@@ -27,9 +27,10 @@ The workflow consists of five major stages:
 
 1. snRNA-seq preprocessing, QC, clustering, subclustering, and cell-type annotation  
 2. GeoMx WTA processing, QC, and AnnData object construction  
-3. Regression-based cell-type signature inference and Bayesian spatial deconvolution  
-4. Extraction, normalization, and annotation of spatial cell-type abundances  
-5. Statistical analysis of inferred cell-type proportions and spatial visualization  
+3. Regression-based cell-type signature inference and Bayesian spatial deconvolution
+   Note: training signatures separately for AD vs Control, however, If there is only a unified reference. this can also be made with this repo.
+5. Extraction, normalization, and annotation of spatial cell-type abundances  
+6. Statistical analysis of inferred cell-type proportions and spatial visualization  
 
 This structure follows the integrated workflow described in the internal project documentation. :contentReference[oaicite:0]{index=0}
 
