@@ -125,6 +125,7 @@ This structure ensures compatibility with downstream Bayesian spatial modeling.
 The workflow uses a two-stage modeling strategy:
 
 1.- Regression-based inference of cell-type signatures from snRNA-seq
+
 2.- Bayesian spatial deconvolution of GeoMx WTA data using a SpaceJam / Cell2Location-style model implemented in Pyro
 
 
@@ -223,7 +224,8 @@ This enables compartment-resolved analysis of gliovascular and neuroimmune remod
 
 
 
-Author
+### Author
 Enrique Chimal
 PhD Candidate – Medical Neuroscience
+
 This README positions the repo as a full **computational biology framework**, not just a collection of scripts.
