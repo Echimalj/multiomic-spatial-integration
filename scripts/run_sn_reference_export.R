@@ -845,33 +845,43 @@ AD_CAA <- checkpoint(
 # Aggregation-based signatures represent mean expression per cell class and
 # do not explicitly model gene-level dispersion or compositional uncertainty.
 
-AD_CAA$cellclass_FDX <- paste0(
-  AD_CAA$final_cellclass,
-  "_",
-  AD_CAA$FDX
+source("R/signature_export_utils.R")
+
+# Add combined final cell class + disease/condition label
+AD_CAA <- add_cellclass_condition_label(
+  seu = AD_CAA,
+  cellclass_col = "final_cellclass",
+  condition_col = "FDX",
+  output_col = "cellclass_FDX",
+  sep = "_"
 )
 
-agg_exp <- Seurat::AggregateExpression(
-  AD_CAA,
-  group.by = "cellclass_FDX",
-  assays = "RNA",
-  return.seurat = TRUE
-)
-
-avg_exp <- Seurat::GetAssayData(
-  agg_exp,
+# Export aggregation-based signatures
+avg_exp <- export_aggregate_signatures(
+  seu = AD_CAA,
+  group_col = "cellclass_FDX",
   assay = "RNA",
-  layer = "data"
+  layer = "data",
+  file = file.path(output_dir, "AD_CAA_avg_expression_by_cellclass_FDX.txt")
 )
 
-write.table(
-  avg_exp,
-  file = file.path(output_dir, "AD_CAA_avg_expression_by_cellclass_FDX.txt"),
-  sep = "\t",
-  quote = FALSE
+# Export inputs for notebook 02 regression signatures
+export_seurat_to_anndata_inputs(
+  seu = AD_CAA,
+  output_dir = file.path(output_dir, "anndata_inputs"),
+  assay = "RNA",
+  counts_layer = "counts",
+  prefix = "AD_CAA"
 )
 
-## CheckPoint
+# Save metadata summary
+save_reference_metadata_summary(
+  seu = AD_CAA,
+  group_cols = c("final_cellclass", "FDX"),
+  file = file.path(output_dir, "AD_CAA_final_cellclass_by_FDX.csv")
+)
+
+# Final checkpoint
 saveRDS(
   AD_CAA,
   file = file.path(checkpoint_dir, "AD_CAA_final_sn_reference.rds")
