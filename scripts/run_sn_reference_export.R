@@ -125,3 +125,157 @@ check_required_packages(c(
   "SoupX",
   "DoubletFinder"
 ))
+
+# ============================================================
+# Project configuration
+# ============================================================
+
+project_dir <- "/path/to/multiomic-spatial-integration"
+
+sample_sheet_file <- file.path(project_dir, "data", "human_sample_sheet.csv")
+
+output_dir <- file.path(project_dir, "results", "sn_reference")
+checkpoint_dir <- file.path(project_dir, "checkpoints")
+figure_dir <- file.path(project_dir, "figures", "sn_reference")
+
+dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
+dir.create(checkpoint_dir, recursive = TRUE, showWarnings = FALSE)
+dir.create(figure_dir, recursive = TRUE, showWarnings = FALSE)
+
+# ============================================================
+# Load sample sheet
+# ============================================================
+
+sample_sheet <- read.csv(sample_sheet_file)
+
+required_cols <- c(
+  "sample_id",
+  "sample_path",
+  "FDX",
+  "batch",
+  "species",
+  "use_soupx",
+  "orig.ident"
+)
+
+missing_cols <- setdiff(required_cols, colnames(sample_sheet))
+
+if (length(missing_cols) > 0) {
+  stop(
+    "Sample sheet is missing required columns: ",
+    paste(missing_cols, collapse = ", "),
+    call. = FALSE
+  )
+}
+
+sample_sheet
+
+# ============================================================
+# Load samples
+# ============================================================
+
+seurat_list <- load_samples_from_sheet(
+  sample_sheet = sample_sheet,
+  min_cells = 3,
+  min_features = 200,
+  use_soupx = TRUE
+)
+
+seurat_list <- annotate_samples_from_sheet(
+  seurat_list = seurat_list,
+  sample_sheet = sample_sheet
+)
+
+AD_CAA <- merge_seurat_samples(
+  seurat_list = seurat_list,
+  project_name = "AD_CAA_2025"
+)
+
+summarize_cells_by_group(AD_CAA, group_col = "orig.ident")
+summarize_cells_by_group(AD_CAA, group_col = "FDX")
+
+## CheckPoint
+AD_CAA <- checkpoint(
+  object = AD_CAA,
+  file = file.path(checkpoint_dir, "AD_CAA_01_loaded_merged.rds"),
+  reload = TRUE
+)
+
+# ============================================================
+# QC metrics and filtering
+# ============================================================
+
+AD_CAA <- add_qc_metrics(
+  seu = AD_CAA,
+  species = "human",
+  add_ribo = FALSE,
+  add_hb = FALSE
+)
+
+qc_plot <- plot_basic_qc(AD_CAA)
+
+ggplot2::ggsave(
+  filename = file.path(figure_dir, "AD_CAA_basic_qc.pdf"),
+  plot = qc_plot,
+  width = 10,
+  height = 5
+)
+
+AD_CAA_before_qc <- AD_CAA
+
+AD_CAA <- filter_cells_basic(
+  seu = AD_CAA,
+  min_features = 200,
+  max_mt = 1
+)
+
+qc_summary <- summarize_filtering(
+  before = AD_CAA_before_qc,
+  after = AD_CAA,
+  group_col = "orig.ident"
+)
+
+write.csv(
+  qc_summary,
+  file = file.path(output_dir, "AD_CAA_QC_filtering_summary.csv"),
+  row.names = FALSE
+)
+
+## CheckPoint
+AD_CAA <- checkpoint(
+  object = AD_CAA,
+  file = file.path(checkpoint_dir, "AD_CAA_02_after_qc.rds"),
+  reload = TRUE
+)
+# ============================================================
+# Doublet detection and singlet filtering
+# ============================================================
+
+AD_CAA <- annotate_doublets_by_sample(
+  seu = AD_CAA,
+  split_by = "orig.ident",
+  assay = "RNA",
+  sct = FALSE,
+  resolution = 0.1
+)
+
+doublet_summary <- summarize_doublets(
+  AD_CAA,
+  group_col = "orig.ident"
+)
+
+write.csv(
+  doublet_summary,
+  file = file.path(output_dir, "AD_CAA_doublet_summary.csv"),
+  row.names = FALSE
+)
+
+AD_CAA <- keep_singlets(AD_CAA)
+
+## CheckPoint
+AD_CAA <- checkpoint(
+  object = AD_CAA,
+  file = file.path(checkpoint_dir, "AD_CAA_03_singlets_only.rds"),
+  reload = TRUE
+)
+
