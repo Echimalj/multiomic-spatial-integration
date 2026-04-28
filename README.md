@@ -41,7 +41,6 @@ This structure follows the integrated workflow described in the internal project
 ```text
 multiomic-spatial-integration/
 ├── R/
-│   ├── seurat_reference_utils.R          # Prepare annotated snRNA-seq reference
 │   ├── signature_export_utils.R          # Export cell-type signatures
 │   ├── proportion_stats_utils.R          # Beta mixed models for inferred proportions
 │   ├── contrast_utils.R                  # Disease, amyloid, and weighted contrasts
