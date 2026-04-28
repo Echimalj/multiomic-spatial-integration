@@ -92,7 +92,7 @@ Main steps include:
 - Harmony integration
 - clustering and manual annotation
 - targeted subclustering of astrocytes, microglia, and vascular cells
-- Pearson correlation-based merging of highly similar subclusters export of annotated reference signatures
+- Pearson correlation-based merging of highly similar subclusters
 
 
 The reference includes major brain cell populations such as astrocytes, microglia, oligodendrocytes, OPCs, excitatory/inhibitory neurons, and vascular-associated populations. 
