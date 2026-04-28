@@ -822,6 +822,28 @@ AD_CAA <- checkpoint(
 # ============================================================
 # Export aggregated expression signatures for spatial integration
 # ============================================================
+# NOTE:
+# In this repository, cell-type signatures are primarily derived using the
+# regression-based framework implemented in:
+# notebooks/02_regression_signatures.ipynb
+#
+# That approach (Cell2Location / SpaceJam regression) estimates gene expression
+# signatures while accounting for technical effects and compositional biases,
+# and is therefore the preferred method for downstream spatial deconvolution.
+#
+# However, as an alternative, cell-type signatures can also be approximated using
+# simple aggregation of single-cell expression profiles, as implemented below
+# via Seurat::AggregateExpression().
+#
+# While aggregation is computationally simpler and useful for quick exploration
+# or sanity checks, it does not explicitly model technical noise or sampling
+# variability, and may be less robust than regression-based estimates.
+#
+# Both approaches are provided for flexibility, but regression-derived signatures
+# are recommended for most analyses in this repository.
+
+# Aggregation-based signatures represent mean expression per cell class and
+# do not explicitly model gene-level dispersion or compositional uncertainty.
 
 AD_CAA$cellclass_FDX <- paste0(
   AD_CAA$final_cellclass,
