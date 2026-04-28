@@ -235,5 +235,5 @@ Unlike standard approaches, this pipeline:
 * incorporates spatial heterogeneity
 * provides multiple complementary biological contrasts
 
-This allows a more accurate representation of disease biology in complex multi-microenvironment systems such as AD/CAA.
----
+This allows a more accurate representation of disease biology in complex multi-microenvironment systems such as AD/CAA
+
