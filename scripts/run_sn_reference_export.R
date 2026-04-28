@@ -818,3 +818,39 @@ AD_CAA <- checkpoint(
   file = file.path(checkpoint_dir, "AD_CAA_12_final_merged_cellclass.rds"),
   reload = TRUE
 )
+
+# ============================================================
+# Export aggregated expression signatures for spatial integration
+# ============================================================
+
+AD_CAA$cellclass_FDX <- paste0(
+  AD_CAA$final_cellclass,
+  "_",
+  AD_CAA$FDX
+)
+
+agg_exp <- Seurat::AggregateExpression(
+  AD_CAA,
+  group.by = "cellclass_FDX",
+  assays = "RNA",
+  return.seurat = TRUE
+)
+
+avg_exp <- Seurat::GetAssayData(
+  agg_exp,
+  assay = "RNA",
+  layer = "data"
+)
+
+write.table(
+  avg_exp,
+  file = file.path(output_dir, "AD_CAA_avg_expression_by_cellclass_FDX.txt"),
+  sep = "\t",
+  quote = FALSE
+)
+
+## CheckPoint
+saveRDS(
+  AD_CAA,
+  file = file.path(checkpoint_dir, "AD_CAA_final_sn_reference.rds")
+)
