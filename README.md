@@ -97,6 +97,9 @@ Main steps include:
 
 The reference includes major brain cell populations such as astrocytes, microglia, oligodendrocytes, OPCs, excitatory/inhibitory neurons, and vascular-associated populations. 
 
+This repository uses the preprocessing logic developed in `neuro-snRNAseq-tools` to generate the annotated snRNA-seq reference. The original project-specific script included SoupX correction, QC, DoubletFinder, SCTransform, Harmony integration, manual annotation, targeted subclustering, Pearson-correlation-guided merging, and expression aggregation for spatial integration. :contentReference[oaicite:0]{index=0}
+
+
 ## Stage 2: GeoMx WTA AnnData Construction
 GeoMx WTA matrices are converted into a unified AnnData object.
 The AnnData structure preserves:
