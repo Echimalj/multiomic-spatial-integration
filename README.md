@@ -32,7 +32,7 @@ The workflow consists of five major stages:
 5. Extraction, normalization, and annotation of spatial cell-type abundances  
 6. Statistical analysis of inferred cell-type proportions and spatial visualization  
 
-This structure follows the integrated workflow described in the internal project documentation. :contentReference[oaicite:0]{index=0}
+This structure follows the integrated workflow described in the internal project documentation. 
 
 ---
 
@@ -97,8 +97,17 @@ Main steps include:
 
 The reference includes major brain cell populations such as astrocytes, microglia, oligodendrocytes, OPCs, excitatory/inhibitory neurons, and vascular-associated populations. 
 
-This repository uses the preprocessing logic developed in `neuro-snRNAseq-tools` to generate the annotated snRNA-seq reference. The original project-specific script included SoupX correction, QC, DoubletFinder, SCTransform, Harmony integration, manual annotation, targeted subclustering, Pearson-correlation-guided merging, and expression aggregation for spatial integration. :contentReference[oaicite:0]{index=0}
+This repository uses the preprocessing logic developed in `neuro-snRNAseq-tools` to generate the annotated snRNA-seq reference. The original project-specific script included SoupX correction, QC, DoubletFinder, SCTransform, Harmony integration, manual annotation, targeted subclustering, Pearson-correlation-guided merging, and expression aggregation for spatial integration. 
 
+### Dependency: neuro-snRNAseq-tools
+
+This script depends on the `neuro-snRNAseq-tools` repository.
+
+Clone it locally:
+
+```bash
+git clone https://github.com/echimalj/neuro-snRNAseq-tools.git
+```
 
 ## Stage 2: GeoMx WTA AnnData Construction
 GeoMx WTA matrices are converted into a unified AnnData object.
