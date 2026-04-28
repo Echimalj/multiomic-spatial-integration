@@ -58,11 +58,18 @@ multiomic-spatial-integration/
 │   └── LocationModelWTAMultiExperimentHierarchicalGeneLevel_Modified.py
 │
 ├── notebooks/
-│   ├── 01_wta_to_anndata.ipynb
-│   ├── 02_regression_signatures.ipynb
-│   ├── 03_spacejam_cell2location.ipynb
-│   ├── 04_extract_cell_proportions.ipynb
-│   └── 05_plotting_and_stats.ipynb
+│   ├── 01_wta_to_anndata.py            #Convert GeoMx WTA outputs into AnnData format
+│   ├── 02_regression_signatures.py     #Learn cell-type gene signatures via regression (preferred)
+│   ├── 03_spacejam_cell2location.py    #Run Bayesian spatial deconvolution (Cell2Location / SpaceJam)
+│   ├── 04_extract_cell_proportions.py  #Extract and normalize inferred cell-type abundances
+│   ├──  05_plotting_and_stats.py       #Exploratory visualization and generate analysis-ready tables
+│   └──Examples/
+│       ├── WTA to AnnData.ipynb
+│       ├── Regression.ipynb
+│       ├── Cell2Location + SpaceJam.ipynb
+│       ├── Cell Proportions after SpaceJam.ipynb
+│       ├── Cell2location_Plotting_and_Stats.ipynb
+│       └── Stats_Integration.Rmd
 │
 ├── scripts/
 │   ├── run_sn_reference_export.R
@@ -79,6 +86,33 @@ multiomic-spatial-integration/
 ├── README.md
 └── .gitignore
 ```
+### Note: Files under 'notebooks'
+These files represent the modular, production-ready pipeline for spatial transcriptomics integration.
+Although organized under notebooks/, they are implemented as .py scripts for:
+   * reproducibility
+   * version control stability
+   * compatibility with HPC and batch execution
+
+Each script:
+   * uses utils
+   * mirrors the logical steps of the analysis pipeline
+   * can be run independently or as part of the full workflow
+
+### Example notebooks:
+This folder contains the original interactive notebooks and R Markdown files used during method development.
+
+These files:
+* provide step-by-step exploratory workflows
+* include intermediate checks and visualizations
+* reflect the iterative development process
+  
+Recommended usage
+* Use the .py scripts in notebooks → reproducible pipeline execution
+* Use the Examples/ folder for:
+      * understanding the workflow
+      * debugging
+      * exploratory analysis
+      * adapting to new datasets
 
 ## Stage 1: snRNA-seq Reference Preparation
 Annotated snRNA-seq data are used as the cellular reference for spatial deconvolution.
