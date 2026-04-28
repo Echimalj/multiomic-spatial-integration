@@ -1,0 +1,2010 @@
+---
+title: "Stats Integration"
+author: "Enrique Chimal"
+date: "2026-01-13"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+
+```
+
+### Basic Settings
+
+```{r}
+setwd("/N/u/echimal/Quartz/Desktop/CLR_MRI/Human_GeoMx_Sep2025/SpaceJam_results")
+library(glmmTMB)
+library(dplyr)
+library(emmeans)
+library(broom.mixed)
+library(ggplot2)
+library(pheatmap)
+library(dplyr)
+library(tidyr)
+```
+
+### Load Dataset
+
+```{r}
+df <- read.csv("spatial_celltype_proportions.csv")
+
+df$disease_status <- factor(df$disease_status, levels = c("Control", "AD-CAA"))
+df$Scan_ID <- factor(df$Scan_ID)
+df$celltype <- factor(df$celltype)
+df$region <- factor(df$region)
+df$pathology <- factor(df$pathology)
+
+```
+
+### Beta Mixed Model setup
+
+```{r}
+#Fix 0/1 values (for beta regression)
+eps <- 1e-6
+df$rel_abundance <- pmin(pmax(df$rel_abundance, eps), 1 - eps)
+
+```
+
+# Arteries Subset
+
+```{r}
+########=======
+arteries <- df %>% filter(region == "Arteries")
+
+# Build a 3-level "group":
+# Control only has AmyloidFree -> Define the label explicitly
+arteries <- arteries %>%
+  mutate(
+    group = case_when(
+      disease_status == "Control" ~ "Control_AmyloidFree",
+      disease_status == "AD-CAA" & pathology == "AmyloidFree" ~ "AD_AmyloidFree",
+      disease_status == "AD-CAA" & pathology == "Amyloid" ~ "AD_Amyloid",
+      TRUE ~ NA_character_
+    ),
+    group = factor(group, levels = c("Control_AmyloidFree", "AD_AmyloidFree", "AD_Amyloid"))
+  ) %>%
+  filter(!is.na(group))
+
+# Compute AD amyloid weight (within arteries)
+# w = proportion of AD arterial ROIs that are Amyloid
+w <- arteries %>%
+  filter(disease_status == "AD-CAA") %>%
+  summarise(w = mean(pathology == "Amyloid")) %>%
+  pull(w)
+
+cat("AD amyloid weight w =", w, "\n")
+
+#Fit per celltype beta mixed model + extract 3 contrasts 
+contrast_results <- list()
+
+for (ct in levels(arteries$celltype)) {
+  
+  tmp <- arteries %>% filter(celltype == ct)
+  
+  # basic sanity
+  if (n_distinct(tmp$Scan_ID) < 2) next
+  if (n_distinct(tmp$group) < 2) next
+  
+  fit <- glmmTMB(
+    rel_abundance ~ group + (1 | Scan_ID),
+    data = tmp,
+    family = beta_family(link = "logit")
+  )
+  
+  em_link <- emmeans(fit, ~ group)  # link scale (logit)
+  
+  # Contrasts on link scale:
+  # Disease_effect: AD_AmyloidFree - Control_AmyloidFree
+  # Amyloid_effect: AD_Amyloid - AD_AmyloidFree
+  # AD_overall_vs_Control: ( (1-w)*AD_AmyloidFree + w*AD_Amyloid ) - Control_AmyloidFree
+  contr <- contrast(
+    em_link,
+    method = list(
+      Disease_effect        = c(-1,  1,  0),
+      Amyloid_effect        = c( 0, -1,  1),
+      AD_overall_vs_Control = c(-1, (1 - w), w)
+    )
+  )
+  
+  out <- as.data.frame(summary(contr, infer = TRUE)) %>%
+    mutate(celltype = ct)
+  
+  contrast_results[[ct]] <- out
+}
+
+contrasts3 <- bind_rows(contrast_results)
+
+#Multiple Hypothesis Testing
+contrasts3 <- contrasts3 %>%
+  group_by(contrast) %>%
+  mutate(p_adj = p.adjust(p.value, method = "BH")) %>%
+  ungroup()
+
+write.csv(contrasts3, "arteries_3contrasts_betaMM.csv", row.names = FALSE)
+
+sig_counts <- contrasts3 %>%
+  group_by(contrast) %>%
+  summarise(
+    n_tested = n(),
+    n_sig_FDR_0.05 = sum(p_adj < 0.05, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+print(sig_counts)
+
+#HeatMap
+heatmap_df <- contrasts3 %>%
+  select(celltype, contrast, estimate, p_adj) %>%
+  tidyr::pivot_wider(
+    names_from = contrast,
+    values_from = c(estimate, p_adj),
+    names_sep = "___"
+  )
+
+# Extract effect matrix (3 columns)
+effect_cols <- c("estimate___Disease_effect",
+                 "estimate___Amyloid_effect",
+                 "estimate___AD_overall_vs_Control")
+
+padj_cols <- c("p_adj___Disease_effect",
+               "p_adj___Amyloid_effect",
+               "p_adj___AD_overall_vs_Control")
+
+heatmap_mat <- as.matrix(heatmap_df[, effect_cols])
+rownames(heatmap_mat) <- heatmap_df$celltype
+colnames(heatmap_mat) <- c("Disease_effect", "Amyloid_effect", "AD_overall_vs_Control")
+
+# Clean non-finite values for clustering safety
+heatmap_mat_clean <- heatmap_mat
+heatmap_mat_clean[!is.finite(heatmap_mat_clean)] <- 0
+
+# Optional: add significance stars as annotation labels
+padj_mat <- as.matrix(heatmap_df[, padj_cols])
+rownames(padj_mat) <- heatmap_df$celltype
+colnames(padj_mat) <- c("Disease_effect", "Amyloid_effect", "AD_overall_vs_Control")
+
+sig_labels <- matrix("", nrow = nrow(padj_mat), ncol = ncol(padj_mat),
+                     dimnames = dimnames(padj_mat))
+sig_labels[padj_mat < 0.05] <- "*"
+sig_labels[padj_mat < 0.01] <- "**"
+sig_labels[padj_mat < 0.001] <- "***"
+sig_labels[is.na(padj_mat)] <- ""
+
+pheatmap(
+  heatmap_mat_clean,
+  color = colorRampPalette(c("blue", "white", "red"))(100),
+  scale = "none",
+  clustering_distance_rows = "euclidean",
+  clustering_distance_cols = "euclidean",
+  border_color = NA,
+  fontsize_row = 8,
+  fontsize_col = 10,
+  display_numbers = sig_labels,
+  number_color = "black",
+  main = "Arterial Cell-Type Changes\nDisease vs Amyloid vs Weighted AD Overall"
+)
+```
+
+# Parenchyma Subset
+
+```{r}
+########=======
+parenchyma <- df %>% filter(region == "Parenchyma")
+
+# Build a 3-level "group":
+# Control only has AmyloidFree -> Define the label explicitly
+parenchyma <- parenchyma %>%
+  mutate(
+    group = case_when(
+      disease_status == "Control" ~ "Control_AmyloidFree",
+      disease_status == "AD-CAA" & pathology == "AmyloidFree" ~ "AD_AmyloidFree",
+      disease_status == "AD-CAA" & pathology == "Amyloid" ~ "AD_Amyloid",
+      TRUE ~ NA_character_
+    ),
+    group = factor(group, levels = c("Control_AmyloidFree", "AD_AmyloidFree", "AD_Amyloid"))
+  ) %>%
+  filter(!is.na(group))
+
+# Compute AD amyloid weight (within arteries)
+# w = proportion of AD arterial ROIs that are Amyloid
+w <- parenchyma %>%
+  filter(disease_status == "AD-CAA") %>%
+  summarise(w = mean(pathology == "Amyloid")) %>%
+  pull(w)
+
+cat("AD amyloid weight w =", w, "\n")
+
+#Fit per celltype beta mixed model + extract 3 contrasts 
+contrast_results <- list()
+
+for (ct in levels(parenchyma$celltype)) {
+  
+  tmp <- parenchyma %>% filter(celltype == ct)
+  
+  # basic sanity
+  if (n_distinct(tmp$Scan_ID) < 2) next
+  if (n_distinct(tmp$group) < 2) next
+  
+  fit <- glmmTMB(
+    rel_abundance ~ group + (1 | Scan_ID),
+    data = tmp,
+    family = beta_family(link = "logit")
+  )
+  
+  em_link <- emmeans(fit, ~ group)  # link scale (logit)
+  
+  # Contrasts on link scale:
+  # Disease_effect: AD_AmyloidFree - Control_AmyloidFree
+  # Amyloid_effect: AD_Amyloid - AD_AmyloidFree
+  # AD_overall_vs_Control: ( (1-w)*AD_AmyloidFree + w*AD_Amyloid ) - Control_AmyloidFree
+  contr <- contrast(
+    em_link,
+    method = list(
+      Disease_effect        = c(-1,  1,  0),
+      Amyloid_effect        = c( 0, -1,  1),
+      AD_overall_vs_Control = c(-1, (1 - w), w)
+    )
+  )
+  
+  out <- as.data.frame(summary(contr, infer = TRUE)) %>%
+    mutate(celltype = ct)
+  
+  contrast_results[[ct]] <- out
+}
+
+contrasts3 <- bind_rows(contrast_results)
+
+#Multiple Hypothesis Testing
+contrasts3 <- contrasts3 %>%
+  group_by(contrast) %>%
+  mutate(p_adj = p.adjust(p.value, method = "BH")) %>%
+  ungroup()
+
+write.csv(contrasts3, "parenchyma_3contrasts_betaMM.csv", row.names = FALSE)
+
+sig_counts <- contrasts3 %>%
+  group_by(contrast) %>%
+  summarise(
+    n_tested = n(),
+    n_sig_FDR_0.05 = sum(p_adj < 0.05, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+print(sig_counts)
+
+#HeatMap
+heatmap_df <- contrasts3 %>%
+  select(celltype, contrast, estimate, p_adj) %>%
+  tidyr::pivot_wider(
+    names_from = contrast,
+    values_from = c(estimate, p_adj),
+    names_sep = "___"
+  )
+
+# Extract effect matrix (3 columns)
+effect_cols <- c("estimate___Disease_effect",
+                 "estimate___Amyloid_effect",
+                 "estimate___AD_overall_vs_Control")
+
+padj_cols <- c("p_adj___Disease_effect",
+               "p_adj___Amyloid_effect",
+               "p_adj___AD_overall_vs_Control")
+
+heatmap_mat <- as.matrix(heatmap_df[, effect_cols])
+rownames(heatmap_mat) <- heatmap_df$celltype
+colnames(heatmap_mat) <- c("Disease_effect", "Amyloid_effect", "AD_overall_vs_Control")
+
+# Clean non-finite values for clustering safety
+heatmap_mat_clean <- heatmap_mat
+heatmap_mat_clean[!is.finite(heatmap_mat_clean)] <- 0
+
+# Optional: add significance stars as annotation labels
+padj_mat <- as.matrix(heatmap_df[, padj_cols])
+rownames(padj_mat) <- heatmap_df$celltype
+colnames(padj_mat) <- c("Disease_effect", "Amyloid_effect", "AD_overall_vs_Control")
+
+sig_labels <- matrix("", nrow = nrow(padj_mat), ncol = ncol(padj_mat),
+                     dimnames = dimnames(padj_mat))
+sig_labels[padj_mat < 0.05] <- "*"
+sig_labels[padj_mat < 0.01] <- "**"
+sig_labels[padj_mat < 0.001] <- "***"
+sig_labels[is.na(padj_mat)] <- ""
+
+pheatmap(
+  heatmap_mat_clean,
+  color = colorRampPalette(c("blue", "white", "red"))(100),
+  scale = "none",
+  clustering_distance_rows = "euclidean",
+  clustering_distance_cols = "euclidean",
+  border_color = NA,
+  fontsize_row = 8,
+  fontsize_col = 10,
+  display_numbers = sig_labels,
+  number_color = "black",
+  main = "Parenchyma Cell-Type Changes\nDisease vs Amyloid vs Weighted AD Overall"
+)
+```
+
+# Capillaries Subset
+
+```{r}
+########=======
+capillaries <- df %>% filter(region == "Capillaries")
+
+# Build a 3-level "group":
+# Control only has AmyloidFree -> Define the label explicitly
+capillaries <- capillaries %>%
+  mutate(
+    group = case_when(
+      disease_status == "Control" ~ "Control_AmyloidFree",
+      disease_status == "AD-CAA" & pathology == "AmyloidFree" ~ "AD_AmyloidFree",
+      disease_status == "AD-CAA" & pathology == "Amyloid" ~ "AD_Amyloid",
+      TRUE ~ NA_character_
+    ),
+    group = factor(group, levels = c("Control_AmyloidFree", "AD_AmyloidFree", "AD_Amyloid"))
+  ) %>%
+  filter(!is.na(group))
+
+# Compute AD amyloid weight (within arteries)
+# w = proportion of AD arterial ROIs that are Amyloid
+w <- capillaries %>%
+  filter(disease_status == "AD-CAA") %>%
+  summarise(w = mean(pathology == "Amyloid")) %>%
+  pull(w)
+
+cat("AD amyloid weight w =", w, "\n")
+
+#Fit per celltype beta mixed model + extract 3 contrasts 
+contrast_results <- list()
+
+for (ct in levels(capillaries$celltype)) {
+  
+  tmp <- capillaries %>% filter(celltype == ct)
+  
+  # basic sanity
+  if (n_distinct(tmp$Scan_ID) < 2) next
+  if (n_distinct(tmp$group) < 2) next
+  
+  fit <- glmmTMB(
+    rel_abundance ~ group + (1 | Scan_ID),
+    data = tmp,
+    family = beta_family(link = "logit")
+  )
+  
+  em_link <- emmeans(fit, ~ group)  # link scale (logit)
+  
+  # Contrasts on link scale:
+  # Disease_effect: AD_AmyloidFree - Control_AmyloidFree
+  # Amyloid_effect: AD_Amyloid - AD_AmyloidFree
+  # AD_overall_vs_Control: ( (1-w)*AD_AmyloidFree + w*AD_Amyloid ) - Control_AmyloidFree
+  contr <- contrast(
+    em_link,
+    method = list(
+      Disease_effect        = c(-1,  1,  0),
+      Amyloid_effect        = c( 0, -1,  1),
+      AD_overall_vs_Control = c(-1, (1 - w), w)
+    )
+  )
+  
+  out <- as.data.frame(summary(contr, infer = TRUE)) %>%
+    mutate(celltype = ct)
+  
+  contrast_results[[ct]] <- out
+}
+
+contrasts3 <- bind_rows(contrast_results)
+
+#Multiple Hypothesis Testing
+contrasts3 <- contrasts3 %>%
+  group_by(contrast) %>%
+  mutate(p_adj = p.adjust(p.value, method = "BH")) %>%
+  ungroup()
+
+write.csv(contrasts3, "capillaries_3contrasts_betaMM.csv", row.names = FALSE)
+
+sig_counts <- contrasts3 %>%
+  group_by(contrast) %>%
+  summarise(
+    n_tested = n(),
+    n_sig_FDR_0.05 = sum(p_adj < 0.05, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+print(sig_counts)
+
+#HeatMap
+heatmap_df <- contrasts3 %>%
+  select(celltype, contrast, estimate, p_adj) %>%
+  tidyr::pivot_wider(
+    names_from = contrast,
+    values_from = c(estimate, p_adj),
+    names_sep = "___"
+  )
+
+# Extract effect matrix (3 columns)
+effect_cols <- c("estimate___Disease_effect",
+                 "estimate___Amyloid_effect",
+                 "estimate___AD_overall_vs_Control")
+
+padj_cols <- c("p_adj___Disease_effect",
+               "p_adj___Amyloid_effect",
+               "p_adj___AD_overall_vs_Control")
+
+heatmap_mat <- as.matrix(heatmap_df[, effect_cols])
+rownames(heatmap_mat) <- heatmap_df$celltype
+colnames(heatmap_mat) <- c("Disease_effect", "Amyloid_effect", "AD_overall_vs_Control")
+
+# Clean non-finite values for clustering safety
+heatmap_mat_clean <- heatmap_mat
+heatmap_mat_clean[!is.finite(heatmap_mat_clean)] <- 0
+
+# Optional: add significance stars as annotation labels
+padj_mat <- as.matrix(heatmap_df[, padj_cols])
+rownames(padj_mat) <- heatmap_df$celltype
+colnames(padj_mat) <- c("Disease_effect", "Amyloid_effect", "AD_overall_vs_Control")
+
+sig_labels <- matrix("", nrow = nrow(padj_mat), ncol = ncol(padj_mat),
+                     dimnames = dimnames(padj_mat))
+sig_labels[padj_mat < 0.05] <- "*"
+sig_labels[padj_mat < 0.01] <- "**"
+sig_labels[padj_mat < 0.001] <- "***"
+sig_labels[is.na(padj_mat)] <- ""
+
+pheatmap(
+  heatmap_mat_clean,
+  color = colorRampPalette(c("blue", "white", "red"))(100),
+  scale = "none",
+  clustering_distance_rows = "euclidean",
+  clustering_distance_cols = "euclidean",
+  border_color = NA,
+  fontsize_row = 8,
+  fontsize_col = 10,
+  display_numbers = sig_labels,
+  number_color = "black",
+  main = "Capillaries Cell-Type Changes\nDisease vs Amyloid vs Weighted AD Overall"
+)
+```
+
+## Sanity Check with Only Parenchyma & Amyloid Effect (to recapitulate AD Paper 2026)
+
+```{r}
+parenchyma <- df %>% 
+  filter(region == "Parenchyma",
+         disease_status == "AD-CAA")
+results_amyloid_par <- list()
+
+for (ct in levels(parenchyma$celltype)) {
+  
+  tmp <- parenchyma %>% filter(celltype == ct)
+  if (n_distinct(tmp$Scan_ID) < 2) next
+  if (n_distinct(tmp$pathology) < 2) next
+  
+  fit <- glmmTMB(
+    rel_abundance ~ pathology + (1 | Scan_ID),
+    data = tmp,
+    family = beta_family(link = "logit")
+  )
+  
+  emm <- emmeans(fit, ~ pathology, type = "response")
+  cont <- contrast(emm, method = "revpairwise")
+  
+  out <- as.data.frame(summary(cont, infer = TRUE))
+  out$celltype <- ct
+  
+  results_amyloid_par[[ct]] <- out
+}
+
+amyloid_par_df <- bind_rows(results_amyloid_par) %>%
+  mutate(p_adj = p.adjust(p.value, method = "BH"))
+
+sig_amyloid_par <- amyloid_par_df %>%
+  filter(p_adj < 0.05)
+
+n_sig <- n_distinct(sig_amyloid_par$celltype)
+n_total <- n_distinct(amyloid_par_df$celltype)
+
+n_sig
+```
+
+```{r}
+sig_cts <- sig_amyloid_par$celltype
+sig_cts
+
+plot_df <- df %>%
+  filter(
+    region == "Parenchyma",
+    disease_status == "AD-CAA",
+    celltype %in% sig_cts
+  ) %>%
+  mutate(
+    pathology = factor(pathology, levels = c("AmyloidFree", "Amyloid"))
+  )
+
+library(ggplot2)
+
+ggplot(plot_df,
+       aes(x = pathology,
+           y = rel_abundance,
+           color = pathology)) +
+  geom_boxplot(
+    outlier.shape = NA,
+    width = 0.5,
+    alpha = 0.6
+  ) +
+  geom_jitter(
+    width = 0.15,
+    size = 1.8,
+    alpha = 0.6
+  ) +
+  facet_wrap(~ celltype, scales = "free_y", ncol = 2) +
+  scale_color_manual(
+    values = c("AmyloidFree" = "#2C7BB6",
+               "Amyloid" = "#D7191C")
+  ) +
+  labs(
+    title = "Parenchymal Amyloid-Associated Cell-Type Changes (AD-CAA)",
+    subtitle = "Only cell types significant after FDR correction",
+    x = "",
+    y = "Relative abundance"
+  ) +
+  theme_classic(base_size = 13) +
+  theme(
+    legend.position = "none",
+    strip.background = element_blank(),
+    strip.text = element_text(face = "bold")
+  )
+```
+
+### Gene Enrichment
+
+```{r}
+#From the Seurat Code for snRNA:
+markers <- read.table("AD_CAA.ctx.seurat_withsubsets_clusterDEGs.txt")
+```
+
+```{r}
+library(dplyr)
+
+topN <- 300  # 30 to 100 is typical
+
+marker_lists <- markers %>%
+  filter(cluster %in% sig_cts) %>%
+  group_by(cluster) %>%
+  arrange(p_val_adj, desc(avg_log2FC)) %>%
+  slice_head(n = topN) %>%
+  summarise(
+    celltype = first(cluster),
+    genes = list(unique(gene)),
+    .groups = "drop"
+  )
+
+marker_lists
+sapply(marker_lists$genes, length)
+
+```
+
+```{r}
+dir.create("enrichment_inputs", showWarnings = FALSE)
+
+for (i in seq_len(nrow(marker_lists))) {
+  ct <- marker_lists$celltype[i]
+  write.table(marker_lists$genes[[i]],
+              file = file.path("enrichment_inputs", paste0(ct, "_top", topN, "_genes.txt")),
+              row.names = FALSE, col.names = FALSE, quote = FALSE)
+}
+```
+
+Running the top 300 genes on Reactome OPC1 recapitulates the Matrisome pathways that are described on the 2026 Chimal et al paper.
+
+Further Statistics need to be discussed and agreed to align with the objectives of the paper.
+
+# Amyloid effect (All regions \~ Only AD_CAA)
+
+```{r}
+library(dplyr)
+
+df <- read.csv("spatial_celltype_proportions.csv", stringsAsFactors = FALSE)
+
+# Make sure rel_abundance is numeric
+df$rel_abundance <- as.numeric(df$rel_abundance)
+
+# Check raw range BEFORE clipping
+range(df$rel_abundance, na.rm = TRUE)
+sum(df$rel_abundance < 0, na.rm = TRUE)
+sum(df$rel_abundance > 1, na.rm = TRUE)
+
+# Beta regression requires 0 < y < 1
+eps <- 1e-6
+df <- df %>%
+  mutate(
+    rel_abundance = pmin(pmax(rel_abundance, eps), 1 - eps)
+  )
+
+# Check again AFTER clipping
+range(df$rel_abundance, na.rm = TRUE)
+sum(df$rel_abundance <= 0, na.rm = TRUE)
+sum(df$rel_abundance >= 1, na.rm = TRUE)
+
+# Rebuild factors AFTER cleaning
+df$disease_status <- factor(df$disease_status, levels = c("Control", "AD-CAA"))
+df$Scan_ID <- factor(df$Scan_ID)
+df$celltype <- factor(df$celltype)
+df$region <- factor(df$region)
+df$pathology <- factor(df$pathology, levels = c("AmyloidFree", "Amyloid"))
+
+# Now create AD-only object from the cleaned df
+dat_ad <- df %>%
+  filter(disease_status == "AD-CAA")
+```
+
+```{r}
+# AD-CAA only, since you want amyloid effect within disease
+mean_results <- list()
+contrast_results <- list()
+
+for (rg in levels(dat_ad$region)) {
+  for (ct in levels(dat_ad$celltype)) {
+    
+    tmp <- dat_ad %>%
+      filter(region == rg, celltype == ct) %>%
+      filter(!is.na(rel_abundance)) %>%
+      droplevels()
+    
+    if (nrow(tmp) < 5) next
+    if (n_distinct(tmp$Scan_ID) < 2) next
+    if (n_distinct(tmp$pathology) < 2) next
+    
+    fit <- try(
+      glmmTMB(
+        rel_abundance ~ pathology + (1 | Scan_ID),
+        data = tmp,
+        family = beta_family(link = "logit")
+      ),
+      silent = TRUE
+    )
+    
+    if (inherits(fit, "try-error")) next
+    
+    emm <- emmeans(fit, ~ pathology, type = "response")
+    
+    emm_df <- as.data.frame(emm) %>%
+      rename(mean_abundance = response) %>%
+      mutate(celltype = ct, region = rg)
+    
+    mean_results[[paste(rg, ct, sep = "__")]] <- emm_df
+    
+    cont <- contrast(
+      emm,
+      method = list(Amyloid_effect = c(-1, 1))
+    )
+    
+    cont_df <- as.data.frame(summary(cont, infer = TRUE)) %>%
+      mutate(celltype = ct, region = rg)
+    
+    contrast_results[[paste(rg, ct, sep = "__")]] <- cont_df
+  }
+}
+```
+
+```{r}
+#P value adjustment (by region)
+means_df <- bind_rows(mean_results)
+
+contrast_df <- bind_rows(contrast_results) %>%
+  group_by(region) %>%
+  mutate(p_adj = p.adjust(p.value, method = "BH")) %>%
+  ungroup()
+```
+
+```{r}
+#Means HeatMap
+#Pivot (so each regions becomes a column)
+mean_heat_df <- means_df %>%
+  mutate(region_path = paste(region, pathology, sep = "_")) %>%
+  group_by(celltype, region_path) %>%
+  summarise(mean_abundance = mean(mean_abundance), .groups = "drop") %>%
+  pivot_wider(names_from = region_path, values_from = mean_abundance)
+
+desired_mean_cols <- c(
+  "Parenchyma_AmyloidFree", "Parenchyma_Amyloid",
+  "Arteries_AmyloidFree",   "Arteries_Amyloid",
+  "Capillaries_AmyloidFree","Capillaries_Amyloid"
+)
+
+desired_mean_cols <- desired_mean_cols[desired_mean_cols %in% colnames(mean_heat_df)]
+
+mean_mat <- as.matrix(mean_heat_df[, desired_mean_cols, drop = FALSE])
+rownames(mean_mat) <- mean_heat_df$celltype
+```
+
+```{r}
+#Build Significance tables 
+#Only mark Amyloid positive columns 
+mean_sig_df <- contrast_df %>%
+  select(celltype, region, p_adj) %>%
+  mutate(
+    region_path = paste(region, "Amyloid", sep = "_"),
+    sig = case_when(
+      is.na(p_adj) ~ "",
+      p_adj < 0.001 ~ "***",
+      p_adj < 0.01  ~ "**",
+      p_adj < 0.05  ~ "*",
+      TRUE ~ ""
+    )
+  ) %>%
+  select(celltype, region_path, sig) %>%
+  pivot_wider(names_from = region_path, values_from = sig)
+
+mean_sig_mat <- matrix(
+  "",
+  nrow = nrow(mean_mat),
+  ncol = ncol(mean_mat),
+  dimnames = dimnames(mean_mat)
+)
+
+for (col in intersect(colnames(mean_sig_df), colnames(mean_mat))) {
+  idx <- match(rownames(mean_mat), mean_sig_df$celltype)
+  mean_sig_mat[, col] <- mean_sig_df[[col]][idx]
+}
+
+```
+
+```{r}
+#Mean Heatmap
+pheatmap(
+  mean_mat,
+  color = colorRampPalette(c("navy", "white", "firebrick3"))(100),
+  scale = "none",
+  cluster_rows = FALSE,
+  cluster_cols = FALSE,
+  border_color = NA,
+  fontsize_row = 8,
+  fontsize_col = 10,
+  display_numbers = mean_sig_mat,
+  number_color = "black",
+  main = "Model-estimated Mean Cell-Type Abundance\nAmyloidFree vs Amyloid Across Regions (AD-CAA)"
+)
+```
+
+```{r}
+#Contrast Heatmap
+#Red -> Enriched in Amyloid
+#Blue -> Depleted in Amyloid 
+contrast_heat_df <- contrast_df %>%
+  mutate(log2_OR = log2(odds.ratio)) %>%
+  select(celltype, region, log2_OR, p_adj) %>%
+  pivot_wider(names_from = region, values_from = c(log2_OR, p_adj), names_sep = "___")
+
+desired_contrast_cols <- c(
+  "log2_OR___Parenchyma",
+  "log2_OR___Arteries",
+  "log2_OR___Capillaries"
+)
+
+desired_contrast_cols <- desired_contrast_cols[desired_contrast_cols %in% colnames(contrast_heat_df)]
+
+contrast_mat <- as.matrix(contrast_heat_df[, desired_contrast_cols, drop = FALSE])
+rownames(contrast_mat) <- contrast_heat_df$celltype
+colnames(contrast_mat) <- gsub("^log2_OR___", "", desired_contrast_cols)
+
+# Columns for adjusted p-values
+desired_padj_cols <- c(
+  "p_adj___Parenchyma",
+  "p_adj___Arteries",
+  "p_adj___Capillaries"
+)
+
+desired_padj_cols <- desired_padj_cols[desired_padj_cols %in% colnames(contrast_heat_df)]
+
+padj_mat <- as.matrix(contrast_heat_df[, desired_padj_cols, drop = FALSE])
+rownames(padj_mat) <- contrast_heat_df$celltype
+colnames(padj_mat) <- gsub("^p_adj___", "", desired_padj_cols)
+
+# Significance labels
+contrast_sig_mat <- matrix(
+  "",
+  nrow = nrow(padj_mat),
+  ncol = ncol(padj_mat),
+  dimnames = dimnames(padj_mat)
+)
+
+contrast_sig_mat[padj_mat < 0.05] <- "*"
+contrast_sig_mat[padj_mat < 0.01] <- "**"
+contrast_sig_mat[padj_mat < 0.001] <- "***"
+contrast_sig_mat[is.na(padj_mat)] <- ""
+```
+
+```{r}
+#Contrasts Heatmap
+breaks <- seq(-2.5, 2.5, length.out = 101)
+
+pheatmap(
+  contrast_mat,
+  color = colorRampPalette(c("blue", "white", "red"))(100),
+  breaks = breaks,
+  scale = "none",
+  cluster_rows = FALSE,
+  cluster_cols = FALSE,
+  border_color = NA,
+  fontsize_row = 8,
+  fontsize_col = 10,
+  display_numbers = contrast_sig_mat,
+  number_color = "black",
+  main = "Amyloid Effect by Region\n(log2 Odds Ratio, Amyloid vs AmyloidFree)"
+)
+```
+
+```{r}
+amyloid_df <- contrast_df %>%
+  mutate(
+    log2_OR = log2(odds.ratio),
+    type = "Amyloid"
+  ) %>%
+  select(celltype, region, log2_OR, p.value, p_adj, type)
+
+```
+
+# Disease Effect (All regions \~ only AmyloidFree)
+
+library(dplyr)
+
+```{r}
+library(dplyr)
+
+df <- read.csv("spatial_celltype_proportions.csv", stringsAsFactors = FALSE)
+
+# Make sure rel_abundance is numeric
+df$rel_abundance <- as.numeric(df$rel_abundance)
+
+# Check raw range BEFORE clipping
+range(df$rel_abundance, na.rm = TRUE)
+sum(df$rel_abundance < 0, na.rm = TRUE)
+sum(df$rel_abundance > 1, na.rm = TRUE)
+
+# Beta regression requires 0 < y < 1
+eps <- 1e-6
+df <- df %>%
+  mutate(
+    rel_abundance = pmin(pmax(rel_abundance, eps), 1 - eps)
+  )
+
+# Check again AFTER clipping
+range(df$rel_abundance, na.rm = TRUE)
+sum(df$rel_abundance <= 0, na.rm = TRUE)
+sum(df$rel_abundance >= 1, na.rm = TRUE)
+
+# Rebuild factors AFTER cleaning
+df$disease_status <- factor(df$disease_status, levels = c("Control", "AD-CAA"))
+df$Scan_ID <- factor(df$Scan_ID)
+df$celltype <- factor(df$celltype)
+df$region <- factor(df$region)
+df$pathology <- factor(df$pathology, levels = c("AmyloidFree", "Amyloid"))
+
+# Now create AmyloidFree-only object from the cleaned df
+dat_dis <- df %>%
+  filter(pathology == "AmyloidFree")
+```
+
+```{r}
+# Amyloid Free only, since you want disease effects between FDX
+mean_results <- list()
+contrast_results <- list()
+
+for (rg in levels(dat_dis$region)) {
+  for (ct in levels(dat_dis$celltype)) {
+    
+    tmp <- dat_dis %>%
+      filter(region == rg, celltype == ct) %>%
+      filter(!is.na(rel_abundance)) %>%
+      droplevels()
+    
+    if (nrow(tmp) < 5) next
+    if (n_distinct(tmp$Scan_ID) < 2) next
+    if (n_distinct(tmp$disease_status) < 2) next
+    
+    fit <- try(
+      glmmTMB(
+        rel_abundance ~ disease_status + (1 | Scan_ID),
+        data = tmp,
+        family = beta_family(link = "logit")
+      ),
+      silent = TRUE
+    )
+    
+    if (inherits(fit, "try-error")) next
+    
+    emm <- emmeans(fit, ~ disease_status, type = "response")
+    
+    emm_df <- as.data.frame(emm) %>%
+      rename(mean_abundance = response) %>%
+      mutate(celltype = ct, region = rg)
+    
+    mean_results[[paste(rg, ct, sep = "__")]] <- emm_df
+    
+    cont <- contrast(
+      emm,
+      method = list(Disease_effect = c(-1, 1))
+    )
+    
+    cont_df <- as.data.frame(summary(cont, infer = TRUE)) %>%
+      mutate(celltype = ct, region = rg)
+    
+    contrast_results[[paste(rg, ct, sep = "__")]] <- cont_df
+  }
+}
+```
+
+```{r}
+#P value adjustment (by region)
+means_df_dis <- bind_rows(mean_results)
+
+contrast_df_dis <- bind_rows(contrast_results) %>%
+  group_by(region) %>%
+  mutate(p_adj = p.adjust(p.value, method = "BH")) %>%
+  ungroup()
+```
+
+```{r}
+#Means HeatMap
+#Pivot (so each regions becomes a column)
+mean_heat_df_dis <- means_df_dis %>%
+  mutate(region_status = paste(region, disease_status, sep = "_")) %>%
+  group_by(celltype, region_status) %>%
+  summarise(mean_abundance = mean(mean_abundance), .groups = "drop") %>%
+  pivot_wider(names_from = region_status, values_from = mean_abundance)
+
+desired_mean_cols_dis <- c(
+  "Parenchyma_Control", "Parenchyma_AD-CAA",
+  "Arteries_Control",   "Arteries_AD-CAA",
+  "Capillaries_Control","Capillaries_AD-CAA"
+)
+
+desired_mean_cols_dis <- desired_mean_cols_dis[desired_mean_cols_dis %in% colnames(mean_heat_df_dis)]
+
+mean_mat_dis <- as.matrix(mean_heat_df_dis[, desired_mean_cols_dis, drop = FALSE])
+rownames(mean_mat_dis) <- mean_heat_df_dis$celltype
+```
+
+```{r}
+#Build Significance tables 
+#Only mark Amyloid positive columns 
+mean_sig_df_dis<- contrast_df_dis %>%
+  select(celltype, region, p_adj) %>%
+  mutate(
+    region_status = paste(region, "AD-CAA", sep = "_"),
+    sig = case_when(
+      is.na(p_adj) ~ "",
+      p_adj < 0.001 ~ "***",
+      p_adj < 0.01  ~ "**",
+      p_adj < 0.05  ~ "*",
+      TRUE ~ ""
+    )
+  ) %>%
+  select(celltype, region_status, sig) %>%
+  pivot_wider(names_from = region_status, values_from = sig)
+
+mean_sig_mat_dis <- matrix(
+  "",
+  nrow = nrow(mean_mat_dis),
+  ncol = ncol(mean_mat_dis),
+  dimnames = dimnames(mean_mat_dis)
+)
+
+for (col in intersect(colnames(mean_sig_df_dis), colnames(mean_mat_dis))) {
+  idx <- match(rownames(mean_mat_dis), mean_sig_df_dis$celltype)
+  mean_sig_mat_dis[, col] <- mean_sig_df_dis[[col]][idx]
+}
+
+```
+
+```{r}
+#Mean Heatmap
+pheatmap(
+  mean_mat_dis,
+  color = colorRampPalette(c("navy", "white", "firebrick3"))(100),
+  scale = "none",
+  cluster_rows = FALSE,
+  cluster_cols = FALSE,
+  border_color = NA,
+  fontsize_row = 8,
+  fontsize_col = 10,
+  display_numbers = mean_sig_mat_dis,
+  number_color = "black",
+  main = "Model-estimated Mean Cell-Type Abundance\nControl vs AD-CAA Across Amyloid-Free Regions"
+)
+```
+
+```{r}
+#Contrast Heatmap
+#Red -> Enriched in AD
+#Blue -> Depleted in AD
+contrast_heat_df <- contrast_df_dis %>%
+  mutate(log2_OR = log2(odds.ratio)) %>%
+  select(celltype, region, log2_OR, p_adj) %>%
+  pivot_wider(names_from = region, values_from = c(log2_OR, p_adj), names_sep = "___")
+
+desired_contrast_cols <- c(
+  "log2_OR___Parenchyma",
+  "log2_OR___Arteries",
+  "log2_OR___Capillaries"
+)
+
+desired_contrast_cols <- desired_contrast_cols[desired_contrast_cols %in% colnames(contrast_heat_df)]
+
+contrast_mat <- as.matrix(contrast_heat_df[, desired_contrast_cols, drop = FALSE])
+rownames(contrast_mat) <- contrast_heat_df$celltype
+colnames(contrast_mat) <- gsub("^log2_OR___", "", desired_contrast_cols)
+
+# Columns for adjusted p-values
+desired_padj_cols <- c(
+  "p_adj___Parenchyma",
+  "p_adj___Arteries",
+  "p_adj___Capillaries"
+)
+
+desired_padj_cols <- desired_padj_cols[desired_padj_cols %in% colnames(contrast_heat_df)]
+
+padj_mat <- as.matrix(contrast_heat_df[, desired_padj_cols, drop = FALSE])
+rownames(padj_mat) <- contrast_heat_df$celltype
+colnames(padj_mat) <- gsub("^p_adj___", "", desired_padj_cols)
+
+# Significance labels
+contrast_sig_mat <- matrix(
+  "",
+  nrow = nrow(padj_mat),
+  ncol = ncol(padj_mat),
+  dimnames = dimnames(padj_mat)
+)
+
+contrast_sig_mat[padj_mat < 0.05] <- "*"
+contrast_sig_mat[padj_mat < 0.01] <- "**"
+contrast_sig_mat[padj_mat < 0.001] <- "***"
+contrast_sig_mat[is.na(padj_mat)] <- ""
+```
+
+```{r}
+#Contrasts Heatmap
+breaks <- seq(-2.5, 2.5, length.out = 101)
+
+pheatmap(
+  contrast_mat,
+  color = colorRampPalette(c("blue", "white", "red"))(100),
+  breaks = breaks,
+  scale = "none",
+  cluster_rows = FALSE,
+  cluster_cols = FALSE,
+  border_color = NA,
+  fontsize_row = 8,
+  fontsize_col = 10,
+  display_numbers = contrast_sig_mat,
+  number_color = "black",
+  main = "Disease Effect (AD-CAA vs Control)\nlog2 Odds Ratio, AmyloidFree ROI"
+)
+```
+
+```{r}
+disease_df <- contrast_df_dis %>%
+  mutate(
+    log2_OR = log2(odds.ratio),
+    type = "Disease"
+  ) %>%
+  select(celltype, region, log2_OR, p.value, p_adj, type)
+```
+
+# Overall Effect
+
+```{r}
+overall_dat <- df %>%
+  mutate(
+    group = case_when(
+      disease_status == "Control" ~ "Control_AmyloidFree",
+      disease_status == "AD-CAA" & pathology == "AmyloidFree" ~ "AD_AmyloidFree",
+      disease_status == "AD-CAA" & pathology == "Amyloid" ~ "AD_Amyloid",
+      TRUE ~ NA_character_
+    ),
+    group = factor(group, levels = c("Control_AmyloidFree", "AD_AmyloidFree", "AD_Amyloid"))
+  ) %>%
+  filter(!is.na(group))
+
+mean_results_overall <- list()
+contrast_results_overall <- list()
+weight_df <- list()
+
+for (rg in levels(overall_dat$region)) {
+  
+  # region-specific amyloid weight within AD
+  w <- overall_dat %>%
+    filter(region == rg, disease_status == "AD-CAA") %>%
+    summarise(w = mean(pathology == "Amyloid")) %>%
+    pull(w)
+  
+  weight_df[[rg]] <- data.frame(region = rg, w = w)
+  
+  for (ct in levels(overall_dat$celltype)) {
+    
+    tmp <- overall_dat %>%
+      filter(region == rg, celltype == ct) %>%
+      filter(!is.na(rel_abundance), is.finite(rel_abundance)) %>%
+      droplevels()
+    
+    if (nrow(tmp) < 5) next
+    if (n_distinct(tmp$Scan_ID) < 2) next
+    if (n_distinct(tmp$group) < 2) next
+    
+    fit <- try(
+      glmmTMB(
+        rel_abundance ~ group + (1 | Scan_ID),
+        data = tmp,
+        family = beta_family(link = "logit")
+      ),
+      silent = TRUE
+    )
+    
+    if (inherits(fit, "try-error")) next
+    
+    # Means for the 3 observed groups
+    emm <- try(
+      emmeans(fit, ~ group, type = "response"),
+      silent = TRUE
+    )
+    
+    if (inherits(emm, "try-error")) next
+    
+    emm_df <- as.data.frame(summary(emm))
+    value_col <- intersect(c("response", "prob", "emmean"), colnames(emm_df))[1]
+    if (is.na(value_col)) next
+    
+    emm_df <- emm_df %>%
+      rename(mean_abundance = all_of(value_col)) %>%
+      mutate(celltype = ct, region = rg, weight = w)
+    
+    mean_results_overall[[paste(rg, ct, sep = "__")]] <- emm_df
+    
+    # Contrasts on link scale
+    em_link <- emmeans(fit, ~ group)
+    
+    contr <- try(
+      contrast(
+        em_link,
+        method = list(
+          Disease_effect        = c(-1,  1,  0),
+          Amyloid_effect        = c( 0, -1,  1),
+          AD_overall_vs_Control = c(-1, (1 - w), w)
+        )
+      ),
+      silent = TRUE
+    )
+    
+    if (inherits(contr, "try-error")) next
+    
+    cont_df <- as.data.frame(summary(contr, infer = TRUE)) %>%
+      mutate(celltype = ct, region = rg, weight = w)
+    
+    contrast_results_overall[[paste(rg, ct, sep = "__")]] <- cont_df
+  }
+}
+
+means_df_overall <- bind_rows(mean_results_overall)
+contrast_df_overall <- bind_rows(contrast_results_overall) %>%
+  group_by(region, contrast) %>%
+  mutate(p_adj = p.adjust(p.value, method = "BH")) %>%
+  ungroup()
+
+weights_used <- bind_rows(weight_df)
+weights_used
+```
+
+```{r}
+# Extract the three group means
+mean_wide_overall <- means_df_overall %>%
+  select(celltype, region, group, mean_abundance, weight) %>%
+  pivot_wider(names_from = group, values_from = mean_abundance)
+
+# Compute weighted AD overall mean
+mean_wide_overall <- mean_wide_overall %>%
+  mutate(
+    AD_overall = (1 - weight) * AD_AmyloidFree + weight * AD_Amyloid,
+    Control_overall = Control_AmyloidFree
+  )
+```
+
+```{r}
+mean_heat_df_overall <- mean_wide_overall %>%
+  select(celltype, region, Control_overall, AD_overall) %>%
+  pivot_longer(
+    cols = c(Control_overall, AD_overall),
+    names_to = "status",
+    values_to = "mean_abundance"
+  ) %>%
+  mutate(
+    status = recode(status,
+                    "Control_overall" = "Control",
+                    "AD_overall" = "AD_overall"),
+    region_status = paste(region, status, sep = "_")
+  ) %>%
+  select(celltype, region_status, mean_abundance) %>%
+  pivot_wider(names_from = region_status, values_from = mean_abundance)
+```
+
+```{r}
+desired_mean_cols_overall <- c(
+  "Parenchyma_Control", "Parenchyma_AD_overall",
+  "Arteries_Control",   "Arteries_AD_overall",
+  "Capillaries_Control","Capillaries_AD_overall"
+)
+
+desired_mean_cols_overall <- desired_mean_cols_overall[
+  desired_mean_cols_overall %in% colnames(mean_heat_df_overall)
+]
+
+mean_mat_overall <- as.matrix(mean_heat_df_overall[, desired_mean_cols_overall, drop = FALSE])
+rownames(mean_mat_overall) <- mean_heat_df_overall$celltype
+
+mean_sig_df_overall <- contrast_df_overall %>%
+  filter(contrast == "AD_overall_vs_Control") %>%
+  select(celltype, region, p_adj) %>%
+  mutate(
+    region_status = paste(region, "AD_overall", sep = "_"),
+    sig = case_when(
+      is.na(p_adj) ~ "",
+      p_adj < 0.001 ~ "***",
+      p_adj < 0.01  ~ "**",
+      p_adj < 0.05  ~ "*",
+      TRUE ~ ""
+    )
+  ) %>%
+  select(celltype, region_status, sig) %>%
+  pivot_wider(names_from = region_status, values_from = sig)
+
+mean_sig_mat_overall <- matrix(
+  "",
+  nrow = nrow(mean_mat_overall),
+  ncol = ncol(mean_mat_overall),
+  dimnames = dimnames(mean_mat_overall)
+)
+
+for (col in intersect(colnames(mean_sig_df_overall), colnames(mean_mat_overall))) {
+  idx <- match(rownames(mean_mat_overall), mean_sig_df_overall$celltype)
+  mean_sig_mat_overall[, col] <- mean_sig_df_overall[[col]][idx]
+}
+```
+
+```{r}
+pheatmap(
+  mean_mat_overall,
+  color = colorRampPalette(c("navy", "white", "firebrick3"))(100),
+  scale = "none",
+  cluster_rows = FALSE,
+  cluster_cols = FALSE,
+  border_color = NA,
+  fontsize_row = 8,
+  fontsize_col = 10,
+  display_numbers = mean_sig_mat_overall,
+  number_color = "black",
+  main = "Model-estimated Mean Cell-Type Abundance\nControl vs Weighted AD Overall"
+)
+```
+
+```{r}
+contrast_heat_df_overall <- contrast_df_overall %>%
+  filter(contrast == "AD_overall_vs_Control") %>%
+  select(celltype, region, estimate, p_adj) %>%
+  pivot_wider(names_from = region, values_from = c(estimate, p_adj), names_sep = "___")
+
+desired_contrast_cols_overall <- c(
+  "estimate___Parenchyma",
+  "estimate___Arteries",
+  "estimate___Capillaries"
+)
+
+desired_contrast_cols_overall <- desired_contrast_cols_overall[
+  desired_contrast_cols_overall %in% colnames(contrast_heat_df_overall)
+]
+
+contrast_mat_overall <- as.matrix(
+  contrast_heat_df_overall[, desired_contrast_cols_overall, drop = FALSE]
+)
+
+rownames(contrast_mat_overall) <- contrast_heat_df_overall$celltype
+colnames(contrast_mat_overall) <- gsub("^estimate___", "", desired_contrast_cols_overall)
+
+desired_padj_cols_overall <- c(
+  "p_adj___Parenchyma",
+  "p_adj___Arteries",
+  "p_adj___Capillaries"
+)
+
+desired_padj_cols_overall <- desired_padj_cols_overall[
+  desired_padj_cols_overall %in% colnames(contrast_heat_df_overall)
+]
+
+padj_mat_overall <- as.matrix(
+  contrast_heat_df_overall[, desired_padj_cols_overall, drop = FALSE]
+)
+
+rownames(padj_mat_overall) <- contrast_heat_df_overall$celltype
+colnames(padj_mat_overall) <- gsub("^p_adj___", "", desired_padj_cols_overall)
+
+contrast_sig_mat_overall <- matrix(
+  "",
+  nrow = nrow(padj_mat_overall),
+  ncol = ncol(padj_mat_overall),
+  dimnames = dimnames(padj_mat_overall)
+)
+
+contrast_sig_mat_overall[padj_mat_overall < 0.05] <- "*"
+contrast_sig_mat_overall[padj_mat_overall < 0.01] <- "**"
+contrast_sig_mat_overall[padj_mat_overall < 0.001] <- "***"
+contrast_sig_mat_overall[is.na(padj_mat_overall)] <- ""
+```
+
+```{r}
+#Contrasts Heatmap
+breaks <- seq(-2.5, 2.5, length.out = 101)
+
+pheatmap(
+  contrast_mat_overall,
+  color = colorRampPalette(c("blue", "white", "red"))(100),
+  breaks = breaks,
+  scale = "none",
+  cluster_rows = FALSE,
+  cluster_cols = FALSE,
+  border_color = NA,
+  fontsize_row = 8,
+  fontsize_col = 10,
+  display_numbers = contrast_sig_mat_overall,
+  number_color = "black",
+  main = "Overall AD vs Control Effect by Region\n(Weighted AD Composition)"
+)
+```
+
+```{r}
+overall_df <- contrast_df_overall %>%
+  filter(contrast == "AD_overall_vs_Control") %>%
+  mutate(
+    log2_OR = estimate / log(2),
+    type = "Overall"
+  ) %>%
+  select(celltype, region, log2_OR, p.value, p_adj, type)
+```
+
+# Maximal Pathology Comparison
+
+```{r}
+comparison_dat <- df %>%
+  mutate(
+    group2 = case_when(
+      disease_status == "Control" & pathology == "AmyloidFree" ~ "Control_AmyloidFree",
+      disease_status == "AD-CAA" & pathology == "Amyloid" ~ "AD_Amyloid",
+      TRUE ~ NA_character_
+    ),
+    group2 = factor(group2, levels = c("Control_AmyloidFree", "AD_Amyloid"))
+  ) %>%
+  filter(!is.na(group2))
+
+mean_results_comp <- list()
+contrast_results_comp <- list()
+fit_status_comp <- list()
+
+for (rg in levels(comparison_dat$region)) {
+  for (ct in levels(comparison_dat$celltype)) {
+    
+    tmp <- comparison_dat %>%
+      filter(region == rg, celltype == ct) %>%
+      filter(!is.na(rel_abundance), is.finite(rel_abundance)) %>%
+      droplevels()
+    
+    status <- data.frame(
+      region = rg,
+      celltype = ct,
+      n_rows = nrow(tmp),
+      n_scans = n_distinct(tmp$Scan_ID),
+      n_groups = n_distinct(tmp$group2),
+      fit_ok = FALSE,
+      converged = NA,
+      pd_hessian = NA,
+      stringsAsFactors = FALSE
+    )
+    
+    if (nrow(tmp) < 5) {
+      fit_status_comp[[paste(rg, ct, sep = "__")]] <- status
+      next
+    }
+    if (n_distinct(tmp$Scan_ID) < 2) {
+      fit_status_comp[[paste(rg, ct, sep = "__")]] <- status
+      next
+    }
+    if (n_distinct(tmp$group2) < 2) {
+      fit_status_comp[[paste(rg, ct, sep = "__")]] <- status
+      next
+    }
+    
+    fit <- try(
+      glmmTMB(
+        rel_abundance ~ group2 + (1 | Scan_ID),
+        data = tmp,
+        family = beta_family(link = "logit")
+      ),
+      silent = TRUE
+    )
+    
+    if (inherits(fit, "try-error")) {
+      fit_status_comp[[paste(rg, ct, sep = "__")]] <- status
+      next
+    }
+    
+    status$fit_ok <- TRUE
+    
+    # Extract convergence diagnostics if available
+    s <- try(summary(fit), silent = TRUE)
+    if (!inherits(s, "try-error")) {
+      status$converged <- isTRUE(fit$sdr$pdHess)
+      status$pd_hessian <- isTRUE(fit$sdr$pdHess)
+    }
+    
+    emm <- try(
+      emmeans(fit, ~ group2, type = "response"),
+      silent = TRUE
+    )
+    
+    if (inherits(emm, "try-error")) {
+      fit_status_comp[[paste(rg, ct, sep = "__")]] <- status
+      next
+    }
+    
+    emm_df <- as.data.frame(summary(emm))
+    value_col <- intersect(c("response", "prob", "emmean"), colnames(emm_df))[1]
+    if (is.na(value_col)) {
+      fit_status_comp[[paste(rg, ct, sep = "__")]] <- status
+      next
+    }
+    
+    emm_df <- emm_df %>%
+      rename(mean_abundance = all_of(value_col)) %>%
+      mutate(celltype = ct, region = rg)
+    
+    mean_results_comp[[paste(rg, ct, sep = "__")]] <- emm_df
+    
+    em_link <- emmeans(fit, ~ group2)
+    
+    contr <- try(
+      contrast(
+        em_link,
+        method = list(
+          AD_Amyloid_vs_Control = c(-1, 1)
+        )
+      ),
+      silent = TRUE
+    )
+    
+    if (inherits(contr, "try-error")) {
+      fit_status_comp[[paste(rg, ct, sep = "__")]] <- status
+      next
+    }
+    
+    cont_df <- as.data.frame(summary(contr, infer = TRUE)) %>%
+      mutate(celltype = ct, region = rg)
+    
+    contrast_results_comp[[paste(rg, ct, sep = "__")]] <- cont_df
+    fit_status_comp[[paste(rg, ct, sep = "__")]] <- status
+  }
+}
+
+means_df_comp <- bind_rows(mean_results_comp)
+
+contrast_df_comp <- bind_rows(contrast_results_comp) %>%
+  group_by(region) %>%
+  mutate(p_adj = p.adjust(p.value, method = "BH")) %>%
+  ungroup()
+
+fit_status_comp_df <- bind_rows(fit_status_comp)
+```
+
+```{r}
+table(fit_status_comp_df$region, fit_status_comp_df$pd_hessian, useNA = "ifany")
+fit_status_comp_df %>% filter(pd_hessian == FALSE | is.na(pd_hessian))
+```
+
+```{r}
+mean_heat_df_comp <- means_df_comp %>%
+  mutate(region_group = paste(region, group2, sep = "_")) %>%
+  group_by(celltype, region_group) %>%
+  summarise(mean_abundance = mean(mean_abundance), .groups = "drop") %>%
+  pivot_wider(names_from = region_group, values_from = mean_abundance)
+
+desired_mean_cols_comp <- c(
+  "Parenchyma_Control_AmyloidFree", "Parenchyma_AD_Amyloid",
+  "Arteries_Control_AmyloidFree",   "Arteries_AD_Amyloid",
+  "Capillaries_Control_AmyloidFree","Capillaries_AD_Amyloid"
+)
+
+desired_mean_cols_comp <- desired_mean_cols_comp[
+  desired_mean_cols_comp %in% colnames(mean_heat_df_comp)
+]
+
+mean_mat_comp <- as.matrix(mean_heat_df_comp[, desired_mean_cols_comp, drop = FALSE])
+rownames(mean_mat_comp) <- mean_heat_df_comp$celltype
+
+mean_sig_df_comp <- contrast_df_comp %>%
+  select(celltype, region, p_adj) %>%
+  mutate(
+    region_group = paste(region, "AD_Amyloid", sep = "_"),
+    sig = case_when(
+      is.na(p_adj) ~ "",
+      p_adj < 0.001 ~ "***",
+      p_adj < 0.01  ~ "**",
+      p_adj < 0.05  ~ "*",
+      TRUE ~ ""
+    )
+  ) %>%
+  select(celltype, region_group, sig) %>%
+  pivot_wider(names_from = region_group, values_from = sig)
+
+mean_sig_mat_comp <- matrix(
+  "",
+  nrow = nrow(mean_mat_comp),
+  ncol = ncol(mean_mat_comp),
+  dimnames = dimnames(mean_mat_comp)
+)
+
+for (col in intersect(colnames(mean_sig_df_comp), colnames(mean_mat_comp))) {
+  idx <- match(rownames(mean_mat_comp), mean_sig_df_comp$celltype)
+  mean_sig_mat_comp[, col] <- mean_sig_df_comp[[col]][idx]
+}
+```
+
+```{r}
+pheatmap(
+  mean_mat_comp,
+  color = colorRampPalette(c("navy", "white", "firebrick3"))(100),
+  scale = "none",
+  cluster_rows = FALSE,
+  cluster_cols = FALSE,
+  border_color = NA,
+  fontsize_row = 8,
+  fontsize_col = 10,
+  display_numbers = mean_sig_mat_comp,
+  number_color = "black",
+  main = "Model-estimated Mean Cell-Type Abundance\nControl Amyloid-Free vs AD Amyloid"
+)
+```
+
+```{r}
+contrast_heat_df_comp <- contrast_df_comp %>%
+  select(celltype, region, estimate, p_adj) %>%
+  pivot_wider(names_from = region, values_from = c(estimate, p_adj), names_sep = "___")
+
+desired_contrast_cols_comp <- c(
+  "estimate___Parenchyma",
+  "estimate___Arteries",
+  "estimate___Capillaries"
+)
+
+desired_contrast_cols_comp <- desired_contrast_cols_comp[
+  desired_contrast_cols_comp %in% colnames(contrast_heat_df_comp)
+]
+
+contrast_mat_comp <- as.matrix(
+  contrast_heat_df_comp[, desired_contrast_cols_comp, drop = FALSE]
+)
+
+rownames(contrast_mat_comp) <- contrast_heat_df_comp$celltype
+colnames(contrast_mat_comp) <- gsub("^estimate___", "", desired_contrast_cols_comp)
+
+desired_padj_cols_comp <- c(
+  "p_adj___Parenchyma",
+  "p_adj___Arteries",
+  "p_adj___Capillaries"
+)
+
+desired_padj_cols_comp <- desired_padj_cols_comp[
+  desired_padj_cols_comp %in% colnames(contrast_heat_df_comp)
+]
+
+padj_mat_comp <- as.matrix(
+  contrast_heat_df_comp[, desired_padj_cols_comp, drop = FALSE]
+)
+
+rownames(padj_mat_comp) <- contrast_heat_df_comp$celltype
+colnames(padj_mat_comp) <- gsub("^p_adj___", "", desired_padj_cols_comp)
+
+contrast_sig_mat_comp <- matrix(
+  "",
+  nrow = nrow(padj_mat_comp),
+  ncol = ncol(padj_mat_comp),
+  dimnames = dimnames(padj_mat_comp)
+)
+
+contrast_sig_mat_comp[padj_mat_comp < 0.05] <- "*"
+contrast_sig_mat_comp[padj_mat_comp < 0.01] <- "**"
+contrast_sig_mat_comp[padj_mat_comp < 0.001] <- "***"
+contrast_sig_mat_comp[is.na(padj_mat_comp)] <- ""
+```
+
+```{r}
+#Contrasts Heatmap
+breaks <- seq(-2.5, 2.5, length.out = 101)
+
+pheatmap(
+  contrast_mat_comp,
+  color = colorRampPalette(c("blue", "white", "red"))(100),
+  breaks = breaks,
+  scale = "none",
+  cluster_rows = FALSE,
+  cluster_cols = FALSE,
+  border_color = NA,
+  fontsize_row = 8,
+  fontsize_col = 10,
+  display_numbers = contrast_sig_mat_comp,
+  number_color = "black",
+  main = "AD Amyloid vs Control Amyloid-Free by Region"
+)
+```
+
+```{r}
+maxpath_df <- contrast_df_comp %>%
+  mutate(
+    log2_OR = estimate / log(2),
+    type = "MaxPathology"
+  ) %>%
+  select(celltype, region, log2_OR, p.value, p_adj, type)
+```
+
+# Heat Maps by Region
+
+```{r}
+amyloid_df_clean <- contrast_df %>%
+  transmute(
+    celltype,
+    region,
+    type = "Amyloid",
+    log2_OR = log2(odds.ratio),
+    p_adj
+  ) %>%
+  distinct()
+
+disease_df_clean <- contrast_df_dis %>%
+  transmute(
+    celltype,
+    region,
+    type = "Disease",
+    log2_OR = log2(odds.ratio),
+    p_adj
+  ) %>%
+  distinct()
+
+overall_df_clean <- contrast_df_overall %>%
+  filter(contrast == "AD_overall_vs_Control") %>%
+  transmute(
+    celltype,
+    region,
+    type = "Overall",
+    log2_OR = estimate / log(2),
+    p_adj
+  ) %>%
+  distinct()
+
+maxpath_df_clean <- contrast_df_comp %>%
+  transmute(
+    celltype,
+    region,
+    type = "MaxPathology",
+    log2_OR = estimate / log(2),
+    p_adj
+  ) %>%
+  distinct()
+
+combined_df_clean <- bind_rows(
+  amyloid_df_clean,
+  disease_df_clean,
+  overall_df_clean,
+  maxpath_df_clean
+)
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(pheatmap)
+
+regions <- c("Arteries", "Capillaries", "Parenchyma")
+
+for (rg in regions) {
+  
+  tmp <- combined_df_clean %>%
+    filter(region == rg) %>%
+    group_by(celltype, type) %>%
+    summarise(
+      log2_OR = first(log2_OR),
+      p_adj   = first(p_adj),
+      .groups = "drop"
+    )
+  
+  # -----------------------------
+  # Effect matrix
+  # -----------------------------
+  heat_df <- tmp %>%
+    select(celltype, type, log2_OR) %>%
+    pivot_wider(names_from = type, values_from = log2_OR)
+  
+  desired_cols <- c("Amyloid", "Disease", "Overall", "MaxPathology")
+  desired_cols <- desired_cols[desired_cols %in% colnames(heat_df)]
+  
+  mat <- as.matrix(heat_df[, desired_cols, drop = FALSE])
+  rownames(mat) <- heat_df$celltype
+  
+  # -----------------------------
+  # Significance matrix
+  # -----------------------------
+  sig_df <- tmp %>%
+    mutate(sig = case_when(
+      is.na(p_adj) ~ "",
+      p_adj < 0.001 ~ "***",
+      p_adj < 0.01  ~ "**",
+      p_adj < 0.05  ~ "*",
+      TRUE ~ ""
+    )) %>%
+    select(celltype, type, sig) %>%
+    pivot_wider(names_from = type, values_from = sig)
+  
+  sig_df[is.na(sig_df)] <- ""
+  
+  sig_mat <- as.matrix(sig_df[, desired_cols, drop = FALSE])
+  rownames(sig_mat) <- sig_df$celltype
+  
+  # -----------------------------
+  # Plot
+  # -----------------------------
+  mat_display <- pmax(pmin(mat, 2.5), -2.5)
+  mat_cluster <- mat_display
+  mat_cluster[!is.finite(mat_cluster)] <- 0
+  
+  pheatmap(
+    mat_display,
+    color = colorRampPalette(c("blue", "white", "red"))(100),
+    breaks = seq(-2.5, 2.5, length.out = 101),
+    scale = "none",
+    cluster_rows = FALSE,
+    cluster_cols = FALSE,
+    clustering_distance_rows = dist(mat_cluster),
+    border_color = NA,
+    fontsize_row = 7,
+    fontsize_col = 10,
+    display_numbers = sig_mat,
+    number_color = "black",
+    na_col = "grey90",
+    main = paste("Cell-Type Effects Across Contrasts —", rg)
+  )
+}
+```
+
+```{r}
+```
+
+```{r}
+
+```
+
+## Supplementary
+
+```{r}
+#effect magnitude similarity across analyses
+combined_df %>%
+  ggplot(aes(x = type, y = abs(log2_OR))) +
+  geom_boxplot() +
+  facet_wrap(~region) +
+  theme_classic() +
+  labs(y = "|log2 OR|", title = "Effect Size Distribution by Contrast")
+```
+
+```{r}
+#Effect size vs Significance 
+combined_df %>%
+  ggplot(aes(x = log2_OR, y = -log10(p.value))) +
+  geom_point() +
+  facet_grid(region ~ type) +
+  theme_classic()
+```
+
+```{r}
+#% of significant cell types 
+combined_df %>%
+  group_by(type, region) %>%
+  summarise(
+    n_sig = sum(p_adj < 0.05, na.rm = TRUE),
+    n_tested = n(),
+    .groups = "drop"
+  )
+combined_df %>%
+  group_by(type, region) %>%
+  summarise(sig = mean(p_adj < 0.05), .groups = "drop") %>%
+  ggplot(aes(x = type, y = sig)) +
+  geom_col() +
+  facet_wrap(~region) +
+  theme_classic() +
+  labs(y = "% significant")
+```
+
+```{r}
+combined_df %>%
+  ggplot(aes(x = type, y = SE)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(width = 0.15, alpha = 0.5, size = 1.2) +
+  facet_wrap(~region) +
+  theme_classic() +
+  labs(
+    x = "",
+    y = "Standard error",
+    title = "Standard error comparison across contrast types"
+  )
+```
+
+```{r}
+amyloid_se <- contrast_df %>%
+  mutate(type = "Amyloid") %>%
+  select(celltype, region, SE, type)
+
+disease_se <- contrast_df_dis %>%
+  mutate(type = "Disease") %>%
+  select(celltype, region, SE, type)
+
+overall_se <- contrast_df_overall %>%
+  filter(contrast == "AD_overall_vs_Control") %>%
+  mutate(type = "Overall") %>%
+  select(celltype, region, SE, type)
+
+maxpath_se <- contrast_df_comp %>%
+  mutate(type = "MaxPathology") %>%
+  select(celltype, region, SE, type)
+
+combined_se <- bind_rows(
+  amyloid_se,
+  disease_se,
+  overall_se,
+  maxpath_se
+)
+```
+
+```{r}
+#Standard Error Distributions
+combined_se %>%
+  ggplot(aes(x = type, y = SE)) +
+  geom_boxplot() +
+  facet_wrap(~region) +
+  theme_classic() +
+  labs(title = "Standard Error Distribution by Contrast")
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+combined_df %>%
+  left_join(combined_se, by = c("celltype", "region", "type")) %>%
+  mutate(sig = p_adj < 0.05) %>%
+  ggplot(aes(x = log2_OR, y = SE)) +
+  
+  # Points colored by significance
+  geom_point(aes(color = sig), size = 2, alpha = 0.8) +
+  
+  # Smooth trend
+  geom_smooth(method = "loess", se = FALSE, color = "red", linewidth = 0.7) +
+  
+  # Global SE reference
+  geom_hline(
+    yintercept = median(combined_se$SE, na.rm = TRUE),
+    linetype = "dashed",
+    color = "black"
+  ) +
+  
+  # Faceting
+  facet_grid(region ~ type) +
+  
+  # Colors
+  scale_color_manual(
+    values = c("FALSE" = "grey70", "TRUE" = "#D7191C"),
+    name = "FDR < 0.05"
+  ) +
+  
+  # Labels
+  labs(
+    x = "Effect size (log2 Odds Ratio)",
+    y = "Standard Error (SE)",
+    title = "Effect Size vs Uncertainty Across Contrast Strategies"
+  ) +
+  
+  theme_classic(base_size = 13) +
+  theme(
+    strip.background = element_blank(),
+    strip.text = element_text(face = "bold"),
+    legend.position = "top"
+  )
+```
+
+## Identify Robust Cell types
+
+```{r}
+robust_df <- combined_df %>%
+  mutate(sig = p_adj < 0.05) %>%
+  group_by(celltype) %>%
+  summarise(
+    n_sig = sum(sig, na.rm = TRUE),
+    mean_effect = mean(log2_OR, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(n_sig))
+
+robust_cts <- robust_df %>%
+  filter(n_sig >= 3)  # across contrasts
+```
+
+```{r}
+robust_df %>%
+  ggplot(aes(x = reorder(celltype, n_sig), y = n_sig)) +
+  geom_col() +
+  coord_flip() +
+  theme_classic() +
+  labs(title = "Robust Cell Types Across Contrasts")
+```
+
+## Cluster Cells types by response pattern
+
+```{r}
+cluster_mat <- combined_df %>%
+  select(celltype, region, type, log2_OR) %>%
+  mutate(feature = paste(type, region, sep = "_")) %>%
+  select(celltype, feature, log2_OR) %>%
+  tidyr::pivot_wider(names_from = feature, values_from = log2_OR)
+
+mat <- as.matrix(cluster_mat[, -1])
+rownames(mat) <- cluster_mat$celltype
+
+mat[is.na(mat)] <- 0
+```
+
+```{r}
+pheatmap(
+  mat,
+  scale = "row",
+  clustering_distance_rows = "euclidean",
+  clustering_method = "ward.D2",
+  main = "Cell-Type Response Patterns Across Contrasts"
+)
+```
+
+```{r}
+abs_mat_df <- combined_df %>%
+  select(celltype, region, type, log2_OR) %>%
+  mutate(feature = paste(type, region, sep = "_")) %>%
+  select(celltype, feature, log2_OR) %>%
+  tidyr::pivot_wider(names_from = feature, values_from = log2_OR)
+
+abs_mat <- as.matrix(abs_mat_df[, -1])
+rownames(abs_mat) <- abs_mat_df$celltype
+
+# Replace NA (missing fits) with 0 for visualization
+abs_mat[is.na(abs_mat)] <- 0
+
+max_val <- max(abs(abs_mat), na.rm = TRUE)
+
+breaks <- seq(-max_val, max_val, length.out = 100)
+colors <- colorRampPalette(c("blue", "white", "red"))(99)
+
+pheatmap(
+  abs_mat,
+  color = colors,
+  breaks = breaks,
+  scale = "none",  # <-- CRITICAL
+  clustering_distance_rows = "euclidean",
+  clustering_method = "ward.D2",
+  border_color = NA,
+  fontsize_row = 7,
+  fontsize_col = 9,
+  main = "Absolute Effect Sizes Across Contrasts\n(log2 Odds Ratio)"
+)
+```
