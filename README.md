@@ -176,7 +176,7 @@ After model training, posterior spatial factors are extracted and converted into
 These outputs are merged with GeoMx metadata and factor-to-cell-type annotation mappings for downstream visualization and statistical testing. 
 
 ## Stage 5: Statistical Modeling
-Spatial cell-type proportions are modeled using beta mixed-effects models in R.
+Spatially inferred cell-type proportions are modeled using **beta mixed-effects models** in R.
 The core model structure is:
 ``` R
 rel_abundance ~ contrast_variable + (1 | Scan_ID)
@@ -185,23 +185,55 @@ using:
 ``` R
 glmmTMB::beta_family(link = "logit")
 ```
-This is appropriate because inferred cell-type abundances are proportions bounded between 0 and 1.
-Core contrasts include:
+This framework is appropriate because cell-type abundances are continuous proportions bounded between 0 and 1 and exhibit heteroscedasticity. A random intercept for Scan_ID accounts for repeated measurements at the ROI/sample level.
 
-1.- Disease effect: AD/CAA versus control in amyloid-free ROIs
+--
+Multi-contrast framework
 
+To disentangle disease and pathology effects, we implement four complementary contrasts:
 
-2.- Amyloid effect: amyloid-positive versus amyloid-free ROIs within AD/CAA
+### 1. Disease effect
+ AD/CAA vs Control using amyloid-free ROIs only
+→ isolates disease-driven changes independent of amyloid pathology
 
+### 2. Amyloid effect (within AD)
+ Amyloid vs AmyloidFree within AD/CAA
+→ captures pathology-specific effects within diseased tissue
 
-3.- Max Amyloid Pathology:  amyloid-positive in AD/CAA versus amyloid-free ROIs within Controls
+### 3. Max pathology effect
+ AD/CAA Amyloid vs Control AmyloidFree
+→ represents the strongest pathological contrast
 
+### 4. Weighted overall AD effect 
+ Pathology-weighted AD/CAA vs Control
 
-4.- Weighted AD overall effect: pathology-weighted AD/CAA versus control
+This model accounts for heterogeneous amyloid burden across regions by defining:
+```text
+AD_overall = (1 − w) × AD_AmyloidFree + w × AD_Amyloid
+```
+where:
+```text
+w = proportion of amyloid-positive ROIs within AD/CAA (region-specific)
+```
+→ provides a biologically realistic estimate of the overall disease effect
 
+### Effect size and inference
+- Effect sizes are reported as log2 odds ratios
+- Statistical contrasts are computed using emmeans
+- Multiple testing correction is performed using Benjamini–Hochberg FDR, applied within region and contrast
 
-Multiple testing correction is performed across cell types using Benjamini-Hochberg FDR. 
+### Design strengths
 
+This modeling framework:
+- Separates disease and pathology effects
+- Accounts for spatial heterogeneity in amyloid burden
+- Provides both controlled and extreme contrasts
+- Enables biologically interpretable comparisons across microenvironments
+
+For full details, see:
+``` text
+docs/statistical_modeling.md
+```
 ---
 
 ## Outputs
