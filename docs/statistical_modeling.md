@@ -1,7 +1,5 @@
 # Statistical Modeling
 
-# Statistical Modeling
-
 This repository implements a structured multi-contrast statistical framework to analyze spatially inferred cell-type proportions derived from Bayesian deconvolution (Cell2Location / SpaceJam).
 
 ---
