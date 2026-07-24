@@ -32,7 +32,11 @@ deconv_dir <- "results/deconvolution_comparison"
 baseline_csv <- "results/cell_proportions/spatial_celltype_proportions_for_R.csv"
 
 fig_root <- "results/figures"
-
+dir.create(
+  fig_root,
+  recursive = TRUE,
+  showWarnings = FALSE
+)
 # helper: run a figure call only if its input exists
 if_exists <- function(path, expr) {
   if (all(file.exists(path))) {
@@ -54,42 +58,75 @@ if_exists(
   )
 )
 
-contrast_files <- list(
-  Amyloid = "amyloid_effect_contrasts.csv",
-  Disease = "disease_effect_contrasts.csv",
-  Overall = "overall_effect_contrasts.csv",
-  MaxPathology = "max_pathology_effect_contrasts.csv"
-)
-
-for (label in names(contrast_files)) {
-  csv <- file.path(stats_dir, contrast_files[[label]])
-  if_exists(csv, plot_contrast_forest(csv, label, file.path(fig_root, "spatial_stats")))
-}
 
 # ============================================================
 # Region heterogeneity + co-occurrence
 # ============================================================
 
 if_exists(
-  file.path(stats_dir, "region_heterogeneity_interaction_tests.csv"),
+  file.path(
+    stats_dir,
+    "region_heterogeneity_interaction_tests.csv"
+  ),
   plot_region_interaction(
-    file.path(stats_dir, "region_heterogeneity_interaction_tests.csv"),
-    file.path(fig_root, "spatial_stats")
+    file.path(
+      stats_dir,
+      "region_heterogeneity_interaction_tests.csv"
+    ),
+    file.path(
+      fig_root,
+      "spatial_stats"
+    )
   )
 )
 
 if_exists(
-  file.path(stats_dir, "celltype_cooccurrence_by_region.csv"),
+  file.path(
+    stats_dir,
+    "celltype_cooccurrence_by_region.csv"
+  ),
   {
     plot_cooccurrence_heatmap(
-      file.path(stats_dir, "celltype_cooccurrence_by_region.csv"),
-      file.path(fig_root, "cooccurrence")
+      file.path(
+        stats_dir,
+        "celltype_cooccurrence_by_region.csv"
+      ),
+      file.path(
+        fig_root,
+        "cooccurrence"
+      )
     )
+
     plot_cooccurrence_network(
-      file.path(stats_dir, "celltype_cooccurrence_by_region.csv"),
-      file.path(fig_root, "cooccurrence")
+      file.path(
+        stats_dir,
+        "celltype_cooccurrence_by_region.csv"
+      ),
+      file.path(
+        fig_root,
+        "cooccurrence"
+      )
     )
   }
+)
+
+context_cooccurrence_csv <- file.path(
+  stats_dir,
+  "celltype_cooccurrence_by_context.csv"
+)
+
+if_exists(
+  context_cooccurrence_csv,
+  plot_context_cooccurrence_network(
+    cooccurrence_csv = context_cooccurrence_csv,
+    output_dir = file.path(
+      fig_root,
+      "cooccurrence"
+    ),
+    edge_threshold = 0.90,
+    max_edges_per_panel = 50,
+    layout_seed = 1234
+  )
 )
 
 # ============================================================
@@ -139,35 +176,6 @@ if (dir.exists(robustness_dir)) {
 
 comp_dir <- file.path(deconv_dir, "comparison_summary")
 
-if_exists(
-  file.path(comp_dir, "cross_method_correlation.csv"),
-  plot_cross_method_heatmap(
-    file.path(comp_dir, "cross_method_correlation.csv"),
-    file.path(fig_root, "deconvolution")
-  )
-)
-
-if_exists(
-  file.path(comp_dir, "concordance_vs_cell2location.csv"),
-  {
-    plot_method_agreement_box(
-      file.path(comp_dir, "concordance_vs_cell2location.csv"),
-      file.path(fig_root, "deconvolution")
-    )
-    plot_concordance_heatmap(
-      file.path(comp_dir, "concordance_vs_cell2location.csv"),
-      file.path(fig_root, "deconvolution")
-    )
-  }
-)
-
-if_exists(
-  file.path(comp_dir, "mean_abs_diff_vs_cell2location.csv"),
-  plot_mean_abs_diff_bar(
-    file.path(comp_dir, "mean_abs_diff_vs_cell2location.csv"),
-    file.path(fig_root, "deconvolution")
-  )
-)
 
 if_exists(
   file.path(comp_dir, "cross_method_correlation.csv"),
@@ -177,15 +185,37 @@ if_exists(
   )
 )
 
-if_exists(
-  baseline_csv,
-  if (length(list.files(deconv_dir, pattern = "_proportions\\.csv$")) > 0) {
-    plot_method_composition_heatmap(deconv_dir, baseline_csv, file.path(fig_root, "deconvolution"))
-    plot_celltype_method_spread(deconv_dir, baseline_csv, file.path(fig_root, "deconvolution"))
-    plot_celltype_scatter_vs_baseline(deconv_dir, baseline_csv, file.path(fig_root, "deconvolution"))
-  } else {
-    message("Skipping composition/spread/scatter figures: no method _proportions.csv files yet.")
-  }
+method_proportion_files <- list.files(
+  deconv_dir,
+  pattern = "_proportions\\.csv$",
+  recursive = TRUE,
+  full.names = TRUE
 )
 
+if_exists(
+  baseline_csv,
+  if (length(method_proportion_files) > 0) {
+    plot_method_composition_heatmap(
+      deconv_dir,
+      baseline_csv,
+      file.path(fig_root, "deconvolution")
+    )
+    plot_celltype_method_spread(
+      deconv_dir,
+      baseline_csv,
+      file.path(fig_root, "deconvolution")
+    )
+    plot_celltype_scatter_vs_baseline(
+      deconv_dir,
+      baseline_csv,
+      file.path(fig_root, "deconvolution")
+    )
+  } else {
+    message(
+      "Skipping composition/spread/scatter figures: ",
+      "no method _proportions.csv files yet."
+    )
+  }
+)
+print(warnings())
 message("\nAll available figures written under ", fig_root)

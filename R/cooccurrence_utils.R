@@ -44,6 +44,38 @@ compute_clr <- function(prop_mat, eps = 1e-6) {
   as.data.frame(clr_mat)
 }
 
+#' Add disease/pathology context labels
+#'
+#' Defines the three observed ROI contexts:
+#' Control amyloid-free, AD amyloid-free, and AD amyloid-positive.
+#'
+#' @keywords internal
+.add_cooccurrence_context <- function(df) {
+  df |>
+    dplyr::mutate(
+      context = dplyr::case_when(
+        .data$disease_status == "Control" &
+          .data$pathology == "AmyloidFree" ~ "Control_AF",
+
+        .data$disease_status == "AD-CAA" &
+          .data$pathology == "AmyloidFree" ~ "AD_AF",
+
+        .data$disease_status == "AD-CAA" &
+          .data$pathology == "Amyloid" ~ "AD_Abeta",
+
+        TRUE ~ NA_character_
+      ),
+      context = factor(
+        .data$context,
+        levels = c(
+          "Control_AF",
+          "AD_AF",
+          "AD_Abeta"
+        )
+      )
+    ) |>
+    dplyr::filter(!is.na(.data$context))
+}
 
 #' Run CLR-transformed cell-type co-occurrence analysis
 #'
@@ -151,4 +183,245 @@ run_celltype_cooccurrence <- function(df,
     dplyr::select(dplyr::all_of(c(stratify_by, "celltype_1", "celltype_2", "r", "p.value", "p_adj", "n")))
 
   cooc_df
+}
+
+#' Run CLR co-occurrence analysis by region and disease/pathology context
+#'
+#' Cell-type proportions are averaged within each independent
+#' Scan_ID x region x context before CLR transformation and correlation.
+#'
+#' @param df Cleaned spatial proportion dataframe.
+#' @param abundance_col Relative-abundance column.
+#' @param min_n Minimum number of independent Scan_IDs required.
+#'
+#' @return Long-format pairwise correlation table.
+#' @export
+run_celltype_cooccurrence_by_context <- function(
+    df,
+    abundance_col = "rel_abundance",
+    min_n = 3
+) {
+  required_cols <- c(
+    "Scan_ID",
+    "region",
+    "celltype",
+    "disease_status",
+    "pathology",
+    abundance_col
+  )
+
+  missing_cols <- setdiff(
+    required_cols,
+    colnames(df)
+  )
+
+  if (length(missing_cols) > 0) {
+    stop(
+      "Missing required columns: ",
+      paste(missing_cols, collapse = ", "),
+      call. = FALSE
+    )
+  }
+
+  context_df <- .add_cooccurrence_context(df)
+
+  wide_dat <- context_df |>
+    dplyr::select(
+      .data$Scan_ID,
+      .data$region,
+      .data$context,
+      .data$celltype,
+      abundance = dplyr::all_of(abundance_col)
+    ) |>
+    dplyr::filter(
+      !is.na(.data$abundance),
+      !is.na(.data$Scan_ID),
+      !is.na(.data$region),
+      !is.na(.data$context),
+      !is.na(.data$celltype)
+    ) |>
+    dplyr::group_by(
+      .data$Scan_ID,
+      .data$region,
+      .data$context,
+      .data$celltype
+    ) |>
+    dplyr::summarise(
+      abundance = mean(
+        .data$abundance,
+        na.rm = TRUE
+      ),
+      .groups = "drop"
+    ) |>
+    tidyr::pivot_wider(
+      id_cols = c(
+        "Scan_ID",
+        "region",
+        "context"
+      ),
+      names_from = "celltype",
+      values_from = "abundance"
+    )
+
+  metadata_cols <- c(
+    "Scan_ID",
+    "region",
+    "context"
+  )
+
+  celltype_cols <- setdiff(
+    colnames(wide_dat),
+    metadata_cols
+  )
+
+  if (length(celltype_cols) < 2) {
+    return(data.frame())
+  }
+
+  strata <- wide_dat |>
+    dplyr::distinct(
+      .data$region,
+      .data$context
+    )
+
+  result_list <- list()
+
+  for (k in seq_len(nrow(strata))) {
+    region_name <- strata$region[k]
+    context_name <- strata$context[k]
+
+    sub <- wide_dat[
+      wide_dat$region == region_name &
+        wide_dat$context == context_name,
+      celltype_cols,
+      drop = FALSE
+    ]
+
+    sub <- sub[
+      ,
+      colSums(!is.na(sub)) > 0,
+      drop = FALSE
+    ]
+
+    n_scans <- nrow(sub)
+
+    if (n_scans < min_n) {
+      message(
+        "Skipping ",
+        region_name,
+        " / ",
+        context_name,
+        ": only ",
+        n_scans,
+        " independent Scan_ID(s)."
+      )
+      next
+    }
+
+    if (ncol(sub) < 2) {
+      next
+    }
+
+    sub[is.na(sub)] <- 0
+
+    clr_mat <- compute_clr(sub)
+
+    variable_cols <- vapply(
+      clr_mat,
+      function(x) {
+        stats::sd(x, na.rm = TRUE) > 0
+      },
+      logical(1)
+    )
+
+    clr_mat <- clr_mat[
+      ,
+      variable_cols,
+      drop = FALSE
+    ]
+
+    if (ncol(clr_mat) < 2) {
+      next
+    }
+
+    pairs <- utils::combn(
+      colnames(clr_mat),
+      2,
+      simplify = FALSE
+    )
+
+    pair_results <- lapply(
+      pairs,
+      function(pair) {
+        ct1 <- pair[1]
+        ct2 <- pair[2]
+
+        test <- try(
+          stats::cor.test(
+            clr_mat[[ct1]],
+            clr_mat[[ct2]],
+            method = "pearson"
+          ),
+          silent = TRUE
+        )
+
+        if (inherits(test, "try-error")) {
+          return(NULL)
+        }
+
+        data.frame(
+          region = as.character(region_name),
+          context = as.character(context_name),
+          celltype_1 = ct1,
+          celltype_2 = ct2,
+          r = unname(test$estimate),
+          p.value = test$p.value,
+          n_scans = n_scans,
+          stringsAsFactors = FALSE
+        )
+      }
+    )
+
+    pair_df <- dplyr::bind_rows(pair_results)
+
+    if (nrow(pair_df) == 0) {
+      next
+    }
+
+    pair_df <- pair_df |>
+      dplyr::mutate(
+        p_adj = stats::p.adjust(
+          .data$p.value,
+          method = "BH"
+        )
+      )
+
+    result_list[[
+      paste(
+        region_name,
+        context_name,
+        sep = "__"
+      )
+    ]] <- pair_df
+  }
+
+  cooc_df <- dplyr::bind_rows(
+    result_list
+  )
+
+  if (nrow(cooc_df) == 0) {
+    return(cooc_df)
+  }
+
+  cooc_df |>
+    dplyr::select(
+      .data$region,
+      .data$context,
+      .data$celltype_1,
+      .data$celltype_2,
+      .data$r,
+      .data$p.value,
+      .data$p_adj,
+      .data$n_scans
+    )
 }

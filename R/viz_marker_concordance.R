@@ -18,31 +18,89 @@ NULL
 #' @param padj_cutoff Significance threshold defining a pass.
 #' @return The ggplot object (invisibly).
 #' @export
-plot_marker_concordance <- function(concordance_csv, output_dir, padj_cutoff = 0.05) {
-  df <- utils::read.csv(concordance_csv, stringsAsFactors = FALSE)
+plot_marker_concordance <- function(
+    concordance_csv,
+    output_dir,
+    padj_cutoff = 0.05
+) {
+  df <- utils::read.csv(
+    concordance_csv,
+    stringsAsFactors = FALSE
+  )
 
-  df$pass <- !is.na(df$statistic) & df$statistic > 0 &
-    !is.na(df$p_adj) & df$p_adj < padj_cutoff
-  df$statistic[is.na(df$statistic)] <- 0
+  df$pass <- !is.na(df$statistic) &
+    df$statistic > 0 &
+    !is.na(df$p_adj) &
+    df$p_adj < padj_cutoff
 
-  df <- df[order(df$statistic), ]
-  df$celltype <- factor(df$celltype, levels = df$celltype)
+  df$statistic[
+    is.na(df$statistic)
+  ] <- 0
 
-  p <- ggplot2::ggplot(df, ggplot2::aes(x = statistic, y = celltype, fill = pass)) +
-    ggplot2::geom_col(width = 0.7) +
-    ggplot2::geom_vline(xintercept = 0, color = "grey50") +
+  df <- df[
+    order(df$statistic),
+    ,
+    drop = FALSE
+  ]
+
+  df$celltype <- factor(
+    df$celltype,
+    levels = df$celltype
+  )
+
+  p <- ggplot2::ggplot(
+    df,
+    ggplot2::aes(
+      x = statistic,
+      y = celltype,
+      fill = pass
+    )
+  ) +
+    ggplot2::geom_col(
+      width = 0.7
+    ) +
+    ggplot2::geom_vline(
+      xintercept = 0,
+      color = "grey35",
+      linewidth = 0.4
+    ) +
     ggplot2::scale_fill_manual(
-      values = c("FALSE" = "#D55E00", "TRUE" = "#009E73"),
-      labels = c("FALSE" = "flag (no pos. sig. concordance)", "TRUE" = "pass"),
+      values = c(
+        "FALSE" = "#D55E00",
+        "TRUE" = "#009E73"
+      ),
+      labels = c(
+        "FALSE" = "Flag",
+        "TRUE" = "Pass"
+      ),
       name = NULL
     ) +
     ggplot2::labs(
       title = "Marker-gene concordance by cell type",
-      subtitle = "Correlation of inferred proportion with own marker score",
-      x = "Concordance correlation", y = NULL
+      subtitle = paste0(
+        "Own-marker concordance; pass = positive correlation with adjusted p < ",
+        padj_cutoff
+      ),
+      x = "Marker concordance (Spearman rho)",
+      y = NULL,
+      fill = NULL
     ) +
-    theme_analysis()
+    theme_analysis() +
+    ggplot2::theme(
+      legend.position = "bottom",
+      legend.direction = "horizontal",
+      axis.text.y = ggplot2::element_text(
+        size = 8
+      )
+    )
 
-  save_figure(p, "marker_concordance", output_dir, width = 8, height = 9)
+  save_figure(
+    p,
+    "marker_concordance",
+    output_dir,
+    width = 8,
+    height = 9
+  )
+
   invisible(p)
 }

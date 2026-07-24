@@ -35,6 +35,7 @@ import pandas as pd
 import pyro
 import scanpy as sc
 import torch
+import os
 
 from models.LocationModelWTAMultiExperimentHierarchicalGeneLevel_Modified import (
     LocationModelPyro,
@@ -56,7 +57,17 @@ RESULTS_ROOT = PROJECT_DIR / "results"
 H5AD_FILE = DATA_DIR / "CAA-AD_AnnData.h5ad"
 
 SIGNATURE_DIR = RESULTS_ROOT / "regression_model"
-RESULTS_DIR = RESULTS_ROOT / "spacejam"
+RESULTS_DIR = Path(
+    os.environ.get(
+        "SPACEJAM_RESULTS_DIR",
+        PROJECT_DIR / "results" / "spacejam",
+    )
+)
+
+RESULTS_DIR.mkdir(
+    parents=True,
+    exist_ok=True,
+)
 
 AD_SIGNATURE_FILE = (
     SIGNATURE_DIR / "AD+CAA_inferred_signatures.csv"
@@ -64,6 +75,10 @@ AD_SIGNATURE_FILE = (
 
 CTRL_SIGNATURE_FILE = (
     SIGNATURE_DIR / "Control_inferred_signatures.csv"
+)
+
+NUCLEI_COUNT_FILE = Path(
+    "data/nuc_count.csv"
 )
 
 RESULTS_DIR.mkdir(
@@ -85,8 +100,9 @@ CELL_NUMBER_PRIOR = {
     "combs_per_spot": 2.5,
     "factors_per_combs": 3.0,
     "cells_mean_var_ratio": 1.0,
-    "factors_mean_var_ratio": 1.0,
-    "combs_mean_var_ratio": 1.0,
+    "cells_prior_mode": "nuclei_informed",
+    "nuclei_prior_strength": 1.0,
+    "nuclei_scale_clip": (0.25, 4.0),
 }
 
 print("Python:", sys.executable)
@@ -169,6 +185,90 @@ def make_spot2sample_mat(sample_ids):
 
     return matrix, categories
 
+def align_nuclei_counts(
+    adata,
+    nuclei_file,
+):
+    """
+    Align measured nuclei counts to the exact ROI order of an AnnData object.
+    """
+    nuclei_df = pd.read_csv(
+        nuclei_file
+    )
+
+    required_columns = {
+        "ROI_ID",
+        "nuclei_count",
+    }
+
+    missing_columns = (
+        required_columns -
+        set(nuclei_df.columns)
+    )
+
+    if missing_columns:
+        raise ValueError(
+            "Nuclei-count file is missing required columns: "
+            f"{sorted(missing_columns)}"
+        )
+
+    if nuclei_df["ROI_ID"].duplicated().any():
+        duplicated = (
+            nuclei_df.loc[
+                nuclei_df["ROI_ID"].duplicated(),
+                "ROI_ID",
+            ]
+            .astype(str)
+            .tolist()
+        )
+
+        raise ValueError(
+            "Duplicated ROI_ID values in nuclei-count file: "
+            f"{duplicated[:5]}"
+        )
+
+    nuclei_lookup = (
+        nuclei_df
+        .assign(
+            ROI_ID=lambda x: x["ROI_ID"].astype(str)
+        )
+        .set_index("ROI_ID")["nuclei_count"]
+    )
+
+    roi_ids = (
+        pd.Index(
+            adata.obs_names.astype(str),
+            name="ROI_ID",
+        )
+    )
+
+    missing_rois = roi_ids.difference(
+        nuclei_lookup.index
+    )
+
+    if len(missing_rois) > 0:
+        raise ValueError(
+            f"Missing nuclei counts for {len(missing_rois)} ROI(s). "
+            f"Examples: {missing_rois[:5].tolist()}"
+        )
+
+    nuclei_aligned = (
+        nuclei_lookup
+        .loc[roi_ids]
+        .to_numpy(dtype=np.float32)
+    )
+
+    if not np.all(np.isfinite(nuclei_aligned)):
+        raise ValueError(
+            "Aligned nuclei counts contain non-finite values."
+        )
+
+    if np.any(nuclei_aligned <= 0):
+        raise ValueError(
+            "Aligned nuclei counts must all be positive."
+        )
+
+    return nuclei_aligned
 
 # ============================================================
 # Gene and matrix alignment
@@ -641,6 +741,23 @@ def train_condition_model(
         counts_layer="counts",
     )
 
+    nuclei_aligned = align_nuclei_counts(
+        adata=adata_aligned,
+        nuclei_file=NUCLEI_COUNT_FILE,
+    )
+
+    print(
+        "Nuclei count range:",
+        float(np.min(nuclei_aligned)),
+        "to",
+        float(np.max(nuclei_aligned)),
+    )
+    
+    print(
+        "Median nuclei count:",
+        float(np.median(nuclei_aligned)),
+    )
+
     negative_probes = get_negative_probe_matrix(
         adata_aligned
     )
@@ -699,6 +816,7 @@ def train_condition_model(
         X_data=counts,
         Y_data=negative_probes,
         spot2sample_mat=spot2sample,
+        nuclei_counts=nuclei_aligned,
         device=DEVICE,
         cell_number_prior=CELL_NUMBER_PRIOR,
     )

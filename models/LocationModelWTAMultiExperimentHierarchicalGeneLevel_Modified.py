@@ -21,18 +21,43 @@ class LocationModelPyro:
 
     def __init__(
         self,
-        cell_state_mat,   # genes x n_factors (numpy)
-        X_data,           # n_rois x n_genes (numpy)  -> gene probes
-        Y_data,           # n_rois x n_npro  (numpy)  -> negative probes
-        spot2sample_mat,  # n_rois x n_exper (numpy)
+        cell_state_mat,
+        X_data,
+        Y_data,
+        spot2sample_mat,
+        nuclei_counts=None,
         device=None,
         dtype=torch.float32,
-        gene_level_prior={"mean": 1 / 2, "sd": 1 / 4, "sample_alpha": 20},
-        cell_number_prior={"cells_per_spot": 8, "factors_per_spot": 7, "combs_per_spot": 2.5},
+        gene_level_prior=None,
+        cell_number_prior=None,
         n_comb=50,
-        phi_hyp_prior={"mean": 3, "sd": 1},
+        phi_hyp_prior=None,
         spot_fact_mean_var_ratio=0.5,
     ):
+
+        if gene_level_prior is None:
+            gene_level_prior = {
+                "mean": 1 / 2,
+                "sd": 1 / 4,
+                "sample_alpha": 20,
+            }
+
+        if cell_number_prior is None:
+            cell_number_prior = {
+                "cells_per_spot": 8.0,
+                "combs_per_spot": 2.5,
+                "factors_per_combs": 3.0,
+                "cells_mean_var_ratio": 1.0,
+                "cells_prior_mode": "legacy",
+             "nuclei_prior_strength": 1.0,
+             "nuclei_scale_clip": (0.25, 4.0),
+            }
+
+        if phi_hyp_prior is None:
+            phi_hyp_prior = {
+              "mean": 3,
+              "sd": 1,
+         }
         # device
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
         self.dtype = dtype
@@ -50,6 +75,40 @@ class LocationModelPyro:
         self.n_exper = self.spot2sample.shape[1]
         self.n_fact = self.cell_state.shape[1]
         self.n_comb = n_comb
+
+# ------------------------------------------------------------
+# Optional ROI-level nuclei counts
+# ------------------------------------------------------------
+
+        if nuclei_counts is None:
+            self.nuclei_counts = None
+        else:
+            nuclei_np = np.asarray(
+                nuclei_counts,
+                dtype=np.float32,
+            ).reshape(-1)
+
+            if nuclei_np.shape[0] != self.n_rois:
+                raise ValueError(
+                    "nuclei_counts must contain exactly one value per ROI. "
+                    f"Expected {self.n_rois}, received {nuclei_np.shape[0]}."
+               )
+
+            if not np.all(np.isfinite(nuclei_np)):
+                raise ValueError(
+                    "nuclei_counts contains non-finite values."
+                )
+
+            if np.any(nuclei_np <= 0):
+                raise ValueError(
+                    "All nuclei_counts values must be greater than zero."
+                )
+
+            self.nuclei_counts = torch.tensor(
+                nuclei_np,
+                dtype=self.dtype,
+                device=self.device,
+            ).reshape(self.n_rois, 1)
 
         # total number of gene counts per ROI divided by 1e5 (as in original)
         l_r_np = np.array([np.sum(X_data[i, :]) for i in range(self.n_rois)]).reshape(self.n_rois, 1) * 1e-5
@@ -139,20 +198,159 @@ class LocationModelPyro:
         # gene_factors deterministic: cell_state (genes x n_fact) transposed to n_fact x genes
         gene_factors = self.cell_state.T  # n_fact x n_genes
 
-        # ------------------ Spot factors priors ------------------
-        cells_per_spot_mean = float(self.cell_number_prior["cells_per_spot"])
-        cells_mvr = float(self.cell_number_prior.get("cells_mean_var_ratio", 1.0))
-
-        cells_per_spot = pyro.sample(
-            "cells_per_spot",
-            dist.Gamma(
-                torch.tensor(cells_per_spot_mean, dtype=self.dtype, device=self.device),
-                torch.sqrt(
-                    torch.tensor(cells_per_spot_mean / cells_mvr, dtype=self.dtype, device=self.device)
-                ),
+        # ------------------------------------------------------------
+        # ROI cellularity prior
+        # ------------------------------------------------------------
+        
+        base_cells_per_spot = float(
+            self.cell_number_prior["cells_per_spot"]
+        )
+        
+        cells_mvr = float(
+            self.cell_number_prior.get(
+                "cells_mean_var_ratio",
+                1.0,
             )
-            .expand([self.n_rois, 1])
-            .to_event(2)
+        )
+        
+        prior_mode = str(
+            self.cell_number_prior.get(
+                "cells_prior_mode",
+                "legacy",
+            )
+        )
+
+        valid_prior_modes = {
+            "legacy",
+            "corrected_common",
+            "nuclei_informed",
+        }
+
+        if prior_mode not in valid_prior_modes:
+            raise ValueError(
+                "Unknown cells_prior_mode: "
+                f"{prior_mode!r}. Expected one of "
+                f"{sorted(valid_prior_modes)}."
+            )
+
+        if prior_mode == "legacy":
+            # Exact historical behavior for reproducibility.
+            cells_per_spot = pyro.sample(
+                "cells_per_spot",
+                dist.Gamma(
+                    torch.tensor(
+                        base_cells_per_spot,
+                        dtype=self.dtype,
+                        device=self.device,
+                    ),
+                    torch.sqrt(
+                        torch.tensor(
+                            base_cells_per_spot / cells_mvr,
+                            dtype=self.dtype,
+                            device=self.device,
+                        )
+                    ),
+                )
+                .expand([self.n_rois, 1])
+                .to_event(2),
+            )
+
+            cells_prior_mean = torch.full(
+                (self.n_rois, 1),
+                base_cells_per_spot,
+                dtype=self.dtype,
+                device=self.device,
+            )
+
+        else:
+            if prior_mode == "corrected_common":
+                cells_prior_mean = torch.full(
+                    (self.n_rois, 1),
+                    base_cells_per_spot,
+                    dtype=self.dtype,
+                    device=self.device,
+                )
+
+            else:
+                if self.nuclei_counts is None:
+                    raise ValueError(
+                        "cells_prior_mode='nuclei_informed' requires "
+                        "nuclei_counts."
+                    )
+
+                median_nuclei = torch.median(
+                    self.nuclei_counts
+                )
+
+                nuclei_scale = (
+                    self.nuclei_counts /
+                    torch.clamp(
+                        median_nuclei,
+                        min=1.0,
+                    )
+                )
+
+                clip_low, clip_high = (
+                    self.cell_number_prior.get(
+                        "nuclei_scale_clip",
+                        (0.25, 4.0),
+                    )
+                )
+
+                nuclei_scale = torch.clamp(
+                    nuclei_scale,
+                    min=float(clip_low),
+                    max=float(clip_high),
+                )
+
+                prior_strength = float(
+                    self.cell_number_prior.get(
+                        "nuclei_prior_strength",
+                        1.0,
+                    )
+                )
+
+                if prior_strength < 0:
+                    raise ValueError(
+                        "nuclei_prior_strength must be non-negative."
+                    )
+
+                # strength = 0 gives a common prior;
+                # strength = 1 gives full nuclei-relative scaling.
+                nuclei_scale = torch.pow(
+                    nuclei_scale,
+                    prior_strength,
+                )
+
+                cells_prior_mean = (
+                    base_cells_per_spot *
+                    nuclei_scale
+                )
+
+            # Correct Gamma parameterization:
+            # mean = concentration / rate
+            # variance = mean / cells_mvr
+            concentration_cells = torch.clamp(
+                cells_prior_mean * cells_mvr,
+                min=1e-6,
+            )
+
+            rate_cells = torch.full_like(
+                cells_prior_mean,
+                fill_value=cells_mvr,
+            )
+
+            cells_per_spot = pyro.sample(
+                "cells_per_spot",
+                dist.Gamma(
+                    concentration_cells,
+                    rate_cells,
+                ).to_event(2),
+            )
+
+        pyro.deterministic(
+            "cells_prior_mean",
+            cells_prior_mean,
         )
 
 
@@ -323,7 +521,7 @@ class LocationModelPyro:
         """
         # use Predictive with the guide to sample latent variables then conditionally sample observation nodes
         predictive = Predictive(self.model, guide=self.guide, num_samples=num_samples,
-                                return_sites=["mu_biol", "spot_factors", "nUMI_factors", "mu_concat"])
+                                return_sites=["mu_biol", "spot_factors", "nUMI_factors", "mu_concat", "cells_per_spot", "cells_prior_mean",])
         samples = predictive()
         return samples
 

@@ -45,7 +45,7 @@ CELL_PROPORTION_DIR = (
 )
 
 FIGURE_DIR = (
-    PROJECT_DIR / "figures" / "exploratory"
+    PROJECT_DIR / "results" / "figures" / "exploratory"
 )
 
 FIGURE_DIR.mkdir(

@@ -118,5 +118,12 @@
   "spacejam_steps": 9000,
   "spacejam_learning_rate": 0.002,
   "posterior_predictive_samples": 100,
+  "cells_prior_mode": "nuclei_informed",
+  "nuclei_prior_strength": 1.0,
+  "nuclei_scale_clip": [
+    0.25,
+    4.0
+  ],
+  "synthetic_nuclei_count_per_roi": 200,
   "device": "cuda"
 }

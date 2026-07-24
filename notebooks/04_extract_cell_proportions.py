@@ -12,6 +12,8 @@
 #   results/cell_proportions/
 # =============================================================================
 
+from pathlib import Path
+
 import scanpy as sc
 import pandas as pd
 import torch
@@ -34,11 +36,9 @@ print(adata_wta)
 # Load validated SpaceJam abundance tensors
 # =============================================================================
 
-spacejam_results = (
-    "/N/u/echimal/Quartz/Desktop/CLR_MRI/"
-    "Human_GeoMx_Sep2025/"
-    "multiomic-spatial-integration/results/spacejam"
-)
+PROJECT_DIR = Path(__file__).resolve().parents[1]
+
+spacejam_results = PROJECT_DIR / "results" / "spacejam"
 
 ad_spot_abs_t = torch.load(
     f"{spacejam_results}/ADCAA_spot_factors_abs.pt",
@@ -125,11 +125,7 @@ print("\nSpaceJam abundance tensors validated.")
 # Load regression signatures
 # =============================================================================
 
-signature_dir = (
-    "/N/u/echimal/Quartz/Desktop/CLR_MRI/"
-    "Human_GeoMx_Sep2025/"
-    "multiomic-spatial-integration/results/regression_model"
-)
+signature_dir = PROJECT_DIR / "results" / "regression_model"
 
 ad_signature = pd.read_csv(
     f"{signature_dir}/AD+CAA_inferred_signatures.csv",

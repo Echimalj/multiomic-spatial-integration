@@ -13,10 +13,48 @@ expr_norm <- normalize_expression_cpm(expr_raw)
 
 prop <- read.csv(proportions_csv, stringsAsFactors = FALSE)
 
-marker_lists <- load_marker_genes(
+markers_df <- read.delim(
   markers_file,
-  padj_cutoff = 0.05,
-  top_n = 20
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+
+required_cols <- c(
+  "p_val_adj",
+  "avg_log2FC",
+  "cluster",
+  "gene"
+)
+
+missing_cols <- setdiff(required_cols, colnames(markers_df))
+
+if (length(missing_cols) > 0) {
+  stop(
+    "Marker file is missing required columns: ",
+    paste(missing_cols, collapse = ", ")
+  )
+}
+
+marker_lists <- markers_df |>
+  dplyr::filter(
+    is.finite(p_val_adj),
+    p_val_adj <= 0.05,
+    gene %in% colnames(expr_norm)
+  ) |>
+  dplyr::group_by(cluster) |>
+  dplyr::arrange(
+    dplyr::desc(avg_log2FC),
+    .by_group = TRUE
+  ) |>
+  dplyr::slice_head(n = 20) |>
+  dplyr::summarise(
+    genes = list(unique(gene)),
+    .groups = "drop"
+  )
+
+marker_lists <- stats::setNames(
+  marker_lists$genes,
+  marker_lists$cluster
 )
 
 # Build marker-score matrix: ROI x marker-celltype

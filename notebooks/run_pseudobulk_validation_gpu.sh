@@ -67,7 +67,7 @@ STAMP=$(date +%Y%m%d_%H%M%S)
 if [[ -d "${OUTPUT_DIR}" ]] && \
    find "${OUTPUT_DIR}" -mindepth 1 -print -quit | grep -q .
 then
-    ARCHIVE_DIR="${PROJECT_DIR}/results/archive/pseudobulk_validation_${STAMP}"
+    ARCHIVE_DIR="${PROJECT_DIR}/results/Archive/pseudobulk_validation_${STAMP}"
     mkdir -p "${ARCHIVE_DIR}"
     cp -a "${OUTPUT_DIR}/." "${ARCHIVE_DIR}/"
     rm -rf "${OUTPUT_DIR}"
@@ -90,6 +90,17 @@ for condition in "AD+CAA" "Control"; do
 done
 
 echo "All expected pseudobulk validation outputs were found."
+echo
+echo "Newest outputs:"
+find "${OUTPUT_DIR}" \
+    -type f \
+    -printf '%TY-%Tm-%Td %TH:%TM:%TS  %P\n' \
+    | sort | tail -20
+
+echo
+echo "Recovery metric files:"
+find "${OUTPUT_DIR}" \
+    -name "recovery_metrics.csv"
 
 echo "====================================="
 echo "Job finished successfully"

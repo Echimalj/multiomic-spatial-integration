@@ -247,43 +247,258 @@ plot_method_dendrogram <- function(cross_cor_csv, output_dir) {
 #' @param n_celltypes Number of cell types when `celltypes` is NULL.
 #' @return The ggplot object (invisibly).
 #' @export
-plot_celltype_scatter_vs_baseline <- function(method_output_dir, baseline_csv, output_dir,
-                                              celltypes = NULL, n_celltypes = 6) {
-  combined <- .load_combined_proportions(method_output_dir, baseline_csv)
-  baseline <- combined[combined$method == "Cell2location", ]
-  others <- combined[combined$method != "Cell2location", ]
+
+plot_celltype_scatter_vs_baseline <- function(
+    method_output_dir,
+    baseline_csv,
+    output_dir,
+    celltypes = NULL,
+    n_celltypes = 6
+) {
+  combined <- .load_combined_proportions(
+    method_output_dir,
+    baseline_csv
+  )
+
+  baseline <- combined[
+    combined$method == "Cell2location",
+    ,
+    drop = FALSE
+  ]
+
+  others <- combined[
+    combined$method != "Cell2location",
+    ,
+    drop = FALSE
+  ]
 
   if (is.null(celltypes)) {
-    ct_mean <- stats::aggregate(proportion ~ celltype, baseline, mean)
-    ct_mean <- ct_mean[order(-ct_mean$proportion), ]
-    celltypes <- utils::head(ct_mean$celltype, n_celltypes)
-  }
+    baseline_for_ranking <- baseline[
+      is.finite(baseline$proportion),
+      ,
+      drop = FALSE
+    ]
 
-  b <- baseline[baseline$celltype %in% celltypes, c("ROI_ID", "celltype", "proportion")]
-  colnames(b)[3] <- "baseline"
-  o <- others[others$celltype %in% celltypes, ]
-
-  merged <- merge(o, b, by = c("ROI_ID", "celltype"))
-
-  p <- ggplot2::ggplot(merged, ggplot2::aes(x = baseline, y = proportion)) +
-    ggplot2::geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "grey60") +
-    ggplot2::geom_point(alpha = 0.5, size = 0.9, color = "#0072B2") +
-    ggplot2::facet_grid(celltype ~ method) +
-    ggplot2::labs(
-      title = "Method vs. Cell2location proportion",
-      subtitle = paste0("Top ", length(celltypes), " cell types by baseline abundance"),
-      x = "Cell2location proportion", y = "Method proportion"
-    ) +
-    theme_analysis(base_size = 8) +
-    ggplot2::theme(
-      axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 5),
-      axis.text.y = ggplot2::element_text(size = 5)
+    ct_mean <- stats::aggregate(
+      proportion ~ celltype,
+      baseline_for_ranking,
+      mean
     )
 
-  save_figure(p, "celltype_scatter_vs_baseline", output_dir, width = 14, height = 10)
+    ct_mean <- ct_mean[
+      order(-ct_mean$proportion),
+      ,
+      drop = FALSE
+    ]
+
+    celltypes <- utils::head(
+      ct_mean$celltype,
+      n_celltypes
+    )
+  }
+
+  b <- baseline[
+    baseline$celltype %in% celltypes,
+    c(
+      "ROI_ID",
+      "celltype",
+      "proportion"
+    ),
+    drop = FALSE
+  ]
+
+  colnames(b)[3] <- "baseline"
+
+  o <- others[
+    others$celltype %in% celltypes,
+    ,
+    drop = FALSE
+  ]
+
+  merged <- merge(
+    o,
+    b,
+    by = c(
+      "ROI_ID",
+      "celltype"
+    )
+  )
+
+  n_before <- nrow(merged)
+
+  merged <- merged[
+    is.finite(merged$baseline) &
+      is.finite(merged$proportion),
+    ,
+    drop = FALSE
+  ]
+
+  n_removed <- n_before - nrow(merged)
+
+  if (n_removed > 0) {
+    message(
+      "plot_celltype_scatter_vs_baseline: excluded ",
+      n_removed,
+      " rows without paired finite estimates."
+    )
+  }
+
+  if (nrow(merged) == 0) {
+    warning(
+      "plot_celltype_scatter_vs_baseline: no paired finite estimates remain."
+    )
+
+    return(
+      invisible(NULL)
+    )
+  }
+
+  merged$celltype <- factor(
+    merged$celltype,
+    levels = celltypes
+  )
+
+panel_cor <- merged |>
+  dplyr::group_by(
+    celltype,
+    method
+  ) |>
+  dplyr::summarise(
+    n_pairs = sum(
+      is.finite(baseline) &
+        is.finite(proportion)
+    ),
+    rho = if (
+      n_pairs >= 3 &&
+        stats::sd(baseline, na.rm = TRUE) > 0 &&
+        stats::sd(proportion, na.rm = TRUE) > 0
+    ) {
+      suppressWarnings(
+        stats::cor(
+          baseline,
+          proportion,
+          method = "spearman",
+          use = "complete.obs"
+        )
+      )
+    } else {
+      NA_real_
+    },
+    .groups = "drop"
+  )
+
+panel_cor$label <- ifelse(
+  is.finite(panel_cor$rho),
+  paste0(
+    "rho = ",
+    sprintf("%.2f", panel_cor$rho)
+  ),
+  "rho = NA"
+)
+
+p <- ggplot2::ggplot(
+  merged,
+  ggplot2::aes(
+    x = baseline,
+    y = proportion
+  )
+) +
+  ggplot2::geom_abline(
+    slope = 1,
+    intercept = 0,
+    linetype = "22",
+    color = "grey40",
+    linewidth = 0.7
+  ) +
+  ggplot2::geom_point(
+    alpha = 0.4,
+    size = 0.6,
+    color = "#0072B2"
+  ) +
+  ggplot2::geom_text(
+    data = panel_cor,
+    mapping = ggplot2::aes(
+      x = -Inf,
+      y = Inf,
+      label = label
+    ),
+    inherit.aes = FALSE,
+    hjust = -0.1,
+    vjust = 1.2,
+    size = 2.5,
+    fontface = "italic",
+    colour = "grey25"
+  ) +
+  ggplot2::scale_x_continuous(
+    limits = c(
+      0,
+      NA
+    ),
+    expand = ggplot2::expansion(
+      mult = c(0.05, 0.05)
+    )
+  ) +
+  ggplot2::scale_y_continuous(
+    limits = c(
+      0,
+      NA
+    ),
+    expand = ggplot2::expansion(
+      mult = c(0.05, 0.08)
+    )
+  ) +
+  ggplot2::facet_wrap(
+    ggplot2::vars(
+      celltype,
+      method
+    ),
+    scales = "free_y",
+    ncol = length(
+      unique(merged$method)
+    )
+  ) +
+    ggplot2::labs(
+      title = paste0(
+        "Agreement between Cell2location and alternative ",
+        "deconvolution methods"
+      ),
+      subtitle = paste0(
+        "Top ",
+        length(celltypes),
+        " cell types by Cell2location abundance; ",
+        "dashed line indicates perfect agreement (y = x)"
+      ),
+      x = "Cell2location proportion",
+      y = "Alternative-method proportion"
+    ) +
+    theme_analysis(
+      base_size = 8
+    ) +
+    ggplot2::theme(
+      axis.text.x = ggplot2::element_text(
+        angle = 45,
+        hjust = 1,
+        size = 5
+      ),
+      axis.text.y = ggplot2::element_text(
+        size = 5
+      ),
+      strip.text = ggplot2::element_text(
+        face = "bold",
+        size = 7
+      )
+    )
+
+  save_figure(
+    p,
+    "celltype_scatter_vs_baseline",
+    output_dir,
+    width = 12,
+    height = 11
+  )
+
   invisible(p)
 }
-
 
 #' Method x cell-type mean-composition heatmap
 #'
@@ -297,15 +512,37 @@ plot_celltype_scatter_vs_baseline <- function(method_output_dir, baseline_csv, o
 #' @param roi_id_col,celltype_col,proportion_col Baseline column names.
 #' @return The ggplot object (invisibly).
 #' @export
-plot_method_composition_heatmap <- function(method_output_dir, baseline_csv, output_dir,
-                                            roi_id_col = "ROI_ID",
-                                            celltype_col = "celltype",
-                                            proportion_col = "rel_abundance") {
-  files <- list.files(method_output_dir, pattern = "_proportions\\.csv$", full.names = TRUE)
-  method_dfs <- lapply(files, utils::read.csv, stringsAsFactors = FALSE)
-  combined <- do.call(rbind, method_dfs)
+plot_method_composition_heatmap <- function(
+    method_output_dir,
+    baseline_csv,
+    output_dir,
+    roi_id_col = "ROI_ID",
+    celltype_col = "celltype",
+    proportion_col = "rel_abundance"
+) {
 
-  baseline <- utils::read.csv(baseline_csv, stringsAsFactors = FALSE)
+  files <- list.files(
+    method_output_dir,
+    pattern = "_proportions\\.csv$",
+    full.names = TRUE
+  )
+
+  method_dfs <- lapply(
+    files,
+    utils::read.csv,
+    stringsAsFactors = FALSE
+  )
+
+  combined <- do.call(
+    rbind,
+    method_dfs
+  )
+
+  baseline <- utils::read.csv(
+    baseline_csv,
+    stringsAsFactors = FALSE
+  )
+
   baseline <- data.frame(
     method = "Cell2location",
     ROI_ID = baseline[[roi_id_col]],
@@ -314,20 +551,104 @@ plot_method_composition_heatmap <- function(method_output_dir, baseline_csv, out
     stringsAsFactors = FALSE
   )
 
-  combined <- rbind(combined, baseline)
+  combined <- rbind(
+    combined,
+    baseline
+  )
 
-  mean_comp <- stats::aggregate(proportion ~ method + celltype, combined, mean)
+  # Remove non-finite proportions before summarizing
+  n_before <- nrow(combined)
 
-  p <- ggplot2::ggplot(mean_comp, ggplot2::aes(x = method, y = celltype, fill = proportion)) +
-    ggplot2::geom_tile(color = "white", linewidth = 0.2) +
-    scale_fill_magnitude(name = "mean prop.") +
-    ggplot2::labs(
-      title = "Mean cell-type composition by method",
-      x = NULL, y = NULL
+  combined <- combined[
+    is.finite(combined$proportion),
+    ,
+    drop = FALSE
+  ]
+
+  n_removed <- n_before - nrow(combined)
+
+  if (n_removed > 0) {
+    message(
+      "plot_method_composition_heatmap: excluded ",
+      n_removed,
+      " rows with non-finite proportions."
+    )
+  }
+
+  mean_comp <- stats::aggregate(
+    proportion ~ method + celltype,
+    combined,
+    function(x) {
+      mean(
+        x,
+        na.rm = TRUE
+      )
+    }
+  )
+  # Order cell types by cross-method disagreement
+  celltype_spread <- stats::aggregate(
+    proportion ~ celltype,
+    mean_comp,
+    function(x) {
+      max(x, na.rm = TRUE) -
+        min(x, na.rm = TRUE)
+    }
+  )
+  
+  celltype_order <- celltype_spread$celltype[
+    order(
+      celltype_spread$proportion,
+      decreasing = TRUE
+    )
+  ]
+  
+  mean_comp$celltype <- factor(
+    mean_comp$celltype,
+    levels = rev(celltype_order)
+  )
+
+  p <- ggplot2::ggplot(
+    mean_comp,
+    ggplot2::aes(
+      x = method,
+      y = celltype,
+      fill = proportion
+    )
+  ) +
+    ggplot2::geom_tile(
+      color = "white",
+      linewidth = 0.2
     ) +
-    theme_analysis(base_size = 8) +
-    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 30, hjust = 1))
+    ggplot2::scale_fill_viridis_c(
+      name = "Mean proportion",
+      trans = "sqrt",
+      limits = c(0, NA)
+    ) +
+    ggplot2::labs(
+      title = "Mean inferred cell-type composition by method",
+      subtitle = "Cell types ordered by cross-method variability",
+      x = NULL,
+      y = NULL
+    ) +
+    theme_analysis(
+      base_size = 8
+    ) +
+    ggplot2::theme(
+      axis.text.x = ggplot2::element_text(
+        angle = 45,
+        hjust = 1,
+		vjust = 1,
+		face = "bold"
+      )
+    )
 
-  save_figure(p, "method_composition_heatmap", output_dir, width = 8, height = 10)
+  save_figure(
+    p,
+    "method_composition_heatmap",
+    output_dir,
+    width = 8,
+    height = 10
+  )
+
   invisible(p)
 }

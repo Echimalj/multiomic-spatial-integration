@@ -111,20 +111,23 @@ CONDITION_MAP = {
     "Control": "Control",
 }
 
+# Synthetic validation settings
+N_MIXTURES = 100
+N_CELLS_PER_MIXTURE = 200
+DIRICHLET_CONCENTRATION = 0.3
+
 CELL_NUMBER_PRIOR = {
-    "cells_per_spot": 8.0,
+    "cells_per_spot": float(N_CELLS_PER_MIXTURE),
     "factors_per_spot": 7.0,
     "combs_per_spot": 2.5,
     "factors_per_combs": 3.0,
     "cells_mean_var_ratio": 1.0,
     "factors_mean_var_ratio": 1.0,
     "combs_mean_var_ratio": 1.0,
+    "cells_prior_mode": "nuclei_informed",
+    "nuclei_prior_strength": 1.0,
+    "nuclei_scale_clip": (0.25, 4.0),
 }
-
-# Synthetic validation settings
-N_MIXTURES = 100
-N_CELLS_PER_MIXTURE = 200
-DIRICHLET_CONCENTRATION = 0.3
 
 # Reference regression model settings
 REGRESSION_MAX_EPOCHS = 100
@@ -1131,15 +1134,70 @@ for ref_condition, spatial_condition in CONDITION_MAP.items():
     pyro.clear_param_store()
     torch.cuda.empty_cache()
 
+    synthetic_x = np.asarray(
+        synthetic["X_data"],
+        dtype=np.float32,
+    )
+
+    if synthetic_x.ndim != 2:
+        raise ValueError(
+            f"{ref_condition}: synthetic X_data must be two-dimensional; "
+            f"received shape {synthetic_x.shape}."
+        )
+
+    n_synthetic_rois = synthetic_x.shape[0]
+
+    if n_synthetic_rois == 0:
+        raise ValueError(
+            f"{ref_condition}: no synthetic ROIs were generated."
+        )
+
+    synthetic_nuclei_counts = np.full(
+        shape=n_synthetic_rois,
+        fill_value=float(N_CELLS_PER_MIXTURE),
+        dtype=np.float32,
+    )
+
+    if synthetic_nuclei_counts.ndim != 1:
+        raise ValueError(
+            f"{ref_condition}: synthetic nuclei counts must be one-dimensional."
+        )
+
+    if len(synthetic_nuclei_counts) != synthetic_x.shape[0]:
+        raise ValueError(
+            f"{ref_condition}: synthetic nuclei-count vector contains "
+            f"{len(synthetic_nuclei_counts)} entries, but X_data contains "
+            f"{synthetic_x.shape[0]} synthetic ROIs."
+        )
+
+    if not np.isfinite(synthetic_nuclei_counts).all():
+        raise ValueError(
+            f"{ref_condition}: synthetic nuclei counts contain non-finite values."
+        )
+
+    if np.any(synthetic_nuclei_counts <= 0):
+        raise ValueError(
+            f"{ref_condition}: synthetic nuclei counts must all be positive."
+        )
+
+    print(
+        f"{ref_condition}: using nuclei-informed prior for "
+        f"{n_synthetic_rois} synthetic ROIs."
+    )
+
+    print(
+        f"{ref_condition}: synthetic nuclei counts — "
+        f"min={synthetic_nuclei_counts.min():.1f}, "
+        f"median={np.median(synthetic_nuclei_counts):.1f}, "
+        f"max={synthetic_nuclei_counts.max():.1f}."
+    )
+
     model_inputs = {
         "cell_state_mat": (
             signature_df
             .to_numpy(dtype=np.float32)
         ),
-        "X_data": np.asarray(
-            synthetic["X_data"],
-            dtype=np.float32,
-        ),
+        "X_data": synthetic_x,
         "Y_data": np.asarray(
             synthetic["Y_data"],
             dtype=np.float32,
@@ -1148,6 +1206,7 @@ for ref_condition, spatial_condition in CONDITION_MAP.items():
             synthetic["spot2sample_mat"],
             dtype=np.float32,
         ),
+        "nuclei_counts": synthetic_nuclei_counts,
         "cell_number_prior": CELL_NUMBER_PRIOR,
     }
 
@@ -1320,6 +1379,12 @@ for ref_condition, spatial_condition in CONDITION_MAP.items():
         "spacejam_steps": SPACEJAM_STEPS,
         "spacejam_learning_rate": SPACEJAM_LEARNING_RATE,
         "posterior_predictive_samples": POSTERIOR_PREDICTIVE_SAMPLES,
+        "cells_prior_mode": CELL_NUMBER_PRIOR["cells_prior_mode"],
+        "nuclei_prior_strength": CELL_NUMBER_PRIOR["nuclei_prior_strength"],
+        "nuclei_scale_clip": list(
+            CELL_NUMBER_PRIOR["nuclei_scale_clip"]
+        ),
+        "synthetic_nuclei_count_per_roi": N_CELLS_PER_MIXTURE,
         "device": DEVICE,
     }
 

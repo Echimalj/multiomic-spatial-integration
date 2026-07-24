@@ -136,6 +136,26 @@ write.csv(
 )
 
 # ============================================================
+# Cell-type co-occurrence by region and disease/pathology context
+# ============================================================
+
+cooccurrence_context_res <-
+  run_celltype_cooccurrence_by_context(
+    df = df,
+    abundance_col = "rel_abundance",
+    min_n = 3
+  )
+
+write.csv(
+  cooccurrence_context_res,
+  file = file.path(
+    output_dir,
+    "celltype_cooccurrence_by_context.csv"
+  ),
+  row.names = FALSE
+)
+
+# ============================================================
 # Combined summary table
 # ============================================================
 

@@ -54,6 +54,14 @@ contrast_fns <- list(
   max_pathology_effect = run_max_pathology_effect
 )
 
+expected_contrast <- c(
+  amyloid_effect = "Amyloid_effect",
+  disease_effect = "Disease_effect",
+  overall_effect = "AD_overall_vs_Control",
+  max_pathology_effect = "AD_Amyloid_vs_Control"
+)
+
+
 for (name in names(contrast_fns)) {
 
   message(sprintf("Running leave-one-Scan-out for %s...", name))
@@ -65,6 +73,31 @@ for (name in names(contrast_fns)) {
   )
 
   summary_df <- summarize_robustness(loo$full, loo$leave_one_out)
+
+  if (
+    "contrast" %in% colnames(summary_df) &&
+      name %in% names(expected_contrast)
+  ) {
+  
+    n_before <- nrow(summary_df)
+
+    summary_df <- summary_df[
+      summary_df$contrast == expected_contrast[[name]],
+      ,
+      drop = FALSE
+    ]
+
+    if (nrow(summary_df) != n_before) {
+      message(
+        sprintf(
+          "  Filtered robustness results from %d to %d rows (%s).",
+          n_before,
+          nrow(summary_df),
+          expected_contrast[[name]]
+        )
+      )
+    }
+  }
 
   write.csv(
     summary_df,
