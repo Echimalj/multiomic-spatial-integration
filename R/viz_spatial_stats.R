@@ -132,7 +132,10 @@ NULL
   invisible(eps_path)
 }
 
-.prepare_contrast_heatmap_data <- function(df) {
+.prepare_contrast_heatmap_data <- function(
+    df,
+    effect_col = "log2_OR"
+) {
   if (!"type" %in% colnames(df)) {
     if ("contrast_type" %in% colnames(df)) {
       df$type <- df$contrast_type
@@ -151,7 +154,7 @@ NULL
       "celltype",
       "region",
       "type",
-      "log2_OR",
+      effect_col,
       "p_adj"
     ),
     "Combined spatial contrast table"
@@ -161,8 +164,8 @@ NULL
   df$celltype <- as.character(df$celltype)
   df$region <- as.character(df$region)
 
-  df$log2_OR <- suppressWarnings(
-    as.numeric(df$log2_OR)
+  df[[effect_col]] <- suppressWarnings(
+    as.numeric(df[[effect_col]])
   )
 
   df$p_adj <- suppressWarnings(
@@ -186,7 +189,7 @@ NULL
     !is.na(df$celltype) &
       !is.na(df$region) &
       !is.na(df$type) &
-      !is.na(df$log2_OR),
+      is.finite(df[[effect_col]]),
     ,
     drop = FALSE
   ]
@@ -521,9 +524,43 @@ plot_contrast_effsize_heatmap <- function(
     output_dir,
     abundance_csv =
       "results/cell_proportions/spatial_celltype_proportions_for_R.csv",
+    effect_col = "log2_OR",
+    effect_label = "log2 OR",
     padj_cutoff = 0.05,
     effect_limit = 2.5
 ) {
+if (
+  length(effect_col) != 1 ||
+    is.na(effect_col) ||
+    !nzchar(effect_col)
+) {
+  stop(
+    "`effect_col` must be one non-empty column name.",
+    call. = FALSE
+  )
+}
+
+if (
+  length(effect_label) != 1 ||
+    is.na(effect_label) ||
+    !nzchar(effect_label)
+) {
+  stop(
+    "`effect_label` must be one non-empty display label.",
+    call. = FALSE
+  )
+}
+
+if (
+  length(effect_limit) != 1 ||
+    !is.finite(effect_limit) ||
+    effect_limit <= 0
+) {
+  stop(
+    "`effect_limit` must be one positive finite number.",
+    call. = FALSE
+  )
+}
   required_packages <- c(
     "ComplexHeatmap",
     "circlize",
@@ -562,7 +599,8 @@ plot_contrast_effsize_heatmap <- function(
   )
 
   contrast_df <- .prepare_contrast_heatmap_data(
-    contrast_df
+    contrast_df,
+    effect_col = effect_col
   )
 
   mean_context_df <- .calculate_scan_balanced_abundance(
@@ -670,7 +708,7 @@ plot_contrast_effsize_heatmap <- function(
   )
 
   effect_legend <- ComplexHeatmap::Legend(
-    title = "log2 OR",
+    title = effect_label,
     col_fun = effect_colors,
     at = effect_legend_breaks,
     labels = effect_legend_labels,
@@ -758,10 +796,10 @@ significance_legend <- ComplexHeatmap::Legend(
         region_df,
         celltype,
         type,
-        log2_OR
+        dplyr::all_of(effect_col)
       ),
       names_from = type,
-      values_from = log2_OR
+      values_from = dplyr::all_of(effect_col)
     )
 
     region_celltypes <- celltype_order[
@@ -923,7 +961,7 @@ significance_legend <- ComplexHeatmap::Legend(
  
   heatmap_object <- ComplexHeatmap::Heatmap(
     effect_mat_display,
-    name = "log2 OR",
+    name = effect_label,
     col = effect_colors,
     na_col = "grey92",
     show_heatmap_legend = FALSE,
