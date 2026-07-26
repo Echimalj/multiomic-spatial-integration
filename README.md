@@ -95,7 +95,7 @@ multiomic-spatial-integration/
 │   ├── check_marker_factor_mapping.R          # Compare regression signatures against independent marker sets
 │   ├── run_sn_reference_export.R              # Export annotated snRNA-seq reference
 │   ├── run_spatial_stats.R                    # Run spatial statistical analyses and contrasts
-│   ├── run_pathway_sanity_checks.R            # Export marker-based pathway inputs
+│   ├── export_pathway_gene_list.R            # Export marker-based pathway inputs
 │   ├── run_pathway_proportion_link.R          # Associate cell-type abundance with pathway activity
 │   ├── run_marker_concordance_check.R         # Validate inferred abundances using marker concordance
 │   ├── run_contrast_robustness_check.R        # Perform leave-one-scan-out robustness analyses
