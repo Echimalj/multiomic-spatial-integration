@@ -442,8 +442,8 @@ related spatial transcriptomic platforms.
 | Cell2location (baseline) | ✅ Validated |
 | SpatialDecon | ✅ Implemented & benchmarked |
 | DWLS | ✅ Implemented & benchmarked |
-| MuSiC | 🟡 Pending |
-| Bisque | 🟡 Pending |
+| MuSiC | ✅ Implemented & benchmarked|
+| Bisque | ✅ Implemented & benchmarked |
 | BayesPrism | 🟡 Pending |
 | SPOTlight | 🟡 Pending |
 | RCTD | 🟡 Pending |
