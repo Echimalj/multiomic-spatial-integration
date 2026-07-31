@@ -15,7 +15,7 @@ source("deconvolution_comparison/R/common_utils.R")
 # Config -- adjust paths for your environment
 # ============================================================
 
-mixture_csv <- "data/CAA-AD_expression_wide.csv"
+mixture_csv <- "results/geomx_exports/CAA-AD_expression_wide.csv"
 # Default to the independent raw-reference signature written by
 # run_all_deconvolution.R (removes circularity with the Cell2location
 # baseline). Switch to the cell2location inferred signatures

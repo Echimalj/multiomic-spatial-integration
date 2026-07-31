@@ -27,6 +27,8 @@ baseline_file <- paste0(
   "spatial_celltype_proportions_for_R.csv"
 )
 
+cross_method_correlation_method <- "spearman"
+
 dir.create(
   output_dir,
   recursive = TRUE,
@@ -99,6 +101,24 @@ all_celltype_results <- list()
 all_lineage_results <- list()
 all_usage_results <- list()
 all_failed_rois <- list()
+all_proportion_results <- list()
+
+# Store Cell2location as one of the methods for
+# cross-method correlation analysis.
+
+baseline_long <- baseline |>
+  dplyr::mutate(
+    method = "Cell2location",
+    .before = 1
+  ) |>
+  dplyr::select(
+    method,
+    ROI_ID,
+    celltype,
+    proportion
+  )
+
+all_proportion_results[["Cell2location"]] <- baseline_long
 
 # ============================================================
 # Run comparisons
@@ -432,6 +452,17 @@ for (method_file in method_files) {
   all_failed_rois[[method_name]] <- failed_rois
   all_celltype_results[[method_name]] <- by_celltype
   all_lineage_results[[method_name]] <- by_lineage
+
+# Store proportions for cross-method correlation.
+
+  all_proportion_results[[method_name]] <-
+    method_df |>
+    dplyr::select(
+      method,
+      ROI_ID,
+      celltype,
+      proportion
+    )
 }
 
 # ============================================================
@@ -477,6 +508,325 @@ if (length(all_lineage_results) > 0) {
     )
   )
 }
+
+# ============================================================
+# Cross-method correlation matrix
+# ============================================================
+
+if (length(all_proportion_results) > 1) {
+
+  message(
+    "\nComputing cross-method correlation matrix..."
+  )
+
+  combined_long <- bind_rows(
+    all_proportion_results
+  )
+
+  cross_cor <- cross_method_correlation(
+    combined_long,
+    cor_method = cross_method_correlation_method
+  )
+
+  cross_cor_df <- as.data.frame(
+    cross_cor,
+    check.names = FALSE
+  )
+
+  cross_cor_df <- tibble::rownames_to_column(
+    cross_cor_df,
+    var = "method"
+  )
+
+  write_csv(
+    cross_cor_df,
+    file.path(
+      output_dir,
+      "cross_method_correlation.csv"
+    )
+  )
+
+  message(
+    "Cross-method correlation matrix written."
+  )
+}
+
+# ----------------------------------------------------------
+# Method summary table
+# ----------------------------------------------------------
+
+message("\nWriting method summary table...")
+
+combined_proportions <- dplyr::bind_rows(
+  all_proportion_results
+)
+
+# ----------------------------------------------------------
+# Highest mean-abundance cell type per method
+# ----------------------------------------------------------
+
+mean_by_method_celltype <- combined_proportions |>
+  dplyr::group_by(
+    method,
+    celltype
+  ) |>
+  dplyr::summarise(
+    mean_proportion = if (
+      all(!is.finite(proportion))
+    ) {
+      NA_real_
+    } else {
+      mean(
+        proportion,
+        na.rm = TRUE
+      )
+    },
+    .groups = "drop"
+  )
+
+mean_summary <- mean_by_method_celltype |>
+  dplyr::filter(
+    is.finite(mean_proportion)
+  ) |>
+  dplyr::group_by(
+    method
+  ) |>
+  dplyr::slice_max(
+    order_by = mean_proportion,
+    n = 1,
+    with_ties = FALSE
+  ) |>
+  dplyr::ungroup() |>
+  dplyr::rename(
+    Highest_mean_celltype = celltype,
+    Highest_mean_proportion = mean_proportion
+  )
+
+# ----------------------------------------------------------
+# Method-specific bias signature
+#
+# For each cell type, mean proportions are z-scaled across
+# methods. The cell type with the largest positive z-score
+# is the method's strongest relative enrichment.
+# ----------------------------------------------------------
+
+bias_wide <- mean_by_method_celltype |>
+  tidyr::pivot_wider(
+    names_from = method,
+    values_from = mean_proportion
+  )
+
+bias_matrix <- bias_wide |>
+  tibble::column_to_rownames(
+    "celltype"
+  ) |>
+  as.matrix()
+
+bias_z_matrix <- t(
+  apply(
+    bias_matrix,
+    1,
+    function(x) {
+
+      finite_x <- is.finite(x)
+
+      if (
+        sum(finite_x) < 2 ||
+        stats::sd(
+          x[finite_x],
+          na.rm = TRUE
+        ) == 0
+      ) {
+        return(
+          rep(
+            NA_real_,
+            length(x)
+          )
+        )
+      }
+
+      z <- rep(
+        NA_real_,
+        length(x)
+      )
+
+      z[finite_x] <- as.numeric(
+        scale(
+          x[finite_x]
+        )
+      )
+
+      z
+    }
+  )
+)
+
+rownames(bias_z_matrix) <- rownames(
+  bias_matrix
+)
+
+colnames(bias_z_matrix) <- colnames(
+  bias_matrix
+)
+
+bias_long <- as.data.frame(
+  as.table(
+    bias_z_matrix
+  ),
+  stringsAsFactors = FALSE
+)
+
+names(bias_long) <- c(
+  "Bias_signature",
+  "method",
+  "Bias_zscore"
+)
+
+bias_long$Bias_zscore <- as.numeric(
+  bias_long$Bias_zscore
+)
+
+bias_summary <- bias_long |>
+  dplyr::filter(
+    is.finite(Bias_zscore)
+  ) |>
+  dplyr::group_by(
+    method
+  ) |>
+  dplyr::slice_max(
+    order_by = Bias_zscore,
+    n = 1,
+    with_ties = FALSE
+  ) |>
+  dplyr::ungroup()
+
+# ----------------------------------------------------------
+# Median fine-cell-type agreement with Cell2location
+# ----------------------------------------------------------
+
+celltype_summary <- dplyr::bind_rows(
+  all_celltype_results
+) |>
+  dplyr::group_by(
+    method
+  ) |>
+  dplyr::summarise(
+    Median_celltype_rho = if (
+      all(!is.finite(spearman_rho))
+    ) {
+      NA_real_
+    } else {
+      stats::median(
+        spearman_rho,
+        na.rm = TRUE
+      )
+    },
+    .groups = "drop"
+  )
+
+# ----------------------------------------------------------
+# Median lineage-level agreement with Cell2location
+# ----------------------------------------------------------
+
+lineage_summary <- dplyr::bind_rows(
+  all_lineage_results
+) |>
+  dplyr::group_by(
+    method
+  ) |>
+  dplyr::summarise(
+    Median_lineage_rho = if (
+      all(!is.finite(spearman_rho))
+    ) {
+      NA_real_
+    } else {
+      stats::median(
+        spearman_rho,
+        na.rm = TRUE
+      )
+    },
+    .groups = "drop"
+  )
+
+# ----------------------------------------------------------
+# Cell-type usage summary
+# ----------------------------------------------------------
+usage_summary <- dplyr::bind_rows(
+  all_usage_results
+) |>
+  dplyr::group_by(method) |>
+  dplyr::summarise(
+    Never_used_celltypes = sum(
+      fraction_nonzero == 0,
+      na.rm = TRUE
+    ),
+    Well_used_celltypes = sum(
+      fraction_nonzero >= 0.10,
+      na.rm = TRUE
+    ),
+    .groups = "drop"
+  )
+# ----------------------------------------------------------
+# Failed ROI summary
+# ----------------------------------------------------------
+
+failed_summary <- tibble::tibble(
+  method = names(
+    all_failed_rois
+  ),
+  Failed_ROIs = vapply(
+    all_failed_rois,
+    length,
+    integer(1)
+  )
+)
+
+# ----------------------------------------------------------
+# Assemble final method summary
+# ----------------------------------------------------------
+
+method_summary <- mean_summary |>
+  dplyr::left_join(
+    bias_summary,
+    by = "method"
+  ) |>
+  dplyr::left_join(
+    celltype_summary,
+    by = "method"
+  ) |>
+  dplyr::left_join(
+    lineage_summary,
+    by = "method"
+  ) |>
+  dplyr::left_join(
+    usage_summary,
+    by = "method"
+  ) |>
+  dplyr::left_join(
+    failed_summary,
+    by = "method"
+  ) |>
+  dplyr::arrange(
+    dplyr::desc(
+      Median_celltype_rho
+    )
+  )
+
+readr::write_csv(
+  method_summary,
+  file.path(
+    output_dir,
+    "method_summary_table.csv"
+  )
+)
+
+message(
+  "Method summary table written to: ",
+  file.path(
+    output_dir,
+    "method_summary_table.csv"
+  )
+)
 
 message(
   "\nDeconvolution comparison completed successfully."

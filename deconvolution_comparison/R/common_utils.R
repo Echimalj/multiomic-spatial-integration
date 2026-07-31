@@ -206,56 +206,90 @@ align_genes <- function(mixture, reference_genes) {
 #' @return Long data frame: method, ROI_ID, celltype, proportion.
 #' @export
 standardize_proportions <- function(prop_mat, method, normalize = TRUE) {
+
   prop_mat <- as.matrix(prop_mat)
 
-  if (normalize) {
-  row_sums <- rowSums(prop_mat)
+  #---------------------------------------------------------
+  # Clip negative coefficients
+  #---------------------------------------------------------
 
-  zero_rows <- which(
-    !is.finite(row_sums) | row_sums <= 0
-  )
+  n_negative <- sum(prop_mat < 0, na.rm = TRUE)
 
-  if (length(zero_rows) > 0) {
-    warning(
-      "standardize_proportions: ",
-      length(zero_rows),
-      " ROI(s) have zero or non-finite total abundance and ",
-      "will be returned as NA proportions: ",
-      paste(
-        head(rownames(prop_mat)[zero_rows], 5),
-        collapse = ", "
-      ),
-      if (length(zero_rows) > 5) " ..." else "",
-      call. = FALSE
+  if (n_negative > 0) {
+
+    message(
+      "standardize_proportions: clipping ",
+      n_negative,
+      " negative coefficient(s) to zero."
     )
+
+    prop_mat[prop_mat < 0] <- 0
   }
 
-  valid_rows <- setdiff(
-    seq_len(nrow(prop_mat)),
-    zero_rows
-  )
+  #---------------------------------------------------------
+  # Row normalization
+  #---------------------------------------------------------
 
-  prop_mat[valid_rows, ] <- (
-    prop_mat[valid_rows, , drop = FALSE] /
-    row_sums[valid_rows]
-  )
+  if (normalize) {
 
-  if (length(zero_rows) > 0) {
-    prop_mat[zero_rows, ] <- NA_real_
+    row_sums <- rowSums(prop_mat)
+
+    zero_rows <- which(
+      !is.finite(row_sums) |
+      row_sums <= 0
+    )
+
+    if (length(zero_rows) > 0) {
+
+      warning(
+        "standardize_proportions: ",
+        length(zero_rows),
+        " ROI(s) have zero or non-finite total abundance and ",
+        "will be returned as NA proportions: ",
+        paste(
+          head(rownames(prop_mat)[zero_rows], 5),
+          collapse = ", "
+        ),
+        if (length(zero_rows) > 5) " ..." else "",
+        call. = FALSE
+      )
+
+    }
+
+    valid_rows <- setdiff(
+      seq_len(nrow(prop_mat)),
+      zero_rows
+    )
+
+    prop_mat[valid_rows, ] <-
+      prop_mat[valid_rows, , drop = FALSE] /
+      row_sums[valid_rows]
+
+    if (length(zero_rows) > 0) {
+      prop_mat[zero_rows, ] <- NA_real_
+    }
   }
-}
+
+  #---------------------------------------------------------
+  # Convert to long format
+  #---------------------------------------------------------
 
   long <- data.frame(
     method = method,
-    ROI_ID = rep(rownames(prop_mat), times = ncol(prop_mat)),
-    celltype = rep(colnames(prop_mat), each = nrow(prop_mat)),
+    ROI_ID = rep(
+      rownames(prop_mat),
+      times = ncol(prop_mat)
+    ),
+    celltype = rep(
+      colnames(prop_mat),
+      each = nrow(prop_mat)
+    ),
     proportion = as.vector(prop_mat),
     stringsAsFactors = FALSE
   )
 
   long
 }
-
 
 #' Write a standardized proportion table to the comparison output folder
 #'

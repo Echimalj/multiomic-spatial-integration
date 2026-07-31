@@ -26,12 +26,13 @@ source(file.path(comparison_root, "adapter_spatialdecon.R"))
 # Config -- adjust paths for your environment
 # ============================================================
 
-reference_dir <- "results/sn_reference/anndata_inputs"
-counts_mtx <- file.path(reference_dir, "AD_CAA_counts.mtx")
-metadata_csv <- file.path(reference_dir, "AD_CAA_metadata.csv")
-genes_csv <- file.path(reference_dir, "AD_CAA_genes.csv")
+reference_dir <- "data"
 
-mixture_csv <- "data/CAA-AD_expression_wide.csv"
+counts_mtx   <- file.path(reference_dir, "AD_CAA_counts.mtx")
+metadata_csv <- file.path(reference_dir, "AD_CAA_meta.csv")
+genes_csv    <- file.path(reference_dir, "AD_CAA_genes.csv")
+
+mixture_csv <- "results/geomx_exports/CAA-AD_expression_wide.csv"
 background_csv <- "data/CAA-AD_negprobe_background.csv"  # for SpatialDecon
 
 output_dir <- "results/deconvolution_comparison"

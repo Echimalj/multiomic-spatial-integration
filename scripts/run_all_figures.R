@@ -174,7 +174,7 @@ if (dir.exists(robustness_dir)) {
 # Deconvolution comparison
 # ============================================================
 
-comp_dir <- file.path(deconv_dir, "comparison_summary")
+comp_dir <- deconv_dir
 
 
 if_exists(
@@ -195,24 +195,48 @@ method_proportion_files <- list.files(
 if_exists(
   baseline_csv,
   if (length(method_proportion_files) > 0) {
+
     plot_method_composition_heatmap(
       deconv_dir,
       baseline_csv,
-      file.path(fig_root, "deconvolution")
+      file.path(
+        fig_root,
+        "deconvolution"
+      )
     )
+
+    plot_method_celltype_mean_heatmaps(
+      deconv_dir = deconv_dir,
+      baseline_csv = baseline_csv,
+      output_dir = file.path(
+        fig_root,
+        "deconvolution"
+      ),
+      cluster_rows = TRUE,
+      cluster_columns = TRUE
+    )
+
     plot_celltype_method_spread(
       deconv_dir,
       baseline_csv,
-      file.path(fig_root, "deconvolution")
+      file.path(
+        fig_root,
+        "deconvolution"
+      )
     )
+
     plot_celltype_scatter_vs_baseline(
       deconv_dir,
       baseline_csv,
-      file.path(fig_root, "deconvolution")
+      file.path(
+        fig_root,
+        "deconvolution"
+      )
     )
+
   } else {
     message(
-      "Skipping composition/spread/scatter figures: ",
+      "Skipping composition/spread/scatter/mean-heatmap figures: ",
       "no method _proportions.csv files yet."
     )
   }

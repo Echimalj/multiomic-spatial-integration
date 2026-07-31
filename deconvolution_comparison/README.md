@@ -30,7 +30,7 @@ accuracy check on synthetic data, see the separate pseudobulk validation:
 
 ## Inputs (set paths in each script's config header)
 
-- **Mixture (ROI x gene)**: `data/CAA-AD_expression_wide.csv`
+- **Mixture (ROI x gene)**: results/geomx_exports/CAA-AD_expression_wide.csv
   (exported by `python.geomx_anndata_utils.export_expression_csv`, called in
   `notebooks/01_wta_to_anndata.py`).
 - **snRNA-seq reference (counts + labels)**: the MatrixMarket triple exported

@@ -652,3 +652,638 @@ plot_method_composition_heatmap <- function(
 
   invisible(p)
 }
+
+# ============================================================
+# Mean cell-type abundance and method-bias heatmaps
+#
+# Panel A:
+#   Mean estimated proportion for each cell type and method.
+#
+# Panel B:
+#   Row-scaled z-score across methods. This highlights methods
+#   that estimate relatively more or less of a given cell type.
+#
+# The same clustered row and column ordering is used in both
+# panels so they can be compared directly.
+# ============================================================
+
+plot_method_celltype_mean_heatmaps <- function(
+    deconv_dir,
+    baseline_csv,
+    output_dir,
+    cluster_rows = TRUE,
+    cluster_columns = TRUE
+) {
+
+  required_packages <- c(
+    "ggplot2",
+    "dplyr",
+    "readr",
+    "tidyr",
+    "grid"
+  )
+
+  missing_packages <- required_packages[
+    !vapply(
+      required_packages,
+      requireNamespace,
+      quietly = TRUE,
+      FUN.VALUE = logical(1)
+    )
+  ]
+
+  if (length(missing_packages) > 0) {
+    stop(
+      "Missing required package(s): ",
+      paste(missing_packages, collapse = ", "),
+      call. = FALSE
+    )
+  }
+
+  dir.create(
+    output_dir,
+    recursive = TRUE,
+    showWarnings = FALSE
+  )
+
+  # ----------------------------------------------------------
+  # Find method proportion files
+  # ----------------------------------------------------------
+
+  method_files <- list.files(
+    deconv_dir,
+    pattern = "_proportions\\.csv$",
+    recursive = TRUE,
+    full.names = TRUE
+  )
+
+  method_files <- method_files[
+    !grepl(
+      "Cell2location",
+      basename(method_files),
+      ignore.case = TRUE
+    )
+  ]
+
+  if (length(method_files) == 0) {
+    stop(
+      "No method proportion files were found in ",
+      deconv_dir,
+      ".",
+      call. = FALSE
+    )
+  }
+
+  if (!file.exists(baseline_csv)) {
+    stop(
+      "Cell2location baseline file not found: ",
+      baseline_csv,
+      call. = FALSE
+    )
+  }
+
+  # ----------------------------------------------------------
+  # Load Cell2location baseline
+  # ----------------------------------------------------------
+
+  baseline_raw <- readr::read_csv(
+    baseline_csv,
+    show_col_types = FALSE
+  )
+
+  required_baseline_columns <- c(
+    "ROI_ID",
+    "celltype",
+    "rel_abundance"
+  )
+
+  missing_baseline_columns <- setdiff(
+    required_baseline_columns,
+    names(baseline_raw)
+  )
+
+  if (length(missing_baseline_columns) > 0) {
+    stop(
+      "Cell2location baseline is missing required columns: ",
+      paste(missing_baseline_columns, collapse = ", "),
+      call. = FALSE
+    )
+  }
+
+  baseline <- baseline_raw |>
+    dplyr::transmute(
+      method = "Cell2location",
+      ROI_ID = as.character(.data$ROI_ID),
+      celltype = as.character(.data$celltype),
+      proportion = as.numeric(.data$rel_abundance)
+    )
+
+  # ----------------------------------------------------------
+  # Load comparison methods
+  # ----------------------------------------------------------
+
+  method_list <- lapply(
+    method_files,
+    function(method_file) {
+
+      method_df <- readr::read_csv(
+        method_file,
+        show_col_types = FALSE
+      )
+
+      required_method_columns <- c(
+        "ROI_ID",
+        "celltype",
+        "proportion"
+      )
+
+      missing_method_columns <- setdiff(
+        required_method_columns,
+        names(method_df)
+      )
+
+      if (length(missing_method_columns) > 0) {
+        warning(
+          "Skipping ",
+          basename(method_file),
+          ": missing columns ",
+          paste(missing_method_columns, collapse = ", "),
+          call. = FALSE
+        )
+
+        return(NULL)
+      }
+
+      filename_method <- sub(
+        "_proportions\\.csv$",
+        "",
+        basename(method_file)
+      )
+
+      method_label <- filename_method
+
+      if ("method" %in% names(method_df)) {
+        observed_labels <- unique(
+          method_df$method[
+            !is.na(method_df$method) &
+              nzchar(method_df$method)
+          ]
+        )
+
+        if (length(observed_labels) == 1) {
+          method_label <- observed_labels
+        }
+      }
+
+      method_df |>
+        dplyr::transmute(
+          method = method_label,
+          ROI_ID = as.character(.data$ROI_ID),
+          celltype = as.character(.data$celltype),
+          proportion = as.numeric(.data$proportion)
+        )
+    }
+  )
+
+  method_list <- method_list[
+    !vapply(
+      method_list,
+      is.null,
+      FUN.VALUE = logical(1)
+    )
+  ]
+
+  if (length(method_list) == 0) {
+    stop(
+      "No valid comparison-method files could be loaded.",
+      call. = FALSE
+    )
+  }
+
+  all_proportions <- dplyr::bind_rows(
+    c(
+      list(baseline),
+      method_list
+    )
+  )
+
+  # ----------------------------------------------------------
+  # Calculate mean abundance by method and cell type
+  #
+  # For methods with failed ROIs, the mean is calculated using
+  # the finite estimates available for that method/cell type.
+  # ----------------------------------------------------------
+
+  mean_abundance <- all_proportions |>
+    dplyr::group_by(
+      .data$celltype,
+      .data$method
+    ) |>
+    dplyr::summarise(
+      n_evaluable = sum(
+        is.finite(.data$proportion)
+      ),
+      mean_proportion = if (
+        all(!is.finite(.data$proportion))
+      ) {
+        NA_real_
+      } else {
+        mean(
+          .data$proportion[
+            is.finite(.data$proportion)
+          ],
+          na.rm = TRUE
+        )
+      },
+      .groups = "drop"
+    )
+
+  # Save the values underlying the figure.
+  readr::write_csv(
+    mean_abundance,
+    file.path(
+      deconv_dir,
+      "all_methods_mean_proportion_by_celltype.csv"
+    )
+  )
+
+  # ----------------------------------------------------------
+  # Convert to cell type x method matrix
+  # ----------------------------------------------------------
+
+  mean_wide <- mean_abundance |>
+    dplyr::select(
+      celltype,
+      method,
+      mean_proportion
+    ) |>
+    tidyr::pivot_wider(
+      names_from = method,
+      values_from = mean_proportion
+    ) |>
+    dplyr::arrange(
+      .data$celltype
+    )
+
+  mean_matrix <- as.matrix(
+    mean_wide[
+      ,
+      setdiff(
+        names(mean_wide),
+        "celltype"
+      ),
+      drop = FALSE
+    ]
+  )
+
+  storage.mode(mean_matrix) <- "numeric"
+
+  rownames(mean_matrix) <- mean_wide$celltype
+
+  # ----------------------------------------------------------
+  # Row-scaled z-scores
+  # ----------------------------------------------------------
+
+  z_matrix <- matrix(
+    NA_real_,
+    nrow = nrow(mean_matrix),
+    ncol = ncol(mean_matrix),
+    dimnames = dimnames(mean_matrix)
+  )
+
+  for (i in seq_len(nrow(mean_matrix))) {
+
+    values <- mean_matrix[i, ]
+    finite_values <- values[is.finite(values)]
+
+    if (length(finite_values) == 0) {
+      next
+    }
+
+    row_mean <- mean(finite_values)
+    row_sd <- stats::sd(finite_values)
+
+    if (
+      !is.finite(row_sd) ||
+      row_sd == 0
+    ) {
+      z_matrix[i, is.finite(values)] <- 0
+    } else {
+      z_matrix[i, ] <- (
+        values - row_mean
+      ) / row_sd
+    }
+  }
+
+  # ----------------------------------------------------------
+  # Determine clustered ordering
+  #
+  # The z-score matrix is used for clustering so abundant cell
+  # types do not dominate solely because of their magnitude.
+  # ----------------------------------------------------------
+
+  row_order <- rownames(mean_matrix)
+  column_order <- colnames(mean_matrix)
+
+  clustering_matrix <- z_matrix
+  clustering_matrix[
+    !is.finite(clustering_matrix)
+  ] <- 0
+
+  if (
+    cluster_rows &&
+    nrow(clustering_matrix) > 1
+  ) {
+    row_hclust <- stats::hclust(
+      stats::dist(clustering_matrix),
+      method = "complete"
+    )
+
+    row_order <- rownames(clustering_matrix)[
+      row_hclust$order
+    ]
+  }
+
+  if (
+    cluster_columns &&
+    ncol(clustering_matrix) > 1
+  ) {
+    column_hclust <- stats::hclust(
+      stats::dist(
+        t(clustering_matrix)
+      ),
+      method = "complete"
+    )
+
+    column_order <- colnames(clustering_matrix)[
+      column_hclust$order
+    ]
+  }
+
+  # ----------------------------------------------------------
+  # Prepare plotting data
+  # ----------------------------------------------------------
+
+  raw_plot_df <- mean_abundance |>
+    dplyr::mutate(
+      celltype = factor(
+        .data$celltype,
+        levels = rev(row_order)
+      ),
+      method = factor(
+        .data$method,
+        levels = column_order
+      )
+    )
+
+  z_plot_df <- as.data.frame(
+    as.table(z_matrix),
+    stringsAsFactors = FALSE
+  )
+
+  names(z_plot_df) <- c(
+    "celltype",
+    "method",
+    "z_score"
+  )
+
+  z_plot_df <- z_plot_df |>
+    dplyr::mutate(
+      celltype = factor(
+        .data$celltype,
+        levels = rev(row_order)
+      ),
+      method = factor(
+        .data$method,
+        levels = column_order
+      )
+    )
+
+  # ----------------------------------------------------------
+  # Panel A: raw mean proportions
+  #
+  # The square-root transformation affects only the display
+  # scale; the underlying values remain raw mean proportions.
+  # ----------------------------------------------------------
+
+  p_raw <- ggplot2::ggplot(
+    raw_plot_df,
+    ggplot2::aes(
+      x = .data$method,
+      y = .data$celltype,
+      fill = .data$mean_proportion
+    )
+  ) +
+    ggplot2::geom_tile(
+      linewidth = 0.25,
+      color = "white"
+    ) +
+    ggplot2::scale_fill_viridis_c(
+      option = "C",
+      trans = "sqrt",
+      na.value = "grey90",
+      name = "Mean\nproportion"
+    ) +
+    ggplot2::labs(
+      title = "A. Mean estimated proportion",
+      x = NULL,
+      y = NULL
+    ) +
+    ggplot2::theme_minimal(
+      base_size = 9
+    ) +
+    ggplot2::theme(
+      panel.grid = ggplot2::element_blank(),
+      axis.text.x = ggplot2::element_text(
+        angle = 45,
+        hjust = 1,
+        vjust = 1
+      ),
+      axis.text.y = ggplot2::element_text(
+        size = 6.5
+      ),
+      plot.title = ggplot2::element_text(
+        face = "bold",
+        size = 11
+      ),
+      legend.position = "right"
+    )
+
+  # ----------------------------------------------------------
+  # Panel B: row-scaled method bias
+  # ----------------------------------------------------------
+
+  finite_z <- z_plot_df$z_score[
+    is.finite(z_plot_df$z_score)
+  ]
+
+  z_limit <- if (length(finite_z) == 0) {
+    2
+  } else {
+    max(
+      abs(finite_z),
+      na.rm = TRUE
+    )
+  }
+
+  if (
+    !is.finite(z_limit) ||
+    z_limit == 0
+  ) {
+    z_limit <- 2
+  }
+
+  p_z <- ggplot2::ggplot(
+    z_plot_df,
+    ggplot2::aes(
+      x = .data$method,
+      y = .data$celltype,
+      fill = .data$z_score
+    )
+  ) +
+    ggplot2::geom_tile(
+      linewidth = 0.25,
+      color = "white"
+    ) +
+    ggplot2::scale_fill_gradient2(
+      low = "#3B4CC0",
+      mid = "white",
+      high = "#B40426",
+      midpoint = 0,
+      limits = c(
+        -z_limit,
+        z_limit
+      ),
+      oob = scales::squish,
+      na.value = "grey90",
+      name = "Row\nz-score"
+    ) +
+    ggplot2::labs(
+      title = "B. Relative method bias",
+      subtitle = "Scaled within each cell type",
+      x = NULL,
+      y = NULL
+    ) +
+    ggplot2::theme_minimal(
+      base_size = 9
+    ) +
+    ggplot2::theme(
+      panel.grid = ggplot2::element_blank(),
+      axis.text.x = ggplot2::element_text(
+        angle = 45,
+        hjust = 1,
+        vjust = 1
+      ),
+      axis.text.y = ggplot2::element_text(
+        size = 6.5
+      ),
+      plot.title = ggplot2::element_text(
+        face = "bold",
+        size = 11
+      ),
+      plot.subtitle = ggplot2::element_text(
+        size = 8
+      ),
+      legend.position = "right"
+    )
+
+  # ----------------------------------------------------------
+  # Draw the two ggplots side by side using base grid
+  #
+  # This avoids adding patchwork or cowplot as dependencies.
+  # ----------------------------------------------------------
+
+  draw_two_panels <- function() {
+
+    grid::grid.newpage()
+
+    figure_layout <- grid::grid.layout(
+      nrow = 1,
+      ncol = 2,
+      widths = grid::unit(
+        c(1, 1),
+        "null"
+      )
+    )
+
+    grid::pushViewport(
+      grid::viewport(
+        layout = figure_layout
+      )
+    )
+
+    print(
+      p_raw,
+      vp = grid::viewport(
+        layout.pos.row = 1,
+        layout.pos.col = 1
+      )
+    )
+
+    print(
+      p_z,
+      vp = grid::viewport(
+        layout.pos.row = 1,
+        layout.pos.col = 2
+      )
+    )
+
+    grid::popViewport()
+  }
+
+  pdf_file <- file.path(
+    output_dir,
+    "method_celltype_mean_and_bias_heatmaps.pdf"
+  )
+
+  png_file <- file.path(
+    output_dir,
+    "method_celltype_mean_and_bias_heatmaps.png"
+  )
+
+  grDevices::pdf(
+    pdf_file,
+    width = 13,
+    height = 10,
+    useDingbats = FALSE
+  )
+
+  draw_two_panels()
+
+  grDevices::dev.off()
+
+  grDevices::png(
+    png_file,
+    width = 13,
+    height = 10,
+    units = "in",
+    res = 300
+  )
+
+  draw_two_panels()
+
+  grDevices::dev.off()
+
+  message(
+    "Wrote ",
+    pdf_file
+  )
+
+  message(
+    "Wrote ",
+    png_file
+  )
+
+  invisible(
+    list(
+      raw_plot = p_raw,
+      zscore_plot = p_z,
+      mean_abundance = mean_abundance,
+      mean_matrix = mean_matrix,
+      z_matrix = z_matrix,
+      row_order = row_order,
+      method_order = column_order
+    )
+  )
+}
+
