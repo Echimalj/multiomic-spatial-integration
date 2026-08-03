@@ -1,0 +1,968 @@
+gene,panel,category,headline,source,agora_id,ensembl_gene_id,total_nominations,initial_nomination,nominating_teams,cohort_studies,input_data,programs,pharos_class
+APOE,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79224,ENSG00000130203,5,2018,ASU; Duke; Emory-Sage-SGC; MSSM - Roussos Lab; Mayo-UFL-ISB,APP Mice; Banner; Emory; HBI_scRNAseq; MSBB; ROSMAP; VirusResilience,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD; TREAT-AD,Tbio
+MSN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792c1,ENSG00000147065,5,2018,Chang Lab; Emory; Emory-Sage-SGC; MSSM - Zhang Lab,ACT; BLSA; Banner; Kronos; MSBB; ROSMAP,Genetics; Protein; RNA,AMP-AD; Community; TREAT-AD,Tbio
+PLEC,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793d4,ENSG00000178209,5,2018,Chang Lab; Columbia-Rush; Emory; Emory-Sage-SGC; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB; ROSMAP,Clinical; Genetics; Protein,AMP-AD; Community; TREAT-AD,Tbio
+PRDX1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791db,ENSG00000117450,5,2018,Chang Lab; Columbia-Rush; Emory; Emory-Sage-SGC; MSSM - Zhang Lab,ACT; BLSA; Banner; Kronos; MSBB; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD; Community; TREAT-AD,Tchem
+BIN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79266,ENSG00000136717,4,2018,ASU; Duke; Emory-Sage-SGC; Mayo-UFL-ISB,ADNI; Mayo; VirusResilience,Genetics; Metabolomics; Protein; RNA,AMP-AD; TREAT-AD,Tbio
+CLU,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791f1,ENSG00000120885,4,2018,Columbia-Rush; Duke; MSSM - Roussos Lab; Mayo-UFL-ISB,ADNI; APP Mice; FreshMicro; ROSMAP,Clinical; Genetics; Metabolomics; Protein; RNA,AMP-AD,Tbio
+COL25A1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7941a,ENSG00000188517,4,2018,Emory; Emory-Sage-SGC; Mayo-UFL-ISB,APP Mice; Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+HTRA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7935c,ENSG00000166033,4,2018,Emory; Emory-Sage-SGC; MSSM - Roussos Lab; Mayo-UFL-ISB,APP Mice; Banner; Emory; HBI_scRNAseq; MSBB; ROSMAP,Protein; RNA,AMP-AD; TREAT-AD,Tchem
+INPP5D,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79380,ENSG00000168918,4,2018,Duke; IUSM-Purdue; MSSM - Zhang Lab; Mayo-UFL-ISB,ABA; ADNI; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; Metabolomics; RNA,AMP-AD; TREAT-AD,Tbio
+NRN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79209,ENSG00000124785,4,2018,Columbia-Rush; Emory-Sage-SGC; MSSM - Zhang Lab,MSBB; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD; TREAT-AD,Tbio
+PDHB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79379,ENSG00000168291,4,2018,Chang Lab; Columbia-Rush; Emory; Emory-Sage-SGC,ACT; BLSA; Banner; MSBB; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD; Community; TREAT-AD,Tbio
+PRDX6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791dc,ENSG00000117592,4,2018,Chang Lab; Emory; Emory-Sage-SGC; MSSM - Zhang Lab,ACT; BLSA; Banner; Kronos; MSBB; Rush,Genetics; Protein; RNA,AMP-AD; Community; TREAT-AD,Tbio
+RPH3A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79130,ENSG00000089169,4,2018,Chang Lab; Columbia-Rush; Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB; ROSMAP,Clinical; Genetics; Protein,AMP-AD; Community,Tbio
+VGF,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79219,ENSG00000128564,4,2018,Columbia-Rush; Emory; MSSM - Zhang Lab; Mayo-UFL-ISB,ACT; BLSA; Banner; MSBB; Mayo; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+ACE,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79318,ENSG00000159640,3,2018,Duke; Emory,ADNI; Banner; ROSMAP; https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Metabolomics; Protein,AMP-AD,Tclin
+CTSH,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79162,ENSG00000103811,3,2020,Emory; Emory-Sage-SGC,Banner; ROSMAP; https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD; TREAT-AD,Tchem
+DBI,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792fe,ENSG00000155368,3,2018,Columbia-Rush; Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB; ROSMAP,Clinical; Genetics; Protein,AMP-AD,Tbio
+DNM1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79180,ENSG00000106976,3,2018,Chang Lab; Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; Kronos; MSBB; Mayo; ROSMAP,Genetics; Protein; RNA,AMP-AD; Community,Tbio
+ERBB3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790f8,ENSG00000065361,3,2018,ASU; Columbia-Rush; Mayo-UFL-ISB,Mayo; ROSMAP; VirusResilience,Clinical; Genetics; Protein; RNA,AMP-AD,Tclin
+GSN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792c9,ENSG00000148180,3,2018,Chang Lab; Columbia-Rush; MSSM - Zhang Lab,Kronos; MSBB; ROSMAP; Rush,Clinical; Genetics; Protein; RNA,AMP-AD; Community,Tbio
+MDK,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791a1,ENSG00000110492,3,2018,Emory; Emory-Sage-SGC; Mayo-UFL-ISB,Banner; Emory; MSBB; Mayo; ROSMAP,Protein; RNA,AMP-AD; TREAT-AD,Tchem
+NDUFA10,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79227,ENSG00000130414,3,2018,Chang Lab; Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Genetics; Protein,AMP-AD; Community,Tclin
+PAK1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792cf,ENSG00000149269,3,2018,Chang Lab; Emory-Sage-SGC; MSSM - Zhang Lab,Banner; Emory; Kronos; MSBB; ROSMAP,Genetics; Protein; RNA,AMP-AD; Community; TREAT-AD,Tchem
+PDHA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79232,ENSG00000131828,3,2018,Columbia-Rush; Emory-Sage-SGC; MSSM - Zhang Lab,MSBB; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD; TREAT-AD,Tbio
+PTN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7917a,ENSG00000105894,3,2018,Emory; Emory-Sage-SGC; Mayo-UFL-ISB,Banner; Emory; MSBB; Mayo; ROSMAP,Protein; RNA,AMP-AD; TREAT-AD,Tchem
+RABEP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790dd,ENSG00000029725,3,2018,Duke; Emory-Sage-SGC; MSSM - Roussos Lab,ADNI; Banner; FreshMicro; ROSMAP,Genetics; Metabolomics; Protein; RNA,AMP-AD; TREAT-AD,Tbio
+RUFY3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790cf,ENSG00000018189,3,2018,Duke; Emory; MSSM - Roussos Lab,ACT; ADNI; BLSA; Banner; HBI_scRNAseq,Genetics; Metabolomics; Protein; RNA,AMP-AD,Tbio
+SEPTIN5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ff,ENSG00000184702,3,2018,ASU; Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB; VirusResilience,Protein; RNA,AMP-AD,Tbio
+SFRP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79177,ENSG00000104332,3,2018,Emory; Emory-Sage-SGC; Mayo-UFL-ISB,APP Mice; Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tchem
+SLC25A11,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7918c,ENSG00000108528,3,2018,Chang Lab; Columbia-Rush; Emory,ACT; BLSA; Banner; MSBB; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD; Community,Tbio
+SLIT2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792b2,ENSG00000145147,3,2018,Duke; Emory; Emory-Sage-SGC,ADNI; Banner; Emory; MSBB; ROSMAP,Genetics; Metabolomics; Protein,AMP-AD; TREAT-AD,Tbio
+SNX32,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793b4,ENSG00000172803,3,2020,Emory; Emory-Sage-SGC,Banner; ROSMAP; https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD; TREAT-AD,Tdark
+SPON1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7947a,ENSG00000262655,3,2020,Emory; Emory-Sage-SGC; MSSM - Roussos Lab,Banner; Emory; FreshMicro; MSBB; ROSMAP,Protein; RNA,AMP-AD; TREAT-AD,Tbio
+SYK,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79353,ENSG00000165025,3,2018,Emory-Sage-SGC; IUSM-Purdue; MSSM - Zhang Lab,ABA; Banner; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; Protein; RNA,AMP-AD; TREAT-AD,Tclin
+SYNGAP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7942f,ENSG00000197283,3,2018,Chang Lab; Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Genetics; Protein,AMP-AD; Community,Tbio
+SYT1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790ff,ENSG00000067715,3,2018,Chang Lab; Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; Kronos; MSBB; Mayo; ROSMAP; Rush,Genetics; Protein; RNA,AMP-AD; Community,Tbio
+TNFRSF1A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790fe,ENSG00000067182,3,2018,Chang Lab; IUSM-Purdue; MSSM - Zhang Lab,GSE15222; GSE33000; GSE48350; GSE5281; GSE84422; Kronos; MSBB; Mayo; Mayo Clinic; ROSMAP; Rush,Genetics; RNA,AMP-AD; Community; TREAT-AD,Tchem
+TYROBP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790c8,ENSG00000011600,3,2018,IUSM-Purdue; MSSM - Zhang Lab; Mayo-UFL-ISB,ABA; GSE33000; GSE44772; GSE48350; GSE5281; HBTRC; MSBB; Mayo; ROSMAP,Genetics; RNA,AMP-AD; TREAT-AD,Tbio
+ABI3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79193,ENSG00000108798,2,2018,IUSM-Purdue; Mayo-UFL-ISB,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,AMP-AD; TREAT-AD,Tbio
+ADAMTS4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79311,ENSG00000158859,2,2018,ASU; Duke,ADNI; VirusResilience,Genetics; Metabolomics; RNA,AMP-AD,Tchem
+ANKS1B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79401,ENSG00000185046,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Protein,AMP-AD,Tbio
+AP2B1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790bc,ENSG00000006125,2,2018,Chang Lab; Emory,ACT; BLSA; Banner; MSBB; Rush,Genetics; Protein; RNA,AMP-AD; Community,Tbio
+APOC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79223,ENSG00000130208,2,2018,Duke; MSSM - Roussos Lab,ADNI; FreshMicro,Genetics; Metabolomics; RNA,AMP-AD,Tbio
+ATP1B1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7929b,ENSG00000143153,2,2018,Chang Lab; Columbia-Rush,Kronos; MSBB; Mayo; ROSMAP; Rush,Clinical; Genetics; Protein; RNA,AMP-AD; Community,Tclin
+ATP2A2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793bb,ENSG00000174437,2,2018,Columbia-Rush; Emory,ACT; BLSA; Banner; ROSMAP,Clinical; Protein,AMP-AD,Tchem
+ATP2B1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79107,ENSG00000070961,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Genetics; Protein; RNA,AMP-AD,Tbio
+ATP6V1A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791bc,ENSG00000114573,2,2018,Chang Lab; MSSM - Zhang Lab,Kronos; MSBB; Mayo; ROSMAP; Rush,Genetics; Protein; RNA,AMP-AD; Community,Tbio
+BDH2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79344,ENSG00000164039,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+C1QTNF4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793af,ENSG00000172247,2,2018,Columbia-Rush; Mayo-UFL-ISB,Mayo; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+C4A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7946b,ENSG00000244731,2,2018,Columbia-Rush; Emory-Sage-SGC,ACT; BLSA; Banner; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD; TREAT-AD,Tbio
+CACNB4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793eb,ENSG00000182389,2,2018,MSSM - Roussos Lab; MSSM - Zhang Lab,HBI_scRNAseq; MSBB,Genetics; RNA,AMP-AD,Tbio
+CAPN2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7932c,ENSG00000162909,2,2018,Emory; Emory-Sage-SGC,ACT; BLSA; Banner,Protein,AMP-AD; TREAT-AD,Tchem
+CD44,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790db,ENSG00000026508,2,2018,Emory; Emory-Sage-SGC,ACT; BLSA; Banner,Protein,AMP-AD; TREAT-AD,Tbio
+CDK18,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791d8,ENSG00000117266,2,2019,Chang Lab; Mayo-UFL-ISB,GSE197305; Kronos; MC-CAA; Mayo; ROSMAP; Rush,Genetics; Protein; RNA,AMP-AD; Community,Tchem
+CHADL,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79149,ENSG00000100399,2,2018,Columbia-Rush; Emory,ROSMAP; syn20933797; syn52525880,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+CIRBP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7913e,ENSG00000099622,2,2019,Chang Lab; MSSM - Roussos Lab,HBI_scRNAseq; Kronos; Mayo; ROSMAP,Genetics; RNA,AMP-AD; Community,Tbio
+CLIC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7945e,ENSG00000213719,2,2018,Chang Lab; MSSM - Zhang Lab,Kronos; MSBB; Mayo; ROSMAP; Rush,Genetics; RNA,AMP-AD; Community,Tbio
+COL11A1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790f0,ENSG00000060718,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Clinical; Protein,AMP-AD; TREAT-AD,Tbio
+CPLX1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79384,ENSG00000168993,2,2018,Columbia-Rush; Emory,ROSMAP; https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Clinical; Genetics; Protein,AMP-AD,Tbio
+CS,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790f2,ENSG00000062485,2,2018,Chang Lab; Columbia-Rush,MSBB; ROSMAP,Clinical; Genetics; Protein,AMP-AD; Community,Tbio
+CSF1R,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ed,ENSG00000182578,2,2018,IUSM-Purdue; Mayo-UFL-ISB,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,AMP-AD; TREAT-AD,Tclin
+CSMD1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793f5,ENSG00000183117,2,2018,Duke; MSSM - Zhang Lab,ADNI; MSBB,Genetics; Metabolomics; RNA,AMP-AD,Tbio
+CYBA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790ea,ENSG00000051523,2,2019,Chang Lab; IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; Kronos; MSBB; Mayo; ROSMAP; Rush,Genetics; RNA,Community; TREAT-AD,Tbio
+DAG1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793b7,ENSG00000173402,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+DDAH2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79462,ENSG00000213722,2,2018,Columbia-Rush; Emory,ACT; BLSA; Banner; ROSMAP,Clinical; Protein,AMP-AD,Tbio
+DISC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7932d,ENSG00000162946,2,2023,ASU; IUSM-Purdue,GSE138852; GSE189119; GSE302545; VirusResilience; syn18485175; syn31512863; syn5279529,RNA,AMP-AD; TREAT-AD,Tbio
+DLGAP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7943d,ENSG00000198010,2,2021,JAX-VUMC-UW Resilience; MSSM - Zhang Lab,Diversity outbred mice; MSBB; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD; Resilience-AD,Tbio
+DOC2A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792d7,ENSG00000149927,2,2020,Emory,Banner; ROSMAP; https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+DOCK2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79249,ENSG00000134516,2,2018,IUSM-Purdue; MSSM - Zhang Lab,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; RNA,AMP-AD; TREAT-AD,Tchem
+DPP6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79225,ENSG00000130226,2,2018,Chang Lab; Emory,ACT; BLSA; Banner; MSBB; Mayo,Genetics; Protein; RNA,AMP-AD; Community,Tbio
+DYNC1I1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7930f,ENSG00000158560,2,2018,Chang Lab; MSSM - Zhang Lab,Kronos; MSBB; Mayo; ROSMAP; Rush,Genetics; RNA,AMP-AD; Community,Tbio
+ECE1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791d9,ENSG00000117298,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tchem
+EPB41L3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79125,ENSG00000082397,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Protein,AMP-AD,Tbio
+EPHA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792c0,ENSG00000146904,2,2018,Duke; Mayo-UFL-ISB,ADNI; Mayo,Genetics; Metabolomics; RNA,AMP-AD,Tchem
+EPHX2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ef,ENSG00000120915,2,2022,Duke; Emory-Sage-SGC,Banner; ROSMAP,Genetics; Protein,AMP-AD; TREAT-AD,Tchem
+FCER1G,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79316,ENSG00000158869,2,2018,Emory-Sage-SGC; Mayo-UFL-ISB,Banner; Mayo; ROSMAP,Genetics; Protein; RNA,AMP-AD; TREAT-AD,Tbio
+FIBP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793b2,ENSG00000172500,2,2019,Chang Lab; MSSM - Roussos Lab,FreshMicro; Kronos; Mayo; ROSMAP,Genetics; RNA,AMP-AD; Community,Tbio
+FLT1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79156,ENSG00000102755,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tclin
+FN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791c5,ENSG00000115414,2,2026,Columbia; IUSM-Purdue,GSE138852; syn18485175; syn20801188,Genetics; Protein; RNA,FunGen-AD; TREAT-AD,Tchem
+FOXO1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792df,ENSG00000150907,2,2018,Duke; MSSM - Roussos Lab,ADNI; HBI_scRNAseq,Genetics; Metabolomics; RNA,AMP-AD,Tbio
+FRZB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79330,ENSG00000162998,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+GABRA2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792eb,ENSG00000151834,2,2023,ASU; Duke,VirusResilience,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tclin
+GFAP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7922e,ENSG00000131095,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Genetics; Protein,AMP-AD,Tbio
+GIMAP8,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793a5,ENSG00000171115,2,2022,IUSM-Purdue; MSSM - Roussos Lab,ABA; GSE33000; GSE44772; GSE48350; GSE5281; HBI_scRNAseq; MSBB; Mayo; ROSMAP,RNA,AMP-AD; TREAT-AD,Tbio
+GMPR,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7926d,ENSG00000137198,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Protein,AMP-AD,Tbio
+GPC5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793dc,ENSG00000179399,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+GPNMB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79261,ENSG00000136235,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+GRIA2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791eb,ENSG00000120251,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Genetics; Protein; RNA,AMP-AD,Tclin
+HLA-DRA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79450,ENSG00000204287,2,2019,Chang Lab; IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; Kronos; MSBB; Mayo; ROSMAP; Rush,Genetics; RNA,Community; TREAT-AD,Tbio
+HNRNPM,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7913f,ENSG00000099783,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Protein,AMP-AD,Tbio
+HOMER1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ed,ENSG00000152413,2,2018,Chang Lab; Emory,ACT; BLSA; Banner; Kronos; Mayo; ROSMAP; Rush,Genetics; Protein; RNA,AMP-AD; Community,Tbio
+HSPB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7917b,ENSG00000106211,2,2018,Columbia-Rush; Emory,ACT; BLSA; Banner; ROSMAP,Clinical; Protein,AMP-AD,Tchem
+IGF1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790ce,ENSG00000017427,2,2018,MSSM - Roussos Lab; Mayo-UFL-ISB,HBI_scRNAseq; Mayo,RNA,AMP-AD,Tbio
+IL10RA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7919e,ENSG00000110324,2,2018,IUSM-Purdue; Mayo-UFL-ISB,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,AMP-AD; TREAT-AD,Tbio
+ITGAM,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79392,ENSG00000169896,2,2022,IUSM-Purdue; MSSM - Roussos Lab,ABA; GSE33000; GSE44772; GSE48350; GSE5281; HBI_scRNAseq; MSBB; Mayo; ROSMAP,RNA,AMP-AD; TREAT-AD,Tbio
+ITGB2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7931c,ENSG00000160255,2,2020,IUSM-Purdue; MSSM - Zhang Lab,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; Protein; RNA,AMP-AD; TREAT-AD,Tclin
+KALRN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79319,ENSG00000160145,2,2018,Columbia-Rush; MSSM - Zhang Lab,MSBB; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+LACTB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7915f,ENSG00000103642,2,2020,Emory,Banner; ROSMAP; https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+LAG3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79131,ENSG00000089692,2,2018,JAX-VUMC-UW Resilience; Mayo-UFL-ISB,AD-BXD mice; Mayo,Behavior; RNA,AMP-AD; Resilience-AD,Tclin
+LAIR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7936e,ENSG00000167613,2,2022,Duke; IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD; TREAT-AD,Tbio
+LAPTM5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79326,ENSG00000162511,2,2019,Chang Lab; JAX-VUMC-UW Resilience,AD-BXD mice; Kronos; Mayo; ROSMAP,Behavior; Genetics; RNA,Community; Resilience-AD,Tbio
+LCP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79260,ENSG00000136167,2,2022,IUSM-Purdue; MSSM - Zhang Lab,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Protein; RNA,AMP-AD; TREAT-AD,Tbio
+LMNA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7931b,ENSG00000160789,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Protein,AMP-AD,Tbio
+LRP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79201,ENSG00000123384,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+LYVE1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79242,ENSG00000133800,2,2018,MSSM - Roussos Lab; Mayo-UFL-ISB,HBI_scRNAseq; Mayo,RNA,AMP-AD,Tbio
+MEF2C,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79135,ENSG00000081189,2,2018,Duke; MSSM - Zhang Lab,ADNI; MSBB,Genetics; Metabolomics; RNA,AMP-AD,Tbio
+MOBP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7937c,ENSG00000168314,2,2018,ASU; Mayo-UFL-ISB,Mayo; VirusResilience,RNA,AMP-AD,Tbio
+MRC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79476,ENSG00000260314,2,2023,ASU; MSSM - Roussos Lab,HBI_scRNAseq; VirusResilience,RNA,AMP-AD,Tbio
+MRPL37,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ce,ENSG00000116221,2,2018,Columbia-Rush; Duke,ROSMAP,Clinical; Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tdark
+MS4A4A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79199,ENSG00000110079,2,2018,IUSM-Purdue; Mayo-UFL-ISB,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; RNA,AMP-AD; TREAT-AD,Tbio
+MS4A6A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79198,ENSG00000110077,2,2018,IUSM-Purdue; Mayo-UFL-ISB,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,AMP-AD; TREAT-AD,Tbio
+NDUFS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790d8,ENSG00000023228,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Protein,AMP-AD,Tclin
+NDUFS2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79312,ENSG00000158864,2,2018,Emory; Emory-Sage-SGC,ACT; BLSA; Banner; Emory; MSBB; ROSMAP,Protein; RNA,AMP-AD; TREAT-AD,Tclin
+NDUFS3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7945c,ENSG00000213619,2,2023,MSSM - Zhang Lab; Mayo,MSBB; Mayo; ROSMAP,Genetics; Protein; RNA,AMP-AD; Resilience-AD,Tclin
+NDUFV1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79370,ENSG00000167792,2,2018,Emory; Mayo,ACT; BLSA; Banner; MSBB; Mayo; ROSMAP,Genetics; Protein; RNA,AMP-AD; Resilience-AD,Tclin
+NLRC5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7928d,ENSG00000140853,2,2018,Duke; MSSM - Zhang Lab,ADNI; MSBB,Genetics; Metabolomics; RNA,AMP-AD,Tbio
+NNT,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791b3,ENSG00000112992,2,2018,Columbia-Rush; Emory,ACT; BLSA; Banner; ROSMAP,Clinical; Protein,AMP-AD,Tbio
+NONO,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792c2,ENSG00000147140,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Protein,AMP-AD,Tbio
+NRXN3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790d5,ENSG00000021645,2,2018,ASU; Duke,ADNI; VirusResilience,Genetics; Metabolomics; RNA,AMP-AD,Tbio
+NTN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790f7,ENSG00000065320,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+NTN3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7931f,ENSG00000162068,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+NXPH1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791fa,ENSG00000122584,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+OLFM1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7922b,ENSG00000130558,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Protein,AMP-AD,Tbio
+OLFM3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791e3,ENSG00000118733,2,2018,MSSM - Zhang Lab,MSBB,Genetics; Protein; RNA,AMP-AD,Tbio
+OLFML3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791d2,ENSG00000116774,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+PADI2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791d5,ENSG00000117115,2,2018,Emory; MSSM - Roussos Lab,ACT; BLSA; Banner; HBI_scRNAseq,Protein; RNA,AMP-AD,Tchem
+PAFAH1B3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7911c,ENSG00000079462,2,2018,Columbia-Rush; Emory,ACT; BLSA; Banner; ROSMAP,Clinical; Protein,AMP-AD,Tbio
+PGLS,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79226,ENSG00000130313,2,2018,Columbia-Rush; Emory,ACT; BLSA; Banner; ROSMAP,Clinical; Protein,AMP-AD,Tbio
+PICALM,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79111,ENSG00000073921,2,2018,Duke; MSSM - Roussos Lab,ADNI; FreshMicro,Genetics; Metabolomics; RNA,AMP-AD,Tbio
+PLCB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793f0,ENSG00000182621,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Protein,AMP-AD,Tbio
+PLCG2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79436,ENSG00000197943,2,2018,IUSM-Purdue; Mayo-UFL-ISB,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,AMP-AD; TREAT-AD,Tchem
+PLXNB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79346,ENSG00000164050,2,2018,Columbia-Rush; MSSM - Zhang Lab,MSBB; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+PREX1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79203,ENSG00000124126,2,2018,Chang Lab; Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD; Community,Tbio
+PTPN6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791a6,ENSG00000111679,2,2022,IUSM-Purdue; MSSM - Zhang Lab,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; Protein; RNA,AMP-AD; TREAT-AD,Tchem
+PTPRC,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79123,ENSG00000081237,2,2020,IUSM-Purdue; MSSM - Zhang Lab,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; Protein; RNA,AMP-AD; TREAT-AD,Tchem
+QPRT,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7915b,ENSG00000103485,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+RAB27B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790f3,ENSG00000041353,2,2018,Emory; MSSM - Zhang Lab,Banner; MSBB; ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+RAB3A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79178,ENSG00000105649,2,2018,Columbia-Rush; Emory,ACT; BLSA; Banner; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+RENBP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79154,ENSG00000102032,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+RTF2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790d6,ENSG00000022277,2,2020,Emory,Banner; ROSMAP; https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+SCARA3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79376,ENSG00000168077,2,2018,ASU; Duke,ADNI; VirusResilience,Genetics; Metabolomics; RNA,AMP-AD,Tbio
+SDC4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79204,ENSG00000124145,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+SIPA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7945b,ENSG00000213445,2,2018,IUSM-Purdue; MSSM - Zhang Lab,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; RNA,AMP-AD; TREAT-AD,Tbio
+SLIT1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79414,ENSG00000187122,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+SLIT3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793fb,ENSG00000184347,2,2018,Duke; Emory,ADNI; syn20933797; syn52525880,Genetics; Metabolomics; Protein,AMP-AD,Tbio
+SMOC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79444,ENSG00000198732,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+SNAP91,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790f9,ENSG00000065609,2,2018,Chang Lab; MSSM - Zhang Lab,Kronos; MSBB; Mayo; ROSMAP,Genetics; RNA,AMP-AD; Community,Tbio
+SPOCK1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ec,ENSG00000152377,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+SPOCK2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79186,ENSG00000107742,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+SPOCK3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79421,ENSG00000196104,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+STAT3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7937f,ENSG00000168610,2,2018,MSSM - Zhang Lab; Mayo-UFL-ISB,MSBB; Mayo,Genetics; RNA,AMP-AD,Tchem
+STX1A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7917c,ENSG00000106089,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Protein,AMP-AD,Tbio
+STX4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7915d,ENSG00000103496,2,2020,Emory; Emory-Sage-SGC,Banner; ROSMAP,Genetics; Protein,AMP-AD; TREAT-AD,Tbio
+STX6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79259,ENSG00000135823,2,2020,Emory,Banner; ROSMAP; https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+SV2B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79408,ENSG00000185518,2,2018,Emory; MSSM - Zhang Lab,ACT; BLSA; Banner; MSBB,Genetics; Protein; RNA,AMP-AD,Tbio
+SYT7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790c5,ENSG00000011347,2,2023,Duke,ADNI; AIBL,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+TAGLN3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ac,ENSG00000144834,2,2018,Columbia-Rush; MSSM - Zhang Lab,MSBB; ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+TGFBR2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79336,ENSG00000163513,2,2018,MSSM - Zhang Lab; Mayo-UFL-ISB,MSBB; Mayo,Genetics; RNA,AMP-AD,Tchem
+TLN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7926b,ENSG00000137076,2,2018,Chang Lab; MSSM - Zhang Lab,MSBB; Mayo; ROSMAP,Genetics; RNA,AMP-AD; Community,Tbio
+TLR2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7926e,ENSG00000137462,2,2018,IUSM-Purdue; Mayo-UFL-ISB,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,AMP-AD; TREAT-AD,Tchem
+TMEFF2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792a8,ENSG00000144339,2,2020,Emory; Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD; TREAT-AD,Tbio
+TREM2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7913b,ENSG00000095970,2,2018,IUSM-Purdue; Mayo-UFL-ISB,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; RNA,AMP-AD; TREAT-AD,Tbio
+VSNL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79331,ENSG00000163032,2,2018,ASU; MSSM - Zhang Lab,MSBB; VirusResilience,Genetics; RNA,AMP-AD,Tbio
+WDFY4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7921b,ENSG00000128815,2,2018,IUSM-Purdue; MSSM - Zhang Lab,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; RNA,AMP-AD; TREAT-AD,Tbio
+WDR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79108,ENSG00000071127,2,2019,Chang Lab; MSSM - Zhang Lab,MSBB,Genetics; Protein,AMP-AD; Community,Tbio
+AADAT,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79195,ENSG00000109576,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+ABCA7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790f5,ENSG00000064687,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+ABCA8,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79290,ENSG00000141338,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+ABLIM2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79342,ENSG00000163995,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tdark
+ACO2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7914a,ENSG00000100412,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+ACOT1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793fd,ENSG00000184227,1,2023,Emory,https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+ACOT11,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79324,ENSG00000162390,1,2023,MSSM - Roussos Lab,FreshMicro,RNA,AMP-AD,Tbio
+ACSL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792e5,ENSG00000151726,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+ACTN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7910c,ENSG00000072110,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+ACTN2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79116,ENSG00000077522,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+ADAM10,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79275,ENSG00000137845,1,2023,Emory,https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tchem
+ADAM9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7937d,ENSG00000168615,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+ADAMTS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792fb,ENSG00000154734,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tchem
+ADAMTS17,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7928a,ENSG00000140470,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+ADD3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792cd,ENSG00000148700,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+AGT,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79258,ENSG00000135744,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+AHCYL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79382,ENSG00000168710,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tchem
+AHNAK,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7920b,ENSG00000124942,1,2020,MSSM - Zhang Lab,MSBB,Genetics; Protein,AMP-AD,Tbio
+AIFM1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79306,ENSG00000156709,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+AK1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79185,ENSG00000106992,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+AK4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79325,ENSG00000162433,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+AKR1D1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791fb,ENSG00000122787,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+AKT1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79298,ENSG00000142208,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+ALCAM,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79395,ENSG00000170017,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+ALDH1A2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7921e,ENSG00000128918,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tchem
+ALDH4A1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79317,ENSG00000159423,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+ALK,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793a2,ENSG00000171094,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tclin
+ANK3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792e2,ENSG00000151150,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+ANKRD31,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792b5,ENSG00000145700,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tdark
+ANO6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793d0,ENSG00000177119,1,2019,Chang Lab,Mayo,Genetics; RNA,Community,Tbio
+ANP32B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7926a,ENSG00000136938,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+ANXA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79250,ENSG00000135046,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+ANXA2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ef,ENSG00000182718,1,2020,MSSM - Zhang Lab,MSBB,Genetics; Protein,AMP-AD,Tbio
+ANXA5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79347,ENSG00000164111,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+AP1B1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79147,ENSG00000100280,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+AP2A1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7942b,ENSG00000196961,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+AP2A2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793f3,ENSG00000183020,1,2025,Emory-Sage-SGC,NA,Genetics; Protein; RNA,TREAT-AD,Tbio
+AP2M1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7931d,ENSG00000161203,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+AP3B2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79160,ENSG00000103723,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+AP3D1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79109,ENSG00000065000,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+APOD,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7941d,ENSG00000189058,1,2018,Mayo-UFL-ISB,APP Mice,Protein,AMP-AD,Tbio
+APP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79297,ENSG00000142192,1,2024,Emory-Sage-SGC,Banner; Emory; MSBB; ROSMAP,Protein,TREAT-AD,Tclin
+ARHGAP17,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7928f,ENSG00000140750,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+ARHGAP20,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79273,ENSG00000137727,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+ARHGAP26,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792b7,ENSG00000145819,1,2019,Chang Lab,MSBB; ROSMAP,Genetics; Protein; RNA,Community,Tbio
+ARHGAP30,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7940e,ENSG00000186517,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+ARHGDIB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791a2,ENSG00000111348,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+ARHGEF2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791cd,ENSG00000116584,1,2022,Emory-Sage-SGC,NA,Pathway Modeling; Risk Scores,TREAT-AD,Tbio
+ARID5B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792db,ENSG00000150347,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+ARPC1B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79229,ENSG00000130429,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+ASAH1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79168,ENSG00000104763,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tchem
+ASAP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792f6,ENSG00000153317,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+ASPM,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790fb,ENSG00000066279,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+ASTN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ea,ENSG00000152092,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+ATCAY,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7936c,ENSG00000167654,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+ATL3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79400,ENSG00000184743,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+ATP1A3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79172,ENSG00000105409,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tclin
+ATP1B3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79101,ENSG00000069849,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tclin
+ATP2B2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79308,ENSG00000157087,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+ATP5PO,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79468,ENSG00000241837,1,2019,Chang Lab,MSBB; Rush,Genetics; Protein; RNA,Community,Tbio
+ATP6V0A1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790e0,ENSG00000033627,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+ATP6V0D1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7931a,ENSG00000159720,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+ATP6V1B2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792c3,ENSG00000147416,1,2019,Chang Lab,MSBB; ROSMAP; Rush,Genetics; Protein; RNA,Community,Tbio
+ATP6V1E1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7922f,ENSG00000131100,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+ATP6V1E2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7946f,ENSG00000250565,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+ATP6V1H,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790e3,ENSG00000047249,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+BAG4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79307,ENSG00000156735,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+BAIAP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793c8,ENSG00000175866,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+BBX,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791bd,ENSG00000114439,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+BCAM,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79415,ENSG00000187244,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+BCAS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790f6,ENSG00000064787,1,2019,Chang Lab,MSBB,Genetics; Protein,Community,Tbio
+BCKDK,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7915e,ENSG00000103507,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+BCL2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793a8,ENSG00000171791,1,2019,Chang Lab,ROSMAP,Genetics; RNA,Community,Tclin
+BDNF,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793cf,ENSG00000176697,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tchem
+BLOC1S1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79255,ENSG00000135441,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+BMPER,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7934b,ENSG00000164619,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+BRINP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79447,ENSG00000198797,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tdark
+BSCL2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79375,ENSG00000168000,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+BSN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79345,ENSG00000164061,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+BTBD8,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79420,ENSG00000189195,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tdark
+BTK,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790c4,ENSG00000010671,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tclin
+C1QA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793b8,ENSG00000173372,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+C1QB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793b6,ENSG00000173369,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,NA
+C3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79210,ENSG00000125730,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tclin
+C3AR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793aa,ENSG00000171860,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tchem
+CACNA1A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79295,ENSG00000141837,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+CADM1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793f2,ENSG00000182985,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+CADM2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793c3,ENSG00000175161,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+CADPS,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7933b,ENSG00000163618,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+CALD1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791f9,ENSG00000122786,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+CAMKK2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791a3,ENSG00000110931,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tchem
+CARHSP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792f1,ENSG00000153048,1,2020,Emory,Banner; ROSMAP,Genetics; Protein,AMP-AD,Tbio
+CASS4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7912d,ENSG00000087589,1,2023,MSSM - Roussos Lab,FreshMicro,Genetics; RNA,AMP-AD,Tbio
+CBL,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7919b,ENSG00000110395,1,2019,Chang Lab,ROSMAP,Genetics; RNA,Community,Tbio
+CCDC6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79189,ENSG00000108091,1,2023,Emory,https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+CCDC89,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793d8,ENSG00000179071,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+CCT6B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79235,ENSG00000132141,1,2019,Chang Lab,Mayo,Genetics; RNA,Community,Tbio
+CD22,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790c9,ENSG00000012124,1,2023,Mayo-UFL-ISB,GSE197305; MC-CAA; Mayo; ROSMAP,Protein; RNA,AMP-AD,Tclin
+CD2AP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7943c,ENSG00000198087,1,2023,Emory,https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+CD300A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79372,ENSG00000167851,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+CD33,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79170,ENSG00000105383,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tclin
+CD47,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79427,ENSG00000196776,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+CD74,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790d1,ENSG00000019582,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tchem
+CD81,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7919f,ENSG00000110651,1,2023,MSSM - Roussos Lab,FreshMicro,RNA,AMP-AD,Tchem
+CD86,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791b7,ENSG00000114013,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tclin
+CDC42SE2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79313,ENSG00000158985,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+CDCA7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792a9,ENSG00000144354,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+CDCP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7933e,ENSG00000163814,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+CDH22,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792d4,ENSG00000149654,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+CDH23,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79188,ENSG00000107736,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+CDK19,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ff,ENSG00000155111,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tchem
+CDYL,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792f0,ENSG00000153046,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+CECR2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79142,ENSG00000099954,1,2023,MSSM - Roussos Lab,FreshMicro,RNA,AMP-AD,Tchem
+CELF1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ce,ENSG00000149187,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+CEP170B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79141,ENSG00000099814,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tdark
+CERCAM,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79368,ENSG00000167123,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tdark
+CERS4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79136,ENSG00000090661,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+CERS6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793b0,ENSG00000172292,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+CETP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7912b,ENSG00000087237,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+CFH,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790b9,ENSG00000000971,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+CFI,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79455,ENSG00000205403,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+CHCHD3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7917e,ENSG00000106554,1,2019,Chang Lab,MSBB,Genetics; Protein,Community,Tbio
+CHST1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793c4,ENSG00000175264,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+CHST11,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793a4,ENSG00000171310,1,2019,Chang Lab,ROSMAP,Genetics; RNA,Community,Tbio
+CHSY3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7943e,ENSG00000198108,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+CISD1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791fc,ENSG00000122873,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+CLEC3B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7933f,ENSG00000163815,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+CLTCL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79104,ENSG00000070371,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+CNKSR2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792da,ENSG00000149970,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+CNN3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791de,ENSG00000117519,1,2022,Emory-Sage-SGC,ACT; BLSA; Banner,Protein; RNA,TREAT-AD,Tbio
+CNP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793b9,ENSG00000173786,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+CNTNAP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793be,ENSG00000174469,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+CNTNAP5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792fc,ENSG00000155052,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+COL18A1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793f1,ENSG00000182871,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+COL1A2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7934d,ENSG00000164692,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+COL4A4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79122,ENSG00000081052,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+COL5A1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7922c,ENSG00000130635,1,2023,Emory,syn20933797; syn52525880,Protein,AMP-AD,Tbio
+CORO1C,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791a0,ENSG00000110880,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+COTL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7915a,ENSG00000103187,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+COX4I1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79230,ENSG00000131143,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+COX5B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7925f,ENSG00000135940,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+COX6B1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79213,ENSG00000126267,1,2019,Chang Lab,Kronos; MSBB,Genetics; Protein; RNA,Community,Tbio
+CR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7944a,ENSG00000203710,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+CRH,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792c4,ENSG00000147571,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+CRHR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791e8,ENSG00000120088,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tclin
+CSF1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793fe,ENSG00000184371,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+CSF3R,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791e6,ENSG00000119535,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tclin
+CSRP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79315,ENSG00000159176,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+CTHRC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79352,ENSG00000164932,1,2020,Emory,Banner; Emory; MSBB; ROSMAP,Protein,AMP-AD,Tbio
+CTLA4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7933a,ENSG00000163599,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tclin
+CTSS,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79332,ENSG00000163131,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tchem
+CX3CL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790bd,ENSG00000006210,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+CX3CR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7937b,ENSG00000168329,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tchem
+CXCL10,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79389,ENSG00000169245,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+CYBB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7935f,ENSG00000165168,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tchem
+CYFIP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790ed,ENSG00000055163,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+CYP19A1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79278,ENSG00000137869,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+CYP27A1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7925c,ENSG00000135929,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+CYP3A43,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790d4,ENSG00000021461,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+CYTL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7939e,ENSG00000170891,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+DAAM1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7914e,ENSG00000100592,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+DAAM2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792bb,ENSG00000146122,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+DAGLA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7924c,ENSG00000134780,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tchem
+DAP3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7923c,ENSG00000132676,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+DAXX,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79451,ENSG00000204209,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+DBT,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79276,ENSG00000137992,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+DCAF12,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79449,ENSG00000198876,1,2019,Chang Lab,Mayo; ROSMAP,Genetics; RNA,Community,Tbio
+DCHS2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79430,ENSG00000197410,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+DCLK1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7923f,ENSG00000133083,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tchem
+DCLK2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79399,ENSG00000170390,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+DCN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790c7,ENSG00000011465,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+DCTN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79458,ENSG00000204843,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+DDB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79373,ENSG00000167986,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+DDO,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7944c,ENSG00000203797,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tchem
+DDR2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79329,ENSG00000162733,1,2023,Mayo-UFL-ISB,MC-BrAD; Mayo; TAUAPPms,Genetics; RNA,AMP-AD,Tchem
+DDX1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7911d,ENSG00000079785,1,2022,Emory-Sage-SGC,NA,Pathway Modeling; Risk Scores,TREAT-AD,Tchem
+DENND1B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79459,ENSG00000213047,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+DESI1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7914c,ENSG00000100418,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tdark
+DHCR24,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ca,ENSG00000116133,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+DHRS11,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7947e,ENSG00000278535,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+DHTKD1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793e1,ENSG00000181192,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+DHX58,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7918e,ENSG00000108771,1,2022,Emory-Sage-SGC,NA,Pathway Modeling; Risk Scores,TREAT-AD,Tbio
+DIRAS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793cd,ENSG00000176490,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+DLAT,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792de,ENSG00000150768,1,2025,Emory-Sage-SGC,NA,Genetics; Protein; RNA,TREAT-AD,Tbio
+DLD,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79137,ENSG00000091140,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+DLG2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792dc,ENSG00000150672,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+DLG4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79239,ENSG00000132535,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tchem
+DLGAP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7939c,ENSG00000170579,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+DMXL2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79163,ENSG00000104093,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+DNAJC6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791cf,ENSG00000116675,1,2019,Chang Lab,MSBB; ROSMAP,Genetics; Protein; RNA,Community,Tbio
+DND1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79472,ENSG00000256453,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+DNM1L,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7912c,ENSG00000087470,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tchem
+DNM2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7911e,ENSG00000079805,1,2019,Chang Lab,MSBB,Genetics; Protein,Community,Tchem
+DNM3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79439,ENSG00000197959,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+DOCK1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792dd,ENSG00000150760,1,2019,Chang Lab,ROSMAP,Genetics; RNA,Community,Tbio
+DOCK3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7912e,ENSG00000088538,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+DOCK4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79218,ENSG00000128512,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+DOCK7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791d0,ENSG00000116641,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+DOCK8,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79181,ENSG00000107099,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+DPP10,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793c9,ENSG00000175497,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+DPY30,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7932e,ENSG00000162961,1,2018,Mayo-UFL-ISB,APP Mice,Protein,AMP-AD,Tbio
+DPYD,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7941c,ENSG00000188641,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tclin
+DPYS,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792c6,ENSG00000147647,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+DPYSL3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791b8,ENSG00000113657,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+DTNA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7924d,ENSG00000134769,1,2020,MSSM - Zhang Lab,MSBB,Genetics; Protein,AMP-AD,Tbio
+DTX3L,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79340,ENSG00000163840,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+DYNC2LI1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79277,ENSG00000138036,1,2019,Chang Lab,Kronos; Mayo; ROSMAP; Rush,Genetics; RNA,Community,Tbio
+EDA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79310,ENSG00000158813,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+EDAR,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7925d,ENSG00000135960,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+EFNA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79388,ENSG00000169242,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+EFNA5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793fc,ENSG00000184349,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+ELAVL2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79182,ENSG00000107105,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+ELAVL4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79323,ENSG00000162374,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+ELL2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791e2,ENSG00000118985,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+ELOVL2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7943b,ENSG00000197977,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+EN2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79351,ENSG00000164778,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+ENC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793a9,ENSG00000171617,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+ENO1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79113,ENSG00000074800,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tchem
+ENO3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7918d,ENSG00000108515,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+ENOSF1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79237,ENSG00000132199,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+EPHA1-AS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79464,ENSG00000229153,1,2023,MSSM - Roussos Lab,FreshMicro,Genetics; RNA,AMP-AD,NA
+EPHA5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792b1,ENSG00000145242,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+EPHX1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792a4,ENSG00000143819,1,2023,Duke,NA,Genetics,AMP-AD,Tchem
+ERBB4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793d7,ENSG00000178568,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tclin
+ERBIN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791b0,ENSG00000112851,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+ERC2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79417,ENSG00000187672,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+ESRRG,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79426,ENSG00000196482,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+ETFA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79287,ENSG00000140374,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+EXOC3L2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7947f,ENSG00000283632,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+EYA4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791a9,ENSG00000112319,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+EZR,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7913a,ENSG00000092820,1,2020,MSSM - Zhang Lab,MSBB,Genetics; Protein,AMP-AD,Tbio
+FA2H,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79158,ENSG00000103089,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+FAAH,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791da,ENSG00000117480,1,2023,Duke,NA,Genetics,AMP-AD,Tchem
+FADS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792d1,ENSG00000149485,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+FADS2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7924e,ENSG00000134824,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+FADS3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79463,ENSG00000221968,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+FAHD2CP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79465,ENSG00000231584,1,2019,Chang Lab,Mayo,Genetics; RNA,Community,NA
+FAM107A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7937a,ENSG00000168309,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+FAM111A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79361,ENSG00000166801,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+FAM163A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7929d,ENSG00000143340,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+FAN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79442,ENSG00000198690,1,2019,Chang Lab,Mayo; ROSMAP,Genetics; RNA,Community,Tbio
+FARSA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793d9,ENSG00000179115,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+FBXL16,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79215,ENSG00000127585,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+FBXL7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793f9,ENSG00000183580,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+FBXO40,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79341,ENSG00000163833,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+FBXW7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79194,ENSG00000109670,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+FCGR1A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792d9,ENSG00000150337,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tclin
+FCGR2A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7929e,ENSG00000143226,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; RNA,TREAT-AD,Tbio
+FERMT3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792d5,ENSG00000149781,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+FGF1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791b4,ENSG00000113578,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tchem
+FGF12,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791b9,ENSG00000114279,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+FGF14,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79155,ENSG00000102466,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+FGF2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7927c,ENSG00000138685,1,2021,JAX-VUMC-UW Resilience,AD-BXD mice,Behavior; Genetics; RNA,Resilience-AD,Tchem
+FKBP5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7913c,ENSG00000096060,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tchem
+FLI1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792e4,ENSG00000151702,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+FLNC,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7921c,ENSG00000128591,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+FOXE1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793d5,ENSG00000178919,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+FPR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793a1,ENSG00000171051,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tchem
+FRAT2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793e3,ENSG00000181274,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+FRMD3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ad,ENSG00000172159,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+FRMPD4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79393,ENSG00000169933,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+FSCN3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7917d,ENSG00000106328,1,2019,Chang Lab,Mayo; ROSMAP,Genetics; RNA,Community,Tdark
+G3BP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7927f,ENSG00000138757,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+GAB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79192,ENSG00000109458,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+GABARAPL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79283,ENSG00000139112,1,2019,Chang Lab,Kronos; ROSMAP,Genetics; RNA,Community,Tbio
+GABRA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790d7,ENSG00000022355,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tclin
+GABRA4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79191,ENSG00000109158,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tclin
+GABRB2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792b8,ENSG00000145864,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tclin
+GABRG2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791b6,ENSG00000113327,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tclin
+GAD1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7921a,ENSG00000128683,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+GALNT2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792a2,ENSG00000143641,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+GAPDH,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791a4,ENSG00000111640,1,2019,Chang Lab,Kronos; MSBB; Rush,Genetics; Protein; RNA,Community,Tchem
+GAS7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790bf,ENSG00000007237,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+GBP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791d7,ENSG00000117228,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+GBP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79328,ENSG00000162645,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+GBP3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791d6,ENSG00000117226,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+GCDH,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79175,ENSG00000105607,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+GCKR,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79129,ENSG00000084734,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,NA
+GDA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791e4,ENSG00000119125,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+GDAP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79167,ENSG00000104381,1,2019,Chang Lab,Mayo; ROSMAP; Rush,Genetics; RNA,Community,Tbio
+GDF10,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7947b,ENSG00000266524,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+GDNF,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7937e,ENSG00000168621,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+GGTA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7944e,ENSG00000204136,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tdark
+GIMAP4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79241,ENSG00000133574,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+GIMAP6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79240,ENSG00000133561,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+GJA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ef,ENSG00000152661,1,2018,MSSM - Zhang Lab,HBTRC,Genetics; RNA,AMP-AD,Tbio
+GLDN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7940c,ENSG00000186417,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+GMNC,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79456,ENSG00000205835,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+GNB5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79102,ENSG00000069966,1,2019,Chang Lab,MSBB,Genetics; Protein,Community,Tbio
+GPC2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7945a,ENSG00000213420,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+GPC6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793f4,ENSG00000183098,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+GPI,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7916c,ENSG00000105220,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+GPM6B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790e2,ENSG00000046653,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+GPR37,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7939f,ENSG00000170775,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+GPR84,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79284,ENSG00000139572,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tchem
+GPSM3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7945d,ENSG00000213654,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+GRAMD2B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792fd,ENSG00000155324,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tdark
+GRAMD4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79114,ENSG00000075240,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+GRIA3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7920e,ENSG00000125675,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tclin
+GRIN2A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793f8,ENSG00000183454,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tclin
+GRIN2B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7947c,ENSG00000273079,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tclin
+GSTK1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79432,ENSG00000197448,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tchem
+GUCY1A1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79348,ENSG00000164116,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tclin
+GUCY1B1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790f1,ENSG00000061918,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tclin
+HABP4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7922d,ENSG00000130956,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+HAND1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791b2,ENSG00000113196,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+HAVCR2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79252,ENSG00000135077,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tchem
+HCK,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79152,ENSG00000101336,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tclin
+HCLS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793df,ENSG00000180353,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+HCP5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79457,ENSG00000206337,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,NA
+HDAC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791cc,ENSG00000116478,1,2018,Harvard-MIT,NA,RNA,AMP-AD,Tclin
+HDAC9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790e6,ENSG00000048052,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tclin
+HEBP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790eb,ENSG00000051620,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+HECW2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7927b,ENSG00000138411,1,2019,Chang Lab,Mayo,Genetics; RNA,Community,Tbio
+HGF,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790d2,ENSG00000019991,1,2023,Emory,syn20933797; syn52525880,Protein,AMP-AD,Tchem
+HLA-DMB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7946a,ENSG00000242574,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+HLA-DOA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7944f,ENSG00000204252,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+HLA-DQB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793da,ENSG00000179344,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,NA
+HLA-DRB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79422,ENSG00000196126,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tchem
+HNF1A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79254,ENSG00000135100,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+HNRNPA2B1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791f7,ENSG00000122566,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+HNRNPU,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792f4,ENSG00000153187,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+HPR,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79478,ENSG00000261701,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+HS3ST4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ee,ENSG00000182601,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+HS3ST5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7946d,ENSG00000249853,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+HSDL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79159,ENSG00000103160,1,2023,Emory,https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+HSPA2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79214,ENSG00000126803,1,2019,Chang Lab,Kronos; MSBB; Rush,Genetics; Protein; RNA,Community,Tchem
+HSPB2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79398,ENSG00000170276,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+HTRA3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7939d,ENSG00000170801,1,2023,MSSM - Roussos Lab,FreshMicro,RNA,AMP-AD,Tbio
+IARS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79425,ENSG00000196305,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tchem
+ICA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790ba,ENSG00000003147,1,2019,Chang Lab,Mayo; ROSMAP,Genetics; RNA,Community,Tbio
+ICA1L,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79339,ENSG00000163596,1,2020,Emory,Banner; ROSMAP,Genetics; Protein,AMP-AD,Tdark
+ICAM1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79134,ENSG00000090339,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tchem
+IDH2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793e7,ENSG00000182054,1,2019,Chang Lab,Kronos; Mayo; ROSMAP,Genetics; RNA,Community,Tclin
+IFI30,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79461,ENSG00000216490,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+IFIH1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791c1,ENSG00000115267,1,2022,Emory-Sage-SGC,NA,Pathway Modeling; Risk Scores,TREAT-AD,Tbio
+IFITM2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79403,ENSG00000185201,1,2019,Chang Lab,Mayo; ROSMAP,Genetics; RNA,Community,Tbio
+IFNLR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79405,ENSG00000185436,1,2023,MSSM - Roussos Lab,FreshMicro,RNA,AMP-AD,Tbio
+IGF1R,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79288,ENSG00000140443,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tclin
+IGFBP5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791c4,ENSG00000115461,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tchem
+IKBKB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79165,ENSG00000104365,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+IL10,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79263,ENSG00000136634,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+IL15,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79349,ENSG00000164136,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+IL1B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7920f,ENSG00000125538,1,2026,IUSM-Purdue,GSE15222; GSE33000; GSE48350; GSE5281; GSE84422; MSBB; Mayo Clinic; ROSMAP,Protein; RNA,TREAT-AD,Tclin
+IL1R1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791c7,ENSG00000115594,1,2026,IUSM-Purdue,GSE15222; GSE33000; GSE48350; GSE5281; GSE84422; MSBB; Mayo Clinic; ROSMAP,RNA,TREAT-AD,Tclin
+IL23R,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79327,ENSG00000162594,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+IL6ST,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79248,ENSG00000134352,1,2019,Chang Lab,ROSMAP,Genetics; RNA,Community,Tclin
+IMMT,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7923a,ENSG00000132305,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+INPPL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79357,ENSG00000165458,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tchem
+INSR,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793a3,ENSG00000171105,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+IQGAP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7928b,ENSG00000140575,1,2019,Chang Lab,ROSMAP,Genetics; RNA,Community,Tbio
+IQUB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7934c,ENSG00000164675,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+IRAK1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793fa,ENSG00000184216,1,2025,IUSM-Purdue,NA,RNA,TREAT-AD,Tchem
+IRAK4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7943a,ENSG00000198001,1,2025,IUSM-Purdue,NA,RNA,TREAT-AD,Tchem
+IRS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79385,ENSG00000169047,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+ISYNA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79179,ENSG00000105655,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+ITGB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792d8,ENSG00000150093,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tclin
+ITGB4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79238,ENSG00000132470,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+ITGB5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79126,ENSG00000082781,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+ITIH2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792e3,ENSG00000151655,1,2018,Mayo-UFL-ISB,APP Mice,Protein,AMP-AD,Tbio
+ITPK1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7914f,ENSG00000100605,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+ITPKB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792a3,ENSG00000143772,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+ITPR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792e0,ENSG00000150995,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tchem
+ITPR2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791fe,ENSG00000123104,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+JARID2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790c2,ENSG00000008083,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+JMJD6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79105,ENSG00000070495,1,2019,Chang Lab,Mayo; ROSMAP,Genetics; RNA,Community,Tchem
+KANK2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7942e,ENSG00000197256,1,2023,Mayo-UFL-ISB,MC-BrAD; Mayo; TAUAPPms,Genetics; RNA,AMP-AD,Tbio
+KAT2B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ba,ENSG00000114166,1,2019,Chang Lab,ROSMAP,Genetics; RNA,Community,Tchem
+KCNC2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7935b,ENSG00000166006,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tclin
+KCND3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793a7,ENSG00000171385,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+KCNIP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ea,ENSG00000182132,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+KCNJ3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7932f,ENSG00000162989,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+KCNK4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ec,ENSG00000182450,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+KCNN2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79121,ENSG00000080709,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tchem
+KCNN3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792a5,ENSG00000143603,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tchem
+KCNN4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79169,ENSG00000104783,1,2023,MSSM - Roussos Lab,FreshMicro,Genetics; RNA,AMP-AD,Tchem
+KCNQ5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79409,ENSG00000185760,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tclin
+KDM3B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ec,ENSG00000120733,1,2019,Chang Lab,Kronos; Mayo; ROSMAP; Rush,Genetics; RNA,Community,Tbio
+KHDRBS2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ab,ENSG00000112232,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+KIAA1549L,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7919c,ENSG00000110427,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,NA
+KIDINS220,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79247,ENSG00000134313,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+KIF13B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79433,ENSG00000197892,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+KLC1-AS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7946c,ENSG00000246451,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,NA
+KLF15,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79343,ENSG00000163884,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+KLHDC9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7932b,ENSG00000162755,1,2023,Emory,https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+KLHL29,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791e7,ENSG00000119771,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+KPNB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7918b,ENSG00000108424,1,2019,Chang Lab,MSBB,Genetics; Protein,Community,Tbio
+KRT8,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7939a,ENSG00000170421,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+LAMA4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ae,ENSG00000112769,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+LAMB2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ac,ENSG00000172037,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+LAMP5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79212,ENSG00000125869,1,2023,MSSM - Roussos Lab,FreshMicro,RNA,AMP-AD,Tbio
+LDB2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7938e,ENSG00000169744,1,2019,Chang Lab,Kronos; Mayo; ROSMAP,Genetics; RNA,Community,Tbio
+LDB3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791f6,ENSG00000122367,1,2023,Mayo-UFL-ISB,GSE197305; MC-CAA; Mayo; ROSMAP,Protein; RNA,AMP-AD,Tbio
+LGALS9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79383,ENSG00000168961,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tchem
+LILRA2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79467,ENSG00000239998,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+LILRB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7916b,ENSG00000104972,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,NA
+LIMS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7938f,ENSG00000169756,1,2020,MSSM - Zhang Lab,MSBB,Genetics; Protein,AMP-AD,Tbio
+LINGO2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793bc,ENSG00000174482,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+LIPC,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7935d,ENSG00000166035,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tchem
+LMO7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7925e,ENSG00000136153,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+LMOD3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79334,ENSG00000163380,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+LNX1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7911f,ENSG00000072201,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+LPAR6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79285,ENSG00000139679,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+LPCAT3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791a5,ENSG00000111684,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+LPIN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7924b,ENSG00000134324,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+LPP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ae,ENSG00000145012,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+LRAT,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791f2,ENSG00000121207,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+LRPPRC,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7927a,ENSG00000138095,1,2019,Chang Lab,MSBB,Genetics; Protein,Community,Tbio
+LRRC25,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793c6,ENSG00000175489,1,2023,MSSM - Roussos Lab,FreshMicro,Genetics; RNA,AMP-AD,Tbio
+LRRC8D,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793a6,ENSG00000171492,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+LY86,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791b1,ENSG00000112799,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+LYL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7916a,ENSG00000104903,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+LYN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79471,ENSG00000254087,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; RNA,TREAT-AD,Tclin
+MAF1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793de,ENSG00000179632,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+MAML3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79428,ENSG00000196782,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+MANF,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792af,ENSG00000145050,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+MAOB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79100,ENSG00000069535,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tclin
+MAP1B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79234,ENSG00000131711,1,2019,Chang Lab,Kronos; MSBB; Mayo; ROSMAP; Rush,Genetics; Protein; RNA,Community,Tchem
+MAP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79117,ENSG00000078018,1,2019,Chang Lab,Kronos; MSBB; ROSMAP; Rush,Genetics; Protein; RNA,Community,Tchem
+MAP4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790e5,ENSG00000047849,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+MAP7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79256,ENSG00000135525,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+MAPK1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79143,ENSG00000100030,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tchem
+MAPK9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790e8,ENSG00000050748,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tchem
+MARK4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790be,ENSG00000007047,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+MBD3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7910b,ENSG00000071655,1,2018,Mayo-UFL-ISB,APP Mice,Protein,AMP-AD,Tbio
+MBP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79438,ENSG00000197971,1,2023,Mayo-UFL-ISB,GSE197305; MC-CAA; Mayo; ROSMAP,Protein; RNA,AMP-AD,Tbio
+MDH1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790cb,ENSG00000014641,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tchem
+MDH2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792be,ENSG00000146701,1,2019,Chang Lab,Kronos; MSBB; Mayo; Rush,Genetics; Protein; RNA,Community,Tchem
+MFF,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79381,ENSG00000168958,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+MFNG,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79144,ENSG00000100060,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+MGST3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7929c,ENSG00000143198,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+MITF,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79413,ENSG00000187098,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+MKNK1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79119,ENSG00000079277,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+MMP17,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79441,ENSG00000198598,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+MNDA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7933c,ENSG00000163563,1,2023,MSSM - Roussos Lab,FreshMicro,RNA,AMP-AD,Tbio
+MOG,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79453,ENSG00000204655,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+MRPL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7938b,ENSG00000169288,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPL11,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793bd,ENSG00000174547,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPL12,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79479,ENSG00000262814,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPL14,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793e2,ENSG00000180992,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tdark
+MRPL15,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79274,ENSG00000137547,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tdark
+MRPL16,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79363,ENSG00000166902,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tdark
+MRPL17,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7930e,ENSG00000158042,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tdark
+MRPL30,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79404,ENSG00000185414,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tdark
+MRPL39,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792fa,ENSG00000154719,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPL40,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79407,ENSG00000185608,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPL43,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790ee,ENSG00000055950,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPL44,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7925a,ENSG00000135900,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPL46,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79475,ENSG00000259494,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tdark
+MRPL48,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793c7,ENSG00000175581,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tdark
+MRPL49,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792d6,ENSG00000149792,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPL50,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79269,ENSG00000136897,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tdark
+MRPL53,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79454,ENSG00000204822,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tdark
+MRPL57,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793b3,ENSG00000173141,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tdark
+MRPL58,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79371,ENSG00000167862,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPS15,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791d3,ENSG00000116898,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tdark
+MRPS16,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793e9,ENSG00000182180,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPS18B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79452,ENSG00000204568,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPS2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791f4,ENSG00000122140,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPS22,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793c2,ENSG00000175110,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MRPS23,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793e4,ENSG00000181610,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+MS4A2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792d2,ENSG00000149534,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+MS4A7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79367,ENSG00000166927,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tdark
+MT1G,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7920d,ENSG00000125144,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+MTHFD1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79150,ENSG00000100714,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tchem
+MTMR10,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79364,ENSG00000166912,1,2019,Chang Lab,Kronos; ROSMAP,Genetics; RNA,Community,Tdark
+MT-ND3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79448,ENSG00000198840,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tclin
+MTSS2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7923b,ENSG00000132613,1,2023,Emory,https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+MYO1D,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ce,ENSG00000176658,1,2019,Chang Lab,Kronos; MSBB,Genetics; Protein; RNA,Community,Tbio
+MYO1E,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7930c,ENSG00000157483,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+MYO1F,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79299,ENSG00000142347,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+MYRF,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7920a,ENSG00000124920,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+N4BP3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792b9,ENSG00000145911,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tdark
+NBAS,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792e8,ENSG00000151779,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+NCKAP1L,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ff,ENSG00000123338,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+NCKAP5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793d1,ENSG00000176771,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+NDUFA11,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793c0,ENSG00000174886,1,2019,Chang Lab,MSBB,Genetics; Protein,Community,Tclin
+NDUFA13,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7940b,ENSG00000186010,1,2019,Chang Lab,MSBB; Mayo; ROSMAP,Genetics; Protein; RNA,Community,Tclin
+NDUFA9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79282,ENSG00000139180,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tclin
+NDUFS6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792b4,ENSG00000145494,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tclin
+NDUFS7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791c2,ENSG00000115286,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tclin
+NECTIN2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79222,ENSG00000130202,1,2020,Duke BARU,Cardiovascular Health Study; Framingham Heart Study; Health and Retirement Study; Late Onset Alzheimer's Disease Family Study,Genetics,Community,Tbio
+NEDD9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791a8,ENSG00000111859,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+NEFL,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7947d,ENSG00000277586,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+NEK7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792e6,ENSG00000151414,1,2026,IUSM-Purdue,GSE15222; GSE33000; GSE48350; GSE5281; GSE84422; MSBB; Mayo Clinic; ROSMAP,Protein; RNA,TREAT-AD,Tchem
+NEUROD6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7934a,ENSG00000164600,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+NFKBIA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79151,ENSG00000100906,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tchem
+NFKBIZ,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ad,ENSG00000144802,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+NFS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79469,ENSG00000244005,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+NGFR,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790f4,ENSG00000064300,1,2021,Longo Lab,AD Mouse Models; MSBB; ROSMAP,Genetics; Protein; RNA,Community,Tclin
+NHSL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79257,ENSG00000135540,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tdark
+NIPSNAP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792bd,ENSG00000146729,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+NKAIN2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7941e,ENSG00000188580,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+NLK,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7912a,ENSG00000087095,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+NLRP3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7932a,ENSG00000162711,1,2026,IUSM-Purdue,GSE15222; GSE33000; GSE48350; GSE5281; GSE84422; MSBB; Mayo Clinic; ROSMAP,Protein; RNA,TREAT-AD,NA
+NMNAT2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7930b,ENSG00000157064,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+NPC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79294,ENSG00000141458,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+NPM3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79187,ENSG00000107833,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+NQO2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79208,ENSG00000124588,1,2026,IUSM-Purdue,NA,Genetics; Protein; RNA,TREAT-AD,Tchem
+NR1H2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79231,ENSG00000131408,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+NR1H3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790d9,ENSG00000025434,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+NR1H4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790ca,ENSG00000012504,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+NR3C1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791b5,ENSG00000113580,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tclin
+NR5A2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791d4,ENSG00000116833,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+NRG1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7930a,ENSG00000157168,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+NSF,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79112,ENSG00000073969,1,2019,Chang Lab,Kronos; MSBB; Mayo; ROSMAP; Rush,Genetics; Protein; RNA,Community,Tbio
+NTRK2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792c8,ENSG00000148053,1,2023,Longo Lab,https://doi.org/10.1002/ajmg.b.30607; https://doi.org/10.1016/j.celrep.2020.107908; https://doi.org/10.1016/j.nbd.2019.104540; https://doi.org/10.1016/j.neulet.2013.06.061; https://doi.org/10.1038/tp.2015.55; https://doi.org/10.3233/jad-2008-15105,Genetics; Phenomics; Protein; RNA,Community,Tclin
+NUAK2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79338,ENSG00000163545,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+NUMA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79270,ENSG00000137497,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+NUPR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793cb,ENSG00000176046,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+NXPH2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792a6,ENSG00000144227,1,2023,Emory,syn20933797; syn52525880,Protein,AMP-AD,Tdark
+NYAP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79365,ENSG00000166924,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tdark
+OPALIN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79431,ENSG00000197430,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tdark
+OR2B2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79377,ENSG00000168131,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tdark
+OSBPL3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79106,ENSG00000070882,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+OXR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7934f,ENSG00000164830,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+P2RY12,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7938a,ENSG00000169313,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tclin
+P2RY13,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793e5,ENSG00000181631,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tchem
+PACSIN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79206,ENSG00000124507,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+PALLD,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7921f,ENSG00000129116,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+PAPOLA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79133,ENSG00000090060,1,2019,Chang Lab,Mayo; ROSMAP; Rush,Genetics; RNA,Community,Tbio
+PAQR9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7941b,ENSG00000188582,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tdark
+PARP8,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792e9,ENSG00000151883,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+PARP9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7927e,ENSG00000138496,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+PAX6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790c0,ENSG00000007372,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+PCDHA6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79124,ENSG00000081842,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tdark
+PCED1B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793dd,ENSG00000179715,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tdark
+PCLO,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7940f,ENSG00000186472,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+PCM1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79118,ENSG00000078674,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+PCSK9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79387,ENSG00000169174,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tclin
+PDCD1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79419,ENSG00000188389,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tclin
+PDE10A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ad,ENSG00000112541,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tclin
+PDE1A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791c0,ENSG00000115252,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tclin
+PFKP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790fd,ENSG00000067057,1,2019,Chang Lab,MSBB; ROSMAP,Genetics; Protein; RNA,Community,Tbio
+PGM2L1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79355,ENSG00000165434,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+PGM5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792f9,ENSG00000154330,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+PHF24,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791f8,ENSG00000122733,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tdark
+PHGDH,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79139,ENSG00000092621,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tchem
+PHYHD1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793c5,ENSG00000175287,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+PIK3AP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79301,ENSG00000155629,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+PIK3C2A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790c6,ENSG00000011405,1,2026,IUSM-Purdue,NA,Unknown,TREAT-AD,Tchem
+PIK3CA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791f3,ENSG00000121879,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+PIK3CB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790e9,ENSG00000051382,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+PKD2L1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79183,ENSG00000107593,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tchem
+PLAT,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79166,ENSG00000104368,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tclin
+PLCD1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79411,ENSG00000187091,1,2020,MSSM - Zhang Lab,MSBB,Genetics; Protein,AMP-AD,Tchem
+PLD4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79360,ENSG00000166428,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+PLEK,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791c8,ENSG00000115956,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+PLEKHA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79184,ENSG00000107679,1,2020,Emory,Banner; ROSMAP,Genetics; Protein,AMP-AD,Tbio
+PLEKHG1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791e9,ENSG00000120278,1,2023,MSSM - Roussos Lab,FreshMicro,RNA,AMP-AD,Tbio
+PLEKHH1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790ec,ENSG00000054690,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tdark
+PLG,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791f5,ENSG00000122194,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tclin
+PLIN4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7936d,ENSG00000167676,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+PLLP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79157,ENSG00000102934,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+PLP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79200,ENSG00000123560,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+PLPP4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7944d,ENSG00000203805,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+PLPPR4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791dd,ENSG00000117600,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+PLXDC2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ea,ENSG00000120594,1,2023,Emory,https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+PLXNA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791bb,ENSG00000114554,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+PNMA2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79466,ENSG00000240694,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+PNPLA3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79148,ENSG00000100344,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+POLR2G,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79378,ENSG00000168002,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+PPARA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79412,ENSG00000186951,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+PPARG,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79236,ENSG00000132170,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tclin
+PPP1CC,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7940a,ENSG00000186298,1,2019,Chang Lab,Mayo; ROSMAP,Genetics; RNA,Community,Tchem
+PPP1R18,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ba,ENSG00000146112,1,2019,Chang Lab,Mayo; ROSMAP,Genetics; RNA,Community,Tbio
+PPP1R7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791c6,ENSG00000115685,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+PPP3CA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79281,ENSG00000138814,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tchem
+PREPL,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79279,ENSG00000138078,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+PRKAR2B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790bb,ENSG00000005249,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tchem
+PRKCA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792f8,ENSG00000154229,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+PRPF31,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79176,ENSG00000105618,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+PSAP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79435,ENSG00000197746,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+PSAT1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79251,ENSG00000135069,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+PSMC3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79359,ENSG00000165916,1,2025,Emory-Sage-SGC,NA,Genetics; Protein; RNA,TREAT-AD,Tbio
+PSME1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7914b,ENSG00000092010,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+PSPH,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792bf,ENSG00000146733,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+PTK2B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ee,ENSG00000120899,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; RNA,TREAT-AD,Tclin
+PTPRG,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ab,ENSG00000144724,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tchem
+PTPRR,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792f5,ENSG00000153233,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+PTPRZ1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7917f,ENSG00000106278,1,2019,Chang Lab,ROSMAP,Genetics; RNA,Community,Tchem
+PTTG1IP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793f6,ENSG00000183255,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+PYCARD,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7915c,ENSG00000103490,1,2025,IUSM-Purdue,NA,RNA,TREAT-AD,Tbio
+PYGL,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7914d,ENSG00000100504,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tchem
+QKI,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791aa,ENSG00000112531,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+QPCT,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791c9,ENSG00000115828,1,2023,Emory,https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tchem
+RAB21,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79120,ENSG00000080371,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+RAB3IL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79374,ENSG00000167994,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+RABEP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793d3,ENSG00000177548,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+RANBP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792f3,ENSG00000153201,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+RAPGEF2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79197,ENSG00000109756,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+RAPSN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7935a,ENSG00000165917,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+RDX,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79272,ENSG00000137710,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+REST,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79127,ENSG00000084093,1,2018,Harvard-MIT,NA,RNA,AMP-AD,Tbio
+RET,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79358,ENSG00000165731,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+RGPD5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790cd,ENSG00000015568,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tdark
+RHBDF2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79221,ENSG00000129667,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+RHPN2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79233,ENSG00000131941,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+RIMS2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793cc,ENSG00000176406,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+RIN3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79161,ENSG00000100599,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+RNASE6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7938d,ENSG00000169413,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+ROBO1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79390,ENSG00000169855,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+RPS6KA2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7910a,ENSG00000071242,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tchem
+RRBP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79211,ENSG00000125844,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+RREB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79207,ENSG00000124782,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+RRM1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79369,ENSG00000167325,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+RRM2B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790e7,ENSG00000048392,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+RSPO2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792c7,ENSG00000147655,1,2023,Emory,syn20933797; syn52525880,Protein,AMP-AD,Tbio
+RTN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79286,ENSG00000139970,1,2019,Chang Lab,Kronos; MSBB; Mayo; ROSMAP; Rush,Genetics; Protein; RNA,Community,Tbio
+RTN3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7923e,ENSG00000133318,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+RTN4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791c3,ENSG00000115310,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+RXRA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7940d,ENSG00000186350,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+S100A11,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79335,ENSG00000163191,1,2020,MSSM - Zhang Lab,MSBB,Genetics; Protein,AMP-AD,Tbio
+S100A4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79424,ENSG00000196154,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tchem
+S100A6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79437,ENSG00000197956,1,2019,Chang Lab,MSBB,Genetics; Protein,Community,Tbio
+S100A8,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792a1,ENSG00000143546,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+S100A9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79333,ENSG00000163220,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tchem
+S1PR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793a0,ENSG00000170989,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+SACK1E,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79174,ENSG00000105523,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tdark
+SAMD4A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790d3,ENSG00000020577,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+SASH1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791a7,ENSG00000111961,1,2019,Chang Lab,Kronos; Mayo; ROSMAP,Genetics; RNA,Community,Tbio
+SCG3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79164,ENSG00000104112,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+SCML4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792bc,ENSG00000146285,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tdark
+SCN2A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79262,ENSG00000136531,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tclin
+SCN7A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79264,ENSG00000136546,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+SCN8A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79429,ENSG00000196876,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tclin
+SCN9A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7938c,ENSG00000169432,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tclin
+SCRN2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79291,ENSG00000141295,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tdark
+SDHA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79110,ENSG00000073578,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+SDR42E1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79402,ENSG00000184860,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tdark
+SDR9C7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7939b,ENSG00000170426,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+SELENBP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792a0,ENSG00000143416,1,2023,MSSM - Roussos Lab,FreshMicro,RNA,AMP-AD,Tbio
+SEMA3F,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790de,ENSG00000001617,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+SENP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7911b,ENSG00000079387,1,2019,Chang Lab,ROSMAP,Genetics; RNA,Community,Tchem
+SEPTIN10,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79410,ENSG00000186522,1,2019,Chang Lab,MSBB; Mayo,Genetics; Protein; RNA,Community,Tbio
+SEPTIN11,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79280,ENSG00000138758,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+SERPINA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7942d,ENSG00000197249,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+SERPINA3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79423,ENSG00000196136,1,2018,Mayo-UFL-ISB,APP Mice,Protein,AMP-AD,Tbio
+SERPINI1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79337,ENSG00000163536,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+SGIP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791e0,ENSG00000118473,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+SGK1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791e1,ENSG00000118515,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tchem
+SGPL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7935e,ENSG00000166224,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+SGPP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79217,ENSG00000126821,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+SH3GLB2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792cb,ENSG00000148341,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+SIDT2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792d3,ENSG00000149577,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+SIGLEC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7912f,ENSG00000088827,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+SIGLEC14,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79470,ENSG00000254415,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+SIGLEC8,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7916f,ENSG00000105366,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+SIGLEC9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79220,ENSG00000129450,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+SLA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79304,ENSG00000155926,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+SLC12A4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79202,ENSG00000124067,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+SLC16A9,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79356,ENSG00000165449,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+SLC19A4P,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790e1,ENSG00000042304,1,2023,ASU,VirusResilience,RNA,AMP-AD,NA
+SLC1A2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7919d,ENSG00000110436,1,2019,Chang Lab,Kronos; Mayo; ROSMAP; Rush,Genetics; RNA,Community,Tchem
+SLC1A5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7916d,ENSG00000105281,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+SLC22A23,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7926c,ENSG00000137266,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+SLC22A4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7942c,ENSG00000197208,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+SLC24A4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79289,ENSG00000140090,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+SLC25A19,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7920c,ENSG00000125454,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+SLC25A4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792e7,ENSG00000151729,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+SLC25A45,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79321,ENSG00000162241,1,2019,Chang Lab,Mayo; ROSMAP,Genetics; RNA,Community,Tdark
+SLC2A5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7929a,ENSG00000142583,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+SLC2A8,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79267,ENSG00000136856,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+SLC30A3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791be,ENSG00000115194,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+SLC35C1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793e6,ENSG00000181830,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+SLC38A2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79245,ENSG00000134294,1,2019,Chang Lab,Mayo; ROSMAP; Rush,Genetics; RNA,Community,Tbio
+SLC4A10,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792a7,ENSG00000144290,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+SLC5A3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79445,ENSG00000198743,1,2019,Chang Lab,Mayo; ROSMAP,Genetics; RNA,Community,Tbio
+SLC7A11,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792e1,ENSG00000151012,1,2025,IUSM-Purdue,NA,RNA,TREAT-AD,Tchem
+SLC7A7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79300,ENSG00000155465,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+SLC8A2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791df,ENSG00000118160,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+SLC9A7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790fa,ENSG00000065923,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+SLCO1A2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79128,ENSG00000084453,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+SLCO2B1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7926f,ENSG00000137491,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tchem
+SLITRK4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793db,ENSG00000179542,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tdark
+SLMAP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7933d,ENSG00000163681,1,2023,Emory,syn20933797; syn52525880,Protein,AMP-AD,Tbio
+SMAD3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79366,ENSG00000166949,1,2023,Mayo,MC_snRNA,Genetics; RNA,Resilience-AD,Tchem
+SMAD4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79293,ENSG00000141646,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+SMARCA5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792f2,ENSG00000153147,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+SMC3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7918a,ENSG00000108055,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+SMOC2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ac,ENSG00000112562,1,2023,Emory,syn20933797; syn52525880,Protein,AMP-AD,Tbio
+SNAP25,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7923d,ENSG00000132639,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tclin
+SNCA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792b3,ENSG00000145335,1,2019,Chang Lab,Mayo; Rush,Genetics; RNA,Community,Tchem
+SNTB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ae,ENSG00000172164,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+SNX27,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7929f,ENSG00000143376,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+SP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79406,ENSG00000185591,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+SP6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7941f,ENSG00000189120,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+SPATA22,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7928e,ENSG00000141255,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+SPATS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7946e,ENSG00000249481,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+SPCS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791bf,ENSG00000114902,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+SPG7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79434,ENSG00000197912,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+SPI1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790fc,ENSG00000066336,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+SPTB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79103,ENSG00000070182,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+SPTLC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79132,ENSG00000090054,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tchem
+SPTLC3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793b1,ENSG00000172296,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+SREBF1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7910d,ENSG00000072310,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+SREBF2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7944b,ENSG00000198911,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tchem
+SRR,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7936f,ENSG00000167720,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+SRSF2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79320,ENSG00000161547,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+ST18,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792c5,ENSG00000147488,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+ST8SIA3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793d2,ENSG00000177511,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+STARD10,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79460,ENSG00000214530,1,2019,Chang Lab,ROSMAP,Genetics; RNA,Community,Tbio
+STAU1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79205,ENSG00000124214,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+STK10,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7910f,ENSG00000072786,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tchem
+STOM,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ca,ENSG00000148175,1,2023,Mayo-UFL-ISB,MC-BrAD; Mayo; TAUAPPms,Genetics; RNA,AMP-AD,Tbio
+STX1B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7913d,ENSG00000099365,1,2023,Emory,https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+STXBP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79265,ENSG00000136854,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+STXBP3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791cb,ENSG00000116266,1,2023,Emory,https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tbio
+STXBP5L,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792b0,ENSG00000145087,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+SULT1A3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79477,ENSG00000261052,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tbio
+SULT2A1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79171,ENSG00000105398,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+SULT4A1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7922a,ENSG00000130540,1,2019,Chang Lab,Kronos; Mayo; ROSMAP,Genetics; RNA,Community,Tbio
+SUMF1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792aa,ENSG00000144455,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+SYN1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790c1,ENSG00000008056,1,2019,Chang Lab,Kronos; MSBB; Mayo; ROSMAP; Rush,Genetics; Protein; RNA,Community,Tbio
+SYN2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79309,ENSG00000157152,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+SYNGR4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79173,ENSG00000105467,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tdark
+SYNJ1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79314,ENSG00000159082,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tchem
+SYNPO,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ab,ENSG00000171992,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+SYP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79153,ENSG00000102003,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+SYT12,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793b5,ENSG00000173227,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+SYT13,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790d0,ENSG00000019505,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+TAL1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79322,ENSG00000162367,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+TARDBP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791f0,ENSG00000120948,1,2020,ASU,ROSMAP,Genetics; Protein; RNA,AMP-AD,Tchem
+TBXAS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790ef,ENSG00000059377,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tchem
+TESPA1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79253,ENSG00000135426,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+TGFB1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7916e,ENSG00000105329,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+TICAM1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79216,ENSG00000127666,1,2022,Emory-Sage-SGC,NA,Pathway Modeling; Risk Scores,TREAT-AD,Tbio
+TIMM13,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79140,ENSG00000099800,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tdark
+TIMP3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79146,ENSG00000100234,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+TJP2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791e5,ENSG00000119139,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+TKFC,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792d0,ENSG00000149476,1,2023,Duke,NA,Genetics; Metabolomics; Phenomics; Protein; RNA,AMP-AD,Tbio
+TLR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ba,ENSG00000174125,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+TLR4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79268,ENSG00000136869,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tchem
+TLR5,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79416,ENSG00000187554,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tchem
+TLR7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7942a,ENSG00000196664,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tclin
+TM6SF2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7945f,ENSG00000213996,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+TMBIM1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7925b,ENSG00000135926,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+TMEM119,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793f7,ENSG00000183160,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+TMEM184B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79446,ENSG00000198792,1,2019,Chang Lab,Mayo; ROSMAP,Genetics; RNA,Community,Tbio
+TMEM229B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7943f,ENSG00000198133,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tdark
+TMEM258,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7924f,ENSG00000134825,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tdark
+TMPO,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791ed,ENSG00000120802,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+TMX3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79362,ENSG00000166479,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+TNFAIP8,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792b6,ENSG00000145779,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+TNFRSF11B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7934e,ENSG00000164761,1,2023,MSSM - Roussos Lab,FreshMicro,RNA,AMP-AD,Tbio
+TNFRSF1B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790dc,ENSG00000028137,1,2026,IUSM-Purdue,GSE15222; GSE33000; GSE48350; GSE5281; GSE84422; MSBB; Mayo Clinic; ROSMAP,RNA,TREAT-AD,Tbio
+TNS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7911a,ENSG00000079308,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+TOMM70,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792f7,ENSG00000154174,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+TPR,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790e4,ENSG00000047410,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+TPST1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79394,ENSG00000169902,1,2019,Chang Lab,Kronos; Mayo; ROSMAP; Rush,Genetics; RNA,Community,Tbio
+TRAF6,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793c1,ENSG00000175104,1,2026,IUSM-Purdue,GSE15222; GSE33000; GSE48350; GSE5281; GSE84422; MSBB; Mayo Clinic; ROSMAP,RNA,TREAT-AD,Tbio
+TREML1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7931e,ENSG00000161911,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+TRHDE,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7910e,ENSG00000072657,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+TRIOBP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79145,ENSG00000100106,1,2018,Columbia-Rush,ROSMAP,Clinical; Genetics; Protein; RNA,AMP-AD,Tbio
+TRPC3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7927d,ENSG00000138741,1,2021,JAX-VUMC-UW Resilience,AD-BXD mice,Genetics; Protein,Resilience-AD,Tchem
+TRPM1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79243,ENSG00000134160,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tchem
+TSPAN7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79303,ENSG00000156298,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+TTBK2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7921d,ENSG00000128881,1,2020,MSSM - Zhang Lab,MSBB,Genetics; Protein,AMP-AD,Tbio
+TTYH2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79292,ENSG00000141540,1,2019,Chang Lab,Kronos; Mayo; ROSMAP; Rush,Genetics; RNA,Community,Tbio
+TUBB3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79474,ENSG00000258947,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tclin
+TUFM,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793d6,ENSG00000178952,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tchem
+UBE2T,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79115,ENSG00000077152,1,2019,Chang Lab,ROSMAP,Genetics; RNA,Community,Tbio
+UGT8,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793bf,ENSG00000174607,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tchem
+UNC119B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793ca,ENSG00000175970,1,2019,Chang Lab,Mayo,Genetics; RNA,Community,Tbio
+UNC13A,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79228,ENSG00000130477,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+UNC5C,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793e8,ENSG00000182168,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+UNC79,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79246,ENSG00000133958,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tbio
+UQCRB,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79305,ENSG00000156467,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+UQCRC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790c3,ENSG00000010256,1,2018,Columbia-Rush,ROSMAP,Clinical; Protein,AMP-AD,Tbio
+UQCRC2,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7928c,ENSG00000140740,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+UQCRFS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79386,ENSG00000169021,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tbio
+USP50,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79397,ENSG00000170236,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+USP6NL,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792cc,ENSG00000148429,1,2023,MSSM - Roussos Lab,FreshMicro,Genetics; RNA,AMP-AD,Tbio
+UTRN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b792ee,ENSG00000152818,1,2023,MSSM - Zhang Lab,MSBB,Protein,AMP-AD,Tchem
+VAV1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79296,ENSG00000141968,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,Genetics; RNA,TREAT-AD,Tchem
+VCAN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790df,ENSG00000038427,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tbio
+VCP,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79354,ENSG00000165280,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tchem
+VEGFA,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791af,ENSG00000112715,1,2023,Mayo,MC_snRNA,Genetics; RNA,Resilience-AD,Tclin
+VIM,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790da,ENSG00000026025,1,2020,MSSM - Zhang Lab,MSBB,Genetics; Protein,AMP-AD,Tbio
+VKORC1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7936a,ENSG00000167397,1,2023,Emory,https://doi.org/10.1038/s41588-018-0311-9; https://doi.org/10.1038/s41588-019-0358-2,Genetics; Protein,AMP-AD,Tclin
+VSIG4,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79302,ENSG00000155659,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+VTN,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79190,ENSG00000109072,1,2018,Mayo-UFL-ISB,APP Mice,Protein,AMP-AD,Tbio
+WAS,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b790cc,ENSG00000015285,1,2022,IUSM-Purdue,ABA; GSE33000; GSE44772; GSE48350; GSE5281; MSBB; Mayo; ROSMAP,RNA,TREAT-AD,Tbio
+WDR7,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79138,ENSG00000091157,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tdark
+WLS,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791d1,ENSG00000116729,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+WNT10B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79391,ENSG00000169884,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+WNT2B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79244,ENSG00000134245,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tbio
+WNT7B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79418,ENSG00000188064,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tbio
+YAP1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79271,ENSG00000137693,1,2018,MSSM - Zhang Lab,MSBB,Genetics; RNA,AMP-AD,Tchem
+YARS1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7924a,ENSG00000134684,1,2018,Emory,ACT; BLSA; Banner,Protein,AMP-AD,Tchem
+YIF1B,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7936b,ENSG00000167645,1,2019,Chang Lab,ROSMAP,Genetics; RNA,Community,Tbio
+YWHAE,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7918f,ENSG00000108953,1,2026,Emory-Sage-SGC,NA,Genetics; Protein; RNA,TREAT-AD,Tbio
+YWHAG,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79396,ENSG00000170027,1,2026,Emory-Sage-SGC,NA,Genetics; Protein; RNA,TREAT-AD,Tchem
+YWHAZ,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79350,ENSG00000164924,1,2026,Emory-Sage-SGC,NA,Genetics; Protein; RNA,TREAT-AD,Tchem
+ZBTB16,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79196,ENSG00000109906,1,2018,Mayo-UFL-ISB,Mayo,RNA,AMP-AD,Tbio
+ZFP3,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b793e0,ENSG00000180787,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tdark
+ZNF225,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79473,ENSG00000256294,1,2023,ASU,VirusResilience,RNA,AMP-AD,Tdark
+ZNF536,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79440,ENSG00000198597,1,2018,Duke,ADNI,Genetics; Metabolomics,AMP-AD,Tbio
+ZNF618,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7930d,ENSG00000157657,1,2023,MSSM - Roussos Lab,HBI_scRNAseq,RNA,AMP-AD,Tdark
+ZNF652,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b79443,ENSG00000198740,1,2023,MSSM - Roussos Lab,FreshMicro,Genetics; RNA,AMP-AD,Tbio
+ZPR1,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b7919a,ENSG00000109917,1,2023,Duke,ADNI; AIBL,Genetics; Metabolomics,AMP-AD,Tbio
+ZWINT,AGORA_Wall_of_Targets,AGORA nominated target,FALSE,AGORA AD Knowledge Portal,6a4fe61059f5a283d2b791fd,ENSG00000122952,1,2018,Mayo-UFL-ISB,APP Mice,Protein,AMP-AD,Tbio

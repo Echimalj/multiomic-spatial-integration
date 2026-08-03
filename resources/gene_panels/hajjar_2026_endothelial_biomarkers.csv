@@ -1,0 +1,41 @@
+gene,panel,category,headline,source
+ICAM1,Hajjar_2026,Endothelial adhesion signature,TRUE,Hajjar et al. 2026
+VCAM1,Hajjar_2026,Endothelial adhesion signature,TRUE,Hajjar et al. 2026
+HGF,Hajjar_2026,CSF AD signature,FALSE,Hajjar et al. 2026
+NRP1,Hajjar_2026,CSF AD signature,FALSE,Hajjar et al. 2026
+NRP2,Hajjar_2026,CSF AD signature,FALSE,Hajjar et al. 2026
+SCARB2,Hajjar_2026,CSF AD signature,FALSE,Hajjar et al. 2026
+PLAU,Hajjar_2026,CSF AD signature,FALSE,Hajjar et al. 2026
+LRPAP1,Hajjar_2026,Tau-Abeta42 ratio hub,FALSE,Hajjar et al. 2026
+SOD1,Hajjar_2026,Tau-Abeta42 ratio hub,FALSE,Hajjar et al. 2026
+FLT3LG,Hajjar_2026,Tau-Abeta42 ratio hub,FALSE,Hajjar et al. 2026
+IL10RB,Hajjar_2026,Tau-Abeta42 ratio hub,FALSE,Hajjar et al. 2026
+TNFRSF12A,Hajjar_2026,Tau-Abeta42 ratio hub,FALSE,Hajjar et al. 2026
+VASN,Hajjar_2026,Tau-Abeta42 ratio hub,FALSE,Hajjar et al. 2026
+NCAM1,Hajjar_2026,Cognition-TAR hub,FALSE,Hajjar et al. 2026
+KITLG,Hajjar_2026,Cognition-TAR hub,FALSE,Hajjar et al. 2026
+NTRK2,Hajjar_2026,Cognition-TAR hub,FALSE,Hajjar et al. 2026
+NGF,Hajjar_2026,Cognition-TAR hub,FALSE,Hajjar et al. 2026
+CSF1,Hajjar_2026,Cognition-TAR hub,FALSE,Hajjar et al. 2026
+PVR,Hajjar_2026,Cognition-TAR hub,FALSE,Hajjar et al. 2026
+JAM2,Hajjar_2026,Cognition-TAR hub,FALSE,Hajjar et al. 2026
+PROC,Hajjar_2026,Cognition-TAR hub,FALSE,Hajjar et al. 2026
+PTPRS,Hajjar_2026,Cognition-TAR hub,FALSE,Hajjar et al. 2026
+LGALS8,Hajjar_2026,Cognition-TAR hub,FALSE,Hajjar et al. 2026
+CD59,Hajjar_2026,Cognition-TAR hub,FALSE,Hajjar et al. 2026
+CRTAC1,Hajjar_2026,Cognition-TAR hub,FALSE,Hajjar et al. 2026
+CCL3,Hajjar_2026,Clinical progression hub,FALSE,Hajjar et al. 2026
+CCL23,Hajjar_2026,Clinical progression hub,FALSE,Hajjar et al. 2026
+EDA2R,Hajjar_2026,Clinical progression hub,FALSE,Hajjar et al. 2026
+SMOC2,Hajjar_2026,Clinical progression hub,FALSE,Hajjar et al. 2026
+ACVRL1,Hajjar_2026,Clinical progression hub,FALSE,Hajjar et al. 2026
+MMP10,Hajjar_2026,Clinical progression hub,FALSE,Hajjar et al. 2026
+MAPT,Hajjar_2026,Clinical progression hub,FALSE,Hajjar et al. 2026
+SIRT2,Hajjar_2026,Clinical progression hub,FALSE,Hajjar et al. 2026
+CA4,Hajjar_2026,CSF Abeta42 hub,FALSE,Hajjar et al. 2026
+VEGFA,Hajjar_2026,CSF Abeta42 hub,FALSE,Hajjar et al. 2026
+CHL1,Hajjar_2026,CSF Abeta42 hub,FALSE,Hajjar et al. 2026
+EPHB6,Hajjar_2026,CSF Abeta42 hub,FALSE,Hajjar et al. 2026
+RGMB,Hajjar_2026,CSF Abeta42 hub,FALSE,Hajjar et al. 2026
+ROBO2,Hajjar_2026,CSF Abeta42 hub,FALSE,Hajjar et al. 2026
+SPARCL1,Hajjar_2026,CSF Abeta42 hub,FALSE,Hajjar et al. 2026
