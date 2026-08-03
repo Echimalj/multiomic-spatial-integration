@@ -1,0 +1,2 @@
+resource,source,api_endpoint,downloaded_at_utc,api_total_elements,retained_unique_genes,tier1_definition,tier1_headline_definition,tier1_retained_genes,full_nomination_distribution,tier1_nomination_distribution
+AGORA Wall of Targets,AGORA AD Knowledge Portal,https://agora.adknowledgeportal.org/api/v1/comparison-tools/targets,2026-08-03 17:52:09 UTC,967,967,total_nominations >= 3,total_nominations >= 4,38,1=802; 2=127; 3=24; 4=10; 5=4,3=24; 4=10; 5=4

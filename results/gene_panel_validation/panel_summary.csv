@@ -1,0 +1,3 @@
+panel,panel_label,n_panel_genes,n_missing_reference_genes,n_spatial_fdr_genes,n_spatial_nominal_only_genes,n_lineage_global_fdr_genes,n_lineage_exploratory_genes,n_fine_celltype_fdr_genes,n_headline_genes
+AGORA_High_Nomination,AGORA high-nomination targets,38,0,13,16,0,14,37,14
+Hajjar_2026,Hajjar 2026 biomarker panel,40,1,27,7,0,15,34,2
