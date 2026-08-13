@@ -492,4 +492,7 @@ related spatial transcriptomic platforms.
 Enrique Chimal
 PhD Candidate – Medical Neuroscience - Indiana University School of Medicine
 
+Subah Hussain
+PhD Student - Genetics and Genomics - Baylor College of Medicine
+
 This README positions the repo as a full **computational biology framework**, not just a collection of scripts.
