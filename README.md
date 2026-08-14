@@ -1,7 +1,7 @@
 # multiomic-spatial-integration
 A modular computational framework for integrating single-cell and spatial transcriptomics through Bayesian deconvolution, statistical modeling, biological validation, and downstream pathway analysis.
 
-🚧 Work in progress
+🚧 Work in progress (Current version 0.4.0)
 
 ![R](https://img.shields.io/badge/R-4.x-blue)
 ![Python](https://img.shields.io/badge/Python-3.x-yellow)
