@@ -24,7 +24,10 @@ source("R/association_utils.R")
 
 panel_files <- c(
   "resources/gene_panels/hajjar_2026_endothelial_biomarkers.csv",
-  "resources/gene_panels/agora_high_nomination_targets.csv"
+  "resources/gene_panels/agora_high_nomination_targets.csv",
+  "resources/gene_panels/agora_single_nomination_targets.csv",
+  "resources/gene_panels/matrisome_biomarkers_clean.csv"
+
 )
 
 signature_files <- c(
@@ -143,6 +146,16 @@ for (panel_file in panel_files) {
   panel <- load_gene_panel(
     panel_file
   )
+# Preserve all panel-specific metadata while avoiding a
+# duplicate panel column when attaching annotations to results.
+  panel_metadata <- panel |>
+    dplyr::select(
+      -panel
+    ) |>
+    dplyr::distinct(
+      gene,
+      .keep_all = TRUE
+    )
 
   panel_names <- unique(
     panel$panel
@@ -202,13 +215,7 @@ for (panel_file in panel_files) {
         .before = 1
       ) |>
       dplyr::left_join(
-        panel |>
-          dplyr::select(
-            gene,
-            category,
-            headline,
-            source
-          ),
+        panel_metadata,
         by = "gene"
       )
 
@@ -219,13 +226,7 @@ for (panel_file in panel_files) {
         .before = 1
       ) |>
       dplyr::left_join(
-        panel |>
-          dplyr::select(
-            gene,
-            category,
-            headline,
-            source
-          ),
+        panel_metadata,
         by = "gene"
       )
 
@@ -414,13 +415,7 @@ for (panel_file in panel_files) {
       .before = 1
     ) |>
     dplyr::left_join(
-      panel |>
-        dplyr::select(
-          gene,
-          category,
-          headline,
-          source
-        ),
+      panel_metadata,
       by = "gene"
     )
 
@@ -471,13 +466,7 @@ for (panel_file in panel_files) {
       .before = 1
     ) |>
     dplyr::left_join(
-      panel |>
-        dplyr::select(
-          gene,
-          category,
-          headline,
-          source
-        ),
+      panel_metadata,
       by = "gene"
     )
 
@@ -530,13 +519,7 @@ for (panel_file in panel_files) {
       .before = 1
     ) |>
     dplyr::left_join(
-      panel |>
-        dplyr::select(
-          gene,
-          category,
-          headline,
-          source
-        ),
+      panel_metadata,
       by = "gene"
     )
 

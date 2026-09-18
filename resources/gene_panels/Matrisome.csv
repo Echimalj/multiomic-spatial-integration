@@ -1,0 +1,3401 @@
+TargetName,MatrisomeDivision,MatrisomeCategory
+HHIP,Matrisome-associated,Secreted Factors
+PLXNB1,Matrisome-associated,ECM-affiliated Proteins
+ANXA11,Matrisome-associated,ECM-affiliated Proteins
+ADAM22,Matrisome-associated,ECM Regulators
+SFRP2,Matrisome-associated,Secreted Factors
+CBLN2,Matrisome-associated,Secreted Factors
+SEMA4A,Matrisome-associated,ECM-affiliated Proteins
+LGALS1,Matrisome-associated,ECM-affiliated Proteins
+ADAM9,Matrisome-associated,ECM Regulators
+SEMA4C,Matrisome-associated,ECM-affiliated Proteins
+COL9A2,Core matrisome,Collagens
+ELFN2,Matrisome-associated,ECM-affiliated Proteins
+EDIL3,Core matrisome,ECM Glycoproteins
+MEGF10,Matrisome-associated,Secreted Factors
+SLIT1,Core matrisome,ECM Glycoproteins
+MUC3A,Matrisome-associated,ECM-affiliated Proteins
+CCL2,Matrisome-associated,Secreted Factors
+FGF13,Matrisome-associated,Secreted Factors
+SEMA3B,Matrisome-associated,ECM-affiliated Proteins
+CTSF,Matrisome-associated,ECM Regulators
+FLT3LG,Matrisome-associated,Secreted Factors
+COL11A2,Core matrisome,Collagens
+SPP1,Core matrisome,ECM Glycoproteins
+SEMA6B,Matrisome-associated,ECM-affiliated Proteins
+CTSA,Matrisome-associated,ECM Regulators
+C1QTNF4,Matrisome-associated,ECM-affiliated Proteins
+SEMA6A,Matrisome-associated,ECM-affiliated Proteins
+GREM1,Matrisome-associated,ECM-affiliated Proteins
+PARM1,Matrisome-associated,ECM-affiliated Proteins
+GLDN,Core matrisome,ECM Glycoproteins
+CELA2A,Matrisome-associated,ECM Regulators
+TNF,Matrisome-associated,Secreted Factors
+LTA,Matrisome-associated,Secreted Factors
+PRELP,Core matrisome,Proteoglycans
+CST3,Matrisome-associated,ECM Regulators
+HSPG2,Core matrisome,Proteoglycans
+FGF3,Matrisome-associated,Secreted Factors
+SEMA4B,Matrisome-associated,ECM-affiliated Proteins
+SPARC,Core matrisome,ECM Glycoproteins
+SPOCK1,Core matrisome,Proteoglycans
+EMID1,Core matrisome,ECM Glycoproteins
+S100A6,Matrisome-associated,Secreted Factors
+VEGFC,Matrisome-associated,Secreted Factors
+SEMA4D,Matrisome-associated,ECM-affiliated Proteins
+PLXNB3,Matrisome-associated,ECM-affiliated Proteins
+FBN3,Core matrisome,ECM Glycoproteins
+IGF2,Matrisome-associated,Secreted Factors
+PLXNB2,Matrisome-associated,ECM-affiliated Proteins
+EFEMP1,Core matrisome,ECM Glycoproteins
+OGFOD2,Matrisome-associated,ECM Regulators
+POMZP3,Core matrisome,ECM Glycoproteins
+TIMP1,Matrisome-associated,ECM Regulators
+COL6A1,Core matrisome,Collagens
+FGF12,Matrisome-associated,Secreted Factors
+FCN1,Matrisome-associated,ECM-affiliated Proteins
+AEBP1,Core matrisome,ECM Glycoproteins
+NTNG1,Core matrisome,ECM Glycoproteins
+LGI4,Core matrisome,ECM Glycoproteins
+CSH2,Matrisome-associated,Secreted Factors
+PLXDC2,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS6,Matrisome-associated,ECM Regulators
+MUC12,Matrisome-associated,ECM-affiliated Proteins
+MEGF9,Matrisome-associated,Secreted Factors
+HAPLN2,Core matrisome,Proteoglycans
+A2M,Matrisome-associated,ECM Regulators
+VEGFB,Matrisome-associated,Secreted Factors
+SPOCK2,Core matrisome,Proteoglycans
+ANXA8,Matrisome-associated,ECM-affiliated Proteins
+AMH,Matrisome-associated,Secreted Factors
+IFNA16,Matrisome-associated,Secreted Factors
+SPOCK3,Core matrisome,Proteoglycans
+CSTB,Matrisome-associated,ECM Regulators
+IGFBP7,Core matrisome,ECM Glycoproteins
+INHBE,Matrisome-associated,Secreted Factors
+MFAP1,Core matrisome,ECM Glycoproteins
+EMILIN1,Core matrisome,ECM Glycoproteins
+WNT9B,Matrisome-associated,Secreted Factors
+IL7,Matrisome-associated,Secreted Factors
+CCN2,Core matrisome,ECM Glycoproteins
+CX3CL1,Matrisome-associated,Secreted Factors
+S100Z,Matrisome-associated,Secreted Factors
+C1QTNF1,Matrisome-associated,ECM-affiliated Proteins
+GAS6,Core matrisome,ECM Glycoproteins
+CSHL1,Matrisome-associated,Secreted Factors
+SEMA4F,Matrisome-associated,ECM-affiliated Proteins
+S100B,Matrisome-associated,Secreted Factors
+TNFSF12,Matrisome-associated,Secreted Factors
+SBSPON,Core matrisome,ECM Glycoproteins
+ANXA6,Matrisome-associated,ECM-affiliated Proteins
+ADAM32,Matrisome-associated,ECM Regulators
+IL25,Matrisome-associated,Secreted Factors
+NELL2,Core matrisome,ECM Glycoproteins
+VEGFD,Matrisome-associated,Secreted Factors
+BMP1,Matrisome-associated,ECM Regulators
+HYAL2,Matrisome-associated,ECM Regulators
+FGF8,Matrisome-associated,Secreted Factors
+CRELD1,Core matrisome,ECM Glycoproteins
+PPBP,Matrisome-associated,Secreted Factors
+PLXNA1,Matrisome-associated,ECM-affiliated Proteins
+CHADL,Core matrisome,Proteoglycans
+SPARCL1,Core matrisome,ECM Glycoproteins
+GPC4,Matrisome-associated,ECM-affiliated Proteins
+CLEC4E,Matrisome-associated,ECM-affiliated Proteins
+CLEC3B,Matrisome-associated,ECM-affiliated Proteins
+PLAT,Matrisome-associated,ECM Regulators
+NRG1,Matrisome-associated,Secreted Factors
+CTSE,Matrisome-associated,ECM Regulators
+WNT10B,Matrisome-associated,Secreted Factors
+CST4,Matrisome-associated,ECM Regulators
+AGRN,Core matrisome,ECM Glycoproteins
+FSTL3,Matrisome-associated,Secreted Factors
+PTN,Matrisome-associated,Secreted Factors
+CLEC10A,Matrisome-associated,ECM-affiliated Proteins
+LRG1,Core matrisome,ECM Glycoproteins
+CCL3L3,Matrisome-associated,Secreted Factors
+PRSS3,Matrisome-associated,ECM Regulators
+C1QTNF7,Matrisome-associated,ECM-affiliated Proteins
+BMP7,Matrisome-associated,Secreted Factors
+INTS6L,Core matrisome,ECM Glycoproteins
+COL27A1,Core matrisome,Collagens
+EGFL7,Matrisome-associated,Secreted Factors
+ADAMTS4,Matrisome-associated,ECM Regulators
+WNT3,Matrisome-associated,Secreted Factors
+COL5A3,Core matrisome,Collagens
+SEMA3A,Matrisome-associated,ECM-affiliated Proteins
+CCL3,Matrisome-associated,Secreted Factors
+COL11A1,Core matrisome,Collagens
+SERPINB1,Matrisome-associated,ECM Regulators
+CTSB,Matrisome-associated,ECM Regulators
+ADAMTS1,Matrisome-associated,ECM Regulators
+TNR,Core matrisome,ECM Glycoproteins
+PLXNA2,Matrisome-associated,ECM-affiliated Proteins
+KNG1,Matrisome-associated,ECM Regulators
+MUC5AC,Matrisome-associated,ECM-affiliated Proteins
+HTRA1,Matrisome-associated,ECM Regulators
+ITIH5,Matrisome-associated,ECM Regulators
+SFTPC,Matrisome-associated,ECM-affiliated Proteins
+ITIH4,Matrisome-associated,ECM Regulators
+SDC4,Matrisome-associated,ECM-affiliated Proteins
+SERPINF1,Matrisome-associated,ECM Regulators
+S100A7,Matrisome-associated,Secreted Factors
+BCAN,Core matrisome,Proteoglycans
+GPC1,Matrisome-associated,ECM-affiliated Proteins
+WIF1,Matrisome-associated,Secreted Factors
+WNT10A,Matrisome-associated,Secreted Factors
+NODAL,Matrisome-associated,Secreted Factors
+EMCN,Matrisome-associated,ECM-affiliated Proteins
+GDF5,Matrisome-associated,Secreted Factors
+LMAN1,Matrisome-associated,ECM-affiliated Proteins
+HAPLN4,Core matrisome,Proteoglycans
+MDK,Matrisome-associated,Secreted Factors
+VWA5B2,Core matrisome,ECM Glycoproteins
+COL5A2,Core matrisome,Collagens
+REG3A,Matrisome-associated,ECM-affiliated Proteins
+ISM1,Matrisome-associated,Secreted Factors
+BMP3,Matrisome-associated,Secreted Factors
+ADAMTSL5,Matrisome-associated,ECM Regulators
+SNED1,Core matrisome,ECM Glycoproteins
+IFNA5,Matrisome-associated,Secreted Factors
+IL1F10,Matrisome-associated,Secreted Factors
+EGLN2,Matrisome-associated,ECM Regulators
+ELSPBP1,Core matrisome,ECM Glycoproteins
+TNFSF13,Matrisome-associated,Secreted Factors
+WNT5B,Matrisome-associated,Secreted Factors
+IL24,Matrisome-associated,Secreted Factors
+FGF11,Matrisome-associated,Secreted Factors
+MASP2,Matrisome-associated,ECM Regulators
+ANXA1,Matrisome-associated,ECM-affiliated Proteins
+EGLN3,Matrisome-associated,ECM Regulators
+S100A1,Matrisome-associated,Secreted Factors
+CTSD,Matrisome-associated,ECM Regulators
+CSPG4,Matrisome-associated,ECM-affiliated Proteins
+CXCL14,Matrisome-associated,Secreted Factors
+LAMA1,Core matrisome,ECM Glycoproteins
+INHA,Matrisome-associated,Secreted Factors
+DCN,Core matrisome,Proteoglycans
+IGFBP2,Core matrisome,ECM Glycoproteins
+CSF1,Matrisome-associated,Secreted Factors
+FGF17,Matrisome-associated,Secreted Factors
+LAMA5,Core matrisome,ECM Glycoproteins
+ZFP91,Matrisome-associated,Secreted Factors
+FGF2,Matrisome-associated,Secreted Factors
+IL18,Matrisome-associated,Secreted Factors
+S100A16,Matrisome-associated,Secreted Factors
+ADAMTS10,Matrisome-associated,ECM Regulators
+ADAM11,Matrisome-associated,ECM Regulators
+FGF18,Matrisome-associated,Secreted Factors
+SERPING1,Matrisome-associated,ECM Regulators
+OVGP1,Matrisome-associated,ECM-affiliated Proteins
+CLEC14A,Matrisome-associated,ECM-affiliated Proteins
+TGFB2,Matrisome-associated,Secreted Factors
+C1QB,Matrisome-associated,ECM-affiliated Proteins
+CRLF1,Matrisome-associated,Secreted Factors
+SERPINE2,Matrisome-associated,ECM Regulators
+S100A10,Matrisome-associated,Secreted Factors
+FREM1,Matrisome-associated,ECM-affiliated Proteins
+SEMA6C,Matrisome-associated,ECM-affiliated Proteins
+LTBP4,Core matrisome,ECM Glycoproteins
+ANXA5,Matrisome-associated,ECM-affiliated Proteins
+CCL18,Matrisome-associated,Secreted Factors
+IGFBP4,Core matrisome,ECM Glycoproteins
+LAMB2,Core matrisome,ECM Glycoproteins
+IFNA14,Matrisome-associated,Secreted Factors
+MST1,Matrisome-associated,Secreted Factors
+FGF21,Matrisome-associated,Secreted Factors
+SDC3,Matrisome-associated,ECM-affiliated Proteins
+LOXL4,Matrisome-associated,ECM Regulators
+P4HTM,Matrisome-associated,ECM Regulators
+P4HA2,Matrisome-associated,ECM Regulators
+IL17F,Matrisome-associated,Secreted Factors
+SERPINH1,Matrisome-associated,ECM Regulators
+KITLG,Matrisome-associated,Secreted Factors
+MUC20,Matrisome-associated,ECM-affiliated Proteins
+FAM20C,Matrisome-associated,ECM Regulators
+MUC21,Matrisome-associated,ECM-affiliated Proteins
+WNT8A,Matrisome-associated,Secreted Factors
+MMP28,Matrisome-associated,ECM Regulators
+ADAM23,Matrisome-associated,ECM Regulators
+MFGE8,Core matrisome,ECM Glycoproteins
+LOXL2,Matrisome-associated,ECM Regulators
+LGI3,Core matrisome,ECM Glycoproteins
+CCL8,Matrisome-associated,Secreted Factors
+C17orf58,Matrisome-associated,ECM Regulators
+FGF6,Matrisome-associated,Secreted Factors
+CTSZ,Matrisome-associated,ECM Regulators
+VWDE,Core matrisome,ECM Glycoproteins
+FGF4,Matrisome-associated,Secreted Factors
+CCN1,Core matrisome,ECM Glycoproteins
+CXCL13,Matrisome-associated,Secreted Factors
+MUC5B,Matrisome-associated,ECM-affiliated Proteins
+GH1,Matrisome-associated,Secreted Factors
+S100A13,Matrisome-associated,Secreted Factors
+MEGF8,Matrisome-associated,Secreted Factors
+TIMP2,Matrisome-associated,ECM Regulators
+ADAMTS13,Matrisome-associated,ECM Regulators
+TIMP3,Matrisome-associated,ECM Regulators
+BMP8B,Matrisome-associated,Secreted Factors
+IL6,Matrisome-associated,Secreted Factors
+C1QL2,Matrisome-associated,ECM-affiliated Proteins
+NCAN,Core matrisome,Proteoglycans
+GDF11,Matrisome-associated,Secreted Factors
+DHH,Matrisome-associated,Secreted Factors
+IFNA13,Matrisome-associated,Secreted Factors
+FN1,Core matrisome,ECM Glycoproteins
+PGF,Matrisome-associated,Secreted Factors
+ADAM15,Matrisome-associated,ECM Regulators
+PF4,Matrisome-associated,Secreted Factors
+GDF1,Matrisome-associated,Secreted Factors
+FGF1,Matrisome-associated,Secreted Factors
+ADAMTS3,Matrisome-associated,ECM Regulators
+SPON2,Core matrisome,ECM Glycoproteins
+IGFBP5,Core matrisome,ECM Glycoproteins
+IFNA4,Matrisome-associated,Secreted Factors
+P4HA1,Matrisome-associated,ECM Regulators
+LTBP1,Core matrisome,ECM Glycoproteins
+F12,Matrisome-associated,ECM Regulators
+VWA5A,Core matrisome,ECM Glycoproteins
+IL34,Matrisome-associated,Secreted Factors
+MFAP3,Core matrisome,ECM Glycoproteins
+PLOD3,Matrisome-associated,ECM Regulators
+SERPINB7,Matrisome-associated,ECM Regulators
+TNFSF14,Matrisome-associated,Secreted Factors
+SERPINB6,Matrisome-associated,ECM Regulators
+IGF1,Matrisome-associated,Secreted Factors
+ANXA9,Matrisome-associated,ECM-affiliated Proteins
+ADAM12,Matrisome-associated,ECM Regulators
+COL16A1,Core matrisome,Collagens
+S100A11,Matrisome-associated,Secreted Factors
+C1QL3,Matrisome-associated,ECM-affiliated Proteins
+CRIM1,Core matrisome,ECM Glycoproteins
+BRINP2,Matrisome-associated,Secreted Factors
+CCL24,Matrisome-associated,Secreted Factors
+EGLN1,Matrisome-associated,ECM Regulators
+CST9L,Matrisome-associated,ECM Regulators
+LTBP3,Core matrisome,ECM Glycoproteins
+IL13,Matrisome-associated,Secreted Factors
+LIF,Matrisome-associated,Secreted Factors
+TNXB,Core matrisome,ECM Glycoproteins
+EBI3,Matrisome-associated,Secreted Factors
+SMOC2,Core matrisome,ECM Glycoproteins
+F7,Matrisome-associated,ECM Regulators
+ELN,Core matrisome,ECM Glycoproteins
+PLXND1,Matrisome-associated,ECM-affiliated Proteins
+NTNG2,Core matrisome,ECM Glycoproteins
+PDGFB,Matrisome-associated,Secreted Factors
+BGN,Core matrisome,Proteoglycans
+MUCL1,Matrisome-associated,ECM-affiliated Proteins
+CST6,Matrisome-associated,ECM Regulators
+SERPINA1,Matrisome-associated,ECM Regulators
+THBS3,Core matrisome,ECM Glycoproteins
+CCL19,Matrisome-associated,Secreted Factors
+COL4A1,Core matrisome,Collagens
+CLEC12B,Matrisome-associated,ECM-affiliated Proteins
+PCSK6,Matrisome-associated,ECM Regulators
+PLOD1,Matrisome-associated,ECM Regulators
+CLEC17A,Matrisome-associated,ECM-affiliated Proteins
+COL6A2,Core matrisome,Collagens
+FBLN5,Core matrisome,ECM Glycoproteins
+SRGN,Core matrisome,Proteoglycans
+HCFC2,Matrisome-associated,Secreted Factors
+CLEC6A,Matrisome-associated,ECM-affiliated Proteins
+SERPIND1,Matrisome-associated,ECM Regulators
+CST8,Matrisome-associated,ECM Regulators
+SERPINA3,Matrisome-associated,ECM Regulators
+PCOLCE,Core matrisome,ECM Glycoproteins
+CCL26,Matrisome-associated,Secreted Factors
+ADAMTS8,Matrisome-associated,ECM Regulators
+COL18A1,Core matrisome,Collagens
+DPT,Core matrisome,ECM Glycoproteins
+MATN4,Core matrisome,ECM Glycoproteins
+TGFB3,Matrisome-associated,Secreted Factors
+FGF14,Matrisome-associated,Secreted Factors
+COL4A2,Core matrisome,Collagens
+MEGF11,Matrisome-associated,Secreted Factors
+VWF,Core matrisome,ECM Glycoproteins
+CELA3A,Matrisome-associated,ECM Regulators
+AGT,Matrisome-associated,ECM Regulators
+CRLF3,Matrisome-associated,Secreted Factors
+SERPINI1,Matrisome-associated,ECM Regulators
+IL36RN,Matrisome-associated,Secreted Factors
+WNT11,Matrisome-associated,Secreted Factors
+C1QTNF6,Matrisome-associated,ECM-affiliated Proteins
+GDF6,Matrisome-associated,Secreted Factors
+LGI1,Core matrisome,ECM Glycoproteins
+GDF2,Matrisome-associated,Secreted Factors
+WNT2,Matrisome-associated,Secreted Factors
+ANXA2,Matrisome-associated,ECM-affiliated Proteins
+CLEC18A,Matrisome-associated,ECM-affiliated Proteins
+C1QC,Matrisome-associated,ECM-affiliated Proteins
+TIMP4,Matrisome-associated,ECM Regulators
+ANXA7,Matrisome-associated,ECM-affiliated Proteins
+COL1A2,Core matrisome,Collagens
+SEMA3E,Matrisome-associated,ECM-affiliated Proteins
+NGLY1,Matrisome-associated,ECM Regulators
+SLIT2,Core matrisome,ECM Glycoproteins
+ASTL,Matrisome-associated,ECM Regulators
+NPNT,Core matrisome,ECM Glycoproteins
+S100A4,Matrisome-associated,Secreted Factors
+CXCL3,Matrisome-associated,Secreted Factors
+RELN,Core matrisome,ECM Glycoproteins
+HHIP,Matrisome-associated,Secreted Factors
+CBLN2,Matrisome-associated,Secreted Factors
+ADAM9,Matrisome-associated,ECM Regulators
+PLXNB1,Matrisome-associated,ECM-affiliated Proteins
+COL11A2,Core matrisome,Collagens
+ANXA11,Matrisome-associated,ECM-affiliated Proteins
+SEMA4C,Matrisome-associated,ECM-affiliated Proteins
+IL25,Matrisome-associated,Secreted Factors
+BMP7,Matrisome-associated,Secreted Factors
+S100A16,Matrisome-associated,Secreted Factors
+GAS6,Core matrisome,ECM Glycoproteins
+COL6A1,Core matrisome,Collagens
+CSTB,Matrisome-associated,ECM Regulators
+GDF5,Matrisome-associated,Secreted Factors
+VEGFD,Matrisome-associated,Secreted Factors
+PARM1,Matrisome-associated,ECM-affiliated Proteins
+EDIL3,Core matrisome,ECM Glycoproteins
+A2M,Matrisome-associated,ECM Regulators
+S100A10,Matrisome-associated,Secreted Factors
+CLEC6A,Matrisome-associated,ECM-affiliated Proteins
+SEMA4F,Matrisome-associated,ECM-affiliated Proteins
+TNFSF12,Matrisome-associated,Secreted Factors
+SFRP2,Matrisome-associated,Secreted Factors
+CTSF,Matrisome-associated,ECM Regulators
+SPP1,Core matrisome,ECM Glycoproteins
+SEMA4D,Matrisome-associated,ECM-affiliated Proteins
+HAPLN2,Core matrisome,Proteoglycans
+PLXNA1,Matrisome-associated,ECM-affiliated Proteins
+LTA,Matrisome-associated,Secreted Factors
+FGF13,Matrisome-associated,Secreted Factors
+CLEC10A,Matrisome-associated,ECM-affiliated Proteins
+LGI4,Core matrisome,ECM Glycoproteins
+CCL3,Matrisome-associated,Secreted Factors
+LGALS1,Matrisome-associated,ECM-affiliated Proteins
+ADAM22,Matrisome-associated,ECM Regulators
+SEMA3B,Matrisome-associated,ECM-affiliated Proteins
+GLDN,Core matrisome,ECM Glycoproteins
+ADAMTS13,Matrisome-associated,ECM Regulators
+PRELP,Core matrisome,Proteoglycans
+HSPG2,Core matrisome,Proteoglycans
+C1QTNF1,Matrisome-associated,ECM-affiliated Proteins
+TIMP1,Matrisome-associated,ECM Regulators
+VEGFB,Matrisome-associated,Secreted Factors
+C1QL2,Matrisome-associated,ECM-affiliated Proteins
+PGF,Matrisome-associated,Secreted Factors
+AMH,Matrisome-associated,Secreted Factors
+SPOCK1,Core matrisome,Proteoglycans
+SLIT1,Core matrisome,ECM Glycoproteins
+MUC12,Matrisome-associated,ECM-affiliated Proteins
+TIMP3,Matrisome-associated,ECM Regulators
+CST3,Matrisome-associated,ECM Regulators
+EGLN2,Matrisome-associated,ECM Regulators
+FSTL3,Matrisome-associated,Secreted Factors
+COL27A1,Core matrisome,Collagens
+OGFOD2,Matrisome-associated,ECM Regulators
+ADAMTS1,Matrisome-associated,ECM Regulators
+EFEMP1,Core matrisome,ECM Glycoproteins
+LMAN1,Matrisome-associated,ECM-affiliated Proteins
+THBS3,Core matrisome,ECM Glycoproteins
+VWDE,Core matrisome,ECM Glycoproteins
+FGF3,Matrisome-associated,Secreted Factors
+ITIH5,Matrisome-associated,ECM Regulators
+SEMA6B,Matrisome-associated,ECM-affiliated Proteins
+IGF2,Matrisome-associated,Secreted Factors
+PLXNB2,Matrisome-associated,ECM-affiliated Proteins
+SDC4,Matrisome-associated,ECM-affiliated Proteins
+FBN3,Core matrisome,ECM Glycoproteins
+PLXNB3,Matrisome-associated,ECM-affiliated Proteins
+CX3CL1,Matrisome-associated,Secreted Factors
+ELFN2,Matrisome-associated,ECM-affiliated Proteins
+ELSPBP1,Core matrisome,ECM Glycoproteins
+C1QTNF7,Matrisome-associated,ECM-affiliated Proteins
+BMP3,Matrisome-associated,Secreted Factors
+CTSZ,Matrisome-associated,ECM Regulators
+COL9A2,Core matrisome,Collagens
+F7,Matrisome-associated,ECM Regulators
+FGF4,Matrisome-associated,Secreted Factors
+WNT2,Matrisome-associated,Secreted Factors
+P4HTM,Matrisome-associated,ECM Regulators
+LOXL2,Matrisome-associated,ECM Regulators
+SEMA4B,Matrisome-associated,ECM-affiliated Proteins
+C17orf58,Matrisome-associated,ECM Regulators
+COL16A1,Core matrisome,Collagens
+FGF21,Matrisome-associated,Secreted Factors
+CTSD,Matrisome-associated,ECM Regulators
+CXCL13,Matrisome-associated,Secreted Factors
+TGFB3,Matrisome-associated,Secreted Factors
+GREM1,Matrisome-associated,ECM-affiliated Proteins
+CRELD1,Core matrisome,ECM Glycoproteins
+MEGF10,Matrisome-associated,Secreted Factors
+SERPING1,Matrisome-associated,ECM Regulators
+CLEC18A,Matrisome-associated,ECM-affiliated Proteins
+SERPINH1,Matrisome-associated,ECM Regulators
+SEMA6A,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS4,Matrisome-associated,ECM Regulators
+PRSS3,Matrisome-associated,ECM Regulators
+NELL2,Core matrisome,ECM Glycoproteins
+C1QTNF4,Matrisome-associated,ECM-affiliated Proteins
+MDK,Matrisome-associated,Secreted Factors
+HCFC2,Matrisome-associated,Secreted Factors
+SEMA6C,Matrisome-associated,ECM-affiliated Proteins
+MUC5AC,Matrisome-associated,ECM-affiliated Proteins
+FBLN5,Core matrisome,ECM Glycoproteins
+CCL19,Matrisome-associated,Secreted Factors
+IL24,Matrisome-associated,Secreted Factors
+SERPINI1,Matrisome-associated,ECM Regulators
+EMILIN1,Core matrisome,ECM Glycoproteins
+IFNA14,Matrisome-associated,Secreted Factors
+SPARC,Core matrisome,ECM Glycoproteins
+TNR,Core matrisome,ECM Glycoproteins
+CELA3A,Matrisome-associated,ECM Regulators
+CXCL3,Matrisome-associated,Secreted Factors
+WNT3,Matrisome-associated,Secreted Factors
+CSHL1,Matrisome-associated,Secreted Factors
+PLAT,Matrisome-associated,ECM Regulators
+S100A1,Matrisome-associated,Secreted Factors
+SERPINE2,Matrisome-associated,ECM Regulators
+POMZP3,Core matrisome,ECM Glycoproteins
+PPBP,Matrisome-associated,Secreted Factors
+PDGFB,Matrisome-associated,Secreted Factors
+FGF18,Matrisome-associated,Secreted Factors
+CCN2,Core matrisome,ECM Glycoproteins
+EMID1,Core matrisome,ECM Glycoproteins
+KNG1,Matrisome-associated,ECM Regulators
+PCOLCE,Core matrisome,ECM Glycoproteins
+SERPINB1,Matrisome-associated,ECM Regulators
+CHADL,Core matrisome,Proteoglycans
+IGFBP7,Core matrisome,ECM Glycoproteins
+TNFSF13,Matrisome-associated,Secreted Factors
+SNED1,Core matrisome,ECM Glycoproteins
+INHBE,Matrisome-associated,Secreted Factors
+LAMA1,Core matrisome,ECM Glycoproteins
+ANXA9,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS6,Matrisome-associated,ECM Regulators
+CST6,Matrisome-associated,ECM Regulators
+IGFBP5,Core matrisome,ECM Glycoproteins
+PLXDC2,Matrisome-associated,ECM-affiliated Proteins
+IFNA4,Matrisome-associated,Secreted Factors
+FAM20C,Matrisome-associated,ECM Regulators
+WNT10A,Matrisome-associated,Secreted Factors
+MEGF9,Matrisome-associated,Secreted Factors
+CCL24,Matrisome-associated,Secreted Factors
+LOXL4,Matrisome-associated,ECM Regulators
+VWA5B2,Core matrisome,ECM Glycoproteins
+CRLF1,Matrisome-associated,Secreted Factors
+LAMA5,Core matrisome,ECM Glycoproteins
+ANXA8,Matrisome-associated,ECM-affiliated Proteins
+CCL18,Matrisome-associated,Secreted Factors
+FLT3LG,Matrisome-associated,Secreted Factors
+IL1F10,Matrisome-associated,Secreted Factors
+NODAL,Matrisome-associated,Secreted Factors
+IGF1,Matrisome-associated,Secreted Factors
+FGF1,Matrisome-associated,Secreted Factors
+WNT10B,Matrisome-associated,Secreted Factors
+SPOCK2,Core matrisome,Proteoglycans
+WNT11,Matrisome-associated,Secreted Factors
+WNT5B,Matrisome-associated,Secreted Factors
+AEBP1,Core matrisome,ECM Glycoproteins
+S100A7,Matrisome-associated,Secreted Factors
+MUC5B,Matrisome-associated,ECM-affiliated Proteins
+COL1A2,Core matrisome,Collagens
+DCN,Core matrisome,Proteoglycans
+FN1,Core matrisome,ECM Glycoproteins
+CELA2A,Matrisome-associated,ECM Regulators
+SEMA4A,Matrisome-associated,ECM-affiliated Proteins
+SLIT2,Core matrisome,ECM Glycoproteins
+LGI1,Core matrisome,ECM Glycoproteins
+GPC1,Matrisome-associated,ECM-affiliated Proteins
+CCL2,Matrisome-associated,Secreted Factors
+SBSPON,Core matrisome,ECM Glycoproteins
+BGN,Core matrisome,Proteoglycans
+CLEC12B,Matrisome-associated,ECM-affiliated Proteins
+NTNG1,Core matrisome,ECM Glycoproteins
+IL13,Matrisome-associated,Secreted Factors
+SPOCK3,Core matrisome,Proteoglycans
+FGF17,Matrisome-associated,Secreted Factors
+CLEC3B,Matrisome-associated,ECM-affiliated Proteins
+ISM1,Matrisome-associated,Secreted Factors
+C1QC,Matrisome-associated,ECM-affiliated Proteins
+COL4A2,Core matrisome,Collagens
+IL18,Matrisome-associated,Secreted Factors
+TNFSF14,Matrisome-associated,Secreted Factors
+ANXA6,Matrisome-associated,ECM-affiliated Proteins
+ADAM12,Matrisome-associated,ECM Regulators
+ELN,Core matrisome,ECM Glycoproteins
+MFAP1,Core matrisome,ECM Glycoproteins
+CLEC4E,Matrisome-associated,ECM-affiliated Proteins
+TGFB2,Matrisome-associated,Secreted Factors
+NTNG2,Core matrisome,ECM Glycoproteins
+RELN,Core matrisome,ECM Glycoproteins
+IL7,Matrisome-associated,Secreted Factors
+C1QL3,Matrisome-associated,ECM-affiliated Proteins
+PLXND1,Matrisome-associated,ECM-affiliated Proteins
+COL5A3,Core matrisome,Collagens
+ADAMTS8,Matrisome-associated,ECM Regulators
+REG3A,Matrisome-associated,ECM-affiliated Proteins
+FGF11,Matrisome-associated,Secreted Factors
+LTBP1,Core matrisome,ECM Glycoproteins
+SERPINF1,Matrisome-associated,ECM Regulators
+BCAN,Core matrisome,Proteoglycans
+OVGP1,Matrisome-associated,ECM-affiliated Proteins
+MEGF11,Matrisome-associated,Secreted Factors
+HTRA1,Matrisome-associated,ECM Regulators
+CSF1,Matrisome-associated,Secreted Factors
+DPT,Core matrisome,ECM Glycoproteins
+LTBP3,Core matrisome,ECM Glycoproteins
+MUC3A,Matrisome-associated,ECM-affiliated Proteins
+GPC4,Matrisome-associated,ECM-affiliated Proteins
+VEGFC,Matrisome-associated,Secreted Factors
+MUC20,Matrisome-associated,ECM-affiliated Proteins
+EGFL7,Matrisome-associated,Secreted Factors
+F12,Matrisome-associated,ECM Regulators
+FREM1,Matrisome-associated,ECM-affiliated Proteins
+LAMB2,Core matrisome,ECM Glycoproteins
+BRINP2,Matrisome-associated,Secreted Factors
+CST9L,Matrisome-associated,ECM Regulators
+CRIM1,Core matrisome,ECM Glycoproteins
+SPARCL1,Core matrisome,ECM Glycoproteins
+CCL3L3,Matrisome-associated,Secreted Factors
+SERPINA1,Matrisome-associated,ECM Regulators
+TNF,Matrisome-associated,Secreted Factors
+IL17F,Matrisome-associated,Secreted Factors
+WNT9B,Matrisome-associated,Secreted Factors
+GDF2,Matrisome-associated,Secreted Factors
+ADAM15,Matrisome-associated,ECM Regulators
+IFNA5,Matrisome-associated,Secreted Factors
+IFNA13,Matrisome-associated,Secreted Factors
+C1QB,Matrisome-associated,ECM-affiliated Proteins
+BMP8B,Matrisome-associated,Secreted Factors
+P4HA1,Matrisome-associated,ECM Regulators
+GH1,Matrisome-associated,Secreted Factors
+GDF1,Matrisome-associated,Secreted Factors
+COL4A1,Core matrisome,Collagens
+CXCL14,Matrisome-associated,Secreted Factors
+MMP28,Matrisome-associated,ECM Regulators
+FCN1,Matrisome-associated,ECM-affiliated Proteins
+VWF,Core matrisome,ECM Glycoproteins
+SERPINB7,Matrisome-associated,ECM Regulators
+PCSK6,Matrisome-associated,ECM Regulators
+MFGE8,Core matrisome,ECM Glycoproteins
+ADAM11,Matrisome-associated,ECM Regulators
+CTSA,Matrisome-associated,ECM Regulators
+FGF2,Matrisome-associated,Secreted Factors
+KITLG,Matrisome-associated,Secreted Factors
+PLOD1,Matrisome-associated,ECM Regulators
+CTSE,Matrisome-associated,ECM Regulators
+MST1,Matrisome-associated,Secreted Factors
+SMOC2,Core matrisome,ECM Glycoproteins
+SFTPC,Matrisome-associated,ECM-affiliated Proteins
+S100Z,Matrisome-associated,Secreted Factors
+PTN,Matrisome-associated,Secreted Factors
+ADAMTSL5,Matrisome-associated,ECM Regulators
+S100A4,Matrisome-associated,Secreted Factors
+CCN1,Core matrisome,ECM Glycoproteins
+BMP1,Matrisome-associated,ECM Regulators
+EGLN3,Matrisome-associated,ECM Regulators
+LRG1,Core matrisome,ECM Glycoproteins
+IFNA16,Matrisome-associated,Secreted Factors
+DHH,Matrisome-associated,Secreted Factors
+HYAL2,Matrisome-associated,ECM Regulators
+CSPG4,Matrisome-associated,ECM-affiliated Proteins
+ANXA7,Matrisome-associated,ECM-affiliated Proteins
+TNXB,Core matrisome,ECM Glycoproteins
+IL6,Matrisome-associated,Secreted Factors
+CST4,Matrisome-associated,ECM Regulators
+CSH2,Matrisome-associated,Secreted Factors
+AGRN,Core matrisome,ECM Glycoproteins
+INTS6L,Core matrisome,ECM Glycoproteins
+ZFP91,Matrisome-associated,Secreted Factors
+MUC21,Matrisome-associated,ECM-affiliated Proteins
+PF4,Matrisome-associated,Secreted Factors
+FGF6,Matrisome-associated,Secreted Factors
+COL18A1,Core matrisome,Collagens
+TIMP4,Matrisome-associated,ECM Regulators
+LIF,Matrisome-associated,Secreted Factors
+WIF1,Matrisome-associated,Secreted Factors
+SEMA3A,Matrisome-associated,ECM-affiliated Proteins
+HAPLN4,Core matrisome,Proteoglycans
+SDC3,Matrisome-associated,ECM-affiliated Proteins
+MATN4,Core matrisome,ECM Glycoproteins
+S100B,Matrisome-associated,Secreted Factors
+IL34,Matrisome-associated,Secreted Factors
+ADAM23,Matrisome-associated,ECM Regulators
+CCL26,Matrisome-associated,Secreted Factors
+PLXNA2,Matrisome-associated,ECM-affiliated Proteins
+CRLF3,Matrisome-associated,Secreted Factors
+CST8,Matrisome-associated,ECM Regulators
+S100A6,Matrisome-associated,Secreted Factors
+FGF8,Matrisome-associated,Secreted Factors
+SERPINB6,Matrisome-associated,ECM Regulators
+COL11A1,Core matrisome,Collagens
+ADAM32,Matrisome-associated,ECM Regulators
+ADAMTS3,Matrisome-associated,ECM Regulators
+IL36RN,Matrisome-associated,Secreted Factors
+EBI3,Matrisome-associated,Secreted Factors
+ANXA2,Matrisome-associated,ECM-affiliated Proteins
+WNT8A,Matrisome-associated,Secreted Factors
+LTBP4,Core matrisome,ECM Glycoproteins
+IGFBP4,Core matrisome,ECM Glycoproteins
+SRGN,Core matrisome,Proteoglycans
+CCL8,Matrisome-associated,Secreted Factors
+SPON2,Core matrisome,ECM Glycoproteins
+SERPINA3,Matrisome-associated,ECM Regulators
+ANXA1,Matrisome-associated,ECM-affiliated Proteins
+INHA,Matrisome-associated,Secreted Factors
+EGLN1,Matrisome-associated,ECM Regulators
+TIMP2,Matrisome-associated,ECM Regulators
+CLEC17A,Matrisome-associated,ECM-affiliated Proteins
+MUCL1,Matrisome-associated,ECM-affiliated Proteins
+C1QTNF6,Matrisome-associated,ECM-affiliated Proteins
+ANXA5,Matrisome-associated,ECM-affiliated Proteins
+FGF12,Matrisome-associated,Secreted Factors
+IGFBP2,Core matrisome,ECM Glycoproteins
+VWA5A,Core matrisome,ECM Glycoproteins
+GDF6,Matrisome-associated,Secreted Factors
+MASP2,Matrisome-associated,ECM Regulators
+ASTL,Matrisome-associated,ECM Regulators
+COL6A2,Core matrisome,Collagens
+NCAN,Core matrisome,Proteoglycans
+NRG1,Matrisome-associated,Secreted Factors
+CTSB,Matrisome-associated,ECM Regulators
+NPNT,Core matrisome,ECM Glycoproteins
+PLOD3,Matrisome-associated,ECM Regulators
+SEMA3E,Matrisome-associated,ECM-affiliated Proteins
+MFAP3,Core matrisome,ECM Glycoproteins
+MEGF8,Matrisome-associated,Secreted Factors
+FGF14,Matrisome-associated,Secreted Factors
+S100A13,Matrisome-associated,Secreted Factors
+ADAMTS10,Matrisome-associated,ECM Regulators
+CLEC14A,Matrisome-associated,ECM-affiliated Proteins
+LGI3,Core matrisome,ECM Glycoproteins
+S100A11,Matrisome-associated,Secreted Factors
+AGT,Matrisome-associated,ECM Regulators
+GDF11,Matrisome-associated,Secreted Factors
+ITIH4,Matrisome-associated,ECM Regulators
+NGLY1,Matrisome-associated,ECM Regulators
+EMCN,Matrisome-associated,ECM-affiliated Proteins
+P4HA2,Matrisome-associated,ECM Regulators
+COL5A2,Core matrisome,Collagens
+SERPIND1,Matrisome-associated,ECM Regulators
+CTSZ,Matrisome-associated,ECM Regulators
+PLOD1,Matrisome-associated,ECM Regulators
+A2M,Matrisome-associated,ECM Regulators
+PLXDC2,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS4,Matrisome-associated,ECM Regulators
+NTNG2,Core matrisome,ECM Glycoproteins
+COL4A1,Core matrisome,Collagens
+HYAL2,Matrisome-associated,ECM Regulators
+CRELD1,Core matrisome,ECM Glycoproteins
+CCN2,Core matrisome,ECM Glycoproteins
+PRELP,Core matrisome,Proteoglycans
+FBN3,Core matrisome,ECM Glycoproteins
+C1QB,Matrisome-associated,ECM-affiliated Proteins
+HHIP,Matrisome-associated,Secreted Factors
+TNFSF12,Matrisome-associated,Secreted Factors
+C1QL2,Matrisome-associated,ECM-affiliated Proteins
+CCL2,Matrisome-associated,Secreted Factors
+COL9A2,Core matrisome,Collagens
+F7,Matrisome-associated,ECM Regulators
+CCL3,Matrisome-associated,Secreted Factors
+CLEC10A,Matrisome-associated,ECM-affiliated Proteins
+SEMA6B,Matrisome-associated,ECM-affiliated Proteins
+CBLN2,Matrisome-associated,Secreted Factors
+MMP28,Matrisome-associated,ECM Regulators
+WNT9B,Matrisome-associated,Secreted Factors
+CSTB,Matrisome-associated,ECM Regulators
+FGF17,Matrisome-associated,Secreted Factors
+MDK,Matrisome-associated,Secreted Factors
+EDIL3,Core matrisome,ECM Glycoproteins
+SPP1,Core matrisome,ECM Glycoproteins
+IGFBP4,Core matrisome,ECM Glycoproteins
+HSPG2,Core matrisome,Proteoglycans
+PLOD3,Matrisome-associated,ECM Regulators
+SPOCK3,Core matrisome,Proteoglycans
+ADAMTS10,Matrisome-associated,ECM Regulators
+LAMB2,Core matrisome,ECM Glycoproteins
+EGLN3,Matrisome-associated,ECM Regulators
+LOXL4,Matrisome-associated,ECM Regulators
+MEGF10,Matrisome-associated,Secreted Factors
+COL5A3,Core matrisome,Collagens
+THBS3,Core matrisome,ECM Glycoproteins
+MUC20,Matrisome-associated,ECM-affiliated Proteins
+ADAMTSL5,Matrisome-associated,ECM Regulators
+CXCL13,Matrisome-associated,Secreted Factors
+TGFB2,Matrisome-associated,Secreted Factors
+COL11A2,Core matrisome,Collagens
+HAPLN4,Core matrisome,Proteoglycans
+IGFBP5,Core matrisome,ECM Glycoproteins
+HAPLN2,Core matrisome,Proteoglycans
+NODAL,Matrisome-associated,Secreted Factors
+PRSS3,Matrisome-associated,ECM Regulators
+SEMA3E,Matrisome-associated,ECM-affiliated Proteins
+CELA2A,Matrisome-associated,ECM Regulators
+PARM1,Matrisome-associated,ECM-affiliated Proteins
+S100A16,Matrisome-associated,Secreted Factors
+P4HA1,Matrisome-associated,ECM Regulators
+C1QTNF6,Matrisome-associated,ECM-affiliated Proteins
+MUC12,Matrisome-associated,ECM-affiliated Proteins
+CLEC4E,Matrisome-associated,ECM-affiliated Proteins
+SERPINB7,Matrisome-associated,ECM Regulators
+INTS6L,Core matrisome,ECM Glycoproteins
+LGI4,Core matrisome,ECM Glycoproteins
+CX3CL1,Matrisome-associated,Secreted Factors
+TIMP1,Matrisome-associated,ECM Regulators
+SPOCK1,Core matrisome,Proteoglycans
+BMP1,Matrisome-associated,ECM Regulators
+LGI1,Core matrisome,ECM Glycoproteins
+POMZP3,Core matrisome,ECM Glycoproteins
+LTBP4,Core matrisome,ECM Glycoproteins
+FGF13,Matrisome-associated,Secreted Factors
+MATN4,Core matrisome,ECM Glycoproteins
+BRINP2,Matrisome-associated,Secreted Factors
+EMILIN1,Core matrisome,ECM Glycoproteins
+SPOCK2,Core matrisome,Proteoglycans
+SEMA4D,Matrisome-associated,ECM-affiliated Proteins
+GDF6,Matrisome-associated,Secreted Factors
+IL1F10,Matrisome-associated,Secreted Factors
+S100Z,Matrisome-associated,Secreted Factors
+SNED1,Core matrisome,ECM Glycoproteins
+IFNA5,Matrisome-associated,Secreted Factors
+NGLY1,Matrisome-associated,ECM Regulators
+TNR,Core matrisome,ECM Glycoproteins
+AMH,Matrisome-associated,Secreted Factors
+FCN1,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS13,Matrisome-associated,ECM Regulators
+SFTPC,Matrisome-associated,ECM-affiliated Proteins
+COL4A2,Core matrisome,Collagens
+CTSE,Matrisome-associated,ECM Regulators
+NTNG1,Core matrisome,ECM Glycoproteins
+FAM20C,Matrisome-associated,ECM Regulators
+ANXA7,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS6,Matrisome-associated,ECM Regulators
+SDC3,Matrisome-associated,ECM-affiliated Proteins
+PLXNB1,Matrisome-associated,ECM-affiliated Proteins
+GH1,Matrisome-associated,Secreted Factors
+NCAN,Core matrisome,Proteoglycans
+VEGFB,Matrisome-associated,Secreted Factors
+GAS6,Core matrisome,ECM Glycoproteins
+LOXL2,Matrisome-associated,ECM Regulators
+MUCL1,Matrisome-associated,ECM-affiliated Proteins
+S100A7,Matrisome-associated,Secreted Factors
+S100A10,Matrisome-associated,Secreted Factors
+WIF1,Matrisome-associated,Secreted Factors
+GDF5,Matrisome-associated,Secreted Factors
+SLIT2,Core matrisome,ECM Glycoproteins
+IGFBP7,Core matrisome,ECM Glycoproteins
+COL6A1,Core matrisome,Collagens
+CCL19,Matrisome-associated,Secreted Factors
+C1QL3,Matrisome-associated,ECM-affiliated Proteins
+PGF,Matrisome-associated,Secreted Factors
+SEMA6A,Matrisome-associated,ECM-affiliated Proteins
+BMP8B,Matrisome-associated,Secreted Factors
+LAMA5,Core matrisome,ECM Glycoproteins
+IL36RN,Matrisome-associated,Secreted Factors
+PDGFB,Matrisome-associated,Secreted Factors
+S100B,Matrisome-associated,Secreted Factors
+MEGF11,Matrisome-associated,Secreted Factors
+IL7,Matrisome-associated,Secreted Factors
+FGF6,Matrisome-associated,Secreted Factors
+SFRP2,Matrisome-associated,Secreted Factors
+TNXB,Core matrisome,ECM Glycoproteins
+ANXA1,Matrisome-associated,ECM-affiliated Proteins
+WNT3,Matrisome-associated,Secreted Factors
+CSH2,Matrisome-associated,Secreted Factors
+SMOC2,Core matrisome,ECM Glycoproteins
+IGF2,Matrisome-associated,Secreted Factors
+SERPINH1,Matrisome-associated,ECM Regulators
+ANXA11,Matrisome-associated,ECM-affiliated Proteins
+TIMP2,Matrisome-associated,ECM Regulators
+TIMP4,Matrisome-associated,ECM Regulators
+SERPINI1,Matrisome-associated,ECM Regulators
+SERPINF1,Matrisome-associated,ECM Regulators
+ELN,Core matrisome,ECM Glycoproteins
+CLEC3B,Matrisome-associated,ECM-affiliated Proteins
+ANXA9,Matrisome-associated,ECM-affiliated Proteins
+SEMA6C,Matrisome-associated,ECM-affiliated Proteins
+COL1A2,Core matrisome,Collagens
+VWA5A,Core matrisome,ECM Glycoproteins
+COL27A1,Core matrisome,Collagens
+CTSD,Matrisome-associated,ECM Regulators
+TNFSF14,Matrisome-associated,Secreted Factors
+C1QC,Matrisome-associated,ECM-affiliated Proteins
+WNT10A,Matrisome-associated,Secreted Factors
+MFGE8,Core matrisome,ECM Glycoproteins
+IL6,Matrisome-associated,Secreted Factors
+CTSA,Matrisome-associated,ECM Regulators
+FGF12,Matrisome-associated,Secreted Factors
+CLEC6A,Matrisome-associated,ECM-affiliated Proteins
+WNT8A,Matrisome-associated,Secreted Factors
+LTBP1,Core matrisome,ECM Glycoproteins
+IL25,Matrisome-associated,Secreted Factors
+FGF2,Matrisome-associated,Secreted Factors
+FGF8,Matrisome-associated,Secreted Factors
+PLXNA1,Matrisome-associated,ECM-affiliated Proteins
+LTBP3,Core matrisome,ECM Glycoproteins
+TIMP3,Matrisome-associated,ECM Regulators
+PLAT,Matrisome-associated,ECM Regulators
+BCAN,Core matrisome,Proteoglycans
+VWA5B2,Core matrisome,ECM Glycoproteins
+SERPIND1,Matrisome-associated,ECM Regulators
+VWDE,Core matrisome,ECM Glycoproteins
+PLXNB3,Matrisome-associated,ECM-affiliated Proteins
+NPNT,Core matrisome,ECM Glycoproteins
+MEGF9,Matrisome-associated,Secreted Factors
+GDF1,Matrisome-associated,Secreted Factors
+CST3,Matrisome-associated,ECM Regulators
+GLDN,Core matrisome,ECM Glycoproteins
+TGFB3,Matrisome-associated,Secreted Factors
+BMP7,Matrisome-associated,Secreted Factors
+SERPINA1,Matrisome-associated,ECM Regulators
+CCL8,Matrisome-associated,Secreted Factors
+ANXA8,Matrisome-associated,ECM-affiliated Proteins
+SDC4,Matrisome-associated,ECM-affiliated Proteins
+IL24,Matrisome-associated,Secreted Factors
+ADAMTS1,Matrisome-associated,ECM Regulators
+CSPG4,Matrisome-associated,ECM-affiliated Proteins
+FGF14,Matrisome-associated,Secreted Factors
+S100A11,Matrisome-associated,Secreted Factors
+IFNA4,Matrisome-associated,Secreted Factors
+CXCL3,Matrisome-associated,Secreted Factors
+COL6A2,Core matrisome,Collagens
+MUC3A,Matrisome-associated,ECM-affiliated Proteins
+COL11A1,Core matrisome,Collagens
+CST4,Matrisome-associated,ECM Regulators
+AEBP1,Core matrisome,ECM Glycoproteins
+ADAM23,Matrisome-associated,ECM Regulators
+PTN,Matrisome-associated,Secreted Factors
+VEGFD,Matrisome-associated,Secreted Factors
+C17orf58,Matrisome-associated,ECM Regulators
+SEMA4B,Matrisome-associated,ECM-affiliated Proteins
+HCFC2,Matrisome-associated,Secreted Factors
+COL16A1,Core matrisome,Collagens
+C1QTNF4,Matrisome-associated,ECM-affiliated Proteins
+ADAM11,Matrisome-associated,ECM Regulators
+ADAM22,Matrisome-associated,ECM Regulators
+GDF2,Matrisome-associated,Secreted Factors
+ADAM32,Matrisome-associated,ECM Regulators
+INHA,Matrisome-associated,Secreted Factors
+PF4,Matrisome-associated,Secreted Factors
+CRLF1,Matrisome-associated,Secreted Factors
+SEMA4F,Matrisome-associated,ECM-affiliated Proteins
+NRG1,Matrisome-associated,Secreted Factors
+TNFSF13,Matrisome-associated,Secreted Factors
+AGT,Matrisome-associated,ECM Regulators
+LTA,Matrisome-associated,Secreted Factors
+SBSPON,Core matrisome,ECM Glycoproteins
+SPARCL1,Core matrisome,ECM Glycoproteins
+PLXNB2,Matrisome-associated,ECM-affiliated Proteins
+EFEMP1,Core matrisome,ECM Glycoproteins
+ADAM9,Matrisome-associated,ECM Regulators
+MUC5AC,Matrisome-associated,ECM-affiliated Proteins
+LMAN1,Matrisome-associated,ECM-affiliated Proteins
+S100A6,Matrisome-associated,Secreted Factors
+FGF18,Matrisome-associated,Secreted Factors
+SEMA4C,Matrisome-associated,ECM-affiliated Proteins
+SPARC,Core matrisome,ECM Glycoproteins
+LGALS1,Matrisome-associated,ECM-affiliated Proteins
+SLIT1,Core matrisome,ECM Glycoproteins
+IL34,Matrisome-associated,Secreted Factors
+SEMA3A,Matrisome-associated,ECM-affiliated Proteins
+CCN1,Core matrisome,ECM Glycoproteins
+CTSF,Matrisome-associated,ECM Regulators
+CELA3A,Matrisome-associated,ECM Regulators
+CLEC18A,Matrisome-associated,ECM-affiliated Proteins
+ELSPBP1,Core matrisome,ECM Glycoproteins
+SERPINB1,Matrisome-associated,ECM Regulators
+GDF11,Matrisome-associated,Secreted Factors
+BMP3,Matrisome-associated,Secreted Factors
+PLXNA2,Matrisome-associated,ECM-affiliated Proteins
+OVGP1,Matrisome-associated,ECM-affiliated Proteins
+CRLF3,Matrisome-associated,Secreted Factors
+SERPING1,Matrisome-associated,ECM Regulators
+ADAMTS3,Matrisome-associated,ECM Regulators
+IFNA13,Matrisome-associated,Secreted Factors
+MFAP1,Core matrisome,ECM Glycoproteins
+P4HTM,Matrisome-associated,ECM Regulators
+C1QTNF1,Matrisome-associated,ECM-affiliated Proteins
+CCL24,Matrisome-associated,Secreted Factors
+EMID1,Core matrisome,ECM Glycoproteins
+MUC21,Matrisome-associated,ECM-affiliated Proteins
+MASP2,Matrisome-associated,ECM Regulators
+FN1,Core matrisome,ECM Glycoproteins
+CLEC14A,Matrisome-associated,ECM-affiliated Proteins
+CST9L,Matrisome-associated,ECM Regulators
+FGF21,Matrisome-associated,Secreted Factors
+BGN,Core matrisome,Proteoglycans
+CST6,Matrisome-associated,ECM Regulators
+WNT11,Matrisome-associated,Secreted Factors
+SPON2,Core matrisome,ECM Glycoproteins
+LRG1,Core matrisome,ECM Glycoproteins
+WNT10B,Matrisome-associated,Secreted Factors
+IFNA16,Matrisome-associated,Secreted Factors
+GPC4,Matrisome-associated,ECM-affiliated Proteins
+PCOLCE,Core matrisome,ECM Glycoproteins
+FBLN5,Core matrisome,ECM Glycoproteins
+CSHL1,Matrisome-associated,Secreted Factors
+SEMA4A,Matrisome-associated,ECM-affiliated Proteins
+ANXA5,Matrisome-associated,ECM-affiliated Proteins
+RELN,Core matrisome,ECM Glycoproteins
+IL13,Matrisome-associated,Secreted Factors
+PPBP,Matrisome-associated,Secreted Factors
+C1QTNF7,Matrisome-associated,ECM-affiliated Proteins
+OGFOD2,Matrisome-associated,ECM Regulators
+LAMA1,Core matrisome,ECM Glycoproteins
+CSF1,Matrisome-associated,Secreted Factors
+IGFBP2,Core matrisome,ECM Glycoproteins
+ITIH5,Matrisome-associated,ECM Regulators
+LGI3,Core matrisome,ECM Glycoproteins
+SERPINB6,Matrisome-associated,ECM Regulators
+S100A1,Matrisome-associated,Secreted Factors
+IL18,Matrisome-associated,Secreted Factors
+CLEC12B,Matrisome-associated,ECM-affiliated Proteins
+KITLG,Matrisome-associated,Secreted Factors
+IL17F,Matrisome-associated,Secreted Factors
+EMCN,Matrisome-associated,ECM-affiliated Proteins
+SRGN,Core matrisome,Proteoglycans
+CXCL14,Matrisome-associated,Secreted Factors
+EBI3,Matrisome-associated,Secreted Factors
+IFNA14,Matrisome-associated,Secreted Factors
+EGLN2,Matrisome-associated,ECM Regulators
+ADAM15,Matrisome-associated,ECM Regulators
+REG3A,Matrisome-associated,ECM-affiliated Proteins
+MUC5B,Matrisome-associated,ECM-affiliated Proteins
+SERPINE2,Matrisome-associated,ECM Regulators
+FGF3,Matrisome-associated,Secreted Factors
+PLXND1,Matrisome-associated,ECM-affiliated Proteins
+SERPINA3,Matrisome-associated,ECM Regulators
+PCSK6,Matrisome-associated,ECM Regulators
+EGFL7,Matrisome-associated,Secreted Factors
+NELL2,Core matrisome,ECM Glycoproteins
+CRIM1,Core matrisome,ECM Glycoproteins
+CHADL,Core matrisome,Proteoglycans
+FGF4,Matrisome-associated,Secreted Factors
+ADAMTS8,Matrisome-associated,ECM Regulators
+VWF,Core matrisome,ECM Glycoproteins
+S100A4,Matrisome-associated,Secreted Factors
+FGF1,Matrisome-associated,Secreted Factors
+CLEC17A,Matrisome-associated,ECM-affiliated Proteins
+ANXA6,Matrisome-associated,ECM-affiliated Proteins
+ELFN2,Matrisome-associated,ECM-affiliated Proteins
+MST1,Matrisome-associated,Secreted Factors
+GPC1,Matrisome-associated,ECM-affiliated Proteins
+FLT3LG,Matrisome-associated,Secreted Factors
+WNT2,Matrisome-associated,Secreted Factors
+ASTL,Matrisome-associated,ECM Regulators
+VEGFC,Matrisome-associated,Secreted Factors
+COL5A2,Core matrisome,Collagens
+FREM1,Matrisome-associated,ECM-affiliated Proteins
+WNT5B,Matrisome-associated,Secreted Factors
+MFAP3,Core matrisome,ECM Glycoproteins
+FGF11,Matrisome-associated,Secreted Factors
+CST8,Matrisome-associated,ECM Regulators
+CCL18,Matrisome-associated,Secreted Factors
+ISM1,Matrisome-associated,Secreted Factors
+TNF,Matrisome-associated,Secreted Factors
+FSTL3,Matrisome-associated,Secreted Factors
+HTRA1,Matrisome-associated,ECM Regulators
+KNG1,Matrisome-associated,ECM Regulators
+EGLN1,Matrisome-associated,ECM Regulators
+IGF1,Matrisome-associated,Secreted Factors
+COL18A1,Core matrisome,Collagens
+S100A13,Matrisome-associated,Secreted Factors
+GREM1,Matrisome-associated,ECM-affiliated Proteins
+P4HA2,Matrisome-associated,ECM Regulators
+AGRN,Core matrisome,ECM Glycoproteins
+MEGF8,Matrisome-associated,Secreted Factors
+DPT,Core matrisome,ECM Glycoproteins
+LIF,Matrisome-associated,Secreted Factors
+CCL26,Matrisome-associated,Secreted Factors
+CTSB,Matrisome-associated,ECM Regulators
+ITIH4,Matrisome-associated,ECM Regulators
+DHH,Matrisome-associated,Secreted Factors
+F12,Matrisome-associated,ECM Regulators
+INHBE,Matrisome-associated,Secreted Factors
+ANXA2,Matrisome-associated,ECM-affiliated Proteins
+CCL3L3,Matrisome-associated,Secreted Factors
+SEMA3B,Matrisome-associated,ECM-affiliated Proteins
+ZFP91,Matrisome-associated,Secreted Factors
+ADAM12,Matrisome-associated,ECM Regulators
+DCN,Core matrisome,Proteoglycans
+COL4A1,Core matrisome,Collagens
+CTSZ,Matrisome-associated,ECM Regulators
+A2M,Matrisome-associated,ECM Regulators
+PRELP,Core matrisome,Proteoglycans
+HSPG2,Core matrisome,Proteoglycans
+IGFBP4,Core matrisome,ECM Glycoproteins
+ADAMTS4,Matrisome-associated,ECM Regulators
+CLEC10A,Matrisome-associated,ECM-affiliated Proteins
+PLOD3,Matrisome-associated,ECM Regulators
+FN1,Core matrisome,ECM Glycoproteins
+C1QB,Matrisome-associated,ECM-affiliated Proteins
+CCL2,Matrisome-associated,Secreted Factors
+LAMB2,Core matrisome,ECM Glycoproteins
+PLXDC2,Matrisome-associated,ECM-affiliated Proteins
+CSTB,Matrisome-associated,ECM Regulators
+EGLN3,Matrisome-associated,ECM Regulators
+CCL3,Matrisome-associated,Secreted Factors
+COL4A2,Core matrisome,Collagens
+IL1F10,Matrisome-associated,Secreted Factors
+POMZP3,Core matrisome,ECM Glycoproteins
+S100A16,Matrisome-associated,Secreted Factors
+LTBP1,Core matrisome,ECM Glycoproteins
+FBN3,Core matrisome,ECM Glycoproteins
+PLOD1,Matrisome-associated,ECM Regulators
+NTNG2,Core matrisome,ECM Glycoproteins
+C1QTNF6,Matrisome-associated,ECM-affiliated Proteins
+F7,Matrisome-associated,ECM Regulators
+COL9A2,Core matrisome,Collagens
+BMP8B,Matrisome-associated,Secreted Factors
+TNFSF12,Matrisome-associated,Secreted Factors
+HYAL2,Matrisome-associated,ECM Regulators
+VWF,Core matrisome,ECM Glycoproteins
+SEMA3E,Matrisome-associated,ECM-affiliated Proteins
+LTBP4,Core matrisome,ECM Glycoproteins
+PARM1,Matrisome-associated,ECM-affiliated Proteins
+SNED1,Core matrisome,ECM Glycoproteins
+GAS6,Core matrisome,ECM Glycoproteins
+IL6,Matrisome-associated,Secreted Factors
+C1QL2,Matrisome-associated,ECM-affiliated Proteins
+ADAMTSL5,Matrisome-associated,ECM Regulators
+P4HA1,Matrisome-associated,ECM Regulators
+CLEC14A,Matrisome-associated,ECM-affiliated Proteins
+VEGFC,Matrisome-associated,Secreted Factors
+S100A6,Matrisome-associated,Secreted Factors
+COL1A2,Core matrisome,Collagens
+ELN,Core matrisome,ECM Glycoproteins
+HHIP,Matrisome-associated,Secreted Factors
+GH1,Matrisome-associated,Secreted Factors
+IGFBP7,Core matrisome,ECM Glycoproteins
+NTNG1,Core matrisome,ECM Glycoproteins
+MATN4,Core matrisome,ECM Glycoproteins
+SERPINB7,Matrisome-associated,ECM Regulators
+CX3CL1,Matrisome-associated,Secreted Factors
+KITLG,Matrisome-associated,Secreted Factors
+WNT5B,Matrisome-associated,Secreted Factors
+WNT8A,Matrisome-associated,Secreted Factors
+TIMP1,Matrisome-associated,ECM Regulators
+MMP28,Matrisome-associated,ECM Regulators
+CCN2,Core matrisome,ECM Glycoproteins
+CBLN2,Matrisome-associated,Secreted Factors
+MUCL1,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS1,Matrisome-associated,ECM Regulators
+WNT10A,Matrisome-associated,Secreted Factors
+MASP2,Matrisome-associated,ECM Regulators
+S100Z,Matrisome-associated,Secreted Factors
+TGFB3,Matrisome-associated,Secreted Factors
+SEMA3A,Matrisome-associated,ECM-affiliated Proteins
+LOXL2,Matrisome-associated,ECM Regulators
+CELA2A,Matrisome-associated,ECM Regulators
+CCL24,Matrisome-associated,Secreted Factors
+PRSS3,Matrisome-associated,ECM Regulators
+VWA5B2,Core matrisome,ECM Glycoproteins
+FLT3LG,Matrisome-associated,Secreted Factors
+FCN1,Matrisome-associated,ECM-affiliated Proteins
+AEBP1,Core matrisome,ECM Glycoproteins
+SPOCK3,Core matrisome,Proteoglycans
+WNT9B,Matrisome-associated,Secreted Factors
+IFNA14,Matrisome-associated,Secreted Factors
+LIF,Matrisome-associated,Secreted Factors
+TNXB,Core matrisome,ECM Glycoproteins
+CRIM1,Core matrisome,ECM Glycoproteins
+SERPING1,Matrisome-associated,ECM Regulators
+VWA5A,Core matrisome,ECM Glycoproteins
+FGF4,Matrisome-associated,Secreted Factors
+ADAM22,Matrisome-associated,ECM Regulators
+CLEC4E,Matrisome-associated,ECM-affiliated Proteins
+SFRP2,Matrisome-associated,Secreted Factors
+PLXNA1,Matrisome-associated,ECM-affiliated Proteins
+C1QC,Matrisome-associated,ECM-affiliated Proteins
+IL25,Matrisome-associated,Secreted Factors
+CTSD,Matrisome-associated,ECM Regulators
+PCSK6,Matrisome-associated,ECM Regulators
+IL34,Matrisome-associated,Secreted Factors
+TIMP2,Matrisome-associated,ECM Regulators
+PLAT,Matrisome-associated,ECM Regulators
+GDF5,Matrisome-associated,Secreted Factors
+LGI4,Core matrisome,ECM Glycoproteins
+INTS6L,Core matrisome,ECM Glycoproteins
+BGN,Core matrisome,Proteoglycans
+GDF1,Matrisome-associated,Secreted Factors
+SLIT1,Core matrisome,ECM Glycoproteins
+SERPIND1,Matrisome-associated,ECM Regulators
+SDC3,Matrisome-associated,ECM-affiliated Proteins
+INHA,Matrisome-associated,Secreted Factors
+VWDE,Core matrisome,ECM Glycoproteins
+C1QL3,Matrisome-associated,ECM-affiliated Proteins
+RELN,Core matrisome,ECM Glycoproteins
+LMAN1,Matrisome-associated,ECM-affiliated Proteins
+IL7,Matrisome-associated,Secreted Factors
+WNT3,Matrisome-associated,Secreted Factors
+FGF21,Matrisome-associated,Secreted Factors
+SEMA6B,Matrisome-associated,ECM-affiliated Proteins
+ELSPBP1,Core matrisome,ECM Glycoproteins
+C1QTNF7,Matrisome-associated,ECM-affiliated Proteins
+CSH2,Matrisome-associated,Secreted Factors
+PF4,Matrisome-associated,Secreted Factors
+HAPLN4,Core matrisome,Proteoglycans
+P4HA2,Matrisome-associated,ECM Regulators
+ANXA7,Matrisome-associated,ECM-affiliated Proteins
+IGFBP5,Core matrisome,ECM Glycoproteins
+MEGF9,Matrisome-associated,Secreted Factors
+CLEC6A,Matrisome-associated,ECM-affiliated Proteins
+AMH,Matrisome-associated,Secreted Factors
+WNT2,Matrisome-associated,Secreted Factors
+EMID1,Core matrisome,ECM Glycoproteins
+FGF14,Matrisome-associated,Secreted Factors
+CST3,Matrisome-associated,ECM Regulators
+SERPINI1,Matrisome-associated,ECM Regulators
+NCAN,Core matrisome,Proteoglycans
+SEMA4F,Matrisome-associated,ECM-affiliated Proteins
+CLEC12B,Matrisome-associated,ECM-affiliated Proteins
+LAMA5,Core matrisome,ECM Glycoproteins
+CCL3L3,Matrisome-associated,Secreted Factors
+SERPINH1,Matrisome-associated,ECM Regulators
+TNFSF13,Matrisome-associated,Secreted Factors
+FGF2,Matrisome-associated,Secreted Factors
+FGF13,Matrisome-associated,Secreted Factors
+FREM1,Matrisome-associated,ECM-affiliated Proteins
+COL6A1,Core matrisome,Collagens
+TGFB2,Matrisome-associated,Secreted Factors
+ADAM32,Matrisome-associated,ECM Regulators
+TNR,Core matrisome,ECM Glycoproteins
+THBS3,Core matrisome,ECM Glycoproteins
+FGF1,Matrisome-associated,Secreted Factors
+BRINP2,Matrisome-associated,Secreted Factors
+OGFOD2,Matrisome-associated,ECM Regulators
+IGF2,Matrisome-associated,Secreted Factors
+PLXNB1,Matrisome-associated,ECM-affiliated Proteins
+CST6,Matrisome-associated,ECM Regulators
+CTSE,Matrisome-associated,ECM Regulators
+ADAMTS10,Matrisome-associated,ECM Regulators
+COL27A1,Core matrisome,Collagens
+SERPINF1,Matrisome-associated,ECM Regulators
+IL36RN,Matrisome-associated,Secreted Factors
+FGF17,Matrisome-associated,Secreted Factors
+GDF2,Matrisome-associated,Secreted Factors
+EGFL7,Matrisome-associated,Secreted Factors
+IFNA16,Matrisome-associated,Secreted Factors
+BMP7,Matrisome-associated,Secreted Factors
+WNT10B,Matrisome-associated,Secreted Factors
+MFAP3,Core matrisome,ECM Glycoproteins
+DCN,Core matrisome,Proteoglycans
+MUC5B,Matrisome-associated,ECM-affiliated Proteins
+ASTL,Matrisome-associated,ECM Regulators
+CSF1,Matrisome-associated,Secreted Factors
+HAPLN2,Core matrisome,Proteoglycans
+BMP3,Matrisome-associated,Secreted Factors
+OVGP1,Matrisome-associated,ECM-affiliated Proteins
+C17orf58,Matrisome-associated,ECM Regulators
+S100A7,Matrisome-associated,Secreted Factors
+LAMA1,Core matrisome,ECM Glycoproteins
+EFEMP1,Core matrisome,ECM Glycoproteins
+FGF12,Matrisome-associated,Secreted Factors
+PLXNB2,Matrisome-associated,ECM-affiliated Proteins
+SERPINB1,Matrisome-associated,ECM Regulators
+TNF,Matrisome-associated,Secreted Factors
+EMCN,Matrisome-associated,ECM-affiliated Proteins
+EMILIN1,Core matrisome,ECM Glycoproteins
+MFGE8,Core matrisome,ECM Glycoproteins
+SEMA3B,Matrisome-associated,ECM-affiliated Proteins
+IFNA5,Matrisome-associated,Secreted Factors
+COL6A2,Core matrisome,Collagens
+C1QTNF4,Matrisome-associated,ECM-affiliated Proteins
+CCL18,Matrisome-associated,Secreted Factors
+ADAM12,Matrisome-associated,ECM Regulators
+TIMP3,Matrisome-associated,ECM Regulators
+ADAMTS8,Matrisome-associated,ECM Regulators
+SMOC2,Core matrisome,ECM Glycoproteins
+IL18,Matrisome-associated,Secreted Factors
+CELA3A,Matrisome-associated,ECM Regulators
+BMP1,Matrisome-associated,ECM Regulators
+MUC12,Matrisome-associated,ECM-affiliated Proteins
+GPC4,Matrisome-associated,ECM-affiliated Proteins
+ITIH5,Matrisome-associated,ECM Regulators
+S100A11,Matrisome-associated,Secreted Factors
+SPON2,Core matrisome,ECM Glycoproteins
+LGI1,Core matrisome,ECM Glycoproteins
+GDF11,Matrisome-associated,Secreted Factors
+LTA,Matrisome-associated,Secreted Factors
+MEGF11,Matrisome-associated,Secreted Factors
+COL16A1,Core matrisome,Collagens
+CRLF3,Matrisome-associated,Secreted Factors
+CCL26,Matrisome-associated,Secreted Factors
+CXCL14,Matrisome-associated,Secreted Factors
+IGFBP2,Core matrisome,ECM Glycoproteins
+AGRN,Core matrisome,ECM Glycoproteins
+SERPINA1,Matrisome-associated,ECM Regulators
+CRELD1,Core matrisome,ECM Glycoproteins
+ANXA1,Matrisome-associated,ECM-affiliated Proteins
+ADAM11,Matrisome-associated,ECM Regulators
+C1QTNF1,Matrisome-associated,ECM-affiliated Proteins
+INHBE,Matrisome-associated,Secreted Factors
+S100A1,Matrisome-associated,Secreted Factors
+SPARCL1,Core matrisome,ECM Glycoproteins
+ADAMTS3,Matrisome-associated,ECM Regulators
+MFAP1,Core matrisome,ECM Glycoproteins
+MUC20,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS13,Matrisome-associated,ECM Regulators
+FSTL3,Matrisome-associated,Secreted Factors
+NRG1,Matrisome-associated,Secreted Factors
+CHADL,Core matrisome,Proteoglycans
+P4HTM,Matrisome-associated,ECM Regulators
+IFNA4,Matrisome-associated,Secreted Factors
+HCFC2,Matrisome-associated,Secreted Factors
+CTSB,Matrisome-associated,ECM Regulators
+SEMA4C,Matrisome-associated,ECM-affiliated Proteins
+FBLN5,Core matrisome,ECM Glycoproteins
+S100A4,Matrisome-associated,Secreted Factors
+FGF11,Matrisome-associated,Secreted Factors
+COL5A3,Core matrisome,Collagens
+CCL8,Matrisome-associated,Secreted Factors
+IGF1,Matrisome-associated,Secreted Factors
+ANXA9,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS6,Matrisome-associated,ECM Regulators
+WNT11,Matrisome-associated,Secreted Factors
+PTN,Matrisome-associated,Secreted Factors
+TIMP4,Matrisome-associated,ECM Regulators
+COL11A1,Core matrisome,Collagens
+PCOLCE,Core matrisome,ECM Glycoproteins
+CLEC18A,Matrisome-associated,ECM-affiliated Proteins
+ANXA2,Matrisome-associated,ECM-affiliated Proteins
+ANXA5,Matrisome-associated,ECM-affiliated Proteins
+ANXA11,Matrisome-associated,ECM-affiliated Proteins
+COL5A2,Core matrisome,Collagens
+ISM1,Matrisome-associated,Secreted Factors
+CST9L,Matrisome-associated,ECM Regulators
+MUC5AC,Matrisome-associated,ECM-affiliated Proteins
+SEMA4D,Matrisome-associated,ECM-affiliated Proteins
+SERPINE2,Matrisome-associated,ECM Regulators
+S100A13,Matrisome-associated,Secreted Factors
+GPC1,Matrisome-associated,ECM-affiliated Proteins
+BCAN,Core matrisome,Proteoglycans
+LTBP3,Core matrisome,ECM Glycoproteins
+SPOCK2,Core matrisome,Proteoglycans
+EBI3,Matrisome-associated,Secreted Factors
+SERPINB6,Matrisome-associated,ECM Regulators
+ELFN2,Matrisome-associated,ECM-affiliated Proteins
+EDIL3,Core matrisome,ECM Glycoproteins
+IL13,Matrisome-associated,Secreted Factors
+FGF8,Matrisome-associated,Secreted Factors
+LGALS1,Matrisome-associated,ECM-affiliated Proteins
+SERPINA3,Matrisome-associated,ECM Regulators
+SEMA6C,Matrisome-associated,ECM-affiliated Proteins
+DHH,Matrisome-associated,Secreted Factors
+CST4,Matrisome-associated,ECM Regulators
+SPP1,Core matrisome,ECM Glycoproteins
+ANXA8,Matrisome-associated,ECM-affiliated Proteins
+REG3A,Matrisome-associated,ECM-affiliated Proteins
+PLXNA2,Matrisome-associated,ECM-affiliated Proteins
+SRGN,Core matrisome,Proteoglycans
+IFNA13,Matrisome-associated,Secreted Factors
+CSHL1,Matrisome-associated,Secreted Factors
+GDF6,Matrisome-associated,Secreted Factors
+CLEC3B,Matrisome-associated,ECM-affiliated Proteins
+CXCL13,Matrisome-associated,Secreted Factors
+MST1,Matrisome-associated,Secreted Factors
+NGLY1,Matrisome-associated,ECM Regulators
+ADAM15,Matrisome-associated,ECM Regulators
+NODAL,Matrisome-associated,Secreted Factors
+LGI3,Core matrisome,ECM Glycoproteins
+CST8,Matrisome-associated,ECM Regulators
+ITIH4,Matrisome-associated,ECM Regulators
+IL17F,Matrisome-associated,Secreted Factors
+HTRA1,Matrisome-associated,ECM Regulators
+SLIT2,Core matrisome,ECM Glycoproteins
+FAM20C,Matrisome-associated,ECM Regulators
+LOXL4,Matrisome-associated,ECM Regulators
+CRLF1,Matrisome-associated,Secreted Factors
+SDC4,Matrisome-associated,ECM-affiliated Proteins
+PGF,Matrisome-associated,Secreted Factors
+CCL19,Matrisome-associated,Secreted Factors
+MEGF8,Matrisome-associated,Secreted Factors
+WIF1,Matrisome-associated,Secreted Factors
+CTSF,Matrisome-associated,ECM Regulators
+CTSA,Matrisome-associated,ECM Regulators
+FGF18,Matrisome-associated,Secreted Factors
+COL18A1,Core matrisome,Collagens
+PLXNB3,Matrisome-associated,ECM-affiliated Proteins
+AGT,Matrisome-associated,ECM Regulators
+SEMA6A,Matrisome-associated,ECM-affiliated Proteins
+S100B,Matrisome-associated,Secreted Factors
+EGLN1,Matrisome-associated,ECM Regulators
+F12,Matrisome-associated,ECM Regulators
+ZFP91,Matrisome-associated,Secreted Factors
+CXCL3,Matrisome-associated,Secreted Factors
+COL11A2,Core matrisome,Collagens
+MEGF10,Matrisome-associated,Secreted Factors
+SPARC,Core matrisome,ECM Glycoproteins
+PDGFB,Matrisome-associated,Secreted Factors
+VEGFD,Matrisome-associated,Secreted Factors
+DPT,Core matrisome,ECM Glycoproteins
+SBSPON,Core matrisome,ECM Glycoproteins
+GREM1,Matrisome-associated,ECM-affiliated Proteins
+CLEC17A,Matrisome-associated,ECM-affiliated Proteins
+MUC3A,Matrisome-associated,ECM-affiliated Proteins
+FGF6,Matrisome-associated,Secreted Factors
+SEMA4B,Matrisome-associated,ECM-affiliated Proteins
+PLXND1,Matrisome-associated,ECM-affiliated Proteins
+EGLN2,Matrisome-associated,ECM Regulators
+CSPG4,Matrisome-associated,ECM-affiliated Proteins
+ADAM23,Matrisome-associated,ECM Regulators
+MDK,Matrisome-associated,Secreted Factors
+MUC21,Matrisome-associated,ECM-affiliated Proteins
+S100A10,Matrisome-associated,Secreted Factors
+FGF3,Matrisome-associated,Secreted Factors
+SEMA4A,Matrisome-associated,ECM-affiliated Proteins
+CCN1,Core matrisome,ECM Glycoproteins
+NPNT,Core matrisome,ECM Glycoproteins
+GLDN,Core matrisome,ECM Glycoproteins
+TNFSF14,Matrisome-associated,Secreted Factors
+NELL2,Core matrisome,ECM Glycoproteins
+SPOCK1,Core matrisome,Proteoglycans
+VEGFB,Matrisome-associated,Secreted Factors
+PPBP,Matrisome-associated,Secreted Factors
+SFTPC,Matrisome-associated,ECM-affiliated Proteins
+KNG1,Matrisome-associated,ECM Regulators
+IL24,Matrisome-associated,Secreted Factors
+ANXA6,Matrisome-associated,ECM-affiliated Proteins
+LRG1,Core matrisome,ECM Glycoproteins
+ADAM9,Matrisome-associated,ECM Regulators
+SEMA3A,Matrisome-associated,ECM-affiliated Proteins
+P4HTM,Matrisome-associated,ECM Regulators
+SEMA3E,Matrisome-associated,ECM-affiliated Proteins
+BMP3,Matrisome-associated,Secreted Factors
+LOXL2,Matrisome-associated,ECM Regulators
+MFAP1,Core matrisome,ECM Glycoproteins
+FBN3,Core matrisome,ECM Glycoproteins
+ADAMTS6,Matrisome-associated,ECM Regulators
+PLXNA2,Matrisome-associated,ECM-affiliated Proteins
+A2M,Matrisome-associated,ECM Regulators
+FGF3,Matrisome-associated,Secreted Factors
+PLXNB1,Matrisome-associated,ECM-affiliated Proteins
+CSH2,Matrisome-associated,Secreted Factors
+ELFN2,Matrisome-associated,ECM-affiliated Proteins
+CTSE,Matrisome-associated,ECM Regulators
+SLIT1,Core matrisome,ECM Glycoproteins
+CLEC14A,Matrisome-associated,ECM-affiliated Proteins
+ASTL,Matrisome-associated,ECM Regulators
+PGF,Matrisome-associated,Secreted Factors
+MEGF11,Matrisome-associated,Secreted Factors
+IL17F,Matrisome-associated,Secreted Factors
+LIF,Matrisome-associated,Secreted Factors
+MASP2,Matrisome-associated,ECM Regulators
+CSF1,Matrisome-associated,Secreted Factors
+SERPINE2,Matrisome-associated,ECM Regulators
+SERPINF1,Matrisome-associated,ECM Regulators
+COL1A2,Core matrisome,Collagens
+ANXA7,Matrisome-associated,ECM-affiliated Proteins
+KITLG,Matrisome-associated,Secreted Factors
+NGLY1,Matrisome-associated,ECM Regulators
+SEMA4A,Matrisome-associated,ECM-affiliated Proteins
+ADAM22,Matrisome-associated,ECM Regulators
+SERPINB6,Matrisome-associated,ECM Regulators
+CCL8,Matrisome-associated,Secreted Factors
+VWA5B2,Core matrisome,ECM Glycoproteins
+TGFB2,Matrisome-associated,Secreted Factors
+BRINP2,Matrisome-associated,Secreted Factors
+LAMA5,Core matrisome,ECM Glycoproteins
+DCN,Core matrisome,Proteoglycans
+ANXA1,Matrisome-associated,ECM-affiliated Proteins
+LGI3,Core matrisome,ECM Glycoproteins
+ADAM12,Matrisome-associated,ECM Regulators
+PRELP,Core matrisome,Proteoglycans
+GDF6,Matrisome-associated,Secreted Factors
+F7,Matrisome-associated,ECM Regulators
+F12,Matrisome-associated,ECM Regulators
+TNFSF12,Matrisome-associated,Secreted Factors
+IFNA13,Matrisome-associated,Secreted Factors
+COL18A1,Core matrisome,Collagens
+MFAP3,Core matrisome,ECM Glycoproteins
+IGF1,Matrisome-associated,Secreted Factors
+TNFSF14,Matrisome-associated,Secreted Factors
+BCAN,Core matrisome,Proteoglycans
+CSHL1,Matrisome-associated,Secreted Factors
+FCN1,Matrisome-associated,ECM-affiliated Proteins
+MDK,Matrisome-associated,Secreted Factors
+TNFSF13,Matrisome-associated,Secreted Factors
+SFTPC,Matrisome-associated,ECM-affiliated Proteins
+CLEC18A,Matrisome-associated,ECM-affiliated Proteins
+CRLF3,Matrisome-associated,Secreted Factors
+RELN,Core matrisome,ECM Glycoproteins
+EGLN2,Matrisome-associated,ECM Regulators
+IGF2,Matrisome-associated,Secreted Factors
+LTBP4,Core matrisome,ECM Glycoproteins
+NODAL,Matrisome-associated,Secreted Factors
+EBI3,Matrisome-associated,Secreted Factors
+PLXNB2,Matrisome-associated,ECM-affiliated Proteins
+FGF18,Matrisome-associated,Secreted Factors
+CLEC3B,Matrisome-associated,ECM-affiliated Proteins
+SERPINI1,Matrisome-associated,ECM Regulators
+EFEMP1,Core matrisome,ECM Glycoproteins
+S100Z,Matrisome-associated,Secreted Factors
+CBLN2,Matrisome-associated,Secreted Factors
+PDGFB,Matrisome-associated,Secreted Factors
+CCL2,Matrisome-associated,Secreted Factors
+CCN2,Core matrisome,ECM Glycoproteins
+VWDE,Core matrisome,ECM Glycoproteins
+TIMP1,Matrisome-associated,ECM Regulators
+ADAMTS10,Matrisome-associated,ECM Regulators
+WNT5B,Matrisome-associated,Secreted Factors
+WIF1,Matrisome-associated,Secreted Factors
+CRLF1,Matrisome-associated,Secreted Factors
+IGFBP5,Core matrisome,ECM Glycoproteins
+EDIL3,Core matrisome,ECM Glycoproteins
+PPBP,Matrisome-associated,Secreted Factors
+HHIP,Matrisome-associated,Secreted Factors
+ITIH5,Matrisome-associated,ECM Regulators
+MUC12,Matrisome-associated,ECM-affiliated Proteins
+FGF8,Matrisome-associated,Secreted Factors
+CLEC12B,Matrisome-associated,ECM-affiliated Proteins
+SPP1,Core matrisome,ECM Glycoproteins
+MST1,Matrisome-associated,Secreted Factors
+SBSPON,Core matrisome,ECM Glycoproteins
+CST8,Matrisome-associated,ECM Regulators
+WNT11,Matrisome-associated,Secreted Factors
+GDF2,Matrisome-associated,Secreted Factors
+SNED1,Core matrisome,ECM Glycoproteins
+ADAMTSL5,Matrisome-associated,ECM Regulators
+IL18,Matrisome-associated,Secreted Factors
+THBS3,Core matrisome,ECM Glycoproteins
+MMP28,Matrisome-associated,ECM Regulators
+VWA5A,Core matrisome,ECM Glycoproteins
+SERPINB1,Matrisome-associated,ECM Regulators
+C1QTNF6,Matrisome-associated,ECM-affiliated Proteins
+CCL18,Matrisome-associated,Secreted Factors
+LOXL4,Matrisome-associated,ECM Regulators
+ADAM32,Matrisome-associated,ECM Regulators
+SPON2,Core matrisome,ECM Glycoproteins
+MUC21,Matrisome-associated,ECM-affiliated Proteins
+SDC3,Matrisome-associated,ECM-affiliated Proteins
+PLXNB3,Matrisome-associated,ECM-affiliated Proteins
+EGLN3,Matrisome-associated,ECM Regulators
+SLIT2,Core matrisome,ECM Glycoproteins
+ADAMTS13,Matrisome-associated,ECM Regulators
+MUCL1,Matrisome-associated,ECM-affiliated Proteins
+MEGF8,Matrisome-associated,Secreted Factors
+TNF,Matrisome-associated,Secreted Factors
+AEBP1,Core matrisome,ECM Glycoproteins
+GREM1,Matrisome-associated,ECM-affiliated Proteins
+VEGFC,Matrisome-associated,Secreted Factors
+IL34,Matrisome-associated,Secreted Factors
+CST6,Matrisome-associated,ECM Regulators
+COL6A1,Core matrisome,Collagens
+REG3A,Matrisome-associated,ECM-affiliated Proteins
+CLEC4E,Matrisome-associated,ECM-affiliated Proteins
+C1QC,Matrisome-associated,ECM-affiliated Proteins
+IL36RN,Matrisome-associated,Secreted Factors
+WNT10A,Matrisome-associated,Secreted Factors
+ANXA9,Matrisome-associated,ECM-affiliated Proteins
+CTSZ,Matrisome-associated,ECM Regulators
+TIMP2,Matrisome-associated,ECM Regulators
+EMCN,Matrisome-associated,ECM-affiliated Proteins
+SFRP2,Matrisome-associated,Secreted Factors
+LTA,Matrisome-associated,Secreted Factors
+ELSPBP1,Core matrisome,ECM Glycoproteins
+SDC4,Matrisome-associated,ECM-affiliated Proteins
+CCL19,Matrisome-associated,Secreted Factors
+PLXNA1,Matrisome-associated,ECM-affiliated Proteins
+WNT10B,Matrisome-associated,Secreted Factors
+CTSD,Matrisome-associated,ECM Regulators
+SERPINB7,Matrisome-associated,ECM Regulators
+SEMA6C,Matrisome-associated,ECM-affiliated Proteins
+FGF21,Matrisome-associated,Secreted Factors
+ZFP91,Matrisome-associated,Secreted Factors
+TGFB3,Matrisome-associated,Secreted Factors
+NPNT,Core matrisome,ECM Glycoproteins
+HSPG2,Core matrisome,Proteoglycans
+PARM1,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS8,Matrisome-associated,ECM Regulators
+WNT2,Matrisome-associated,Secreted Factors
+LGALS1,Matrisome-associated,ECM-affiliated Proteins
+IGFBP2,Core matrisome,ECM Glycoproteins
+GH1,Matrisome-associated,Secreted Factors
+VEGFB,Matrisome-associated,Secreted Factors
+FSTL3,Matrisome-associated,Secreted Factors
+COL6A2,Core matrisome,Collagens
+S100A7,Matrisome-associated,Secreted Factors
+TIMP3,Matrisome-associated,ECM Regulators
+GLDN,Core matrisome,ECM Glycoproteins
+CTSB,Matrisome-associated,ECM Regulators
+PRSS3,Matrisome-associated,ECM Regulators
+CST9L,Matrisome-associated,ECM Regulators
+CRELD1,Core matrisome,ECM Glycoproteins
+C1QTNF7,Matrisome-associated,ECM-affiliated Proteins
+BMP1,Matrisome-associated,ECM Regulators
+MEGF10,Matrisome-associated,Secreted Factors
+ITIH4,Matrisome-associated,ECM Regulators
+GDF1,Matrisome-associated,Secreted Factors
+FGF11,Matrisome-associated,Secreted Factors
+SERPIND1,Matrisome-associated,ECM Regulators
+EMID1,Core matrisome,ECM Glycoproteins
+CCL3,Matrisome-associated,Secreted Factors
+S100B,Matrisome-associated,Secreted Factors
+WNT8A,Matrisome-associated,Secreted Factors
+CX3CL1,Matrisome-associated,Secreted Factors
+FGF6,Matrisome-associated,Secreted Factors
+C1QL3,Matrisome-associated,ECM-affiliated Proteins
+IL24,Matrisome-associated,Secreted Factors
+MUC3A,Matrisome-associated,ECM-affiliated Proteins
+S100A11,Matrisome-associated,Secreted Factors
+CTSA,Matrisome-associated,ECM Regulators
+CRIM1,Core matrisome,ECM Glycoproteins
+LRG1,Core matrisome,ECM Glycoproteins
+S100A6,Matrisome-associated,Secreted Factors
+POMZP3,Core matrisome,ECM Glycoproteins
+FN1,Core matrisome,ECM Glycoproteins
+SRGN,Core matrisome,Proteoglycans
+VWF,Core matrisome,ECM Glycoproteins
+C1QTNF4,Matrisome-associated,ECM-affiliated Proteins
+COL11A1,Core matrisome,Collagens
+INTS6L,Core matrisome,ECM Glycoproteins
+LTBP1,Core matrisome,ECM Glycoproteins
+WNT3,Matrisome-associated,Secreted Factors
+FGF17,Matrisome-associated,Secreted Factors
+COL9A2,Core matrisome,Collagens
+KNG1,Matrisome-associated,ECM Regulators
+LGI4,Core matrisome,ECM Glycoproteins
+HCFC2,Matrisome-associated,Secreted Factors
+LMAN1,Matrisome-associated,ECM-affiliated Proteins
+NTNG2,Core matrisome,ECM Glycoproteins
+CLEC10A,Matrisome-associated,ECM-affiliated Proteins
+SEMA4C,Matrisome-associated,ECM-affiliated Proteins
+CCL24,Matrisome-associated,Secreted Factors
+CSTB,Matrisome-associated,ECM Regulators
+SERPINA1,Matrisome-associated,ECM Regulators
+GPC1,Matrisome-associated,ECM-affiliated Proteins
+VEGFD,Matrisome-associated,Secreted Factors
+ADAMTS3,Matrisome-associated,ECM Regulators
+LAMA1,Core matrisome,ECM Glycoproteins
+COL4A1,Core matrisome,Collagens
+FGF4,Matrisome-associated,Secreted Factors
+HAPLN4,Core matrisome,Proteoglycans
+LGI1,Core matrisome,ECM Glycoproteins
+FBLN5,Core matrisome,ECM Glycoproteins
+GAS6,Core matrisome,ECM Glycoproteins
+SERPINH1,Matrisome-associated,ECM Regulators
+TNXB,Core matrisome,ECM Glycoproteins
+ADAMTS4,Matrisome-associated,ECM Regulators
+AGT,Matrisome-associated,ECM Regulators
+SPOCK3,Core matrisome,Proteoglycans
+CELA3A,Matrisome-associated,ECM Regulators
+ISM1,Matrisome-associated,Secreted Factors
+SPOCK1,Core matrisome,Proteoglycans
+COL5A2,Core matrisome,Collagens
+DHH,Matrisome-associated,Secreted Factors
+CCL3L3,Matrisome-associated,Secreted Factors
+AMH,Matrisome-associated,Secreted Factors
+SEMA4B,Matrisome-associated,ECM-affiliated Proteins
+LAMB2,Core matrisome,ECM Glycoproteins
+HTRA1,Matrisome-associated,ECM Regulators
+ADAM9,Matrisome-associated,ECM Regulators
+S100A4,Matrisome-associated,Secreted Factors
+SEMA3B,Matrisome-associated,ECM-affiliated Proteins
+CTSF,Matrisome-associated,ECM Regulators
+FLT3LG,Matrisome-associated,Secreted Factors
+DPT,Core matrisome,ECM Glycoproteins
+WNT9B,Matrisome-associated,Secreted Factors
+PLOD3,Matrisome-associated,ECM Regulators
+PCOLCE,Core matrisome,ECM Glycoproteins
+C1QL2,Matrisome-associated,ECM-affiliated Proteins
+OGFOD2,Matrisome-associated,ECM Regulators
+COL27A1,Core matrisome,Collagens
+SPOCK2,Core matrisome,Proteoglycans
+GPC4,Matrisome-associated,ECM-affiliated Proteins
+IGFBP7,Core matrisome,ECM Glycoproteins
+MFGE8,Core matrisome,ECM Glycoproteins
+NRG1,Matrisome-associated,Secreted Factors
+S100A16,Matrisome-associated,Secreted Factors
+P4HA2,Matrisome-associated,ECM Regulators
+GDF11,Matrisome-associated,Secreted Factors
+C1QTNF1,Matrisome-associated,ECM-affiliated Proteins
+ADAM23,Matrisome-associated,ECM Regulators
+BGN,Core matrisome,Proteoglycans
+CXCL13,Matrisome-associated,Secreted Factors
+INHA,Matrisome-associated,Secreted Factors
+PF4,Matrisome-associated,Secreted Factors
+PLAT,Matrisome-associated,ECM Regulators
+CXCL14,Matrisome-associated,Secreted Factors
+TIMP4,Matrisome-associated,ECM Regulators
+ANXA11,Matrisome-associated,ECM-affiliated Proteins
+EGFL7,Matrisome-associated,Secreted Factors
+NTNG1,Core matrisome,ECM Glycoproteins
+ANXA5,Matrisome-associated,ECM-affiliated Proteins
+FGF12,Matrisome-associated,Secreted Factors
+P4HA1,Matrisome-associated,ECM Regulators
+NELL2,Core matrisome,ECM Glycoproteins
+COL5A3,Core matrisome,Collagens
+CCL26,Matrisome-associated,Secreted Factors
+CCN1,Core matrisome,ECM Glycoproteins
+BMP7,Matrisome-associated,Secreted Factors
+CST4,Matrisome-associated,ECM Regulators
+CHADL,Core matrisome,Proteoglycans
+GDF5,Matrisome-associated,Secreted Factors
+MATN4,Core matrisome,ECM Glycoproteins
+COL4A2,Core matrisome,Collagens
+MUC5B,Matrisome-associated,ECM-affiliated Proteins
+FGF14,Matrisome-associated,Secreted Factors
+FREM1,Matrisome-associated,ECM-affiliated Proteins
+C17orf58,Matrisome-associated,ECM Regulators
+SERPINA3,Matrisome-associated,ECM Regulators
+PLOD1,Matrisome-associated,ECM Regulators
+CXCL3,Matrisome-associated,Secreted Factors
+CLEC6A,Matrisome-associated,ECM-affiliated Proteins
+SPARCL1,Core matrisome,ECM Glycoproteins
+OVGP1,Matrisome-associated,ECM-affiliated Proteins
+IL25,Matrisome-associated,Secreted Factors
+HYAL2,Matrisome-associated,ECM Regulators
+IFNA5,Matrisome-associated,Secreted Factors
+FGF1,Matrisome-associated,Secreted Factors
+FAM20C,Matrisome-associated,ECM Regulators
+CELA2A,Matrisome-associated,ECM Regulators
+S100A13,Matrisome-associated,Secreted Factors
+SEMA6A,Matrisome-associated,ECM-affiliated Proteins
+FGF13,Matrisome-associated,Secreted Factors
+SERPING1,Matrisome-associated,ECM Regulators
+ADAM11,Matrisome-associated,ECM Regulators
+CSPG4,Matrisome-associated,ECM-affiliated Proteins
+NCAN,Core matrisome,Proteoglycans
+ANXA2,Matrisome-associated,ECM-affiliated Proteins
+IFNA16,Matrisome-associated,Secreted Factors
+ANXA6,Matrisome-associated,ECM-affiliated Proteins
+EGLN1,Matrisome-associated,ECM Regulators
+HAPLN2,Core matrisome,Proteoglycans
+SEMA6B,Matrisome-associated,ECM-affiliated Proteins
+PTN,Matrisome-associated,Secreted Factors
+LTBP3,Core matrisome,ECM Glycoproteins
+MUC5AC,Matrisome-associated,ECM-affiliated Proteins
+MUC20,Matrisome-associated,ECM-affiliated Proteins
+IL1F10,Matrisome-associated,Secreted Factors
+S100A1,Matrisome-associated,Secreted Factors
+TNR,Core matrisome,ECM Glycoproteins
+ADAM15,Matrisome-associated,ECM Regulators
+COL11A2,Core matrisome,Collagens
+BMP8B,Matrisome-associated,Secreted Factors
+CLEC17A,Matrisome-associated,ECM-affiliated Proteins
+PCSK6,Matrisome-associated,ECM Regulators
+EMILIN1,Core matrisome,ECM Glycoproteins
+COL16A1,Core matrisome,Collagens
+INHBE,Matrisome-associated,Secreted Factors
+SEMA4D,Matrisome-associated,ECM-affiliated Proteins
+IL13,Matrisome-associated,Secreted Factors
+IFNA14,Matrisome-associated,Secreted Factors
+SPARC,Core matrisome,ECM Glycoproteins
+CST3,Matrisome-associated,ECM Regulators
+SEMA4F,Matrisome-associated,ECM-affiliated Proteins
+PLXDC2,Matrisome-associated,ECM-affiliated Proteins
+IGFBP4,Core matrisome,ECM Glycoproteins
+IFNA4,Matrisome-associated,Secreted Factors
+ANXA8,Matrisome-associated,ECM-affiliated Proteins
+C1QB,Matrisome-associated,ECM-affiliated Proteins
+SMOC2,Core matrisome,ECM Glycoproteins
+IL6,Matrisome-associated,Secreted Factors
+IL7,Matrisome-associated,Secreted Factors
+AGRN,Core matrisome,ECM Glycoproteins
+ELN,Core matrisome,ECM Glycoproteins
+MEGF9,Matrisome-associated,Secreted Factors
+ADAMTS1,Matrisome-associated,ECM Regulators
+FGF2,Matrisome-associated,Secreted Factors
+PLXND1,Matrisome-associated,ECM-affiliated Proteins
+S100A10,Matrisome-associated,Secreted Factors
+A2M,Matrisome-associated,ECM Regulators
+CCL2,Matrisome-associated,Secreted Factors
+SFRP2,Matrisome-associated,Secreted Factors
+PLXNB1,Matrisome-associated,ECM-affiliated Proteins
+SBSPON,Core matrisome,ECM Glycoproteins
+SEMA6B,Matrisome-associated,ECM-affiliated Proteins
+SLIT1,Core matrisome,ECM Glycoproteins
+SERPINE2,Matrisome-associated,ECM Regulators
+EGLN3,Matrisome-associated,ECM Regulators
+ADAM9,Matrisome-associated,ECM Regulators
+FBN3,Core matrisome,ECM Glycoproteins
+NTNG1,Core matrisome,ECM Glycoproteins
+PLXNB3,Matrisome-associated,ECM-affiliated Proteins
+FLT3LG,Matrisome-associated,Secreted Factors
+COL27A1,Core matrisome,Collagens
+OVGP1,Matrisome-associated,ECM-affiliated Proteins
+MATN4,Core matrisome,ECM Glycoproteins
+HHIP,Matrisome-associated,Secreted Factors
+CX3CL1,Matrisome-associated,Secreted Factors
+SEMA3E,Matrisome-associated,ECM-affiliated Proteins
+FGF12,Matrisome-associated,Secreted Factors
+FGF6,Matrisome-associated,Secreted Factors
+FGF4,Matrisome-associated,Secreted Factors
+IGF1,Matrisome-associated,Secreted Factors
+PLXNA1,Matrisome-associated,ECM-affiliated Proteins
+PLXNB2,Matrisome-associated,ECM-affiliated Proteins
+IL7,Matrisome-associated,Secreted Factors
+FGF21,Matrisome-associated,Secreted Factors
+SEMA4C,Matrisome-associated,ECM-affiliated Proteins
+WNT8A,Matrisome-associated,Secreted Factors
+CST6,Matrisome-associated,ECM Regulators
+VEGFD,Matrisome-associated,Secreted Factors
+BMP3,Matrisome-associated,Secreted Factors
+IFNA13,Matrisome-associated,Secreted Factors
+SEMA3A,Matrisome-associated,ECM-affiliated Proteins
+POMZP3,Core matrisome,ECM Glycoproteins
+CLEC18A,Matrisome-associated,ECM-affiliated Proteins
+TNXB,Core matrisome,ECM Glycoproteins
+SERPINH1,Matrisome-associated,ECM Regulators
+THBS3,Core matrisome,ECM Glycoproteins
+ADAMTS3,Matrisome-associated,ECM Regulators
+COL9A2,Core matrisome,Collagens
+PLAT,Matrisome-associated,ECM Regulators
+SEMA3B,Matrisome-associated,ECM-affiliated Proteins
+SEMA4A,Matrisome-associated,ECM-affiliated Proteins
+COL6A1,Core matrisome,Collagens
+SERPINI1,Matrisome-associated,ECM Regulators
+S100A1,Matrisome-associated,Secreted Factors
+MUC12,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS4,Matrisome-associated,ECM Regulators
+PCOLCE,Core matrisome,ECM Glycoproteins
+LIF,Matrisome-associated,Secreted Factors
+CTSD,Matrisome-associated,ECM Regulators
+AEBP1,Core matrisome,ECM Glycoproteins
+SEMA4B,Matrisome-associated,ECM-affiliated Proteins
+CCL3,Matrisome-associated,Secreted Factors
+LTA,Matrisome-associated,Secreted Factors
+IFNA16,Matrisome-associated,Secreted Factors
+IFNA4,Matrisome-associated,Secreted Factors
+CTSA,Matrisome-associated,ECM Regulators
+WNT3,Matrisome-associated,Secreted Factors
+LAMB2,Core matrisome,ECM Glycoproteins
+EDIL3,Core matrisome,ECM Glycoproteins
+CSPG4,Matrisome-associated,ECM-affiliated Proteins
+SEMA6C,Matrisome-associated,ECM-affiliated Proteins
+HYAL2,Matrisome-associated,ECM Regulators
+EGFL7,Matrisome-associated,Secreted Factors
+WNT10A,Matrisome-associated,Secreted Factors
+P4HTM,Matrisome-associated,ECM Regulators
+SPARC,Core matrisome,ECM Glycoproteins
+P4HA1,Matrisome-associated,ECM Regulators
+COL6A2,Core matrisome,Collagens
+CLEC6A,Matrisome-associated,ECM-affiliated Proteins
+CXCL3,Matrisome-associated,Secreted Factors
+SERPINA1,Matrisome-associated,ECM Regulators
+FGF11,Matrisome-associated,Secreted Factors
+MFAP1,Core matrisome,ECM Glycoproteins
+TIMP4,Matrisome-associated,ECM Regulators
+S100Z,Matrisome-associated,Secreted Factors
+LTBP1,Core matrisome,ECM Glycoproteins
+S100A6,Matrisome-associated,Secreted Factors
+CRELD1,Core matrisome,ECM Glycoproteins
+GAS6,Core matrisome,ECM Glycoproteins
+TNFSF13,Matrisome-associated,Secreted Factors
+CCN1,Core matrisome,ECM Glycoproteins
+NTNG2,Core matrisome,ECM Glycoproteins
+WNT2,Matrisome-associated,Secreted Factors
+NODAL,Matrisome-associated,Secreted Factors
+C1QL3,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS6,Matrisome-associated,ECM Regulators
+PLOD1,Matrisome-associated,ECM Regulators
+MFAP3,Core matrisome,ECM Glycoproteins
+CELA2A,Matrisome-associated,ECM Regulators
+COL1A2,Core matrisome,Collagens
+ELFN2,Matrisome-associated,ECM-affiliated Proteins
+VWA5B2,Core matrisome,ECM Glycoproteins
+KNG1,Matrisome-associated,ECM Regulators
+CRLF1,Matrisome-associated,Secreted Factors
+S100A4,Matrisome-associated,Secreted Factors
+IL36RN,Matrisome-associated,Secreted Factors
+IL6,Matrisome-associated,Secreted Factors
+PARM1,Matrisome-associated,ECM-affiliated Proteins
+IL25,Matrisome-associated,Secreted Factors
+GLDN,Core matrisome,ECM Glycoproteins
+COL4A2,Core matrisome,Collagens
+RELN,Core matrisome,ECM Glycoproteins
+KITLG,Matrisome-associated,Secreted Factors
+CCN2,Core matrisome,ECM Glycoproteins
+VWF,Core matrisome,ECM Glycoproteins
+MEGF10,Matrisome-associated,Secreted Factors
+AGRN,Core matrisome,ECM Glycoproteins
+GPC4,Matrisome-associated,ECM-affiliated Proteins
+EMID1,Core matrisome,ECM Glycoproteins
+C1QB,Matrisome-associated,ECM-affiliated Proteins
+MDK,Matrisome-associated,Secreted Factors
+IGF2,Matrisome-associated,Secreted Factors
+IGFBP4,Core matrisome,ECM Glycoproteins
+NELL2,Core matrisome,ECM Glycoproteins
+ZFP91,Matrisome-associated,Secreted Factors
+SMOC2,Core matrisome,ECM Glycoproteins
+HTRA1,Matrisome-associated,ECM Regulators
+FGF3,Matrisome-associated,Secreted Factors
+IL13,Matrisome-associated,Secreted Factors
+FAM20C,Matrisome-associated,ECM Regulators
+CELA3A,Matrisome-associated,ECM Regulators
+CXCL14,Matrisome-associated,Secreted Factors
+IL34,Matrisome-associated,Secreted Factors
+CCL3L3,Matrisome-associated,Secreted Factors
+ADAMTSL5,Matrisome-associated,ECM Regulators
+EBI3,Matrisome-associated,Secreted Factors
+FGF1,Matrisome-associated,Secreted Factors
+IL17F,Matrisome-associated,Secreted Factors
+GDF11,Matrisome-associated,Secreted Factors
+WNT9B,Matrisome-associated,Secreted Factors
+ANXA8,Matrisome-associated,ECM-affiliated Proteins
+GH1,Matrisome-associated,Secreted Factors
+COL11A2,Core matrisome,Collagens
+FGF2,Matrisome-associated,Secreted Factors
+TGFB3,Matrisome-associated,Secreted Factors
+IL18,Matrisome-associated,Secreted Factors
+GREM1,Matrisome-associated,ECM-affiliated Proteins
+HCFC2,Matrisome-associated,Secreted Factors
+SPP1,Core matrisome,ECM Glycoproteins
+C1QTNF4,Matrisome-associated,ECM-affiliated Proteins
+CTSZ,Matrisome-associated,ECM Regulators
+SFTPC,Matrisome-associated,ECM-affiliated Proteins
+IGFBP5,Core matrisome,ECM Glycoproteins
+COL16A1,Core matrisome,Collagens
+CTSE,Matrisome-associated,ECM Regulators
+TIMP1,Matrisome-associated,ECM Regulators
+S100A13,Matrisome-associated,Secreted Factors
+ANXA1,Matrisome-associated,ECM-affiliated Proteins
+F12,Matrisome-associated,ECM Regulators
+CXCL13,Matrisome-associated,Secreted Factors
+WNT5B,Matrisome-associated,Secreted Factors
+TIMP2,Matrisome-associated,ECM Regulators
+SRGN,Core matrisome,Proteoglycans
+EGLN2,Matrisome-associated,ECM Regulators
+SEMA4D,Matrisome-associated,ECM-affiliated Proteins
+COL5A2,Core matrisome,Collagens
+SEMA6A,Matrisome-associated,ECM-affiliated Proteins
+AMH,Matrisome-associated,Secreted Factors
+CHADL,Core matrisome,Proteoglycans
+INHBE,Matrisome-associated,Secreted Factors
+HAPLN2,Core matrisome,Proteoglycans
+SERPINA3,Matrisome-associated,ECM Regulators
+TNFSF12,Matrisome-associated,Secreted Factors
+LRG1,Core matrisome,ECM Glycoproteins
+CST9L,Matrisome-associated,ECM Regulators
+CRIM1,Core matrisome,ECM Glycoproteins
+SDC3,Matrisome-associated,ECM-affiliated Proteins
+CLEC10A,Matrisome-associated,ECM-affiliated Proteins
+BMP8B,Matrisome-associated,Secreted Factors
+ISM1,Matrisome-associated,Secreted Factors
+PGF,Matrisome-associated,Secreted Factors
+SNED1,Core matrisome,ECM Glycoproteins
+MUC21,Matrisome-associated,ECM-affiliated Proteins
+CSHL1,Matrisome-associated,Secreted Factors
+TNR,Core matrisome,ECM Glycoproteins
+SERPING1,Matrisome-associated,ECM Regulators
+CCL24,Matrisome-associated,Secreted Factors
+ANXA6,Matrisome-associated,ECM-affiliated Proteins
+SERPIND1,Matrisome-associated,ECM Regulators
+MFGE8,Core matrisome,ECM Glycoproteins
+IFNA5,Matrisome-associated,Secreted Factors
+CCL19,Matrisome-associated,Secreted Factors
+ADAM15,Matrisome-associated,ECM Regulators
+NCAN,Core matrisome,Proteoglycans
+CST4,Matrisome-associated,ECM Regulators
+SERPINF1,Matrisome-associated,ECM Regulators
+F7,Matrisome-associated,ECM Regulators
+LOXL2,Matrisome-associated,ECM Regulators
+ADAMTS1,Matrisome-associated,ECM Regulators
+LTBP4,Core matrisome,ECM Glycoproteins
+ANXA7,Matrisome-associated,ECM-affiliated Proteins
+ADAM23,Matrisome-associated,ECM Regulators
+CCL18,Matrisome-associated,Secreted Factors
+SPOCK3,Core matrisome,Proteoglycans
+AGT,Matrisome-associated,ECM Regulators
+CSF1,Matrisome-associated,Secreted Factors
+CST3,Matrisome-associated,ECM Regulators
+LGI3,Core matrisome,ECM Glycoproteins
+PCSK6,Matrisome-associated,ECM Regulators
+CLEC17A,Matrisome-associated,ECM-affiliated Proteins
+FGF8,Matrisome-associated,Secreted Factors
+FSTL3,Matrisome-associated,Secreted Factors
+CSTB,Matrisome-associated,ECM Regulators
+ANXA11,Matrisome-associated,ECM-affiliated Proteins
+VEGFB,Matrisome-associated,Secreted Factors
+SERPINB6,Matrisome-associated,ECM Regulators
+LGALS1,Matrisome-associated,ECM-affiliated Proteins
+WIF1,Matrisome-associated,Secreted Factors
+FN1,Core matrisome,ECM Glycoproteins
+PTN,Matrisome-associated,Secreted Factors
+S100A7,Matrisome-associated,Secreted Factors
+ANXA5,Matrisome-associated,ECM-affiliated Proteins
+GDF1,Matrisome-associated,Secreted Factors
+BMP1,Matrisome-associated,ECM Regulators
+COL5A3,Core matrisome,Collagens
+PRELP,Core matrisome,Proteoglycans
+PRSS3,Matrisome-associated,ECM Regulators
+FGF18,Matrisome-associated,Secreted Factors
+CTSF,Matrisome-associated,ECM Regulators
+TGFB2,Matrisome-associated,Secreted Factors
+ITIH4,Matrisome-associated,ECM Regulators
+S100A11,Matrisome-associated,Secreted Factors
+SPARCL1,Core matrisome,ECM Glycoproteins
+C1QTNF1,Matrisome-associated,ECM-affiliated Proteins
+MST1,Matrisome-associated,Secreted Factors
+TNFSF14,Matrisome-associated,Secreted Factors
+IGFBP2,Core matrisome,ECM Glycoproteins
+EMILIN1,Core matrisome,ECM Glycoproteins
+NGLY1,Matrisome-associated,ECM Regulators
+INTS6L,Core matrisome,ECM Glycoproteins
+LGI4,Core matrisome,ECM Glycoproteins
+WNT11,Matrisome-associated,Secreted Factors
+LGI1,Core matrisome,ECM Glycoproteins
+MASP2,Matrisome-associated,ECM Regulators
+CLEC4E,Matrisome-associated,ECM-affiliated Proteins
+IGFBP7,Core matrisome,ECM Glycoproteins
+MEGF9,Matrisome-associated,Secreted Factors
+PDGFB,Matrisome-associated,Secreted Factors
+SPOCK2,Core matrisome,Proteoglycans
+COL4A1,Core matrisome,Collagens
+ADAMTS10,Matrisome-associated,ECM Regulators
+MUCL1,Matrisome-associated,ECM-affiliated Proteins
+GDF5,Matrisome-associated,Secreted Factors
+EGLN1,Matrisome-associated,ECM Regulators
+ADAM22,Matrisome-associated,ECM Regulators
+FGF13,Matrisome-associated,Secreted Factors
+HAPLN4,Core matrisome,Proteoglycans
+DPT,Core matrisome,ECM Glycoproteins
+NRG1,Matrisome-associated,Secreted Factors
+EMCN,Matrisome-associated,ECM-affiliated Proteins
+LTBP3,Core matrisome,ECM Glycoproteins
+PLXDC2,Matrisome-associated,ECM-affiliated Proteins
+DHH,Matrisome-associated,Secreted Factors
+SPOCK1,Core matrisome,Proteoglycans
+ANXA2,Matrisome-associated,ECM-affiliated Proteins
+CLEC12B,Matrisome-associated,ECM-affiliated Proteins
+S100A10,Matrisome-associated,Secreted Factors
+FREM1,Matrisome-associated,ECM-affiliated Proteins
+MUC5B,Matrisome-associated,ECM-affiliated Proteins
+BRINP2,Matrisome-associated,Secreted Factors
+ADAMTS13,Matrisome-associated,ECM Regulators
+VWA5A,Core matrisome,ECM Glycoproteins
+CTSB,Matrisome-associated,ECM Regulators
+TNF,Matrisome-associated,Secreted Factors
+PPBP,Matrisome-associated,Secreted Factors
+CCL8,Matrisome-associated,Secreted Factors
+P4HA2,Matrisome-associated,ECM Regulators
+SERPINB7,Matrisome-associated,ECM Regulators
+BGN,Core matrisome,Proteoglycans
+CBLN2,Matrisome-associated,Secreted Factors
+GDF2,Matrisome-associated,Secreted Factors
+ADAM32,Matrisome-associated,ECM Regulators
+LMAN1,Matrisome-associated,ECM-affiliated Proteins
+PLOD3,Matrisome-associated,ECM Regulators
+MEGF11,Matrisome-associated,Secreted Factors
+MUC5AC,Matrisome-associated,ECM-affiliated Proteins
+CLEC14A,Matrisome-associated,ECM-affiliated Proteins
+SLIT2,Core matrisome,ECM Glycoproteins
+SERPINB1,Matrisome-associated,ECM Regulators
+LAMA5,Core matrisome,ECM Glycoproteins
+SEMA4F,Matrisome-associated,ECM-affiliated Proteins
+PLXNA2,Matrisome-associated,ECM-affiliated Proteins
+CCL26,Matrisome-associated,Secreted Factors
+INHA,Matrisome-associated,Secreted Factors
+GPC1,Matrisome-associated,ECM-affiliated Proteins
+S100B,Matrisome-associated,Secreted Factors
+COL18A1,Core matrisome,Collagens
+IL24,Matrisome-associated,Secreted Factors
+VWDE,Core matrisome,ECM Glycoproteins
+FCN1,Matrisome-associated,ECM-affiliated Proteins
+MUC3A,Matrisome-associated,ECM-affiliated Proteins
+HSPG2,Core matrisome,Proteoglycans
+ITIH5,Matrisome-associated,ECM Regulators
+OGFOD2,Matrisome-associated,ECM Regulators
+C1QTNF7,Matrisome-associated,ECM-affiliated Proteins
+C1QC,Matrisome-associated,ECM-affiliated Proteins
+TIMP3,Matrisome-associated,ECM Regulators
+SDC4,Matrisome-associated,ECM-affiliated Proteins
+LAMA1,Core matrisome,ECM Glycoproteins
+SPON2,Core matrisome,ECM Glycoproteins
+PF4,Matrisome-associated,Secreted Factors
+LOXL4,Matrisome-associated,ECM Regulators
+ELN,Core matrisome,ECM Glycoproteins
+ASTL,Matrisome-associated,ECM Regulators
+EFEMP1,Core matrisome,ECM Glycoproteins
+DCN,Core matrisome,Proteoglycans
+CRLF3,Matrisome-associated,Secreted Factors
+CST8,Matrisome-associated,ECM Regulators
+NPNT,Core matrisome,ECM Glycoproteins
+VEGFC,Matrisome-associated,Secreted Factors
+IL1F10,Matrisome-associated,Secreted Factors
+MUC20,Matrisome-associated,ECM-affiliated Proteins
+C1QL2,Matrisome-associated,ECM-affiliated Proteins
+ADAM12,Matrisome-associated,ECM Regulators
+GDF6,Matrisome-associated,Secreted Factors
+BCAN,Core matrisome,Proteoglycans
+C17orf58,Matrisome-associated,ECM Regulators
+C1QTNF6,Matrisome-associated,ECM-affiliated Proteins
+COL11A1,Core matrisome,Collagens
+FBLN5,Core matrisome,ECM Glycoproteins
+PLXND1,Matrisome-associated,ECM-affiliated Proteins
+FGF17,Matrisome-associated,Secreted Factors
+REG3A,Matrisome-associated,ECM-affiliated Proteins
+ANXA9,Matrisome-associated,ECM-affiliated Proteins
+MEGF8,Matrisome-associated,Secreted Factors
+ELSPBP1,Core matrisome,ECM Glycoproteins
+CLEC3B,Matrisome-associated,ECM-affiliated Proteins
+IFNA14,Matrisome-associated,Secreted Factors
+S100A16,Matrisome-associated,Secreted Factors
+WNT10B,Matrisome-associated,Secreted Factors
+FGF14,Matrisome-associated,Secreted Factors
+ADAMTS8,Matrisome-associated,ECM Regulators
+CSH2,Matrisome-associated,Secreted Factors
+BMP7,Matrisome-associated,Secreted Factors
+ADAM11,Matrisome-associated,ECM Regulators
+MMP28,Matrisome-associated,ECM Regulators
+S100B,Matrisome-associated,Secreted Factors
+CLEC6A,Matrisome-associated,ECM-affiliated Proteins
+FGF1,Matrisome-associated,Secreted Factors
+THBS3,Core matrisome,ECM Glycoproteins
+S100A6,Matrisome-associated,Secreted Factors
+S100A16,Matrisome-associated,Secreted Factors
+SEMA4A,Matrisome-associated,ECM-affiliated Proteins
+LOXL2,Matrisome-associated,ECM Regulators
+BMP1,Matrisome-associated,ECM Regulators
+FGF12,Matrisome-associated,Secreted Factors
+TNF,Matrisome-associated,Secreted Factors
+S100A10,Matrisome-associated,Secreted Factors
+FBLN5,Core matrisome,ECM Glycoproteins
+MUC3A,Matrisome-associated,ECM-affiliated Proteins
+ELN,Core matrisome,ECM Glycoproteins
+CTSA,Matrisome-associated,ECM Regulators
+FGF8,Matrisome-associated,Secreted Factors
+CCL24,Matrisome-associated,Secreted Factors
+SPARCL1,Core matrisome,ECM Glycoproteins
+LOXL4,Matrisome-associated,ECM Regulators
+ADAM11,Matrisome-associated,ECM Regulators
+PGF,Matrisome-associated,Secreted Factors
+SERPINI1,Matrisome-associated,ECM Regulators
+CXCL3,Matrisome-associated,Secreted Factors
+ADAMTS13,Matrisome-associated,ECM Regulators
+BMP7,Matrisome-associated,Secreted Factors
+TIMP3,Matrisome-associated,ECM Regulators
+FCN1,Matrisome-associated,ECM-affiliated Proteins
+NRG1,Matrisome-associated,Secreted Factors
+WNT8A,Matrisome-associated,Secreted Factors
+CTSB,Matrisome-associated,ECM Regulators
+IGF1,Matrisome-associated,Secreted Factors
+CLEC18A,Matrisome-associated,ECM-affiliated Proteins
+GDF5,Matrisome-associated,Secreted Factors
+C1QL2,Matrisome-associated,ECM-affiliated Proteins
+TGFB3,Matrisome-associated,Secreted Factors
+CLEC10A,Matrisome-associated,ECM-affiliated Proteins
+WNT2,Matrisome-associated,Secreted Factors
+MUC21,Matrisome-associated,ECM-affiliated Proteins
+CCL3,Matrisome-associated,Secreted Factors
+CELA3A,Matrisome-associated,ECM Regulators
+CSH2,Matrisome-associated,Secreted Factors
+CCL2,Matrisome-associated,Secreted Factors
+CCL19,Matrisome-associated,Secreted Factors
+CLEC12B,Matrisome-associated,ECM-affiliated Proteins
+IL25,Matrisome-associated,Secreted Factors
+IFNA16,Matrisome-associated,Secreted Factors
+MEGF10,Matrisome-associated,Secreted Factors
+HCFC2,Matrisome-associated,Secreted Factors
+COL1A2,Core matrisome,Collagens
+ADAM32,Matrisome-associated,ECM Regulators
+WNT11,Matrisome-associated,Secreted Factors
+SPOCK3,Core matrisome,Proteoglycans
+EMCN,Matrisome-associated,ECM-affiliated Proteins
+ADAM12,Matrisome-associated,ECM Regulators
+GDF1,Matrisome-associated,Secreted Factors
+HHIP,Matrisome-associated,Secreted Factors
+COL9A2,Core matrisome,Collagens
+INTS6L,Core matrisome,ECM Glycoproteins
+FLT3LG,Matrisome-associated,Secreted Factors
+SERPINH1,Matrisome-associated,ECM Regulators
+CST3,Matrisome-associated,ECM Regulators
+HAPLN4,Core matrisome,Proteoglycans
+FGF21,Matrisome-associated,Secreted Factors
+F7,Matrisome-associated,ECM Regulators
+CTSD,Matrisome-associated,ECM Regulators
+ZFP91,Matrisome-associated,Secreted Factors
+VEGFC,Matrisome-associated,Secreted Factors
+CST6,Matrisome-associated,ECM Regulators
+LGI1,Core matrisome,ECM Glycoproteins
+PLXND1,Matrisome-associated,ECM-affiliated Proteins
+VWDE,Core matrisome,ECM Glycoproteins
+IL24,Matrisome-associated,Secreted Factors
+CELA2A,Matrisome-associated,ECM Regulators
+ELFN2,Matrisome-associated,ECM-affiliated Proteins
+MEGF8,Matrisome-associated,Secreted Factors
+GAS6,Core matrisome,ECM Glycoproteins
+COL16A1,Core matrisome,Collagens
+ADAM22,Matrisome-associated,ECM Regulators
+PDGFB,Matrisome-associated,Secreted Factors
+FGF6,Matrisome-associated,Secreted Factors
+C1QTNF4,Matrisome-associated,ECM-affiliated Proteins
+P4HTM,Matrisome-associated,ECM Regulators
+PLXNB1,Matrisome-associated,ECM-affiliated Proteins
+SEMA6A,Matrisome-associated,ECM-affiliated Proteins
+ANXA11,Matrisome-associated,ECM-affiliated Proteins
+VEGFD,Matrisome-associated,Secreted Factors
+LGI3,Core matrisome,ECM Glycoproteins
+C1QC,Matrisome-associated,ECM-affiliated Proteins
+CTSZ,Matrisome-associated,ECM Regulators
+C17orf58,Matrisome-associated,ECM Regulators
+EGLN2,Matrisome-associated,ECM Regulators
+BMP8B,Matrisome-associated,Secreted Factors
+CSTB,Matrisome-associated,ECM Regulators
+INHA,Matrisome-associated,Secreted Factors
+SLIT2,Core matrisome,ECM Glycoproteins
+PCOLCE,Core matrisome,ECM Glycoproteins
+ANXA5,Matrisome-associated,ECM-affiliated Proteins
+PF4,Matrisome-associated,Secreted Factors
+BRINP2,Matrisome-associated,Secreted Factors
+CST4,Matrisome-associated,ECM Regulators
+RELN,Core matrisome,ECM Glycoproteins
+S100Z,Matrisome-associated,Secreted Factors
+SEMA4F,Matrisome-associated,ECM-affiliated Proteins
+ITIH4,Matrisome-associated,ECM Regulators
+CTSE,Matrisome-associated,ECM Regulators
+COL11A2,Core matrisome,Collagens
+AGRN,Core matrisome,ECM Glycoproteins
+LTBP4,Core matrisome,ECM Glycoproteins
+COL5A2,Core matrisome,Collagens
+WNT9B,Matrisome-associated,Secreted Factors
+LGALS1,Matrisome-associated,ECM-affiliated Proteins
+S100A1,Matrisome-associated,Secreted Factors
+FGF4,Matrisome-associated,Secreted Factors
+LTBP3,Core matrisome,ECM Glycoproteins
+GREM1,Matrisome-associated,ECM-affiliated Proteins
+SFRP2,Matrisome-associated,Secreted Factors
+SMOC2,Core matrisome,ECM Glycoproteins
+HYAL2,Matrisome-associated,ECM Regulators
+IFNA4,Matrisome-associated,Secreted Factors
+PLOD1,Matrisome-associated,ECM Regulators
+IGFBP2,Core matrisome,ECM Glycoproteins
+CXCL13,Matrisome-associated,Secreted Factors
+LRG1,Core matrisome,ECM Glycoproteins
+COL4A2,Core matrisome,Collagens
+IGFBP4,Core matrisome,ECM Glycoproteins
+PTN,Matrisome-associated,Secreted Factors
+ANXA9,Matrisome-associated,ECM-affiliated Proteins
+IFNA14,Matrisome-associated,Secreted Factors
+MEGF11,Matrisome-associated,Secreted Factors
+IL6,Matrisome-associated,Secreted Factors
+SPARC,Core matrisome,ECM Glycoproteins
+SLIT1,Core matrisome,ECM Glycoproteins
+PLXNA1,Matrisome-associated,ECM-affiliated Proteins
+NTNG1,Core matrisome,ECM Glycoproteins
+SEMA3B,Matrisome-associated,ECM-affiliated Proteins
+COL6A1,Core matrisome,Collagens
+ADAMTS1,Matrisome-associated,ECM Regulators
+VWF,Core matrisome,ECM Glycoproteins
+SEMA6C,Matrisome-associated,ECM-affiliated Proteins
+TNFSF12,Matrisome-associated,Secreted Factors
+COL11A1,Core matrisome,Collagens
+AEBP1,Core matrisome,ECM Glycoproteins
+MASP2,Matrisome-associated,ECM Regulators
+IGFBP5,Core matrisome,ECM Glycoproteins
+ANXA1,Matrisome-associated,ECM-affiliated Proteins
+PLXNA2,Matrisome-associated,ECM-affiliated Proteins
+HAPLN2,Core matrisome,Proteoglycans
+CLEC14A,Matrisome-associated,ECM-affiliated Proteins
+BGN,Core matrisome,Proteoglycans
+SEMA3A,Matrisome-associated,ECM-affiliated Proteins
+HTRA1,Matrisome-associated,ECM Regulators
+SFTPC,Matrisome-associated,ECM-affiliated Proteins
+EMID1,Core matrisome,ECM Glycoproteins
+IGFBP7,Core matrisome,ECM Glycoproteins
+TNXB,Core matrisome,ECM Glycoproteins
+FAM20C,Matrisome-associated,ECM Regulators
+ELSPBP1,Core matrisome,ECM Glycoproteins
+C1QL3,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS10,Matrisome-associated,ECM Regulators
+IL13,Matrisome-associated,Secreted Factors
+FN1,Core matrisome,ECM Glycoproteins
+BMP3,Matrisome-associated,Secreted Factors
+PCSK6,Matrisome-associated,ECM Regulators
+SPON2,Core matrisome,ECM Glycoproteins
+MUC5B,Matrisome-associated,ECM-affiliated Proteins
+P4HA2,Matrisome-associated,ECM Regulators
+ANXA6,Matrisome-associated,ECM-affiliated Proteins
+POMZP3,Core matrisome,ECM Glycoproteins
+LMAN1,Matrisome-associated,ECM-affiliated Proteins
+SERPING1,Matrisome-associated,ECM Regulators
+MFAP1,Core matrisome,ECM Glycoproteins
+SEMA6B,Matrisome-associated,ECM-affiliated Proteins
+IL7,Matrisome-associated,Secreted Factors
+CBLN2,Matrisome-associated,Secreted Factors
+A2M,Matrisome-associated,ECM Regulators
+SEMA4B,Matrisome-associated,ECM-affiliated Proteins
+SERPINB6,Matrisome-associated,ECM Regulators
+EDIL3,Core matrisome,ECM Glycoproteins
+WIF1,Matrisome-associated,Secreted Factors
+FBN3,Core matrisome,ECM Glycoproteins
+GPC4,Matrisome-associated,ECM-affiliated Proteins
+COL27A1,Core matrisome,Collagens
+FGF18,Matrisome-associated,Secreted Factors
+ITIH5,Matrisome-associated,ECM Regulators
+ADAMTS8,Matrisome-associated,ECM Regulators
+ADAM15,Matrisome-associated,ECM Regulators
+SERPINE2,Matrisome-associated,ECM Regulators
+NTNG2,Core matrisome,ECM Glycoproteins
+CLEC4E,Matrisome-associated,ECM-affiliated Proteins
+PLXDC2,Matrisome-associated,ECM-affiliated Proteins
+SDC4,Matrisome-associated,ECM-affiliated Proteins
+ADAM9,Matrisome-associated,ECM Regulators
+GDF2,Matrisome-associated,Secreted Factors
+CCL3L3,Matrisome-associated,Secreted Factors
+DPT,Core matrisome,ECM Glycoproteins
+MFAP3,Core matrisome,ECM Glycoproteins
+S100A13,Matrisome-associated,Secreted Factors
+GLDN,Core matrisome,ECM Glycoproteins
+S100A11,Matrisome-associated,Secreted Factors
+MEGF9,Matrisome-associated,Secreted Factors
+IL36RN,Matrisome-associated,Secreted Factors
+TNFSF14,Matrisome-associated,Secreted Factors
+SERPINA1,Matrisome-associated,ECM Regulators
+ADAMTS6,Matrisome-associated,ECM Regulators
+ANXA8,Matrisome-associated,ECM-affiliated Proteins
+EGLN1,Matrisome-associated,ECM Regulators
+SPOCK2,Core matrisome,Proteoglycans
+ADAMTS4,Matrisome-associated,ECM Regulators
+WNT3,Matrisome-associated,Secreted Factors
+CLEC3B,Matrisome-associated,ECM-affiliated Proteins
+FSTL3,Matrisome-associated,Secreted Factors
+EGFL7,Matrisome-associated,Secreted Factors
+MDK,Matrisome-associated,Secreted Factors
+CRLF3,Matrisome-associated,Secreted Factors
+C1QTNF1,Matrisome-associated,ECM-affiliated Proteins
+ADAMTSL5,Matrisome-associated,ECM Regulators
+C1QTNF7,Matrisome-associated,ECM-affiliated Proteins
+CCL18,Matrisome-associated,Secreted Factors
+S100A4,Matrisome-associated,Secreted Factors
+TIMP4,Matrisome-associated,ECM Regulators
+PLXNB3,Matrisome-associated,ECM-affiliated Proteins
+SBSPON,Core matrisome,ECM Glycoproteins
+SEMA4D,Matrisome-associated,ECM-affiliated Proteins
+LAMA5,Core matrisome,ECM Glycoproteins
+CRLF1,Matrisome-associated,Secreted Factors
+FGF13,Matrisome-associated,Secreted Factors
+LAMA1,Core matrisome,ECM Glycoproteins
+GDF11,Matrisome-associated,Secreted Factors
+EGLN3,Matrisome-associated,ECM Regulators
+CSPG4,Matrisome-associated,ECM-affiliated Proteins
+FGF3,Matrisome-associated,Secreted Factors
+PLXNB2,Matrisome-associated,ECM-affiliated Proteins
+MUC5AC,Matrisome-associated,ECM-affiliated Proteins
+TNFSF13,Matrisome-associated,Secreted Factors
+ADAM23,Matrisome-associated,ECM Regulators
+INHBE,Matrisome-associated,Secreted Factors
+PLOD3,Matrisome-associated,ECM Regulators
+C1QTNF6,Matrisome-associated,ECM-affiliated Proteins
+CCL8,Matrisome-associated,Secreted Factors
+NCAN,Core matrisome,Proteoglycans
+TIMP2,Matrisome-associated,ECM Regulators
+SDC3,Matrisome-associated,ECM-affiliated Proteins
+SPP1,Core matrisome,ECM Glycoproteins
+IFNA5,Matrisome-associated,Secreted Factors
+LTBP1,Core matrisome,ECM Glycoproteins
+ANXA7,Matrisome-associated,ECM-affiliated Proteins
+BCAN,Core matrisome,Proteoglycans
+COL5A3,Core matrisome,Collagens
+SNED1,Core matrisome,ECM Glycoproteins
+WNT10A,Matrisome-associated,Secreted Factors
+IGF2,Matrisome-associated,Secreted Factors
+LGI4,Core matrisome,ECM Glycoproteins
+COL4A1,Core matrisome,Collagens
+CST9L,Matrisome-associated,ECM Regulators
+CCN2,Core matrisome,ECM Glycoproteins
+DCN,Core matrisome,Proteoglycans
+SPOCK1,Core matrisome,Proteoglycans
+F12,Matrisome-associated,ECM Regulators
+AMH,Matrisome-associated,Secreted Factors
+CXCL14,Matrisome-associated,Secreted Factors
+KNG1,Matrisome-associated,ECM Regulators
+CRIM1,Core matrisome,ECM Glycoproteins
+TNR,Core matrisome,ECM Glycoproteins
+ADAMTS3,Matrisome-associated,ECM Regulators
+GDF6,Matrisome-associated,Secreted Factors
+WNT5B,Matrisome-associated,Secreted Factors
+FGF2,Matrisome-associated,Secreted Factors
+PRSS3,Matrisome-associated,ECM Regulators
+VWA5A,Core matrisome,ECM Glycoproteins
+PRELP,Core matrisome,Proteoglycans
+IL1F10,Matrisome-associated,Secreted Factors
+SERPINF1,Matrisome-associated,ECM Regulators
+MST1,Matrisome-associated,Secreted Factors
+CTSF,Matrisome-associated,ECM Regulators
+CSHL1,Matrisome-associated,Secreted Factors
+VEGFB,Matrisome-associated,Secreted Factors
+REG3A,Matrisome-associated,ECM-affiliated Proteins
+SERPINB1,Matrisome-associated,ECM Regulators
+HSPG2,Core matrisome,Proteoglycans
+SERPIND1,Matrisome-associated,ECM Regulators
+CCL26,Matrisome-associated,Secreted Factors
+VWA5B2,Core matrisome,ECM Glycoproteins
+PARM1,Matrisome-associated,ECM-affiliated Proteins
+EMILIN1,Core matrisome,ECM Glycoproteins
+COL18A1,Core matrisome,Collagens
+EFEMP1,Core matrisome,ECM Glycoproteins
+C1QB,Matrisome-associated,ECM-affiliated Proteins
+NPNT,Core matrisome,ECM Glycoproteins
+SERPINB7,Matrisome-associated,ECM Regulators
+WNT10B,Matrisome-associated,Secreted Factors
+OGFOD2,Matrisome-associated,ECM Regulators
+COL6A2,Core matrisome,Collagens
+ASTL,Matrisome-associated,ECM Regulators
+MATN4,Core matrisome,ECM Glycoproteins
+CHADL,Core matrisome,Proteoglycans
+P4HA1,Matrisome-associated,ECM Regulators
+ANXA2,Matrisome-associated,ECM-affiliated Proteins
+NODAL,Matrisome-associated,Secreted Factors
+FGF17,Matrisome-associated,Secreted Factors
+IFNA13,Matrisome-associated,Secreted Factors
+MUCL1,Matrisome-associated,ECM-affiliated Proteins
+IL34,Matrisome-associated,Secreted Factors
+CX3CL1,Matrisome-associated,Secreted Factors
+IL18,Matrisome-associated,Secreted Factors
+AGT,Matrisome-associated,ECM Regulators
+EBI3,Matrisome-associated,Secreted Factors
+CST8,Matrisome-associated,ECM Regulators
+ISM1,Matrisome-associated,Secreted Factors
+PPBP,Matrisome-associated,Secreted Factors
+CCN1,Core matrisome,ECM Glycoproteins
+DHH,Matrisome-associated,Secreted Factors
+TGFB2,Matrisome-associated,Secreted Factors
+LTA,Matrisome-associated,Secreted Factors
+KITLG,Matrisome-associated,Secreted Factors
+FGF14,Matrisome-associated,Secreted Factors
+FGF11,Matrisome-associated,Secreted Factors
+MUC12,Matrisome-associated,ECM-affiliated Proteins
+CSF1,Matrisome-associated,Secreted Factors
+MUC20,Matrisome-associated,ECM-affiliated Proteins
+SEMA4C,Matrisome-associated,ECM-affiliated Proteins
+CLEC17A,Matrisome-associated,ECM-affiliated Proteins
+CRELD1,Core matrisome,ECM Glycoproteins
+FREM1,Matrisome-associated,ECM-affiliated Proteins
+MFGE8,Core matrisome,ECM Glycoproteins
+S100A7,Matrisome-associated,Secreted Factors
+MMP28,Matrisome-associated,ECM Regulators
+GH1,Matrisome-associated,Secreted Factors
+TIMP1,Matrisome-associated,ECM Regulators
+LAMB2,Core matrisome,ECM Glycoproteins
+SEMA3E,Matrisome-associated,ECM-affiliated Proteins
+NELL2,Core matrisome,ECM Glycoproteins
+IL17F,Matrisome-associated,Secreted Factors
+NGLY1,Matrisome-associated,ECM Regulators
+SRGN,Core matrisome,Proteoglycans
+OVGP1,Matrisome-associated,ECM-affiliated Proteins
+PLAT,Matrisome-associated,ECM Regulators
+SERPINA3,Matrisome-associated,ECM Regulators
+LIF,Matrisome-associated,Secreted Factors
+GPC1,Matrisome-associated,ECM-affiliated Proteins
+EDIL3,Core matrisome,ECM Glycoproteins
+SPP1,Core matrisome,ECM Glycoproteins
+S100B,Matrisome-associated,Secreted Factors
+FN1,Core matrisome,ECM Glycoproteins
+SEMA4D,Matrisome-associated,ECM-affiliated Proteins
+CRELD1,Core matrisome,ECM Glycoproteins
+PCSK6,Matrisome-associated,ECM Regulators
+VWF,Core matrisome,ECM Glycoproteins
+S100A6,Matrisome-associated,Secreted Factors
+MDK,Matrisome-associated,Secreted Factors
+CLEC14A,Matrisome-associated,ECM-affiliated Proteins
+WNT5B,Matrisome-associated,Secreted Factors
+SPOCK1,Core matrisome,Proteoglycans
+MEGF10,Matrisome-associated,Secreted Factors
+SMOC2,Core matrisome,ECM Glycoproteins
+FGF14,Matrisome-associated,Secreted Factors
+PF4,Matrisome-associated,Secreted Factors
+FAM20C,Matrisome-associated,ECM Regulators
+COL11A2,Core matrisome,Collagens
+IGF2,Matrisome-associated,Secreted Factors
+VEGFC,Matrisome-associated,Secreted Factors
+SFTPC,Matrisome-associated,ECM-affiliated Proteins
+S100A1,Matrisome-associated,Secreted Factors
+IL24,Matrisome-associated,Secreted Factors
+ADAM22,Matrisome-associated,ECM Regulators
+HAPLN2,Core matrisome,Proteoglycans
+PGF,Matrisome-associated,Secreted Factors
+NODAL,Matrisome-associated,Secreted Factors
+ADAMTS6,Matrisome-associated,ECM Regulators
+CCN2,Core matrisome,ECM Glycoproteins
+LOXL4,Matrisome-associated,ECM Regulators
+PLOD1,Matrisome-associated,ECM Regulators
+COL4A1,Core matrisome,Collagens
+LTA,Matrisome-associated,Secreted Factors
+FGF17,Matrisome-associated,Secreted Factors
+NGLY1,Matrisome-associated,ECM Regulators
+FGF6,Matrisome-associated,Secreted Factors
+FGF1,Matrisome-associated,Secreted Factors
+PDGFB,Matrisome-associated,Secreted Factors
+CXCL13,Matrisome-associated,Secreted Factors
+GLDN,Core matrisome,ECM Glycoproteins
+CLEC3B,Matrisome-associated,ECM-affiliated Proteins
+MUC20,Matrisome-associated,ECM-affiliated Proteins
+CRIM1,Core matrisome,ECM Glycoproteins
+ANXA9,Matrisome-associated,ECM-affiliated Proteins
+COL5A3,Core matrisome,Collagens
+LTBP1,Core matrisome,ECM Glycoproteins
+WIF1,Matrisome-associated,Secreted Factors
+NRG1,Matrisome-associated,Secreted Factors
+S100A10,Matrisome-associated,Secreted Factors
+SEMA4C,Matrisome-associated,ECM-affiliated Proteins
+EFEMP1,Core matrisome,ECM Glycoproteins
+COL4A2,Core matrisome,Collagens
+IFNA14,Matrisome-associated,Secreted Factors
+MUC12,Matrisome-associated,ECM-affiliated Proteins
+WNT8A,Matrisome-associated,Secreted Factors
+CELA3A,Matrisome-associated,ECM Regulators
+LIF,Matrisome-associated,Secreted Factors
+VEGFB,Matrisome-associated,Secreted Factors
+SEMA6A,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS10,Matrisome-associated,ECM Regulators
+ELN,Core matrisome,ECM Glycoproteins
+KITLG,Matrisome-associated,Secreted Factors
+HSPG2,Core matrisome,Proteoglycans
+GDF6,Matrisome-associated,Secreted Factors
+THBS3,Core matrisome,ECM Glycoproteins
+PTN,Matrisome-associated,Secreted Factors
+SEMA6B,Matrisome-associated,ECM-affiliated Proteins
+CCL19,Matrisome-associated,Secreted Factors
+FREM1,Matrisome-associated,ECM-affiliated Proteins
+SPOCK3,Core matrisome,Proteoglycans
+EMCN,Matrisome-associated,ECM-affiliated Proteins
+CTSA,Matrisome-associated,ECM Regulators
+WNT10B,Matrisome-associated,Secreted Factors
+FLT3LG,Matrisome-associated,Secreted Factors
+TGFB2,Matrisome-associated,Secreted Factors
+COL1A2,Core matrisome,Collagens
+OVGP1,Matrisome-associated,ECM-affiliated Proteins
+IGFBP4,Core matrisome,ECM Glycoproteins
+WNT10A,Matrisome-associated,Secreted Factors
+CLEC10A,Matrisome-associated,ECM-affiliated Proteins
+LGI1,Core matrisome,ECM Glycoproteins
+IL1F10,Matrisome-associated,Secreted Factors
+MASP2,Matrisome-associated,ECM Regulators
+CXCL3,Matrisome-associated,Secreted Factors
+P4HA2,Matrisome-associated,ECM Regulators
+SPOCK2,Core matrisome,Proteoglycans
+CCL24,Matrisome-associated,Secreted Factors
+CLEC18A,Matrisome-associated,ECM-affiliated Proteins
+POMZP3,Core matrisome,ECM Glycoproteins
+IGFBP7,Core matrisome,ECM Glycoproteins
+SPON2,Core matrisome,ECM Glycoproteins
+EGFL7,Matrisome-associated,Secreted Factors
+TNFSF14,Matrisome-associated,Secreted Factors
+BMP1,Matrisome-associated,ECM Regulators
+IL18,Matrisome-associated,Secreted Factors
+FGF4,Matrisome-associated,Secreted Factors
+EMILIN1,Core matrisome,ECM Glycoproteins
+ADAMTS13,Matrisome-associated,ECM Regulators
+GDF11,Matrisome-associated,Secreted Factors
+LGI3,Core matrisome,ECM Glycoproteins
+BMP8B,Matrisome-associated,Secreted Factors
+PLOD3,Matrisome-associated,ECM Regulators
+AGT,Matrisome-associated,ECM Regulators
+NPNT,Core matrisome,ECM Glycoproteins
+SDC4,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS1,Matrisome-associated,ECM Regulators
+MFAP3,Core matrisome,ECM Glycoproteins
+WNT9B,Matrisome-associated,Secreted Factors
+FBLN5,Core matrisome,ECM Glycoproteins
+HHIP,Matrisome-associated,Secreted Factors
+SLIT2,Core matrisome,ECM Glycoproteins
+ANXA5,Matrisome-associated,ECM-affiliated Proteins
+WNT11,Matrisome-associated,Secreted Factors
+IL6,Matrisome-associated,Secreted Factors
+GPC4,Matrisome-associated,ECM-affiliated Proteins
+IGFBP5,Core matrisome,ECM Glycoproteins
+PLXNB3,Matrisome-associated,ECM-affiliated Proteins
+SEMA3B,Matrisome-associated,ECM-affiliated Proteins
+FGF21,Matrisome-associated,Secreted Factors
+LGALS1,Matrisome-associated,ECM-affiliated Proteins
+IFNA5,Matrisome-associated,Secreted Factors
+HAPLN4,Core matrisome,Proteoglycans
+FGF18,Matrisome-associated,Secreted Factors
+SEMA3A,Matrisome-associated,ECM-affiliated Proteins
+VEGFD,Matrisome-associated,Secreted Factors
+CCL3L3,Matrisome-associated,Secreted Factors
+INTS6L,Core matrisome,ECM Glycoproteins
+ITIH5,Matrisome-associated,ECM Regulators
+PLXNA2,Matrisome-associated,ECM-affiliated Proteins
+CCL26,Matrisome-associated,Secreted Factors
+CXCL14,Matrisome-associated,Secreted Factors
+MEGF8,Matrisome-associated,Secreted Factors
+IGFBP2,Core matrisome,ECM Glycoproteins
+HYAL2,Matrisome-associated,ECM Regulators
+WNT2,Matrisome-associated,Secreted Factors
+FGF13,Matrisome-associated,Secreted Factors
+C1QTNF6,Matrisome-associated,ECM-affiliated Proteins
+ASTL,Matrisome-associated,ECM Regulators
+TIMP4,Matrisome-associated,ECM Regulators
+CTSB,Matrisome-associated,ECM Regulators
+DCN,Core matrisome,Proteoglycans
+FBN3,Core matrisome,ECM Glycoproteins
+NTNG2,Core matrisome,ECM Glycoproteins
+RELN,Core matrisome,ECM Glycoproteins
+HTRA1,Matrisome-associated,ECM Regulators
+SEMA6C,Matrisome-associated,ECM-affiliated Proteins
+CBLN2,Matrisome-associated,Secreted Factors
+ADAMTS8,Matrisome-associated,ECM Regulators
+ADAM23,Matrisome-associated,ECM Regulators
+TGFB3,Matrisome-associated,Secreted Factors
+MMP28,Matrisome-associated,ECM Regulators
+SERPING1,Matrisome-associated,ECM Regulators
+C1QTNF7,Matrisome-associated,ECM-affiliated Proteins
+C1QL2,Matrisome-associated,ECM-affiliated Proteins
+BRINP2,Matrisome-associated,Secreted Factors
+ANXA11,Matrisome-associated,ECM-affiliated Proteins
+ANXA1,Matrisome-associated,ECM-affiliated Proteins
+CTSE,Matrisome-associated,ECM Regulators
+S100A16,Matrisome-associated,Secreted Factors
+SRGN,Core matrisome,Proteoglycans
+AEBP1,Core matrisome,ECM Glycoproteins
+BGN,Core matrisome,Proteoglycans
+SERPINB6,Matrisome-associated,ECM Regulators
+BCAN,Core matrisome,Proteoglycans
+GH1,Matrisome-associated,Secreted Factors
+CSPG4,Matrisome-associated,ECM-affiliated Proteins
+CLEC12B,Matrisome-associated,ECM-affiliated Proteins
+IL34,Matrisome-associated,Secreted Factors
+AGRN,Core matrisome,ECM Glycoproteins
+MEGF11,Matrisome-associated,Secreted Factors
+SEMA4B,Matrisome-associated,ECM-affiliated Proteins
+SERPINE2,Matrisome-associated,ECM Regulators
+LAMB2,Core matrisome,ECM Glycoproteins
+ISM1,Matrisome-associated,Secreted Factors
+FGF8,Matrisome-associated,Secreted Factors
+TNF,Matrisome-associated,Secreted Factors
+IL36RN,Matrisome-associated,Secreted Factors
+ADAM12,Matrisome-associated,ECM Regulators
+INHBE,Matrisome-associated,Secreted Factors
+GAS6,Core matrisome,ECM Glycoproteins
+AMH,Matrisome-associated,Secreted Factors
+MUC5B,Matrisome-associated,ECM-affiliated Proteins
+MUC3A,Matrisome-associated,ECM-affiliated Proteins
+S100A7,Matrisome-associated,Secreted Factors
+MUC21,Matrisome-associated,ECM-affiliated Proteins
+PLXDC2,Matrisome-associated,ECM-affiliated Proteins
+PLXNB1,Matrisome-associated,ECM-affiliated Proteins
+DHH,Matrisome-associated,Secreted Factors
+TNR,Core matrisome,ECM Glycoproteins
+EGLN3,Matrisome-associated,ECM Regulators
+ADAM9,Matrisome-associated,ECM Regulators
+CTSD,Matrisome-associated,ECM Regulators
+CCL18,Matrisome-associated,Secreted Factors
+MST1,Matrisome-associated,Secreted Factors
+LTBP3,Core matrisome,ECM Glycoproteins
+FGF11,Matrisome-associated,Secreted Factors
+FSTL3,Matrisome-associated,Secreted Factors
+GPC1,Matrisome-associated,ECM-affiliated Proteins
+LGI4,Core matrisome,ECM Glycoproteins
+LTBP4,Core matrisome,ECM Glycoproteins
+VWA5B2,Core matrisome,ECM Glycoproteins
+ANXA8,Matrisome-associated,ECM-affiliated Proteins
+CST6,Matrisome-associated,ECM Regulators
+CLEC4E,Matrisome-associated,ECM-affiliated Proteins
+OGFOD2,Matrisome-associated,ECM Regulators
+SBSPON,Core matrisome,ECM Glycoproteins
+SLIT1,Core matrisome,ECM Glycoproteins
+SNED1,Core matrisome,ECM Glycoproteins
+SPARC,Core matrisome,ECM Glycoproteins
+PRELP,Core matrisome,Proteoglycans
+LRG1,Core matrisome,ECM Glycoproteins
+CCN1,Core matrisome,ECM Glycoproteins
+EMID1,Core matrisome,ECM Glycoproteins
+CSTB,Matrisome-associated,ECM Regulators
+ELSPBP1,Core matrisome,ECM Glycoproteins
+CST4,Matrisome-associated,ECM Regulators
+INHA,Matrisome-associated,Secreted Factors
+TNFSF12,Matrisome-associated,Secreted Factors
+SERPINA1,Matrisome-associated,ECM Regulators
+LMAN1,Matrisome-associated,ECM-affiliated Proteins
+MFGE8,Core matrisome,ECM Glycoproteins
+PPBP,Matrisome-associated,Secreted Factors
+TIMP3,Matrisome-associated,ECM Regulators
+IFNA16,Matrisome-associated,Secreted Factors
+PRSS3,Matrisome-associated,ECM Regulators
+CRLF1,Matrisome-associated,Secreted Factors
+LAMA5,Core matrisome,ECM Glycoproteins
+PLXND1,Matrisome-associated,ECM-affiliated Proteins
+ANXA2,Matrisome-associated,ECM-affiliated Proteins
+NCAN,Core matrisome,Proteoglycans
+COL6A1,Core matrisome,Collagens
+CTSF,Matrisome-associated,ECM Regulators
+ANXA7,Matrisome-associated,ECM-affiliated Proteins
+IFNA4,Matrisome-associated,Secreted Factors
+CCL3,Matrisome-associated,Secreted Factors
+CLEC17A,Matrisome-associated,ECM-affiliated Proteins
+MUCL1,Matrisome-associated,ECM-affiliated Proteins
+IGF1,Matrisome-associated,Secreted Factors
+CCL8,Matrisome-associated,Secreted Factors
+SERPINH1,Matrisome-associated,ECM Regulators
+S100A13,Matrisome-associated,Secreted Factors
+FGF12,Matrisome-associated,Secreted Factors
+S100A11,Matrisome-associated,Secreted Factors
+CSF1,Matrisome-associated,Secreted Factors
+LAMA1,Core matrisome,ECM Glycoproteins
+NTNG1,Core matrisome,ECM Glycoproteins
+PARM1,Matrisome-associated,ECM-affiliated Proteins
+COL9A2,Core matrisome,Collagens
+WNT3,Matrisome-associated,Secreted Factors
+SEMA4F,Matrisome-associated,ECM-affiliated Proteins
+SEMA4A,Matrisome-associated,ECM-affiliated Proteins
+CELA2A,Matrisome-associated,ECM Regulators
+C1QC,Matrisome-associated,ECM-affiliated Proteins
+CHADL,Core matrisome,Proteoglycans
+PLXNA1,Matrisome-associated,ECM-affiliated Proteins
+SEMA3E,Matrisome-associated,ECM-affiliated Proteins
+CST3,Matrisome-associated,ECM Regulators
+C1QL3,Matrisome-associated,ECM-affiliated Proteins
+COL5A2,Core matrisome,Collagens
+PLAT,Matrisome-associated,ECM Regulators
+IL25,Matrisome-associated,Secreted Factors
+GDF1,Matrisome-associated,Secreted Factors
+EGLN1,Matrisome-associated,ECM Regulators
+SDC3,Matrisome-associated,ECM-affiliated Proteins
+NELL2,Core matrisome,ECM Glycoproteins
+COL11A1,Core matrisome,Collagens
+HCFC2,Matrisome-associated,Secreted Factors
+VWA5A,Core matrisome,ECM Glycoproteins
+S100A4,Matrisome-associated,Secreted Factors
+SERPINF1,Matrisome-associated,ECM Regulators
+F12,Matrisome-associated,ECM Regulators
+TNFSF13,Matrisome-associated,Secreted Factors
+IFNA13,Matrisome-associated,Secreted Factors
+ITIH4,Matrisome-associated,ECM Regulators
+SPARCL1,Core matrisome,ECM Glycoproteins
+SERPIND1,Matrisome-associated,ECM Regulators
+MUC5AC,Matrisome-associated,ECM-affiliated Proteins
+ANXA6,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS4,Matrisome-associated,ECM Regulators
+ZFP91,Matrisome-associated,Secreted Factors
+EGLN2,Matrisome-associated,ECM Regulators
+ADAM15,Matrisome-associated,ECM Regulators
+CST8,Matrisome-associated,ECM Regulators
+ADAM11,Matrisome-associated,ECM Regulators
+DPT,Core matrisome,ECM Glycoproteins
+FGF3,Matrisome-associated,Secreted Factors
+P4HA1,Matrisome-associated,ECM Regulators
+ADAM32,Matrisome-associated,ECM Regulators
+COL27A1,Core matrisome,Collagens
+LOXL2,Matrisome-associated,ECM Regulators
+ELFN2,Matrisome-associated,ECM-affiliated Proteins
+COL6A2,Core matrisome,Collagens
+BMP3,Matrisome-associated,Secreted Factors
+VWDE,Core matrisome,ECM Glycoproteins
+SERPINI1,Matrisome-associated,ECM Regulators
+CSH2,Matrisome-associated,Secreted Factors
+MATN4,Core matrisome,ECM Glycoproteins
+TNXB,Core matrisome,ECM Glycoproteins
+IL7,Matrisome-associated,Secreted Factors
+EBI3,Matrisome-associated,Secreted Factors
+C1QB,Matrisome-associated,ECM-affiliated Proteins
+F7,Matrisome-associated,ECM Regulators
+SERPINB1,Matrisome-associated,ECM Regulators
+COL16A1,Core matrisome,Collagens
+GDF2,Matrisome-associated,Secreted Factors
+CSHL1,Matrisome-associated,Secreted Factors
+COL18A1,Core matrisome,Collagens
+CCL2,Matrisome-associated,Secreted Factors
+A2M,Matrisome-associated,ECM Regulators
+SERPINA3,Matrisome-associated,ECM Regulators
+FGF2,Matrisome-associated,Secreted Factors
+GDF5,Matrisome-associated,Secreted Factors
+KNG1,Matrisome-associated,ECM Regulators
+TIMP2,Matrisome-associated,ECM Regulators
+C1QTNF4,Matrisome-associated,ECM-affiliated Proteins
+BMP7,Matrisome-associated,Secreted Factors
+PLXNB2,Matrisome-associated,ECM-affiliated Proteins
+MEGF9,Matrisome-associated,Secreted Factors
+CX3CL1,Matrisome-associated,Secreted Factors
+REG3A,Matrisome-associated,ECM-affiliated Proteins
+SERPINB7,Matrisome-associated,ECM Regulators
+IL13,Matrisome-associated,Secreted Factors
+SFRP2,Matrisome-associated,Secreted Factors
+GREM1,Matrisome-associated,ECM-affiliated Proteins
+CST9L,Matrisome-associated,ECM Regulators
+P4HTM,Matrisome-associated,ECM Regulators
+ADAMTSL5,Matrisome-associated,ECM Regulators
+FCN1,Matrisome-associated,ECM-affiliated Proteins
+CRLF3,Matrisome-associated,Secreted Factors
+S100Z,Matrisome-associated,Secreted Factors
+IL17F,Matrisome-associated,Secreted Factors
+CLEC6A,Matrisome-associated,ECM-affiliated Proteins
+PCOLCE,Core matrisome,ECM Glycoproteins
+C1QTNF1,Matrisome-associated,ECM-affiliated Proteins
+CTSZ,Matrisome-associated,ECM Regulators
+MFAP1,Core matrisome,ECM Glycoproteins
+TIMP1,Matrisome-associated,ECM Regulators
+ADAMTS3,Matrisome-associated,ECM Regulators
+C17orf58,Matrisome-associated,ECM Regulators
+SBSPON,Core matrisome,ECM Glycoproteins
+MUC12,Matrisome-associated,ECM-affiliated Proteins
+CSH2,Matrisome-associated,Secreted Factors
+CSHL1,Matrisome-associated,Secreted Factors
+SEMA4C,Matrisome-associated,ECM-affiliated Proteins
+PLXNA2,Matrisome-associated,ECM-affiliated Proteins
+MEGF8,Matrisome-associated,Secreted Factors
+CLEC14A,Matrisome-associated,ECM-affiliated Proteins
+S100Z,Matrisome-associated,Secreted Factors
+LOXL2,Matrisome-associated,ECM Regulators
+IGF2,Matrisome-associated,Secreted Factors
+ADAM9,Matrisome-associated,ECM Regulators
+P4HTM,Matrisome-associated,ECM Regulators
+FLT3LG,Matrisome-associated,Secreted Factors
+TNFSF12,Matrisome-associated,Secreted Factors
+ADAMTS3,Matrisome-associated,ECM Regulators
+ASTL,Matrisome-associated,ECM Regulators
+DCN,Core matrisome,Proteoglycans
+LGI3,Core matrisome,ECM Glycoproteins
+FGF12,Matrisome-associated,Secreted Factors
+S100A1,Matrisome-associated,Secreted Factors
+MATN4,Core matrisome,ECM Glycoproteins
+CTSE,Matrisome-associated,ECM Regulators
+ADAMTSL5,Matrisome-associated,ECM Regulators
+LAMA5,Core matrisome,ECM Glycoproteins
+BCAN,Core matrisome,Proteoglycans
+MEGF11,Matrisome-associated,Secreted Factors
+FGF3,Matrisome-associated,Secreted Factors
+WNT2,Matrisome-associated,Secreted Factors
+SEMA6B,Matrisome-associated,ECM-affiliated Proteins
+MASP2,Matrisome-associated,ECM Regulators
+IL24,Matrisome-associated,Secreted Factors
+ADAM12,Matrisome-associated,ECM Regulators
+TNXB,Core matrisome,ECM Glycoproteins
+PGF,Matrisome-associated,Secreted Factors
+FGF8,Matrisome-associated,Secreted Factors
+CTSZ,Matrisome-associated,ECM Regulators
+MST1,Matrisome-associated,Secreted Factors
+PPBP,Matrisome-associated,Secreted Factors
+ADAMTS6,Matrisome-associated,ECM Regulators
+VWF,Core matrisome,ECM Glycoproteins
+MFAP1,Core matrisome,ECM Glycoproteins
+CLEC10A,Matrisome-associated,ECM-affiliated Proteins
+ELFN2,Matrisome-associated,ECM-affiliated Proteins
+BMP3,Matrisome-associated,Secreted Factors
+BRINP2,Matrisome-associated,Secreted Factors
+CCL18,Matrisome-associated,Secreted Factors
+GDF6,Matrisome-associated,Secreted Factors
+TGFB2,Matrisome-associated,Secreted Factors
+CRLF3,Matrisome-associated,Secreted Factors
+CCL8,Matrisome-associated,Secreted Factors
+SEMA3A,Matrisome-associated,ECM-affiliated Proteins
+NGLY1,Matrisome-associated,ECM Regulators
+SERPINB1,Matrisome-associated,ECM Regulators
+FCN1,Matrisome-associated,ECM-affiliated Proteins
+LTBP1,Core matrisome,ECM Glycoproteins
+CSF1,Matrisome-associated,Secreted Factors
+ADAM22,Matrisome-associated,ECM Regulators
+CLEC3B,Matrisome-associated,ECM-affiliated Proteins
+EFEMP1,Core matrisome,ECM Glycoproteins
+S100A11,Matrisome-associated,Secreted Factors
+EMID1,Core matrisome,ECM Glycoproteins
+SERPINB6,Matrisome-associated,ECM Regulators
+SFRP2,Matrisome-associated,Secreted Factors
+SERPINF1,Matrisome-associated,ECM Regulators
+TIMP4,Matrisome-associated,ECM Regulators
+COL18A1,Core matrisome,Collagens
+ANXA7,Matrisome-associated,ECM-affiliated Proteins
+PCOLCE,Core matrisome,ECM Glycoproteins
+CLEC6A,Matrisome-associated,ECM-affiliated Proteins
+ADAM15,Matrisome-associated,ECM Regulators
+EGFL7,Matrisome-associated,Secreted Factors
+NTNG1,Core matrisome,ECM Glycoproteins
+GAS6,Core matrisome,ECM Glycoproteins
+PRELP,Core matrisome,Proteoglycans
+CTSB,Matrisome-associated,ECM Regulators
+IFNA16,Matrisome-associated,Secreted Factors
+IL17F,Matrisome-associated,Secreted Factors
+SERPIND1,Matrisome-associated,ECM Regulators
+CLEC4E,Matrisome-associated,ECM-affiliated Proteins
+OVGP1,Matrisome-associated,ECM-affiliated Proteins
+CELA3A,Matrisome-associated,ECM Regulators
+TNFSF14,Matrisome-associated,Secreted Factors
+ITIH5,Matrisome-associated,ECM Regulators
+CST9L,Matrisome-associated,ECM Regulators
+PLOD1,Matrisome-associated,ECM Regulators
+SPON2,Core matrisome,ECM Glycoproteins
+VWA5A,Core matrisome,ECM Glycoproteins
+COL27A1,Core matrisome,Collagens
+ANXA1,Matrisome-associated,ECM-affiliated Proteins
+SERPINB7,Matrisome-associated,ECM Regulators
+COL1A2,Core matrisome,Collagens
+VWDE,Core matrisome,ECM Glycoproteins
+C1QTNF6,Matrisome-associated,ECM-affiliated Proteins
+S100A4,Matrisome-associated,Secreted Factors
+SEMA3E,Matrisome-associated,ECM-affiliated Proteins
+CBLN2,Matrisome-associated,Secreted Factors
+IL7,Matrisome-associated,Secreted Factors
+F7,Matrisome-associated,ECM Regulators
+SLIT2,Core matrisome,ECM Glycoproteins
+CCL2,Matrisome-associated,Secreted Factors
+COL4A2,Core matrisome,Collagens
+HYAL2,Matrisome-associated,ECM Regulators
+MMP28,Matrisome-associated,ECM Regulators
+WNT3,Matrisome-associated,Secreted Factors
+CST8,Matrisome-associated,ECM Regulators
+PDGFB,Matrisome-associated,Secreted Factors
+CCL3L3,Matrisome-associated,Secreted Factors
+REG3A,Matrisome-associated,ECM-affiliated Proteins
+IFNA4,Matrisome-associated,Secreted Factors
+FGF18,Matrisome-associated,Secreted Factors
+FN1,Core matrisome,ECM Glycoproteins
+WNT9B,Matrisome-associated,Secreted Factors
+ADAMTS10,Matrisome-associated,ECM Regulators
+F12,Matrisome-associated,ECM Regulators
+CLEC12B,Matrisome-associated,ECM-affiliated Proteins
+EBI3,Matrisome-associated,Secreted Factors
+VEGFC,Matrisome-associated,Secreted Factors
+KITLG,Matrisome-associated,Secreted Factors
+S100B,Matrisome-associated,Secreted Factors
+FAM20C,Matrisome-associated,ECM Regulators
+IGFBP2,Core matrisome,ECM Glycoproteins
+NPNT,Core matrisome,ECM Glycoproteins
+CELA2A,Matrisome-associated,ECM Regulators
+LTBP4,Core matrisome,ECM Glycoproteins
+TIMP3,Matrisome-associated,ECM Regulators
+GDF2,Matrisome-associated,Secreted Factors
+CST3,Matrisome-associated,ECM Regulators
+SPARC,Core matrisome,ECM Glycoproteins
+SFTPC,Matrisome-associated,ECM-affiliated Proteins
+C1QTNF7,Matrisome-associated,ECM-affiliated Proteins
+HSPG2,Core matrisome,Proteoglycans
+ANXA9,Matrisome-associated,ECM-affiliated Proteins
+VWA5B2,Core matrisome,ECM Glycoproteins
+ADAMTS4,Matrisome-associated,ECM Regulators
+SEMA3B,Matrisome-associated,ECM-affiliated Proteins
+WNT8A,Matrisome-associated,Secreted Factors
+FBN3,Core matrisome,ECM Glycoproteins
+GDF11,Matrisome-associated,Secreted Factors
+EGLN2,Matrisome-associated,ECM Regulators
+IL25,Matrisome-associated,Secreted Factors
+DHH,Matrisome-associated,Secreted Factors
+ADAM32,Matrisome-associated,ECM Regulators
+CHADL,Core matrisome,Proteoglycans
+MUCL1,Matrisome-associated,ECM-affiliated Proteins
+LOXL4,Matrisome-associated,ECM Regulators
+PLXNB3,Matrisome-associated,ECM-affiliated Proteins
+WNT11,Matrisome-associated,Secreted Factors
+WIF1,Matrisome-associated,Secreted Factors
+TNF,Matrisome-associated,Secreted Factors
+SERPINH1,Matrisome-associated,ECM Regulators
+C1QC,Matrisome-associated,ECM-affiliated Proteins
+PCSK6,Matrisome-associated,ECM Regulators
+ADAMTS13,Matrisome-associated,ECM Regulators
+WNT10B,Matrisome-associated,Secreted Factors
+SEMA4D,Matrisome-associated,ECM-affiliated Proteins
+LIF,Matrisome-associated,Secreted Factors
+ELSPBP1,Core matrisome,ECM Glycoproteins
+CXCL13,Matrisome-associated,Secreted Factors
+ADAM23,Matrisome-associated,ECM Regulators
+ADAMTS8,Matrisome-associated,ECM Regulators
+SPP1,Core matrisome,ECM Glycoproteins
+SMOC2,Core matrisome,ECM Glycoproteins
+EMCN,Matrisome-associated,ECM-affiliated Proteins
+WNT5B,Matrisome-associated,Secreted Factors
+CTSF,Matrisome-associated,ECM Regulators
+MUC3A,Matrisome-associated,ECM-affiliated Proteins
+AGRN,Core matrisome,ECM Glycoproteins
+COL4A1,Core matrisome,Collagens
+TIMP1,Matrisome-associated,ECM Regulators
+CXCL3,Matrisome-associated,Secreted Factors
+FGF6,Matrisome-associated,Secreted Factors
+PLAT,Matrisome-associated,ECM Regulators
+C1QB,Matrisome-associated,ECM-affiliated Proteins
+FGF4,Matrisome-associated,Secreted Factors
+SDC4,Matrisome-associated,ECM-affiliated Proteins
+MDK,Matrisome-associated,Secreted Factors
+HAPLN4,Core matrisome,Proteoglycans
+MUC21,Matrisome-associated,ECM-affiliated Proteins
+CST4,Matrisome-associated,ECM Regulators
+LMAN1,Matrisome-associated,ECM-affiliated Proteins
+MFAP3,Core matrisome,ECM Glycoproteins
+CSPG4,Matrisome-associated,ECM-affiliated Proteins
+CX3CL1,Matrisome-associated,Secreted Factors
+RELN,Core matrisome,ECM Glycoproteins
+FGF17,Matrisome-associated,Secreted Factors
+LAMA1,Core matrisome,ECM Glycoproteins
+SEMA4A,Matrisome-associated,ECM-affiliated Proteins
+A2M,Matrisome-associated,ECM Regulators
+IGFBP5,Core matrisome,ECM Glycoproteins
+IL6,Matrisome-associated,Secreted Factors
+EGLN3,Matrisome-associated,ECM Regulators
+IFNA5,Matrisome-associated,Secreted Factors
+IL13,Matrisome-associated,Secreted Factors
+ANXA11,Matrisome-associated,ECM-affiliated Proteins
+COL16A1,Core matrisome,Collagens
+PLOD3,Matrisome-associated,ECM Regulators
+CCL26,Matrisome-associated,Secreted Factors
+ANXA6,Matrisome-associated,ECM-affiliated Proteins
+DPT,Core matrisome,ECM Glycoproteins
+SNED1,Core matrisome,ECM Glycoproteins
+FGF2,Matrisome-associated,Secreted Factors
+SERPING1,Matrisome-associated,ECM Regulators
+VEGFD,Matrisome-associated,Secreted Factors
+FGF21,Matrisome-associated,Secreted Factors
+SEMA4B,Matrisome-associated,ECM-affiliated Proteins
+P4HA1,Matrisome-associated,ECM Regulators
+CCN2,Core matrisome,ECM Glycoproteins
+IGFBP4,Core matrisome,ECM Glycoproteins
+ANXA8,Matrisome-associated,ECM-affiliated Proteins
+FGF1,Matrisome-associated,Secreted Factors
+COL11A1,Core matrisome,Collagens
+OGFOD2,Matrisome-associated,ECM Regulators
+SDC3,Matrisome-associated,ECM-affiliated Proteins
+NELL2,Core matrisome,ECM Glycoproteins
+TNR,Core matrisome,ECM Glycoproteins
+TNFSF13,Matrisome-associated,Secreted Factors
+FREM1,Matrisome-associated,ECM-affiliated Proteins
+BGN,Core matrisome,Proteoglycans
+CCN1,Core matrisome,ECM Glycoproteins
+POMZP3,Core matrisome,ECM Glycoproteins
+IL18,Matrisome-associated,Secreted Factors
+NODAL,Matrisome-associated,Secreted Factors
+LAMB2,Core matrisome,ECM Glycoproteins
+CCL19,Matrisome-associated,Secreted Factors
+FBLN5,Core matrisome,ECM Glycoproteins
+HTRA1,Matrisome-associated,ECM Regulators
+GDF5,Matrisome-associated,Secreted Factors
+INTS6L,Core matrisome,ECM Glycoproteins
+LGALS1,Matrisome-associated,ECM-affiliated Proteins
+HAPLN2,Core matrisome,Proteoglycans
+CCL3,Matrisome-associated,Secreted Factors
+PTN,Matrisome-associated,Secreted Factors
+GDF1,Matrisome-associated,Secreted Factors
+SERPINA1,Matrisome-associated,ECM Regulators
+S100A7,Matrisome-associated,Secreted Factors
+CRLF1,Matrisome-associated,Secreted Factors
+FGF13,Matrisome-associated,Secreted Factors
+PRSS3,Matrisome-associated,ECM Regulators
+VEGFB,Matrisome-associated,Secreted Factors
+ADAMTS1,Matrisome-associated,ECM Regulators
+FSTL3,Matrisome-associated,Secreted Factors
+BMP1,Matrisome-associated,ECM Regulators
+ITIH4,Matrisome-associated,ECM Regulators
+INHBE,Matrisome-associated,Secreted Factors
+COL11A2,Core matrisome,Collagens
+GPC1,Matrisome-associated,ECM-affiliated Proteins
+GREM1,Matrisome-associated,ECM-affiliated Proteins
+COL9A2,Core matrisome,Collagens
+CTSD,Matrisome-associated,ECM Regulators
+TIMP2,Matrisome-associated,ECM Regulators
+ANXA2,Matrisome-associated,ECM-affiliated Proteins
+PLXNA1,Matrisome-associated,ECM-affiliated Proteins
+S100A13,Matrisome-associated,Secreted Factors
+IFNA13,Matrisome-associated,Secreted Factors
+LGI4,Core matrisome,ECM Glycoproteins
+LTBP3,Core matrisome,ECM Glycoproteins
+SEMA6A,Matrisome-associated,ECM-affiliated Proteins
+BMP8B,Matrisome-associated,Secreted Factors
+C17orf58,Matrisome-associated,ECM Regulators
+C1QL2,Matrisome-associated,ECM-affiliated Proteins
+IL34,Matrisome-associated,Secreted Factors
+FGF14,Matrisome-associated,Secreted Factors
+MUC5AC,Matrisome-associated,ECM-affiliated Proteins
+S100A16,Matrisome-associated,Secreted Factors
+CXCL14,Matrisome-associated,Secreted Factors
+GPC4,Matrisome-associated,ECM-affiliated Proteins
+HHIP,Matrisome-associated,Secreted Factors
+CTSA,Matrisome-associated,ECM Regulators
+CST6,Matrisome-associated,ECM Regulators
+SPOCK1,Core matrisome,Proteoglycans
+LGI1,Core matrisome,ECM Glycoproteins
+BMP7,Matrisome-associated,Secreted Factors
+CLEC18A,Matrisome-associated,ECM-affiliated Proteins
+EDIL3,Core matrisome,ECM Glycoproteins
+C1QL3,Matrisome-associated,ECM-affiliated Proteins
+CLEC17A,Matrisome-associated,ECM-affiliated Proteins
+PF4,Matrisome-associated,Secreted Factors
+NTNG2,Core matrisome,ECM Glycoproteins
+TGFB3,Matrisome-associated,Secreted Factors
+SLIT1,Core matrisome,ECM Glycoproteins
+SERPINI1,Matrisome-associated,ECM Regulators
+CSTB,Matrisome-associated,ECM Regulators
+SERPINA3,Matrisome-associated,ECM Regulators
+MEGF9,Matrisome-associated,Secreted Factors
+ADAM11,Matrisome-associated,ECM Regulators
+PLXNB1,Matrisome-associated,ECM-affiliated Proteins
+IL1F10,Matrisome-associated,Secreted Factors
+KNG1,Matrisome-associated,ECM Regulators
+GH1,Matrisome-associated,Secreted Factors
+S100A10,Matrisome-associated,Secreted Factors
+COL6A2,Core matrisome,Collagens
+LTA,Matrisome-associated,Secreted Factors
+INHA,Matrisome-associated,Secreted Factors
+CRIM1,Core matrisome,ECM Glycoproteins
+NCAN,Core matrisome,Proteoglycans
+LRG1,Core matrisome,ECM Glycoproteins
+S100A6,Matrisome-associated,Secreted Factors
+IGFBP7,Core matrisome,ECM Glycoproteins
+P4HA2,Matrisome-associated,ECM Regulators
+IL36RN,Matrisome-associated,Secreted Factors
+EMILIN1,Core matrisome,ECM Glycoproteins
+FGF11,Matrisome-associated,Secreted Factors
+NRG1,Matrisome-associated,Secreted Factors
+CCL24,Matrisome-associated,Secreted Factors
+IGF1,Matrisome-associated,Secreted Factors
+WNT10A,Matrisome-associated,Secreted Factors
+ZFP91,Matrisome-associated,Secreted Factors
+SPOCK2,Core matrisome,Proteoglycans
+PLXDC2,Matrisome-associated,ECM-affiliated Proteins
+SEMA6C,Matrisome-associated,ECM-affiliated Proteins
+SPOCK3,Core matrisome,Proteoglycans
+SRGN,Core matrisome,Proteoglycans
+AGT,Matrisome-associated,ECM Regulators
+IFNA14,Matrisome-associated,Secreted Factors
+CRELD1,Core matrisome,ECM Glycoproteins
+ELN,Core matrisome,ECM Glycoproteins
+C1QTNF1,Matrisome-associated,ECM-affiliated Proteins
+SPARCL1,Core matrisome,ECM Glycoproteins
+SEMA4F,Matrisome-associated,ECM-affiliated Proteins
+PARM1,Matrisome-associated,ECM-affiliated Proteins
+MUC5B,Matrisome-associated,ECM-affiliated Proteins
+AMH,Matrisome-associated,Secreted Factors
+MFGE8,Core matrisome,ECM Glycoproteins
+MUC20,Matrisome-associated,ECM-affiliated Proteins
+EGLN1,Matrisome-associated,ECM Regulators
+C1QTNF4,Matrisome-associated,ECM-affiliated Proteins
+COL6A1,Core matrisome,Collagens
+COL5A2,Core matrisome,Collagens
+PLXNB2,Matrisome-associated,ECM-affiliated Proteins
+GLDN,Core matrisome,ECM Glycoproteins
+PLXND1,Matrisome-associated,ECM-affiliated Proteins
+THBS3,Core matrisome,ECM Glycoproteins
+SERPINE2,Matrisome-associated,ECM Regulators
+AEBP1,Core matrisome,ECM Glycoproteins
+HCFC2,Matrisome-associated,Secreted Factors
+ANXA5,Matrisome-associated,ECM-affiliated Proteins
+MEGF10,Matrisome-associated,Secreted Factors
+COL5A3,Core matrisome,Collagens
+ISM1,Matrisome-associated,Secreted Factors
+A2M,Matrisome-associated,ECM Regulators
+HHIP,Matrisome-associated,Secreted Factors
+CCL2,Matrisome-associated,Secreted Factors
+PLXNB1,Matrisome-associated,ECM-affiliated Proteins
+SFRP2,Matrisome-associated,Secreted Factors
+SLIT1,Core matrisome,ECM Glycoproteins
+SEMA3E,Matrisome-associated,ECM-affiliated Proteins
+PRELP,Core matrisome,Proteoglycans
+COL9A2,Core matrisome,Collagens
+SEMA6B,Matrisome-associated,ECM-affiliated Proteins
+CSTB,Matrisome-associated,ECM Regulators
+CBLN2,Matrisome-associated,Secreted Factors
+COL6A1,Core matrisome,Collagens
+TNFSF12,Matrisome-associated,Secreted Factors
+FBN3,Core matrisome,ECM Glycoproteins
+CRELD1,Core matrisome,ECM Glycoproteins
+ADAM9,Matrisome-associated,ECM Regulators
+F7,Matrisome-associated,ECM Regulators
+CTSZ,Matrisome-associated,ECM Regulators
+PARM1,Matrisome-associated,ECM-affiliated Proteins
+SEMA4A,Matrisome-associated,ECM-affiliated Proteins
+SNED1,Core matrisome,ECM Glycoproteins
+GAS6,Core matrisome,ECM Glycoproteins
+POMZP3,Core matrisome,ECM Glycoproteins
+ADAM22,Matrisome-associated,ECM Regulators
+ELFN2,Matrisome-associated,ECM-affiliated Proteins
+FGF3,Matrisome-associated,Secreted Factors
+HSPG2,Core matrisome,Proteoglycans
+ADAMTS4,Matrisome-associated,ECM Regulators
+ANXA11,Matrisome-associated,ECM-affiliated Proteins
+MFAP1,Core matrisome,ECM Glycoproteins
+CCL3,Matrisome-associated,Secreted Factors
+VWA5B2,Core matrisome,ECM Glycoproteins
+LGI4,Core matrisome,ECM Glycoproteins
+SERPINE2,Matrisome-associated,ECM Regulators
+EDIL3,Core matrisome,ECM Glycoproteins
+IGFBP4,Core matrisome,ECM Glycoproteins
+MEGF10,Matrisome-associated,Secreted Factors
+MDK,Matrisome-associated,Secreted Factors
+CSF1,Matrisome-associated,Secreted Factors
+PLXNB2,Matrisome-associated,ECM-affiliated Proteins
+IGFBP5,Core matrisome,ECM Glycoproteins
+C1QB,Matrisome-associated,ECM-affiliated Proteins
+LGALS1,Matrisome-associated,ECM-affiliated Proteins
+PLXNB3,Matrisome-associated,ECM-affiliated Proteins
+COL4A1,Core matrisome,Collagens
+TGFB2,Matrisome-associated,Secreted Factors
+TNFSF13,Matrisome-associated,Secreted Factors
+P4HTM,Matrisome-associated,ECM Regulators
+CTSE,Matrisome-associated,ECM Regulators
+NTNG2,Core matrisome,ECM Glycoproteins
+SPP1,Core matrisome,ECM Glycoproteins
+SEMA3A,Matrisome-associated,ECM-affiliated Proteins
+ANXA7,Matrisome-associated,ECM-affiliated Proteins
+BMP3,Matrisome-associated,Secreted Factors
+BMP7,Matrisome-associated,Secreted Factors
+HYAL2,Matrisome-associated,ECM Regulators
+PLOD1,Matrisome-associated,ECM Regulators
+LAMB2,Core matrisome,ECM Glycoproteins
+COL1A2,Core matrisome,Collagens
+CLEC10A,Matrisome-associated,ECM-affiliated Proteins
+FCN1,Matrisome-associated,ECM-affiliated Proteins
+SDC3,Matrisome-associated,ECM-affiliated Proteins
+SPOCK2,Core matrisome,Proteoglycans
+MMP28,Matrisome-associated,ECM Regulators
+MEGF11,Matrisome-associated,Secreted Factors
+S100A7,Matrisome-associated,Secreted Factors
+MASP2,Matrisome-associated,ECM Regulators
+ADAMTS10,Matrisome-associated,ECM Regulators
+PGF,Matrisome-associated,Secreted Factors
+FGF13,Matrisome-associated,Secreted Factors
+IL25,Matrisome-associated,Secreted Factors
+PLXNA2,Matrisome-associated,ECM-affiliated Proteins
+ADAMTSL5,Matrisome-associated,ECM Regulators
+GDF5,Matrisome-associated,Secreted Factors
+SEMA4B,Matrisome-associated,ECM-affiliated Proteins
+VEGFD,Matrisome-associated,Secreted Factors
+COL5A3,Core matrisome,Collagens
+SERPINI1,Matrisome-associated,ECM Regulators
+LTBP1,Core matrisome,ECM Glycoproteins
+LAMA5,Core matrisome,ECM Glycoproteins
+WIF1,Matrisome-associated,Secreted Factors
+ANXA1,Matrisome-associated,ECM-affiliated Proteins
+CRLF1,Matrisome-associated,Secreted Factors
+IL1F10,Matrisome-associated,Secreted Factors
+C1QL2,Matrisome-associated,ECM-affiliated Proteins
+MUC3A,Matrisome-associated,ECM-affiliated Proteins
+TIMP2,Matrisome-associated,ECM Regulators
+C1QTNF4,Matrisome-associated,ECM-affiliated Proteins
+TGFB3,Matrisome-associated,Secreted Factors
+SEMA6C,Matrisome-associated,ECM-affiliated Proteins
+HAPLN2,Core matrisome,Proteoglycans
+TNR,Core matrisome,ECM Glycoproteins
+NGLY1,Matrisome-associated,ECM Regulators
+BRINP2,Matrisome-associated,Secreted Factors
+P4HA1,Matrisome-associated,ECM Regulators
+IFNA13,Matrisome-associated,Secreted Factors
+CELA2A,Matrisome-associated,ECM Regulators
+WNT10A,Matrisome-associated,Secreted Factors
+SPOCK3,Core matrisome,Proteoglycans
+IL6,Matrisome-associated,Secreted Factors
+CTSD,Matrisome-associated,ECM Regulators
+CX3CL1,Matrisome-associated,Secreted Factors
+COL11A2,Core matrisome,Collagens
+GLDN,Core matrisome,ECM Glycoproteins
+SPOCK1,Core matrisome,Proteoglycans
+EFEMP1,Core matrisome,ECM Glycoproteins
+FGF21,Matrisome-associated,Secreted Factors
+SEMA4C,Matrisome-associated,ECM-affiliated Proteins
+SEMA6A,Matrisome-associated,ECM-affiliated Proteins
+COL4A2,Core matrisome,Collagens
+GH1,Matrisome-associated,Secreted Factors
+ASTL,Matrisome-associated,ECM Regulators
+MUC12,Matrisome-associated,ECM-affiliated Proteins
+NTNG1,Core matrisome,ECM Glycoproteins
+CST6,Matrisome-associated,ECM Regulators
+CLEC18A,Matrisome-associated,ECM-affiliated Proteins
+FGF17,Matrisome-associated,Secreted Factors
+SERPINH1,Matrisome-associated,ECM Regulators
+IGF2,Matrisome-associated,Secreted Factors
+SEMA4D,Matrisome-associated,ECM-affiliated Proteins
+MEGF9,Matrisome-associated,Secreted Factors
+SPARC,Core matrisome,ECM Glycoproteins
+IL17F,Matrisome-associated,Secreted Factors
+WNT3,Matrisome-associated,Secreted Factors
+ADAMTS6,Matrisome-associated,ECM Regulators
+ADAMTS1,Matrisome-associated,ECM Regulators
+IGF1,Matrisome-associated,Secreted Factors
+CRIM1,Core matrisome,ECM Glycoproteins
+EMID1,Core matrisome,ECM Glycoproteins
+CCL8,Matrisome-associated,Secreted Factors
+SERPINB7,Matrisome-associated,ECM Regulators
+LOXL4,Matrisome-associated,ECM Regulators
+PLOD3,Matrisome-associated,ECM Regulators
+PDGFB,Matrisome-associated,Secreted Factors
+GDF6,Matrisome-associated,Secreted Factors
+C1QL3,Matrisome-associated,ECM-affiliated Proteins
+HAPLN4,Core matrisome,Proteoglycans
+SEMA3B,Matrisome-associated,ECM-affiliated Proteins
+CLEC3B,Matrisome-associated,ECM-affiliated Proteins
+INTS6L,Core matrisome,ECM Glycoproteins
+COL27A1,Core matrisome,Collagens
+BCAN,Core matrisome,Proteoglycans
+CST3,Matrisome-associated,ECM Regulators
+LIF,Matrisome-associated,Secreted Factors
+CCL24,Matrisome-associated,Secreted Factors
+TIMP3,Matrisome-associated,ECM Regulators
+LGI1,Core matrisome,ECM Glycoproteins
+IFNA16,Matrisome-associated,Secreted Factors
+EMILIN1,Core matrisome,ECM Glycoproteins
+LMAN1,Matrisome-associated,ECM-affiliated Proteins
+WNT8A,Matrisome-associated,Secreted Factors
+GDF2,Matrisome-associated,Secreted Factors
+FGF18,Matrisome-associated,Secreted Factors
+FGF2,Matrisome-associated,Secreted Factors
+MUCL1,Matrisome-associated,ECM-affiliated Proteins
+SERPINF1,Matrisome-associated,ECM Regulators
+IL36RN,Matrisome-associated,Secreted Factors
+CLEC12B,Matrisome-associated,ECM-affiliated Proteins
+KNG1,Matrisome-associated,ECM Regulators
+NODAL,Matrisome-associated,Secreted Factors
+CSH2,Matrisome-associated,Secreted Factors
+COL18A1,Core matrisome,Collagens
+ANXA9,Matrisome-associated,ECM-affiliated Proteins
+AEBP1,Core matrisome,ECM Glycoproteins
+FGF8,Matrisome-associated,Secreted Factors
+SERPINA1,Matrisome-associated,ECM Regulators
+INHBE,Matrisome-associated,Secreted Factors
+RELN,Core matrisome,ECM Glycoproteins
+CCN2,Core matrisome,ECM Glycoproteins
+IL18,Matrisome-associated,Secreted Factors
+S100A10,Matrisome-associated,Secreted Factors
+TIMP1,Matrisome-associated,ECM Regulators
+SERPINB6,Matrisome-associated,ECM Regulators
+WNT10B,Matrisome-associated,Secreted Factors
+NCAN,Core matrisome,Proteoglycans
+C17orf58,Matrisome-associated,ECM Regulators
+PLXDC2,Matrisome-associated,ECM-affiliated Proteins
+ITIH4,Matrisome-associated,ECM Regulators
+SBSPON,Core matrisome,ECM Glycoproteins
+BMP1,Matrisome-associated,ECM Regulators
+REG3A,Matrisome-associated,ECM-affiliated Proteins
+IFNA5,Matrisome-associated,Secreted Factors
+EBI3,Matrisome-associated,Secreted Factors
+PRSS3,Matrisome-associated,ECM Regulators
+IFNA14,Matrisome-associated,Secreted Factors
+FGF4,Matrisome-associated,Secreted Factors
+MUC5AC,Matrisome-associated,ECM-affiliated Proteins
+WNT11,Matrisome-associated,Secreted Factors
+S100A6,Matrisome-associated,Secreted Factors
+AGRN,Core matrisome,ECM Glycoproteins
+VEGFB,Matrisome-associated,Secreted Factors
+S100A1,Matrisome-associated,Secreted Factors
+CTSF,Matrisome-associated,ECM Regulators
+BMP8B,Matrisome-associated,Secreted Factors
+S100B,Matrisome-associated,Secreted Factors
+ELN,Core matrisome,ECM Glycoproteins
+CLEC6A,Matrisome-associated,ECM-affiliated Proteins
+CLEC14A,Matrisome-associated,ECM-affiliated Proteins
+SPARCL1,Core matrisome,ECM Glycoproteins
+MUC5B,Matrisome-associated,ECM-affiliated Proteins
+WNT5B,Matrisome-associated,Secreted Factors
+VEGFC,Matrisome-associated,Secreted Factors
+LGI3,Core matrisome,ECM Glycoproteins
+IL24,Matrisome-associated,Secreted Factors
+C1QTNF7,Matrisome-associated,ECM-affiliated Proteins
+MFAP3,Core matrisome,ECM Glycoproteins
+ZFP91,Matrisome-associated,Secreted Factors
+CSPG4,Matrisome-associated,ECM-affiliated Proteins
+SLIT2,Core matrisome,ECM Glycoproteins
+TNFSF14,Matrisome-associated,Secreted Factors
+OVGP1,Matrisome-associated,ECM-affiliated Proteins
+ANXA8,Matrisome-associated,ECM-affiliated Proteins
+IL7,Matrisome-associated,Secreted Factors
+SERPIND1,Matrisome-associated,ECM Regulators
+CST9L,Matrisome-associated,ECM Regulators
+MST1,Matrisome-associated,Secreted Factors
+S100Z,Matrisome-associated,Secreted Factors
+VWDE,Core matrisome,ECM Glycoproteins
+OGFOD2,Matrisome-associated,ECM Regulators
+HTRA1,Matrisome-associated,ECM Regulators
+CXCL3,Matrisome-associated,Secreted Factors
+COL16A1,Core matrisome,Collagens
+CCN1,Core matrisome,ECM Glycoproteins
+F12,Matrisome-associated,ECM Regulators
+PLAT,Matrisome-associated,ECM Regulators
+LAMA1,Core matrisome,ECM Glycoproteins
+LTBP3,Core matrisome,ECM Glycoproteins
+CLEC4E,Matrisome-associated,ECM-affiliated Proteins
+C1QTNF6,Matrisome-associated,ECM-affiliated Proteins
+FGF6,Matrisome-associated,Secreted Factors
+SRGN,Core matrisome,Proteoglycans
+PLXNA1,Matrisome-associated,ECM-affiliated Proteins
+VWF,Core matrisome,ECM Glycoproteins
+FGF11,Matrisome-associated,Secreted Factors
+PCSK6,Matrisome-associated,ECM Regulators
+CCL19,Matrisome-associated,Secreted Factors
+AMH,Matrisome-associated,Secreted Factors
+FAM20C,Matrisome-associated,ECM Regulators
+MUC20,Matrisome-associated,ECM-affiliated Proteins
+MATN4,Core matrisome,ECM Glycoproteins
+LOXL2,Matrisome-associated,ECM Regulators
+CHADL,Core matrisome,Proteoglycans
+S100A4,Matrisome-associated,Secreted Factors
+AGT,Matrisome-associated,ECM Regulators
+ADAM12,Matrisome-associated,ECM Regulators
+ANXA6,Matrisome-associated,ECM-affiliated Proteins
+DCN,Core matrisome,Proteoglycans
+FREM1,Matrisome-associated,ECM-affiliated Proteins
+ADAMTS13,Matrisome-associated,ECM Regulators
+SERPINB1,Matrisome-associated,ECM Regulators
+FGF12,Matrisome-associated,Secreted Factors
+IGFBP2,Core matrisome,ECM Glycoproteins
+ADAM15,Matrisome-associated,ECM Regulators
+KITLG,Matrisome-associated,Secreted Factors
+IL34,Matrisome-associated,Secreted Factors
+SPON2,Core matrisome,ECM Glycoproteins
+TNXB,Core matrisome,ECM Glycoproteins
+HCFC2,Matrisome-associated,Secreted Factors
+WNT9B,Matrisome-associated,Secreted Factors
+CSHL1,Matrisome-associated,Secreted Factors
+COL11A1,Core matrisome,Collagens
+SDC4,Matrisome-associated,ECM-affiliated Proteins
+ADAM23,Matrisome-associated,ECM Regulators
+EGLN3,Matrisome-associated,ECM Regulators
+SEMA4F,Matrisome-associated,ECM-affiliated Proteins
+FN1,Core matrisome,ECM Glycoproteins
+TNF,Matrisome-associated,Secreted Factors
+MFGE8,Core matrisome,ECM Glycoproteins
+S100A11,Matrisome-associated,Secreted Factors
+C1QC,Matrisome-associated,ECM-affiliated Proteins
+MUC21,Matrisome-associated,ECM-affiliated Proteins
+DHH,Matrisome-associated,Secreted Factors
+DPT,Core matrisome,ECM Glycoproteins
+PPBP,Matrisome-associated,Secreted Factors
+CST8,Matrisome-associated,ECM Regulators
+IGFBP7,Core matrisome,ECM Glycoproteins
+S100A13,Matrisome-associated,Secreted Factors
+ELSPBP1,Core matrisome,ECM Glycoproteins
+ADAM32,Matrisome-associated,ECM Regulators
+CRLF3,Matrisome-associated,Secreted Factors
+C1QTNF1,Matrisome-associated,ECM-affiliated Proteins
+CELA3A,Matrisome-associated,ECM Regulators
+PTN,Matrisome-associated,Secreted Factors
+ITIH5,Matrisome-associated,ECM Regulators
+ADAM11,Matrisome-associated,ECM Regulators
+EGLN2,Matrisome-associated,ECM Regulators
+IFNA4,Matrisome-associated,Secreted Factors
+CLEC17A,Matrisome-associated,ECM-affiliated Proteins
+COL6A2,Core matrisome,Collagens
+LRG1,Core matrisome,ECM Glycoproteins
+PCOLCE,Core matrisome,ECM Glycoproteins
+TIMP4,Matrisome-associated,ECM Regulators
+CXCL14,Matrisome-associated,Secreted Factors
+LTA,Matrisome-associated,Secreted Factors
+ADAMTS3,Matrisome-associated,ECM Regulators
+FLT3LG,Matrisome-associated,Secreted Factors
+PLXND1,Matrisome-associated,ECM-affiliated Proteins
+NELL2,Core matrisome,ECM Glycoproteins
+EGLN1,Matrisome-associated,ECM Regulators
+SMOC2,Core matrisome,ECM Glycoproteins
+P4HA2,Matrisome-associated,ECM Regulators
+IL13,Matrisome-associated,Secreted Factors
+GREM1,Matrisome-associated,ECM-affiliated Proteins
+CST4,Matrisome-associated,ECM Regulators
+THBS3,Core matrisome,ECM Glycoproteins
+CTSA,Matrisome-associated,ECM Regulators
+S100A16,Matrisome-associated,Secreted Factors
+ANXA5,Matrisome-associated,ECM-affiliated Proteins
+EMCN,Matrisome-associated,ECM-affiliated Proteins
+GDF1,Matrisome-associated,Secreted Factors
+MEGF8,Matrisome-associated,Secreted Factors
+LTBP4,Core matrisome,ECM Glycoproteins
+INHA,Matrisome-associated,Secreted Factors
+FSTL3,Matrisome-associated,Secreted Factors
+PF4,Matrisome-associated,Secreted Factors
+GPC1,Matrisome-associated,ECM-affiliated Proteins
+CCL3L3,Matrisome-associated,Secreted Factors
+SERPING1,Matrisome-associated,ECM Regulators
+CCL26,Matrisome-associated,Secreted Factors
+VWA5A,Core matrisome,ECM Glycoproteins
+SERPINA3,Matrisome-associated,ECM Regulators
+SFTPC,Matrisome-associated,ECM-affiliated Proteins
+WNT2,Matrisome-associated,Secreted Factors
+ANXA2,Matrisome-associated,ECM-affiliated Proteins
+COL5A2,Core matrisome,Collagens
+FBLN5,Core matrisome,ECM Glycoproteins
+CCL18,Matrisome-associated,Secreted Factors
+ADAMTS8,Matrisome-associated,ECM Regulators
+NPNT,Core matrisome,ECM Glycoproteins
+BGN,Core matrisome,Proteoglycans
+CXCL13,Matrisome-associated,Secreted Factors
+CTSB,Matrisome-associated,ECM Regulators
+NRG1,Matrisome-associated,Secreted Factors
+ISM1,Matrisome-associated,Secreted Factors
+GPC4,Matrisome-associated,ECM-affiliated Proteins
+FGF1,Matrisome-associated,Secreted Factors
+EGFL7,Matrisome-associated,Secreted Factors
+FGF14,Matrisome-associated,Secreted Factors
+GDF11,Matrisome-associated,Secreted Factors

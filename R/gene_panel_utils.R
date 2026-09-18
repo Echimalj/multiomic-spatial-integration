@@ -2483,15 +2483,16 @@ build_gene_panel_summary <- function(
 
   # ----------------------------------------------------------
   # Join all modules
-  # ----------------------------------------------------------
+   # ----------------------------------------------------------
 
+    # Preserve the complete panel definition so panel-specific
+    # metadata propagates into the integrated evidence table.
+    # Examples include AGORA nomination metadata and Matrisome
+    # division/category annotations.
   summary_table <- panel |>
-    dplyr::select(
+    dplyr::distinct(
       gene,
-      panel,
-      category,
-      headline,
-      source
+      .keep_all = TRUE
     ) |>
     dplyr::left_join(
       reference_primary,

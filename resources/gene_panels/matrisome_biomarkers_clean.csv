@@ -1,0 +1,341 @@
+gene,panel,category,headline,source,MatrisomeDivision,MatrisomeCategory
+COL11A1,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+COL11A2,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+COL16A1,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+COL18A1,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+COL1A2,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+COL27A1,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+COL4A1,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+COL4A2,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+COL5A2,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+COL5A3,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+COL6A1,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+COL6A2,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+COL9A2,Matrisome_Biomarkers,Collagens,FALSE,Subah matrisome biomarker panel,Core matrisome,Collagens
+AEBP1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+AGRN,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+CCN1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+CCN2,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+CRELD1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+CRIM1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+DPT,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+EDIL3,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+EFEMP1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+ELN,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+ELSPBP1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+EMID1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+EMILIN1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+FBLN5,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+FBN3,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+FN1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+GAS6,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+GLDN,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+IGFBP2,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+IGFBP4,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+IGFBP5,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+IGFBP7,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+INTS6L,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+LAMA1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+LAMA5,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+LAMB2,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+LGI1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+LGI3,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+LGI4,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+LRG1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+LTBP1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+LTBP3,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+LTBP4,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+MATN4,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+MFAP1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+MFAP3,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+MFGE8,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+NELL2,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+NPNT,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+NTNG1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+NTNG2,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+PCOLCE,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+POMZP3,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+RELN,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+SBSPON,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+SLIT1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+SLIT2,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+SMOC2,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+SNED1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+SPARC,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+SPARCL1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+SPON2,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+SPP1,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+THBS3,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+TNR,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+TNXB,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+VWA5A,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+VWA5B2,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+VWDE,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+VWF,Matrisome_Biomarkers,ECM Glycoproteins,FALSE,Subah matrisome biomarker panel,Core matrisome,ECM Glycoproteins
+BCAN,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+BGN,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+CHADL,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+DCN,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+HAPLN2,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+HAPLN4,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+HSPG2,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+NCAN,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+PRELP,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+SPOCK1,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+SPOCK2,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+SPOCK3,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+SRGN,Matrisome_Biomarkers,Proteoglycans,FALSE,Subah matrisome biomarker panel,Core matrisome,Proteoglycans
+A2M,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAM11,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAM12,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAM15,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAM22,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAM23,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAM32,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAM9,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAMTS1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAMTS10,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAMTS13,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAMTS3,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAMTS4,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAMTS6,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAMTS8,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ADAMTSL5,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+AGT,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ASTL,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+BMP1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+C17orf58,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CELA2A,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CELA3A,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CST3,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CST4,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CST6,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CST8,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CST9L,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CSTB,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CTSA,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CTSB,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CTSD,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CTSE,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CTSF,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+CTSZ,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+EGLN1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+EGLN2,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+EGLN3,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+F12,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+F7,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+FAM20C,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+HTRA1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+HYAL2,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ITIH4,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ITIH5,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+KNG1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+LOXL2,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+LOXL4,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+MASP2,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+MMP28,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+NGLY1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+OGFOD2,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+P4HA1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+P4HA2,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+P4HTM,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+PCSK6,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+PLAT,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+PLOD1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+PLOD3,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+PRSS3,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+SERPINA1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+SERPINA3,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+SERPINB1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+SERPINB6,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+SERPINB7,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+SERPIND1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+SERPINE2,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+SERPINF1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+SERPING1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+SERPINH1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+SERPINI1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+TIMP1,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+TIMP2,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+TIMP3,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+TIMP4,Matrisome_Biomarkers,ECM Regulators,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM Regulators
+ANXA1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+ANXA11,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+ANXA2,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+ANXA5,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+ANXA6,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+ANXA7,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+ANXA8,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+ANXA9,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+C1QB,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+C1QC,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+C1QL2,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+C1QL3,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+C1QTNF1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+C1QTNF4,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+C1QTNF6,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+C1QTNF7,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+CLEC10A,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+CLEC12B,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+CLEC14A,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+CLEC17A,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+CLEC18A,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+CLEC3B,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+CLEC4E,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+CLEC6A,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+CSPG4,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+ELFN2,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+EMCN,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+FCN1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+FREM1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+GPC1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+GPC4,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+GREM1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+LGALS1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+LMAN1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+MUC12,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+MUC20,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+MUC21,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+MUC3A,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+MUC5AC,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+MUC5B,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+MUCL1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+OVGP1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+PARM1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+PLXDC2,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+PLXNA1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+PLXNA2,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+PLXNB1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+PLXNB2,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+PLXNB3,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+PLXND1,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+REG3A,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SDC3,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SDC4,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SEMA3A,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SEMA3B,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SEMA3E,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SEMA4A,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SEMA4B,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SEMA4C,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SEMA4D,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SEMA4F,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SEMA6A,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SEMA6B,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SEMA6C,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+SFTPC,Matrisome_Biomarkers,ECM-affiliated Proteins,FALSE,Subah matrisome biomarker panel,Matrisome-associated,ECM-affiliated Proteins
+AMH,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+BMP3,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+BMP7,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+BMP8B,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+BRINP2,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CBLN2,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CCL18,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CCL19,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CCL2,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CCL24,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CCL26,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CCL3,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CCL3L3,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CCL8,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CRLF1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CRLF3,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CSF1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CSH2,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CSHL1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CX3CL1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CXCL13,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CXCL14,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+CXCL3,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+DHH,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+EBI3,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+EGFL7,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF11,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF12,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF13,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF14,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF17,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF18,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF2,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF21,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF3,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF4,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF6,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FGF8,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FLT3LG,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+FSTL3,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+GDF1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+GDF11,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+GDF2,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+GDF5,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+GDF6,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+GH1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+HCFC2,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+HHIP,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IFNA13,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IFNA14,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IFNA16,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IFNA4,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IFNA5,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IGF1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IGF2,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IL13,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IL17F,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IL18,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IL1F10,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IL24,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IL25,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IL34,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IL36RN,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IL6,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+IL7,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+INHA,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+INHBE,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+ISM1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+KITLG,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+LIF,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+LTA,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+MDK,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+MEGF10,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+MEGF11,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+MEGF8,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+MEGF9,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+MST1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+NODAL,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+NRG1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+PDGFB,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+PF4,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+PGF,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+PPBP,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+PTN,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+S100A1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+S100A10,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+S100A11,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+S100A13,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+S100A16,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+S100A4,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+S100A6,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+S100A7,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+S100B,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+S100Z,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+SFRP2,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+TGFB2,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+TGFB3,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+TNF,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+TNFSF12,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+TNFSF13,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+TNFSF14,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+VEGFB,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+VEGFC,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+VEGFD,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+WIF1,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+WNT10A,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+WNT10B,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+WNT11,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+WNT2,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+WNT3,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+WNT5B,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+WNT8A,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+WNT9B,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
+ZFP91,Matrisome_Biomarkers,Secreted Factors,FALSE,Subah matrisome biomarker panel,Matrisome-associated,Secreted Factors
