@@ -1,7 +1,7 @@
-# multiomic-spatial-integration
-A modular computational framework for integrating single-cell and spatial transcriptomics through Bayesian deconvolution, statistical modeling, biological validation, and downstream pathway analysis.
+# Gene Sextant: Multi-omic Spatial Integration
+A modular computational framework for transforming single-cell and spatial transcriptomic data into cellular, statistical, mechanistic, and translational evidence.
 
-🚧 Work in progress (Current version 0.4.0)
+🚧 Work in progress (Current version 0.5.0)
 
 ![R](https://img.shields.io/badge/R-4.x-blue)
 ![Python](https://img.shields.io/badge/Python-3.x-yellow)
@@ -13,33 +13,291 @@ A modular computational framework for integrating single-cell and spatial transc
 
 ## Overview
 
-This repository contains a modular multi-omic workflow for integrating annotated single-nucleus RNA-seq (snRNA-seq) data with NanoString GeoMx Whole Transcriptome Atlas (WTA) Digital Spatial Profiling data.
+**Gene Sextant** is a modular computational framework for integrating single-nucleus RNA sequencing (snRNA-seq) with spatial transcriptomics to resolve how molecular and cellular changes vary across anatomical and pathological microenvironments.
 
-The goal is to estimate cell-type-resolved spatial abundance in human brain tissue and test how inferred cellular composition varies by disease status, amyloid pathology, and vascular/parenchymal microenvironment.
+The framework was developed using NanoString GeoMx Whole Transcriptome Atlas (WTA) data and human snRNA-seq references, with an initial application to Alzheimer's disease (AD) and cerebral amyloid angiopathy (CAA).
 
-The example biological use case focuses on AD/CAA versus control human brain tissue, with emphasis on vascular and parenchymal amyloid-associated remodeling.
+Rather than treating spatial transcriptomic analysis as a single endpoint, Gene Sextant progressively transforms spatial molecular measurements into multiple layers of biological evidence:
 
----
+**Data → Cellular Composition → Statistical Evidence → Mechanistic Hypotheses → Candidate Prioritization**
 
-## Workflow Summary
+The central goal is to move beyond asking:
 
-The workflow consists of ten major stages:
+> **What changes in disease?**
 
-1. snRNA-seq preprocessing, QC, clustering, subclustering, and cell-type annotation  
-2. GeoMx WTA processing, QC, and AnnData object construction  
-3. Regression-based cell-type signature inference and Bayesian spatial deconvolution
-   Note: training signatures separately for AD vs Control, however, If there is only a unified reference. this can also be made with this repo.
-4. SVI spatial deconvolution
-5. Extraction, normalization, and annotation of spatial cell-type abundances  
-6. Statistical analysis of inferred cell-type proportions and spatial visualization
-7. Biological validation
-8. Pathway analysis
-9. Method comparison
-10. Figure generation
+toward asking:
 
-This structure follows the integrated workflow described in the internal project documentation. 
+> **Where does it change, which cells are associated with the change, under
+> which pathological conditions does it occur, and how can that evidence
+> inform biological interpretation and candidate prioritization?**
 
 ---
+
+## Gene Sextant Architecture
+
+Gene Sextant is organized into five conceptual modules.
+
+```text
+Human snRNA-seq                              Spatial transcriptomics
+ Nuclei × Genes                                  ROIs × Genes
+       │                                              │
+       └──────────────────────┬───────────────────────┘
+                              ▼
+                 ┌─────────────────────────┐
+                 │ MODULE 1                │
+                 │ QC & PREPROCESSING      │
+                 └────────────┬────────────┘
+                              │
+                              ▼
+                 ┌─────────────────────────┐
+                 │ MODULE 2                │
+                 │ CELLULAR COMPOSITION    │
+                 │ ROIs × Cell types       │
+                 └────────────┬────────────┘
+                              │
+                              ▼
+                 ┌─────────────────────────┐
+                 │ MODULE 3                │
+                 │ STATISTICAL EVIDENCE    │
+                 │ Contrast × Feature      │
+                 │ × Region                │
+                 └────────────┬────────────┘
+                              │
+                              ▼
+                 ┌─────────────────────────┐
+                 │ MODULE 4                │
+                 │ MECHANISTIC             │
+                 │ INTERPRETATION          │
+                 │ Cells • Genes           │
+                 │ Pathways • Networks     │
+                 └────────────┬────────────┘
+                              │
+                              ▼
+                 ┌─────────────────────────┐
+                 │ MODULE 5                │
+                 │ BIOMARKER & TARGET      │
+                 │ PRIORITIZATION          │
+                 └────────────┬────────────┘
+                              │
+                              ▼
+                 Spatially contextualized
+                    biological evidence
+                              │
+                              ▼
+                    Precision neuroscience
+```
+
+The modules are conceptually sequential but computationally modular. 
+Individual analyses can be run independently once their required upstream data products are available.
+
+---
+## Module 1 - QC & Preprocessing
+
+Question: Are the single-cell and spatial datasets suitable for integration?
+
+Inputs
+- annotated snRNA-seq reference data
+- GeoMx WTA count matrices
+- negative-probe measurements
+- ROI metadata
+- nuclei counts
+- disease, pathology, anatomical-region, and scan identifiers
+
+
+Approach
+
+The snRNA-seq reference undergoes QC, clustering, annotation, and targeted subclustering. GeoMx WTA measurements are converted into a standardized AnnData representation containing expression counts, negative probes, and ROI-level metadata.
+
+Outputs
+- snRNA-seq reference
+   Nuclei × Genes
+
+- Spatial expression
+   ROIs × Genes
+
+- ROI metadata
+   ROIs × Covariates
+
+These standardized inputs feed the cellular-composition module.
+
+## Module 2 - Cellular Composition
+
+Question: Which cell populations contribute to each spatial microenvironment?
+
+Gene Sextant uses a two-stage reference-based deconvolution strategy:
+
+1.- regression-derived cell-type expression signatures from annotated snRNA-seq;
+2.- Bayesian spatial deconvolution of GeoMx WTA counts using a SpaceJam/Cell2Location-style hierarchical model implemented in Pyro.
+
+The spatial model incorporates:
+
+- snRNA-seq-derived expression signatures
+- WTA counts
+- negative-probe background
+- nuclei-count-informed priors
+- scan/slide structure
+
+Posterior abundance estimates are extracted as both absolute and relative cell-type abundance.
+
+Validation
+
+Deconvolution is evaluated using complementary strategies including:
+
+* held-out synthetic pseudobulk recovery
+* marker-abundance concordance
+* regression-signature identity
+* leave-one-scan-out robustness
+* compositional sensitivity analyses
+* cross-method benchmarking
+
+Outputs
+-ROI × Cell type abundance
+   P(cell type | ROI)
+
+Relative abundance estimates provide the primary input for downstream spatial statistical modeling.
+
+## Module 3 - Statistical Evidence
+
+Question: Which cellular or molecular features change with disease and local pathology across spatial microenvironments?
+
+Gene Sextant uses scan-aware mixed-effects models to evaluate features across arterial, capillary, and parenchymal contexts.
+
+For relative cell-type abundance:
+```text
+Y_ROI ~ Beta(μ, φ)
+
+logit(μ) = Biological effects + (1 | Scan_ID)
+```
+
+Models are fitted using glmmTMB, planned contrasts are estimated with emmeans, and multiple testing is controlled using Benjamini-Hochberg FDR.
+
+*Biological contrasts*
+
+Four complementary contrasts separate disease and local pathology effects:
+
+1.-Disease effect
+   AD/CAA vs Control among amyloid-negative ROIs.
+2.-Amyloid effect
+   Amyloid-positive vs amyloid-negative ROIs within AD/CAA.
+3.-Maximum-pathology effect
+   AD/CAA amyloid-positive vs Control amyloid-negative.
+4.-Overall disease effect
+   Pathology-weighted AD/CAA vs Control.
+
+The same statistical architecture can be applied to different feature spaces, including:
+* ROI × Cell abundances
+* ROI × Genes
+* ROI × Pathway activities
+* ROI × Candidate biomarkers
+
+Outputs
+These analyses produce standardized statistical effect matrices:
+Contrast × Feature × Region
+
+Effect size • Direction • FDR
+
+## Module 4 - Mechanistic Interpretation
+
+Question: How can statistically supported spatial changes be organized into testable biological hypotheses?
+
+Module 4 integrates evidence across multiple biological scales rather than interpreting individual significant features in isolation.
+
+Current analyses include:
+
+* cell-type abundance changes
+* spatial gene-expression effects
+* pathway activity associated with cellular composition
+* lineage-associated molecular perturbations
+* cell-type co-occurrence structure
+* anatomical comparisons across arteries, capillaries, and parenchyma
+
+This module connects statistical associations to candidate mechanisms while preserving anatomical and pathological context.
+
+```text
+Statistical effect matrices
+          │
+          ├── Cell changes
+          ├── Gene changes
+          ├── Pathway changes
+          └── Co-occurrence structure
+          │
+          ▼
+Spatially resolved,
+testable mechanistic hypotheses
+```
+
+These analyses identify associations and generate mechanistic hypotheses; they do not by themselves establish causal relationships.
+
+## Module 5 - Biomarker & Target Prioritization
+
+Question: Can human spatial multi-omic evidence refine the interpretation of candidate biomarkers and therapeutic targets?
+
+Module 5 applies the Gene Sextant evidence framework to externally defined candidate gene panels.
+
+```text
+Candidate panel
+      │
+      ▼
+Reference attribution
+      │
+      ▼
+Spatial perturbation
+Arteries | Capillaries | Parenchyma
+      │
+      ▼
+Lineage attribution
+      │
+      ▼
+Fine-cell-type associations
+      │
+      ▼
+Integrated evidence
+      │
+      ├───────────────┐
+      ▼               ▼
+Biomarker         Therapeutic
+interpretation    target prioritization
+```
+
+Current panel applications:
+
+The repository currently supports analyses of:
+
+* candidate fluid biomarker panels
+* AGORA therapeutic targets
+* single- and repeatedly nominated AGORA targets
+* matrisome/ECM biomarker panels
+
+Panel-agnostic architecture
+
+Module 5 uses a common analytical interface while preserving source-specific
+metadata throughout the workflow.
+
+A panel therefore contains a standardized core:
+- gene
+- panel
+- category
+- headline
+- source
+
+while retaining arbitrary panel-specific annotations such as:
+
+```text
+AGORA
+├── total_nominations
+├── nominating_teams
+├── programs
+└── pharos_class
+
+Matrisome
+├── MatrisomeDivision
+└── MatrisomeCategory
+```
+
+These annotations remain attached to the candidate throughout reference attribution, spatial modeling, lineage analysis, fine-cell-type analysis, and integrated evidence reporting.
+
+This allows new biomarker or therapeutic candidate collections to use the same statistical framework without discarding their original provenance.
+
 
 ## Repository Structure
 
@@ -160,7 +418,9 @@ Recommended usage
       - exploratory analysis
       - adapting to new datasets
 
-## Stage 1: snRNA-seq Reference Preparation
+
+## Module 1 specifics:
+###  snRNA-seq Reference Preparation
 Annotated snRNA-seq data are used as the cellular reference for spatial deconvolution.
 Main steps include:
 
@@ -178,7 +438,7 @@ The reference includes major brain cell populations such as astrocytes, microgli
 
 This repository uses the preprocessing logic developed in `neuro-snRNAseq-tools` to generate the annotated snRNA-seq reference. The original project-specific script included SoupX correction, QC, DoubletFinder, SCTransform, Harmony integration, manual annotation, targeted subclustering, Pearson-correlation-guided merging, and expression aggregation for spatial integration. 
 
-### Dependency: neuro-snRNAseq-tools
+#### Dependency: neuro-snRNAseq-tools
 
 This script depends on the `neuro-snRNAseq-tools` repository.
 
@@ -188,7 +448,7 @@ Clone it locally:
 git clone https://github.com/echimalj/neuro-snRNAseq-tools.git
 ```
 
-## Stage 2: GeoMx WTA AnnData Construction
+### GeoMx WTA AnnData Construction
 GeoMx WTA matrices are converted into a unified AnnData object.
 The AnnData structure preserves:
 - raw WTA gene counts
@@ -212,8 +472,8 @@ adata.obsm["negProbes"]
 ```
 This structure ensures compatibility with downstream Bayesian spatial modeling. 
 
-
-## Stage 3: Bayesian Spatial Deconvolution
+## Module 2 specifics:
+### Bayesian Spatial Deconvolution
 The workflow uses a two-stage modeling strategy:
 
 1.- Regression-based inference of cell-type signatures from snRNA-seq
@@ -245,7 +505,7 @@ The spatial model was adapted from a PyMC3/Theano implementation into a Pyro/PyT
 These modifications preserve the conceptual SpaceJam structure while enabling scalable GeoMx WTA analysis. 
 
 
-## Stage 4: Abundance Extraction and Annotation
+### Abundance Extraction and Annotation
 After model training, posterior spatial factors are extracted and converted into:
 
 - absolute abundance estimates
@@ -255,7 +515,48 @@ After model training, posterior spatial factors are extracted and converted into
 
 These outputs are merged with GeoMx metadata and factor-to-cell-type annotation mappings for downstream visualization and statistical testing. 
 
-## Stage 5: Statistical Modeling
+
+### Validation framework
+Multiple orthogonal validation strategies are implemented to evaluate inferred cell-type abundances.
+
+Current validation includes:
+
+• pseudobulk recovery
+
+• independent marker-gene concordance
+
+• regression-signature identity
+
+• leave-one-scan robustness
+
+• compositional analysis
+
+• ROI nuclei normalization
+   Because inferred abundances are compositional, the framework includes dedicated analyses to distinguish
+      • true biological depletion
+      from
+      • apparent increases caused by compositional redistribution.
+
+      ROI nuclei counts can also be incorporated to normalize inferred abundance on a per-cell basis.
+
+These analyses distinguish technical failures from biologically expected subtype overlap and provide confidence in downstream interpretation.
+
+### Deconvolution benchmarking (WORK IN PROGRESS)
+A modular benchmarking framework compares the Bayesian model against multiple deconvolution algorithms, including
+   - SpatialDecon
+   - MuSiC
+   - Bisque
+   - DWLS
+   - BayesPrism   
+   - SPOTlight
+   - RCTD   
+   - STdeconvolve
+
+with standardized outputs for method agreement and reproducibility.
+
+
+## Module 3 specifics:
+### Statistical Modeling
 Spatially inferred cell-type proportions are modeled using **beta mixed-effects models** in R.
 The core model structure is:
 ``` R
@@ -314,48 +615,41 @@ For full details, see:
 ``` text
 docs/statistical_modeling.md
 ```
-## Stage 6: Validation framework
-Multiple orthogonal validation strategies are implemented to evaluate inferred cell-type abundances.
 
-Current validation includes:
-
-• pseudobulk recovery
-
-• independent marker-gene concordance
-
-• regression-signature identity
-
-• leave-one-scan robustness
-
-• compositional analysis
-
-• ROI nuclei normalization
-   Because inferred abundances are compositional, the framework includes dedicated analyses to distinguish
-      • true biological depletion
-      from
-      • apparent increases caused by compositional redistribution.
-
-      ROI nuclei counts can also be incorporated to normalize inferred abundance on a per-cell basis.
-
-These analyses distinguish technical failures from biologically expected subtype overlap and provide confidence in downstream interpretation.
-
-## Stage 7: Pathway association analysis
+## Module 4 specifics:
+## Pathway association analysis
 Rather than performing enrichment on marker genes, the framework correlates inferred cell-type abundance with spatial gene expression, ranks genes by abundance association, and performs GSEA/fGSEA on those ranked lists.
 
 This identifies biological pathways associated with changes in spatial abundance.
 
-## Stage 8: Deconvolution benchmarking (WORK IN PROGRESS)
-A modular benchmarking framework compares the Bayesian model against multiple deconvolution algorithms, including
-   - SpatialDecon
-   - MuSiC
-   - Bisque
-   - DWLS
-   - BayesPrism   
-   - SPOTlight
-   - RCTD   
-   - STdeconvolve
+Individual cellular effects were subsequently integrated with spatial gene expression, pathway activity, lineage associations, and cellular co-occurrence.
 
-with standardized outputs for method agreement and reproducibility.
+```text
+Cells + Genes + Pathways + Networks
+                ↓
+Spatially resolved mechanistic hypotheses
+```
+
+## Module 5 specifics:
+The current architecture generalizes candidate analysis across different panel types.
+
+Instead of building separate workflows for each candidate collection, Gene Sextant preserves panel-specific metadata while applying a shared analytical pipeline.
+
+```text
+                    Gene Sextant
+                         │
+       ┌─────────────────┼─────────────────┐
+       ▼                 ▼                 ▼
+  Biomarkers           AGORA          Matrisome
+       │                 │                 │
+       └─────────────────┼─────────────────┘
+                         ▼
+                Shared evidence model
+                         ▼
+          Spatially contextualized results
+```
+This design separates the analytical framework from the candidate source, making the architecture extensible to future biomarker panels, therapeutic target collections, and other biologically defined gene sets.
+
 
 ---
 
@@ -401,13 +695,9 @@ The workflow integrates:
 - marker-based biological validation
 - pathway enrichment linked to spatial cell-type abundance
 
-In the current application, this enables compartment-resolved analysis of
-vascular, glial, and neuronal remodeling across parenchymal and vascular
-amyloid microenvironments.
+In the current application, this enables compartment-resolved analysis of vascular, glial, and neuronal remodeling across parenchymal and vascular amyloid microenvironments.
 
-Although developed for AD/CAA, the framework is readily adaptable to any
-study combining annotated sc/snRNA-seq references with GeoMx WTA or
-related spatial transcriptomic platforms.
+Although developed for AD/CAA, the framework is readily adaptable to any study combining annotated sc/snRNA-seq references with GeoMx WTA or related spatial transcriptomic platforms.
 
 ### Notes
 
@@ -420,20 +710,18 @@ related spatial transcriptomic platforms.
 
 ### Current Status
 
-### Current Status
+| Component                                    | Status        |
+| -------------------------------------------- | ------------- |
+| Module 1 — QC & preprocessing                | ✅ Implemented |
+| Module 2 — Cellular composition              | ✅ Implemented |
+| Module 3 — Statistical evidence              | ✅ Implemented |
+| Module 4 — Mechanistic interpretation        | ✅ Implemented |
+| Module 5 — Biomarker & target prioritization | ✅ Implemented |
+| Pseudobulk validation                        | ✅ Implemented |
+| Marker/signature validation                  | ✅ Implemented |
+| Cross-method benchmarking                    | 🟡 Ongoing    |
+| Publication/reporting figures                | 🟡 Ongoing    |
 
-| Module | Status |
-|--------|--------|
-| Reference Construction | ✅ Complete |
-| Bayesian deconvolution | ✅ Complete |
-| Statistical modeling | ✅ Complete |
-| Marker validation | ✅ Complete |
-| Signature validation | ✅ Complete |
-| Compositional analysis | ✅ Complete |
-| Pathway analysis | ✅ Complete |
-| Pseudobulk validation | ✅ Complete |
-| Method comparison | 🟡 In progress |
-| Figure generation | 🟡 In progress |
 
 **Deconvolution methods**
 
@@ -450,43 +738,22 @@ related spatial transcriptomic platforms.
 | STdeconvolve | 🟡 Pending |
 | CIBERSORTx | 🟡 Input preparation implemented |
 
-### Workflow
-```text
-                   ST / snRNA-seq
-                        │
-                        ▼
-              Reference preprocessing
-                        │
-                        ▼
-         Regression signature learning
-                        │
-                        ▼
-        Bayesian spatial deconvolution
-                        │
-                        ▼
-      ROI cell-type abundance estimates
-                        │
-        ┌───────────────┼────────────────┐
-        │               │                │
-        ▼               ▼                ▼
- Marker validation  Statistical     Pathway analysis
-                    modeling
-        │               │                │
-        └───────────────┼────────────────┘
-                        ▼
-             Biological interpretation
-```
 
 ## Highlights
 
-- Bayesian spatial deconvolution using a modified SpaceJam framework
-- Regression-derived cell-type signatures from annotated snRNA-seq references
-- Mixed-effects statistical modeling for disease and pathology contrasts
-- Independent biological validation using marker-gene concordance
-- Regression signature identity assessment
-- Pseudobulk benchmarking for deconvolution accuracy
-- CLR-based compositional and cell-type co-occurrence analyses
-- Pathway enrichment linked directly to inferred spatial abundance
+- Integration of human snRNA-seq references with GeoMx WTA spatial transcriptomics
+- Regression-derived cell-type expression signatures
+- Bayesian spatial deconvolution using a modified SpaceJam/Pyro framework
+- GPU-accelerated stochastic variational inference
+- Synthetic pseudobulk validation with known cellular composition
+- Orthogonal marker, signature, robustness, and cross-method validation
+- Scan-aware mixed-effects modeling across disease, pathology, and anatomical context
+- Standardized `Contrast × Feature × Region` statistical effect matrices
+- Spatial pathway and cell-type co-occurrence analysis
+- Multi-scale integration of cellular, molecular, pathway, and spatial evidence
+- Panel-agnostic biomarker and therapeutic target validation
+- Preservation of source-specific candidate metadata throughout evidence integration
+- Human spatial evidence for contextualizing established and emerging therapeutic candidates
 
 ### Authors:
 Enrique Chimal
@@ -495,4 +762,4 @@ PhD Candidate – Medical Neuroscience - Indiana University School of Medicine
 Subah Hussain
 PhD Student - Genetics and Genomics - Baylor College of Medicine
 
-This README positions the repo as a full **computational biology framework**, not just a collection of scripts.
+Gene Sextant transforms spatial heterogeneity into interpretable cellular, statistical, mechanistic, and translational evidence.
